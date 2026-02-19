@@ -1,0 +1,17 @@
+# Generated reports (per-target, can be large)
+output/
+
+# Python venv
+scripts/.venv/
+__pycache__/
+*.pyc
+
+# Environment (may contain sensitive overrides)
+.env
+
+# OS
+.DS_Store
+
+# Editor
+.vscode/
+.idea/
