@@ -202,6 +202,12 @@ See the V2 roadmap in `ARCHITECTURE.md`.
 
 ---
 
+## Inspiration
+
+The idea for automated SaaS due diligence was sparked by [Charmaine Wilson](https://www.linkedin.com/in/charmaine-wilson-deloitte) (Deloitte Consulting Principal) and [Ayo Odusote](https://www.linkedin.com/in/ayoodusote/) (Deloitte Principal, Software & Platforms Leader) in the context of Taryn Plumb's CIO.com article ["SaaS isn't dead, the market is just becoming more hybrid"](https://www.cio.com/article/4131904/saas-isnt-dead-the-market-is-just-becoming-more-hybrid.html). Their insight — that enterprises will balance traditional SaaS with AI-native alternatives, and that a new governance layer will emerge to orchestrate AI agents — is exactly the landscape where automated due diligence becomes essential. When the market fragments between incumbent SaaS and AI-native challengers, evaluating which side of the hybrid a company falls on requires the kind of multi-signal analysis Dossier provides.
+
+---
+
 ## License
 
 MIT

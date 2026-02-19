@@ -32,6 +32,13 @@ ls output/{domain}/
 - After completing a phase, update PROGRESS.md
 - If a phase fails, log the blocker and move on
 
+### Tool Resilience
+- Phase prompts must specify the **information needed**, not just the tool to use
+- Sub-agents inherit parent permission settings — WebFetch may be denied while WebSearch works
+- WebSearch as WebFetch fallback produces high-quality output (search snippets often include richer metadata than raw HTML)
+- Always tell sub-agents: "WebFetch may be unavailable — use WebSearch as fallback"
+- Design for graceful degradation: if a data source is blocked, note the gap and continue
+
 ### Helper Scripts
 - Python scripts in `scripts/` are called via Bash
 - They output JSON to stdout — redirect to raw/ files
