@@ -1,5 +1,5 @@
-# Generated reports (per-target, can be large)
-output/
+# Generated reports — raw data excluded, markdown/html tracked
+output/*/raw/
 
 # Python venv
 scripts/.venv/

@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Claims Reality Index — February 2026</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+<style>
+:root {
+  --bg: #080c14;
+  --bg-card: #0f1420;
+  --border: #1e2a3a;
+  --gold: #c9a84c;
+  --gold-dim: rgba(201,168,76,0.12);
+  --text: #dfe1e5;
+  --text-sec: #8893a5;
+  --text-muted: #4d5a6e;
+  --glean: #34d399;
+  --sierra: #60a5fa;
+  --vercel: #a78bfa;
+  --cerebras: #fbbf24;
+  --proceed: #34d399;
+  --lean: #2dd4bf;
+  --caution: #facc15;
+  --qualified: #fb923c;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--text);font-family:Georgia,'Times New Roman',serif;-webkit-font-smoothing:antialiased;line-height:1.6}
+.mono{font-family:'SF Mono','Fira Code',Menlo,Consolas,'Courier New',monospace}
+.sans{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,Helvetica,Arial,sans-serif}
+.wrap{max-width:1080px;margin:0 auto;padding:0 28px}
+
+/* ── Hero ── */
+.hero{padding:72px 0 56px;border-bottom:1px solid var(--border);position:relative;overflow:hidden}
+.hero::after{content:'';position:absolute;top:-120px;right:-80px;width:500px;height:500px;background:radial-gradient(circle,rgba(201,168,76,0.035),transparent 65%);pointer-events:none}
+.hero-tag{display:inline-block;padding:5px 14px;border:1px solid rgba(201,168,76,0.25);border-radius:3px;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:28px}
+.hero-tag span{font-family:'SF Mono',Menlo,Consolas,monospace}
+.hero h1{font-size:clamp(30px,5vw,48px);font-weight:400;letter-spacing:-0.3px;line-height:1.12;margin-bottom:20px;color:#f0f1f4}
+.hero h1 em{font-style:italic;color:var(--gold)}
+.hero-desc{font-size:16px;color:var(--text-sec);max-width:640px;line-height:1.75;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif}
+.hero-stats{display:flex;gap:28px;margin-top:28px;flex-wrap:wrap}
+.hero-stat{font-family:'SF Mono',Menlo,Consolas,monospace;font-size:11px;color:var(--text-muted);letter-spacing:0.5px}
+.hero-stat b{color:var(--text-sec);font-weight:500}
+
+/* ── Sections ── */
+section{padding:56px 0;border-bottom:1px solid var(--border)}
+.sec-label{font-family:'SF Mono',Menlo,Consolas,monospace;font-size:9.5px;letter-spacing:2.5px;text-transform:uppercase;color:var(--gold);margin-bottom:6px}
+.sec-title{font-size:26px;font-weight:400;color:#eceef1;margin-bottom:36px}
+
+/* ── Ranking Cards ── */
+.rankings{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px}
+.rcard{background:var(--bg-card);border:1px solid var(--border);border-radius:6px;padding:24px 22px;position:relative;transition:border-color .3s,transform .2s}
+.rcard:hover{border-color:rgba(201,168,76,0.35);transform:translateY(-1px)}
+.rcard-1{border-top:2px solid var(--glean)}
+.rcard-2{border-top:2px solid var(--sierra)}
+.rcard-3{border-top:2px solid var(--vercel)}
+.rcard-4{border-top:2px solid var(--cerebras)}
+.rcard .rnum{position:absolute;top:14px;right:18px;font-size:40px;font-weight:400;color:var(--text-muted);opacity:.3}
+.rcard .rco{font-size:19px;font-weight:600;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif;margin-bottom:3px}
+.rcard-1 .rco{color:var(--glean)}.rcard-2 .rco{color:var(--sierra)}.rcard-3 .rco{color:var(--vercel)}.rcard-4 .rco{color:var(--cerebras)}
+.vbadge{display:inline-block;padding:2px 10px;border-radius:3px;font-family:'SF Mono',Menlo,monospace;font-size:9.5px;font-weight:600;letter-spacing:.6px;text-transform:uppercase;margin:8px 0 14px}
+.vb-proceed{background:rgba(52,211,153,.12);color:var(--proceed);border:1px solid rgba(52,211,153,.25)}
+.vb-lean{background:rgba(45,212,191,.12);color:var(--lean);border:1px solid rgba(45,212,191,.25)}
+.vb-caution{background:rgba(250,204,21,.1);color:var(--caution);border:1px solid rgba(250,204,21,.2)}
+.vb-qualified{background:rgba(251,146,60,.1);color:var(--qualified);border:1px solid rgba(251,146,60,.2)}
+.rcard .rmets{font-family:'SF Mono',Menlo,monospace;font-size:11.5px;color:var(--text-sec);margin-bottom:12px;line-height:1.8}
+.rmets b{color:var(--text);font-weight:500}
+.rcard .rdesc{font-size:13px;color:var(--text-sec);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif;line-height:1.65}
+
+/* ── Table ── */
+.stable{width:100%;border-collapse:collapse;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif;font-size:14px}
+.stable th{text-align:left;padding:10px 14px;font-family:'SF Mono',Menlo,monospace;font-size:9.5px;letter-spacing:1.5px;text-transform:uppercase;color:var(--text-muted);border-bottom:1px solid var(--border);font-weight:500}
+.stable td{padding:13px 14px;border-bottom:1px solid rgba(30,42,58,.4);color:var(--text-sec)}
+.stable tr:hover td{background:rgba(201,168,76,.02)}
+.stable .cname{font-weight:600;color:var(--text)}
+
+/* ── Charts ── */
+.cgrid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+@media(max-width:768px){.cgrid{grid-template-columns:1fr}}
+.cbox{background:var(--bg-card);border:1px solid var(--border);border-radius:6px;padding:22px}
+.cbox h3{font-size:15px;font-weight:400;margin-bottom:18px;color:var(--text)}
+
+/* ── Stack ── */
+.stack{display:flex;flex-direction:column;gap:3px}
+.slayer{display:flex;align-items:center;padding:18px 22px;border-radius:5px;gap:16px;transition:transform .25s}
+.slayer:hover{transform:translateX(3px)}
+.sl4{background:linear-gradient(90deg,rgba(52,211,153,.1),rgba(96,165,250,.06));border-left:3px solid var(--glean)}
+.sl3{background:rgba(167,139,250,.07);border-left:3px solid var(--vercel)}
+.sl2{background:rgba(251,191,36,.06);border-left:3px solid var(--cerebras)}
+.sl1{background:rgba(77,90,110,.08);border-left:3px solid var(--text-muted)}
+.slabel{font-family:'SF Mono',Menlo,monospace;font-size:10px;letter-spacing:1px;text-transform:uppercase;color:var(--text-muted);width:140px;flex-shrink:0}
+.scos{flex:1;font-size:15px;font-weight:500;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif}
+.srisk{font-family:'SF Mono',Menlo,monospace;font-size:10px;padding:3px 10px;border-radius:3px;letter-spacing:.5px;white-space:nowrap}
+.sr-best{background:rgba(52,211,153,.12);color:var(--proceed)}.sr-mod{background:rgba(250,204,21,.1);color:var(--caution)}.sr-high{background:rgba(251,146,60,.1);color:var(--qualified)}.sr-base{background:rgba(77,90,110,.12);color:var(--text-muted)}
+
+/* ── Insights ── */
+.insight{padding:18px 0 18px 22px;border-left:2px solid var(--border);margin-bottom:20px;transition:border-color .3s}
+.insight:hover{border-left-color:var(--gold)}
+.insight .inum{font-family:'SF Mono',Menlo,monospace;font-size:10px;color:var(--gold);letter-spacing:1px;margin-bottom:3px}
+.insight h3{font-size:15.5px;font-weight:600;margin-bottom:6px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif}
+.insight p{font-size:13.5px;color:var(--text-sec);line-height:1.7;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif}
+
+/* ── Bias ── */
+.bgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px}
+.bcard{background:var(--bg-card);border:1px solid var(--border);border-radius:6px;padding:22px;transition:border-color .3s}
+.bcard:hover{border-color:rgba(201,168,76,.25)}
+.bcard .bnum{float:right;font-size:26px;color:var(--gold);opacity:.45;line-height:1}
+.bcard .bname{font-weight:600;font-size:14.5px;margin-bottom:6px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif}
+.bcard .bdesc{font-size:12.5px;color:var(--text-sec);line-height:1.65;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif}
+
+/* ── Methodology ── */
+.passes{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;margin-bottom:28px}
+.pcard{padding:20px;background:var(--bg-card);border:1px solid var(--border);border-radius:6px}
+.pcard .plabel{font-family:'SF Mono',Menlo,monospace;font-size:9.5px;letter-spacing:1.5px;color:var(--gold);margin-bottom:6px}
+.pcard .pname{font-weight:600;margin-bottom:4px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif;font-size:14px}
+.pcard .pdesc{font-size:12.5px;color:var(--text-sec);line-height:1.6;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif}
+
+/* ── Footer ── */
+.foot{padding:44px 0;text-align:center;border-top:1px solid var(--border)}
+.foot p{font-family:'SF Mono',Menlo,monospace;font-size:11px;color:var(--text-muted)}
+.foot .fdisclaim{font-size:10.5px;color:rgba(77,90,110,.7);margin-top:6px;max-width:560px;margin-left:auto;margin-right:auto;line-height:1.6;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif}
+
+/* ── Animation ── */
+@keyframes rise{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+.anim{animation:rise .5s ease-out forwards;opacity:0}
+.d1{animation-delay:.05s}.d2{animation-delay:.12s}.d3{animation-delay:.19s}.d4{animation-delay:.26s}
+
+/* ── Responsive ── */
+@media(max-width:600px){
+  .hero{padding:48px 0 40px}
+  section{padding:40px 0}
+  .hero-stats{gap:14px}
+  .slabel{width:100px;font-size:9px}
+  .rankings{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<!-- ═══════════ HERO ═══════════ -->
+<header class="hero">
+<div class="wrap">
+  <div class="hero-tag"><span>Dossier v0.1.0</span> &middot; Calibrated Output</div>
+  <h1>AI Claims <em>Reality</em> Index</h1>
+  <p class="hero-desc sans">Automated SaaS due diligence across four AI infrastructure companies. Seven-phase analysis with latent space bias correction, fact-checking, CEO pushback simulation, and cross-dossier calibration.</p>
+  <div class="hero-stats">
+    <span class="hero-stat"><b>February 2026</b></span>
+    <span class="hero-stat"><b>4</b> Companies</span>
+    <span class="hero-stat"><b>40+</b> Public Sources</span>
+    <span class="hero-stat"><b>13</b> Analysis Phases</span>
+    <span class="hero-stat"><b>18</b> Fact-Checked Claims</span>
+  </div>
+</div>
+</header>
+
+<!-- ═══════════ RANKING CARDS ═══════════ -->
+<section>
+<div class="wrap">
+  <div class="sec-label">Risk-Adjusted Ranking</div>
+  <h2 class="sec-title">Calibrated Investment Ordering</h2>
+  <div class="rankings">
+    <div class="rcard rcard-1 anim d1">
+      <span class="rnum">1</span>
+      <div class="rco">Glean</div>
+      <span class="vbadge vb-proceed">Proceed</span>
+      <div class="rmets"><b>$200M</b> ARR &middot; <b>100%</b> growth &middot; <b>36x</b> multiple<br><b>$7.2B</b> valuation &middot; <b>100+</b> connectors</div>
+      <p class="rdesc">Best risk-adjusted entry. Lowest multiple despite equal growth. Most defensible operational moat: 100+ enterprise connectors with real-time ACL sync.</p>
+    </div>
+    <div class="rcard rcard-2 anim d2">
+      <span class="rnum">2</span>
+      <div class="rco">Sierra</div>
+      <span class="vbadge vb-lean">Lean Proceed</span>
+      <div class="rmets"><b>$150M</b> ARR &middot; <b>26mo</b> zero-to-scale &middot; <b>67-100x</b><br><b>$10B</b> val &middot; Bret Taylor (ex-Salesforce)</div>
+      <p class="rdesc">Fastest revenue ramp in the set. $0 to $150M ARR in 26 months is historically rare. Enterprise traction genuine. Valuation demands metric scrutiny.</p>
+    </div>
+    <div class="rcard rcard-3 anim d3">
+      <span class="rnum">3</span>
+      <div class="rco">Vercel</div>
+      <span class="vbadge vb-caution">Proceed w/ Caution</span>
+      <div class="rmets"><b>138K</b> GH stars &middot; <b>v0 ~$42M</b> ARR &middot; <b>46.5x</b><br><b>$9.3B</b> val &middot; <b>60%</b> React market share</div>
+      <p class="rdesc">Most verifiable community moat. Next.js at 60% React market share. AI pivot validated by v0 revenue. Pricing friction is addressable.</p>
+    </div>
+    <div class="rcard rcard-4 anim d4">
+      <span class="rnum">4</span>
+      <div class="rco">Cerebras</div>
+      <span class="vbadge vb-qualified">Qualified Candidate</span>
+      <div class="rmets"><b>WSE-3</b> chip &middot; <b>$23B</b> val &middot; <b>$2.55B</b> raised<br>OpenAI <b>$10B</b> deal &middot; <b>102</b> patents</div>
+      <p class="rdesc">Highest potential outcome ($50B+ IPO) but lowest probability. Technology is 5/5 but business is 3.5/5. 6-12 month execution window. Conviction investors only.</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- ═══════════ SCORES TABLE ═══════════ -->
+<section>
+<div class="wrap">
+  <div class="sec-label">Detailed Scores</div>
+  <h2 class="sec-title">Calibrated Assessment Matrix</h2>
+  <div style="overflow-x:auto">
+    <table class="stable">
+      <thead>
+        <tr><th>Company</th><th>AI Reality</th><th>Build vs Buy</th><th>Verdict</th><th>Confidence</th><th>Valuation</th></tr>
+      </thead>
+      <tbody>
+        <tr><td class="cname" style="color:var(--glean)">Glean</td><td>3.7 / 5</td><td>3.1 / 4</td><td><span class="vbadge vb-proceed" style="margin:0">Proceed</span></td><td>Medium-High</td><td class="mono" style="color:var(--text)">$7.2B (36x)</td></tr>
+        <tr><td class="cname" style="color:var(--sierra)">Sierra</td><td>3.8 / 5</td><td>3.1 / 4</td><td><span class="vbadge vb-lean" style="margin:0">Lean Proceed</span></td><td>Medium</td><td class="mono" style="color:var(--text)">$10B (67-100x)</td></tr>
+        <tr><td class="cname" style="color:var(--vercel)">Vercel</td><td>3.2 / 4.2 *</td><td>2.95 / 4</td><td><span class="vbadge vb-caution" style="margin:0">Caution</span></td><td>Medium-High</td><td class="mono" style="color:var(--text)">$9.3B (46.5x)</td></tr>
+        <tr><td class="cname" style="color:var(--cerebras)">Cerebras</td><td>5.0 / 3.5 &dagger;</td><td>3.0 / 4</td><td><span class="vbadge vb-qualified" style="margin:0">Qualified</span></td><td>Medium</td><td class="mono" style="color:var(--text)">$23B (46-85x)</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="mono" style="margin-top:10px;font-size:10.5px;color:var(--text-muted)">
+    * Vercel: 3.2 AI depth / 4.2 AI leverage effectiveness &nbsp;&nbsp;&dagger; Cerebras: 5.0 technology / 3.5 business execution &nbsp;&nbsp;All scores &plusmn;0.3 uncertainty
+  </div>
+</div>
+</section>
+
+<!-- ═══════════ CHARTS ═══════════ -->
+<section>
+<div class="wrap">
+  <div class="sec-label">Visual Comparison</div>
+  <h2 class="sec-title">Multi-Dimensional Analysis</h2>
+  <div class="cgrid">
+    <div class="cbox">
+      <h3>Company Radar</h3>
+      <canvas id="radarChart"></canvas>
+    </div>
+    <div class="cbox">
+      <h3>Gross Margin Inversion</h3>
+      <canvas id="marginChart"></canvas>
+      <p class="sans" style="font-size:11.5px;color:var(--text-muted);margin-top:14px;line-height:1.6">Deepest AI = worst margins. AI inference is expensive. The market prices revenue growth while ignoring margin structure.</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- ═══════════ AI STACK ═══════════ -->
+<section>
+<div class="wrap">
+  <div class="sec-label">Architecture Thesis</div>
+  <h2 class="sec-title">The AI Stack &mdash; Where Value Accrues</h2>
+  <p class="sans" style="color:var(--text-sec);margin-bottom:28px;max-width:640px;font-size:14.5px;line-height:1.75">The application layer is more investable than the infrastructure layer. This inverts the conventional wisdom that moat depth correlates with investment quality.</p>
+  <div class="stack">
+    <div class="slayer sl4">
+      <span class="slabel">Layer 4 &middot; Apps</span>
+      <span class="scos"><span style="color:var(--glean)">Glean</span> &middot; <span style="color:var(--sierra)">Sierra</span></span>
+      <span class="srisk sr-best">Best Risk-Adjusted</span>
+    </div>
+    <div class="slayer sl3">
+      <span class="slabel">Layer 3 &middot; Platform</span>
+      <span class="scos" style="color:var(--vercel)">Vercel</span>
+      <span class="srisk sr-mod">Moderate Risk</span>
+    </div>
+    <div class="slayer sl2">
+      <span class="slabel">Layer 2 &middot; Compute</span>
+      <span class="scos" style="color:var(--cerebras)">Cerebras</span>
+      <span class="srisk sr-high">Highest Risk</span>
+    </div>
+    <div class="slayer sl1">
+      <span class="slabel">Layer 1 &middot; Models</span>
+      <span class="scos" style="color:var(--text-muted)">OpenAI &middot; Anthropic &middot; Google</span>
+      <span class="srisk sr-base">Foundation</span>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- ═══════════ CROSS-COMPANY INSIGHTS ═══════════ -->
+<section>
+<div class="wrap">
+  <div class="sec-label">Cross-Company Analysis</div>
+  <h2 class="sec-title">Five Structural Findings</h2>
+  <div class="insight">
+    <div class="inum">FINDING 01</div>
+    <h3 class="sans">Application Layer Beats Infrastructure</h3>
+    <p>Glean and Sierra &mdash; the "boring" companies with no proprietary models &mdash; offer better risk-adjusted returns than Cerebras. Deepest moat &ne; best investment. Cerebras has physical moat but the deepest risks (customer concentration, margin structure, TSMC dependency).</p>
+  </div>
+  <div class="insight">
+    <div class="inum">FINDING 02</div>
+    <h3 class="sans">Revenue Multiples Are Inverted</h3>
+    <p>Sierra at 67-100x has the highest multiple and weakest disclosed fundamentals. Glean at 36x has the lowest multiple despite equal growth (100%), more defensible moats, and higher ratings. The market is pricing founder brand and narrative over business fundamentals.</p>
+  </div>
+  <div class="insight">
+    <div class="inum">FINDING 03</div>
+    <h3 class="sans">Correlated Systemic Risk</h3>
+    <p>All four companies depend on continued enterprise AI spending momentum. An "AI winter" or budget rationalization hits all simultaneously. Cerebras depends on OpenAI expansion. Sierra and Glean depend on enterprise AI agent budgets. Vercel depends on AI dev tool market growth.</p>
+  </div>
+  <div class="insight">
+    <div class="inum">FINDING 04</div>
+    <h3 class="sans">NRR: The Missing Metric</h3>
+    <p>At 36-100x revenue multiples, Net Revenue Retention is the difference between "durable growth flywheel" and "front-loaded logo acquisition that churns." None of these companies disclose it. Every verdict above is provisional until NRR is verified.</p>
+  </div>
+  <div class="insight">
+    <div class="inum">FINDING 05</div>
+    <h3 class="sans">The Gross Margin Inversion</h3>
+    <p>Deepest AI = worst margins. Cerebras (38-41%), Sierra (est. 40-65%), Glean (est. 65-75%), Vercel (~76%). Each incremental dollar of AI revenue carries higher inference cost than traditional SaaS. The question: at what scale do these margins become self-sustaining?</p>
+  </div>
+</div>
+</section>
+
+<!-- ═══════════ LLM BIAS ═══════════ -->
+<section>
+<div class="wrap">
+  <div class="sec-label">Methodology Innovation</div>
+  <h2 class="sec-title">Six Systematic LLM Biases Identified</h2>
+  <p class="sans" style="color:var(--text-sec);margin-bottom:28px;max-width:640px;font-size:13.5px;line-height:1.75">Through structured self-audit, we identified six reproducible distortions affecting any LLM-generated business analysis. Net effect: LLMs are systematically bullish on hardware/research and bearish on application companies.</p>
+  <div class="bgrid">
+    <div class="bcard">
+      <span class="bnum">01</span>
+      <div class="bname sans">Hardware Worship</div>
+      <p class="bdesc">Overvalues frontier hardware, undervalues enterprise software execution. Training corpus disproportionately covers "breakthrough" hardware. Inflated Cerebras by 20-30%, deflated Glean by 10-20%.</p>
+    </div>
+    <div class="bcard">
+      <span class="bnum">02</span>
+      <div class="bname sans">Publication Proxy</div>
+      <p class="bdesc">Equates "publishes papers" with "does real AI." Companies that ship without publishing (Glean, Stripe ML, Apple) are systematically underrated. Absence of publications &ne; absence of innovation.</p>
+    </div>
+    <div class="bcard">
+      <span class="bnum">03</span>
+      <div class="bname sans">Culture Catastrophizing</div>
+      <p class="bdesc">10:1 token ratio of culture failures vs. "normal for stage." Pattern-matches any Glassdoor decline to Uber/WeWork archetype. A 4.2 rating at 1,400 employees growing 100% is above peer median.</p>
+    </div>
+    <div class="bcard">
+      <span class="bnum">04</span>
+      <div class="bname sans">FAANG Wins Prior</div>
+      <p class="bdesc">"Big tech kills startups via bundling" is over-reinforced. Historical counter-evidence: Slack vs. Teams, Zoom vs. Skype, Figma vs. Adobe, Datadog vs. Azure Monitor. Inflated threats by 20-25%.</p>
+    </div>
+    <div class="bcard">
+      <span class="bnum">05</span>
+      <div class="bname sans">Description-as-Construction</div>
+      <p class="bdesc">Most insidious: an LLM that can describe a system fluently underestimates building it in production. The gap between "architecturally achievable" and "production-ready at scale" is where companies die.</p>
+    </div>
+    <div class="bcard">
+      <span class="bnum">06</span>
+      <div class="bname sans">Post-ZIRP Skepticism</div>
+      <p class="bdesc">Defaults to "overvalued" for any multiple above 20x, despite historical comparables at similar growth rates commanding 30-100x. Most severely affected Glean (36x for 100% growth = below every comparable).</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- ═══════════ METHODOLOGY ═══════════ -->
+<section>
+<div class="wrap">
+  <div class="sec-label">Methodology</div>
+  <h2 class="sec-title">Three-Pass Calibrated Analysis</h2>
+  <div class="passes">
+    <div class="pcard">
+      <div class="plabel">PASS 1</div>
+      <div class="pname">Original 7-Phase</div>
+      <p class="pdesc">Discovery &rarr; Market &rarr; Technical &rarr; Claims &rarr; Academic/IP &rarr; Valuation &rarr; Report Assembly</p>
+    </div>
+    <div class="pcard">
+      <div class="plabel">PASS 2</div>
+      <div class="pname">Latent Space Bias</div>
+      <p class="pdesc">180&deg; inverse analysis. What would training data biases predict? Identify and quantify each distortion.</p>
+    </div>
+    <div class="pcard">
+      <div class="plabel">PASS 3</div>
+      <div class="pname">Calibrated Synthesis</div>
+      <p class="pdesc">Side-by-side review. Score adjustment. Fact-check corrections. CEO pushback simulation. Final calibrated output.</p>
+    </div>
+  </div>
+  <p class="sans" style="font-size:12.5px;color:var(--text-muted);line-height:1.75;max-width:640px">
+    <strong style="color:var(--text-sec)">Sources per company:</strong> 40+ independent web sources across 11 signal types &mdash; Glassdoor, Blind, Reddit, HN, LinkedIn, layoff trackers, arXiv, Twitter/X, job boards, Product Hunt, and analyst reports. All scores carry &plusmn;0.3 uncertainty. This analysis operates on public data only and is a screening tool, not a substitute for traditional due diligence with data room access, management meetings, and customer references.
+  </p>
+</div>
+</section>
+
+<!-- ═══════════ FOOTER ═══════════ -->
+<footer class="foot">
+<div class="wrap">
+  <p>Dossier v0.1.0 &mdash; AI Claims Reality Index &mdash; February 2026 &mdash; <span style="color:var(--gold)">corrections applied 2026-02-19</span></p>
+  <p class="fdisclaim">Screening tool based on publicly available data. Not investment advice. All scores are calibrated estimates with &plusmn;0.3 uncertainty. Produced by Claude Opus 4.6 with structured self-audit for six identified systematic biases.</p>
+</div>
+</footer>
+
+<!-- ═══════════ CHARTS JS ═══════════ -->
+<script>
+if(typeof Chart!=='undefined'){
+  Chart.defaults.color='#8893a5';
+  Chart.defaults.borderColor='rgba(30,42,58,0.4)';
+  Chart.defaults.font.family="-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif";
+
+  // Radar
+  new Chart(document.getElementById('radarChart'),{
+    type:'radar',
+    data:{
+      labels:['AI Reality','Build vs Buy','Growth Rate','Margin Quality','Moat Durability'],
+      datasets:[
+        {label:'Glean',data:[3.7,3.9,5.0,3.5,3.8],borderColor:'#34d399',backgroundColor:'rgba(52,211,153,0.07)',borderWidth:2,pointRadius:3,pointBackgroundColor:'#34d399'},
+        {label:'Sierra',data:[3.8,3.9,4.5,2.6,3.2],borderColor:'#60a5fa',backgroundColor:'rgba(96,165,250,0.07)',borderWidth:2,pointRadius:3,pointBackgroundColor:'#60a5fa'},
+        {label:'Vercel',data:[3.7,3.7,4.0,4.0,3.6],borderColor:'#a78bfa',backgroundColor:'rgba(167,139,250,0.07)',borderWidth:2,pointRadius:3,pointBackgroundColor:'#a78bfa'},
+        {label:'Cerebras',data:[4.25,3.75,3.5,2.0,4.5],borderColor:'#fbbf24',backgroundColor:'rgba(251,191,36,0.07)',borderWidth:2,pointRadius:3,pointBackgroundColor:'#fbbf24'}
+      ]
+    },
+    options:{
+      responsive:true,
+      maintainAspectRatio:true,
+      scales:{r:{beginAtZero:true,max:5,ticks:{stepSize:1,font:{size:9},backdropColor:'transparent'},grid:{color:'rgba(30,42,58,0.5)'},angleLines:{color:'rgba(30,42,58,0.5)'},pointLabels:{font:{size:10.5},color:'#8893a5'}}},
+      plugins:{legend:{position:'bottom',labels:{padding:14,usePointStyle:true,pointStyle:'circle',font:{size:11}}}}
+    }
+  });
+
+  // Margins
+  new Chart(document.getElementById('marginChart'),{
+    type:'bar',
+    data:{
+      labels:['Vercel','Glean','Sierra','Cerebras'],
+      datasets:[{
+        label:'Est. Gross Margin %',
+        data:[76,70,52,40],
+        backgroundColor:['#a78bfa','#34d399','#60a5fa','#fbbf24'],
+        borderRadius:3,
+        barPercentage:0.55
+      }]
+    },
+    options:{
+      indexAxis:'y',
+      responsive:true,
+      maintainAspectRatio:true,
+      scales:{
+        x:{beginAtZero:true,max:100,grid:{color:'rgba(30,42,58,0.35)'},ticks:{callback:v=>v+'%',font:{size:10.5}}},
+        y:{grid:{display:false},ticks:{font:{size:12,weight:'500'}}}
+      },
+      plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>c.parsed.x+'% (estimated)'}}}
+    }
+  });
+}
+</script>
+
+</body>
+</html>
