@@ -97,4 +97,4 @@
 - [x] All 4 exec-summaries have BLOCKING DATA GAP flags
 - [x] HTML dashboard: Sierra $10B, Vercel $9.3B, version annotation present
 - [x] Cross-file score consistency verified
-- [ ] Git committed
+- [x] Git committed — `0b9b31d` on branch `corrections/calibrated-v1`
