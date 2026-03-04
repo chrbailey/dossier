@@ -54,41 +54,36 @@ class TestClaudeAgentLMAforward:
 
     @pytest.mark.asyncio
     async def test_aforward_returns_model_response(self):
+        from claude_agent_sdk import ResultMessage
+
         lm = ClaudeAgentLM()
 
-        # Mock the Agent SDK query() to yield a ResultMessage
-        mock_result = MagicMock()
-        mock_result.result = "This is the LLM response"
-        mock_result.session_id = "test-session-123"
-        mock_result.subtype = "result"
-        mock_result.is_error = False
-        mock_result.num_turns = 1
-        mock_result.duration_ms = 500
-        mock_result.duration_api_ms = 400
-        mock_result.total_cost_usd = None
-        mock_result.usage = None
-
-        mock_init = MagicMock(spec=[])  # empty spec so isinstance checks fail
-        mock_init.subtype = "init"
-        mock_init.data = {"session_id": "test-session-123"}
+        result = ResultMessage(
+            subtype="result",
+            duration_ms=500,
+            duration_api_ms=400,
+            is_error=False,
+            num_turns=1,
+            session_id="test-session-123",
+            result="This is the LLM response",
+            total_cost_usd=None,
+            usage=None,
+        )
 
         async def mock_query(**kwargs):
-            yield mock_result
+            yield result
 
         with patch("dspy.lm.query", side_effect=mock_query):
-            with patch("dspy.lm.isinstance", side_effect=lambda obj, cls: (
-                type(obj).__name__ == cls.__name__
-                if hasattr(cls, '__name__') else False
-            )):
-                response = await lm.aforward(
-                    messages=[
-                        {"role": "system", "content": "You are helpful."},
-                        {"role": "user", "content": "Hello"},
-                    ]
-                )
+            response = await lm.aforward(
+                messages=[
+                    {"role": "system", "content": "You are helpful."},
+                    {"role": "user", "content": "Hello"},
+                ]
+            )
 
         assert response.choices[0].message.content == "This is the LLM response"
         assert response.choices[0].finish_reason == "stop"
+        assert lm._session_id == "test-session-123"
 
     @pytest.mark.asyncio
     async def test_aforward_with_result_message(self):

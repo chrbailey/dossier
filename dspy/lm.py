@@ -17,16 +17,16 @@ def _import_base_lm():
     imports ``BaseLM``, then restores everything.
     """
     import importlib
+    from pathlib import Path
 
     orig_path = sys.path[:]
     orig_modules = {k: v for k, v in sys.modules.items() if k.startswith("dspy")}
 
     try:
-        # Remove paths that resolve to local dspy/ (keep site-packages)
-        sys.path = [
-            p for p in sys.path
-            if p and ("site-packages" in p or "dossier" not in p)
-        ]
+        # Remove the project root (parent of local dspy/) from sys.path
+        # so the installed dspy package resolves instead of our local directory
+        project_root = str(Path(__file__).resolve().parent.parent)
+        sys.path = [p for p in sys.path if p and str(Path(p).resolve()) != project_root]
         # Clear cached dspy modules so importlib re-resolves
         for key in list(sys.modules):
             if key.startswith("dspy"):
@@ -115,7 +115,10 @@ class ClaudeAgentLM(BaseLM):
                 return future.result(timeout=self.timeout)
         else:
             return asyncio.run(
-                self.aforward(prompt=prompt, messages=messages, **kwargs)
+                asyncio.wait_for(
+                    self.aforward(prompt=prompt, messages=messages, **kwargs),
+                    timeout=self.timeout,
+                )
             )
 
     async def aforward(
@@ -162,8 +165,6 @@ class ClaudeAgentLM(BaseLM):
                 result_text = message.result or ""
             elif hasattr(message, "session_id"):
                 self._session_id = message.session_id
-            if hasattr(message, "result") and message.result:
-                result_text = message.result
 
         prompt_tokens = len(str(messages)) // 4
         completion_tokens = len(result_text) // 4
