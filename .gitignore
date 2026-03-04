@@ -3,6 +3,7 @@ output/*/raw/
 
 # Python venv
 scripts/.venv/
+dspy/.venv/
 __pycache__/
 *.pyc
 
