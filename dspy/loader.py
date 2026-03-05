@@ -5,9 +5,10 @@ Scores each phase using metrics.py and produces dspy.Example objects.
 """
 from __future__ import annotations
 
-import sys
 from pathlib import Path
 from typing import Any, Dict, List, Optional
+
+import dspy  # Our proxy — ensures all DSPy classes share one settings instance
 
 from dspy.metrics import dossier_phase_metric
 
@@ -82,33 +83,6 @@ def score_dossier(dossier: Dict[str, Any]) -> Dict[str, float]:
     return scores
 
 
-def _import_example_class():
-    """Import Example from the *installed* dspy package, bypassing local shadow.
-
-    Our local ``dspy/`` directory shadows the installed dspy package. This
-    function temporarily adjusts ``sys.path`` to reach the real package,
-    imports ``Example``, then restores everything.
-    """
-    orig_path = sys.path[:]
-    orig_modules = {k: v for k, v in sys.modules.items() if k.startswith("dspy")}
-
-    try:
-        project_root = str(Path(__file__).resolve().parent.parent)
-        sys.path = [p for p in sys.path if p and str(Path(p).resolve()) != project_root]
-        for key in list(sys.modules):
-            if key.startswith("dspy"):
-                del sys.modules[key]
-
-        import dspy as _installed
-        return _installed.Example
-    finally:
-        sys.path = orig_path
-        for key in list(sys.modules):
-            if key.startswith("dspy"):
-                del sys.modules[key]
-        sys.modules.update(orig_modules)
-
-
 def load_dossier_outputs(output_dir: Path) -> list:
     """Load all complete dossier outputs as DSPy training examples.
 
@@ -117,7 +91,7 @@ def load_dossier_outputs(output_dir: Path) -> list:
     - discovery, market, technical, claims, academic, valuation, report: str
     - scores: dict[str, float] (per-phase metric scores)
     """
-    Example = _import_example_class()
+    Example = dspy.Example
     examples: list = []
 
     if not output_dir.exists():

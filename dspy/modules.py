@@ -5,9 +5,10 @@ The DossierPipeline composes all 7 phases.
 """
 from __future__ import annotations
 
-import sys
 from collections import OrderedDict
 from typing import Any
+
+import dspy  # Our proxy — ensures all DSPy classes share one settings instance
 
 from dspy.signatures import (
     AcademicLandscape,
@@ -19,42 +20,10 @@ from dspy.signatures import (
     ValuationModel,
 )
 
-
-def _import_dspy_modules():
-    """Import Module, ChainOfThought, Prediction from the *installed* dspy.
-
-    Our local ``dspy/`` directory shadows the installed dspy package.  This
-    function temporarily adjusts ``sys.path`` to reach the real package,
-    imports the needed symbols, then restores everything.
-    """
-    from pathlib import Path
-
-    orig_path = sys.path[:]
-    orig_modules = {k: v for k, v in sys.modules.items() if k.startswith("dspy")}
-
-    try:
-        # Remove the project root (parent of local dspy/) from sys.path
-        # so the installed dspy package resolves instead of our local directory
-        project_root = str(Path(__file__).resolve().parent.parent)
-        sys.path = [p for p in sys.path if p and str(Path(p).resolve()) != project_root]
-        # Clear cached dspy modules so importlib re-resolves
-        for key in list(sys.modules):
-            if key.startswith("dspy"):
-                del sys.modules[key]
-
-        import dspy as _installed
-        return _installed.Module, _installed.ChainOfThought, _installed.Prediction
-    finally:
-        # Restore everything
-        sys.path = orig_path
-        # Re-populate dspy module cache with our local package
-        for key in list(sys.modules):
-            if key.startswith("dspy"):
-                del sys.modules[key]
-        sys.modules.update(orig_modules)
-
-
-Module, ChainOfThought, Prediction = _import_dspy_modules()
+# Use classes from the proxy — they share the same settings/predict module
+Module = dspy.Module
+ChainOfThought = dspy.ChainOfThought
+Prediction = dspy.Prediction
 
 
 class PhaseModule(Module):

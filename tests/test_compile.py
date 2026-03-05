@@ -7,17 +7,7 @@ from unittest.mock import MagicMock, patch, call
 
 import pytest
 
-from dspy.compile import make_metric_fn, compile_dossier, _import_dspy_optimizer
-
-
-class TestImportDspyOptimizer:
-    def test_returns_expected_symbols(self):
-        result = _import_dspy_optimizer()
-        # Returns a 4-tuple: (BootstrapFewShotWithRandomSearch, Example, Prediction, configure)
-        assert len(result) == 4
-        BFRS, Example, Prediction, configure = result
-        assert BFRS is not None
-        assert callable(configure)
+from dspy.compile import make_metric_fn, compile_dossier
 
 
 class TestMakeMetricFn:
@@ -112,31 +102,17 @@ class TestMakeMetricFn:
 
 
 class TestCompileDossier:
-    @patch("dspy.compile._import_dspy_optimizer")
+    @patch("dspy.compile.dspy")
     @patch("dspy.compile.load_dossier_outputs")
     @patch("dspy.compile.ClaudeAgentLM")
-    def test_compile_basic_flow(
-        self, mock_lm_cls, mock_load, mock_import_optimizer
-    ):
+    def test_compile_basic_flow(self, mock_lm_cls, mock_load, mock_dspy):
         """Verify compile_dossier wires up optimizer correctly."""
-        # Set up the installed dspy mocks
-        mock_configure = MagicMock()
-        mock_BFRS = MagicMock()
-        mock_Example = MagicMock()
-        mock_Prediction = MagicMock()
-        mock_import_optimizer.return_value = (
-            mock_BFRS,
-            mock_Example,
-            mock_Prediction,
-            mock_configure,
-        )
-
-        # Mock the optimizer instance and its compile method
+        # Mock optimizer
         mock_optimizer_instance = MagicMock()
         mock_compiled_program = MagicMock()
         mock_compiled_program.save = MagicMock()
         mock_optimizer_instance.compile.return_value = mock_compiled_program
-        mock_BFRS.return_value = mock_optimizer_instance
+        mock_dspy.BootstrapFewShotWithRandomSearch.return_value = mock_optimizer_instance
 
         # Mock training data
         mock_example = MagicMock()
@@ -156,37 +132,24 @@ class TestCompileDossier:
         )
 
         # Verify configure was called with our LM
-        mock_configure.assert_called_once()
+        mock_dspy.configure.assert_called_once_with(lm=mock_lm)
         # Verify optimizer was created
-        mock_BFRS.assert_called_once()
+        mock_dspy.BootstrapFewShotWithRandomSearch.assert_called_once()
         # Verify compile was called
         mock_optimizer_instance.compile.assert_called_once()
         # Verify result is the compiled program
         assert result is mock_compiled_program
 
-    @patch("dspy.compile._import_dspy_optimizer")
+    @patch("dspy.compile.dspy")
     @patch("dspy.compile.load_dossier_outputs")
     @patch("dspy.compile.ClaudeAgentLM")
-    def test_compile_saves_to_disk(
-        self, mock_lm_cls, mock_load, mock_import_optimizer, tmp_path
-    ):
+    def test_compile_saves_to_disk(self, mock_lm_cls, mock_load, mock_dspy, tmp_path):
         """Verify the compiled program is saved to disk."""
-        mock_configure = MagicMock()
-        mock_BFRS = MagicMock()
-        mock_Example = MagicMock()
-        mock_Prediction = MagicMock()
-        mock_import_optimizer.return_value = (
-            mock_BFRS,
-            mock_Example,
-            mock_Prediction,
-            mock_configure,
-        )
-
         mock_optimizer_instance = MagicMock()
         mock_compiled = MagicMock()
         mock_compiled.save = MagicMock()
         mock_optimizer_instance.compile.return_value = mock_compiled
-        mock_BFRS.return_value = mock_optimizer_instance
+        mock_dspy.BootstrapFewShotWithRandomSearch.return_value = mock_optimizer_instance
 
         mock_lm = MagicMock()
         mock_lm._session_id = None
@@ -202,24 +165,11 @@ class TestCompileDossier:
         # save() should have been called
         mock_compiled.save.assert_called_once()
 
-    @patch("dspy.compile._import_dspy_optimizer")
+    @patch("dspy.compile.dspy")
     @patch("dspy.compile.load_dossier_outputs")
     @patch("dspy.compile.ClaudeAgentLM")
-    def test_compile_no_training_data_raises(
-        self, mock_lm_cls, mock_load, mock_import_optimizer
-    ):
+    def test_compile_no_training_data_raises(self, mock_lm_cls, mock_load, mock_dspy):
         """Should raise ValueError when no training data is found."""
-        mock_configure = MagicMock()
-        mock_BFRS = MagicMock()
-        mock_Example = MagicMock()
-        mock_Prediction = MagicMock()
-        mock_import_optimizer.return_value = (
-            mock_BFRS,
-            mock_Example,
-            mock_Prediction,
-            mock_configure,
-        )
-
         mock_lm = MagicMock()
         mock_lm_cls.return_value = mock_lm
 
@@ -228,29 +178,18 @@ class TestCompileDossier:
         with pytest.raises(ValueError, match="No training examples"):
             compile_dossier(model="sonnet")
 
-    @patch("dspy.compile._import_dspy_optimizer")
+    @patch("dspy.compile.dspy")
     @patch("dspy.compile.load_dossier_outputs")
     @patch("dspy.compile.ClaudeAgentLM")
     def test_compile_rate_limit_recovery(
-        self, mock_lm_cls, mock_load, mock_import_optimizer, capsys
+        self, mock_lm_cls, mock_load, mock_dspy, capsys
     ):
         """Rate limit errors should print session_id for recovery."""
-        mock_configure = MagicMock()
-        mock_BFRS = MagicMock()
-        mock_Example = MagicMock()
-        mock_Prediction = MagicMock()
-        mock_import_optimizer.return_value = (
-            mock_BFRS,
-            mock_Example,
-            mock_Prediction,
-            mock_configure,
-        )
-
         mock_optimizer_instance = MagicMock()
         mock_optimizer_instance.compile.side_effect = RuntimeError(
             "rate limit exceeded"
         )
-        mock_BFRS.return_value = mock_optimizer_instance
+        mock_dspy.BootstrapFewShotWithRandomSearch.return_value = mock_optimizer_instance
 
         mock_lm = MagicMock()
         mock_lm._session_id = "sess_abc123"
@@ -266,29 +205,18 @@ class TestCompileDossier:
         captured = capsys.readouterr()
         assert "sess_abc123" in captured.out
 
-    @patch("dspy.compile._import_dspy_optimizer")
+    @patch("dspy.compile.dspy")
     @patch("dspy.compile.load_dossier_outputs")
     @patch("dspy.compile.ClaudeAgentLM")
     def test_compile_passes_optimizer_params(
-        self, mock_lm_cls, mock_load, mock_import_optimizer
+        self, mock_lm_cls, mock_load, mock_dspy
     ):
         """Verify optimizer params are forwarded correctly."""
-        mock_configure = MagicMock()
-        mock_BFRS = MagicMock()
-        mock_Example = MagicMock()
-        mock_Prediction = MagicMock()
-        mock_import_optimizer.return_value = (
-            mock_BFRS,
-            mock_Example,
-            mock_Prediction,
-            mock_configure,
-        )
-
         mock_optimizer_instance = MagicMock()
         mock_compiled = MagicMock()
         mock_compiled.save = MagicMock()
         mock_optimizer_instance.compile.return_value = mock_compiled
-        mock_BFRS.return_value = mock_optimizer_instance
+        mock_dspy.BootstrapFewShotWithRandomSearch.return_value = mock_optimizer_instance
 
         mock_lm = MagicMock()
         mock_lm._session_id = None
@@ -306,7 +234,7 @@ class TestCompileDossier:
         )
 
         # Check BFRS was created with correct params
-        bfrs_kwargs = mock_BFRS.call_args
+        bfrs_kwargs = mock_dspy.BootstrapFewShotWithRandomSearch.call_args
         assert bfrs_kwargs.kwargs.get("num_candidate_programs") == 5 or \
             bfrs_kwargs[1].get("num_candidate_programs") == 5
         assert bfrs_kwargs.kwargs.get("max_bootstrapped_demos") == 3 or \

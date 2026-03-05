@@ -14,7 +14,9 @@ from __future__ import annotations
 import argparse
 import sys
 from pathlib import Path
-from typing import Any, Callable, Tuple
+from typing import Any, Callable
+
+import dspy  # Our proxy — re-exports installed dspy's classes + settings
 
 from dspy.lm import ClaudeAgentLM
 from dspy.loader import load_dossier_outputs, PHASE_EXPECTED_SECTIONS
@@ -25,36 +27,6 @@ from dspy.modules import DossierPipeline
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 OUTPUT_DIR = PROJECT_ROOT / "output"
 COMPILED_DIR = PROJECT_ROOT / "dspy" / "compiled"
-
-
-def _import_dspy_optimizer() -> Tuple[Any, Any, Any, Any]:
-    """Import optimizer classes from the *installed* dspy, bypassing local shadow.
-
-    Returns (BootstrapFewShotWithRandomSearch, Example, Prediction, configure).
-    """
-    orig_path = sys.path[:]
-    orig_modules = {k: v for k, v in sys.modules.items() if k.startswith("dspy")}
-
-    try:
-        project_root = str(Path(__file__).resolve().parent.parent)
-        sys.path = [p for p in sys.path if p and str(Path(p).resolve()) != project_root]
-        for key in list(sys.modules):
-            if key.startswith("dspy"):
-                del sys.modules[key]
-
-        import dspy as _installed
-        return (
-            _installed.BootstrapFewShotWithRandomSearch,
-            _installed.Example,
-            _installed.Prediction,
-            _installed.configure,
-        )
-    finally:
-        sys.path = orig_path
-        for key in list(sys.modules):
-            if key.startswith("dspy"):
-                del sys.modules[key]
-        sys.modules.update(orig_modules)
 
 
 def make_metric_fn() -> Callable:
@@ -114,12 +86,10 @@ def compile_dossier(
         ValueError: If no training examples are found.
         RuntimeError: Re-raised after printing session_id on rate-limit errors.
     """
-    # Import optimizer symbols from installed dspy
-    BFRS, Example, Prediction, configure = _import_dspy_optimizer()
-
-    # Configure LM backend
+    # Configure LM backend — uses proxy's configure, which modifies the same
+    # settings object that DSPy's predict module reads from
     lm = ClaudeAgentLM(model=model)
-    configure(lm=lm)
+    dspy.configure(lm=lm)
 
     # Load training data
     print(f"Loading training data from {output_dir} ...")
@@ -136,7 +106,7 @@ def compile_dossier(
     metric_fn = make_metric_fn()
 
     # Create optimizer
-    optimizer = BFRS(
+    optimizer = dspy.BootstrapFewShotWithRandomSearch(
         metric=metric_fn,
         num_candidate_programs=num_candidates,
         max_bootstrapped_demos=max_bootstrapped_demos,

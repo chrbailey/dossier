@@ -5,46 +5,11 @@ All LLM calls go through Claude Code Max subscription. Zero API spend.
 from __future__ import annotations
 
 import asyncio
-import sys
 from typing import Any, Optional, List, Dict
 
+import dspy  # Our proxy — ensures all DSPy classes share one settings instance
 
-def _import_base_lm():
-    """Import BaseLM from the *installed* dspy package, bypassing local shadow.
-
-    Our local ``dspy/`` directory shadows the installed dspy package. This
-    function temporarily adjusts ``sys.path`` to reach the real package,
-    imports ``BaseLM``, then restores everything.
-    """
-    import importlib
-    from pathlib import Path
-
-    orig_path = sys.path[:]
-    orig_modules = {k: v for k, v in sys.modules.items() if k.startswith("dspy")}
-
-    try:
-        # Remove the project root (parent of local dspy/) from sys.path
-        # so the installed dspy package resolves instead of our local directory
-        project_root = str(Path(__file__).resolve().parent.parent)
-        sys.path = [p for p in sys.path if p and str(Path(p).resolve()) != project_root]
-        # Clear cached dspy modules so importlib re-resolves
-        for key in list(sys.modules):
-            if key.startswith("dspy"):
-                del sys.modules[key]
-
-        import dspy as _installed
-        return _installed.BaseLM
-    finally:
-        # Restore everything
-        sys.path = orig_path
-        # Re-populate dspy module cache with our local package
-        for key in list(sys.modules):
-            if key.startswith("dspy"):
-                del sys.modules[key]
-        sys.modules.update(orig_modules)
-
-
-BaseLM = _import_base_lm()
+BaseLM = dspy.BaseLM
 
 from litellm import ModelResponse
 

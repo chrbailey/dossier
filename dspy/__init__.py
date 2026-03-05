@@ -83,6 +83,9 @@ InputField = _real_dspy.InputField
 OutputField = _real_dspy.OutputField
 configure = _real_dspy.configure
 
+# Optimizer
+BootstrapFewShotWithRandomSearch = _real_dspy.BootstrapFewShotWithRandomSearch
+
 # Critical: DSPy internals access dspy.settings and dspy.__version__ via
 # `import dspy`. Since sys.modules['dspy'] is this proxy, we MUST expose
 # the real package's settings object and version here.
