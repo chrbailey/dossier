@@ -258,6 +258,40 @@ No phase failure blocks the entire pipeline. P7 (Report) is designed to work wit
 # Requires: sec-edgar-downloader
 ```
 
+---
+
+## DSPy Prompt Optimization (Offline Compiler)
+
+The `dspy/` directory contains an offline prompt compiler that uses DSPy to optimize
+the phase prompt instructions. All LLM calls route through Claude Agent SDK (Max subscription).
+
+### Architecture
+
+```
+Training data (output/*/) → DSPy Signatures → BootstrapFewShotWithRandomSearch → Optimized prompts
+```
+
+### Usage
+
+```bash
+cd "/Volumes/OWC drive/Dev/dossier"
+PYTHONPATH=. dspy/.venv/bin/python -m dspy.compile --model sonnet --candidates 5
+```
+
+### Components
+
+| File | Purpose |
+|------|---------|
+| `dspy/lm.py` | ClaudeAgentLM — custom DSPy backend via Agent SDK |
+| `dspy/signatures.py` | 7 Signature classes (typed I/O per phase) |
+| `dspy/modules.py` | PhaseModule wrappers + DossierPipeline composition |
+| `dspy/metrics.py` | Evaluation: completeness, source diversity, substantiation |
+| `dspy/loader.py` | Load completed dossier outputs as training examples |
+| `dspy/compile.py` | Optimizer driver (rate-limit aware) |
+| `dspy/export.py` | Write optimized instructions → prompts/p{N}.md |
+
+---
+
 ### V2 Viewer Architecture
 
 ```

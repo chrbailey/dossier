@@ -13,6 +13,12 @@ __pycache__/
 # OS
 .DS_Store
 
+# DSPy compiled artifacts
+dspy/compiled/*.json
+
+# Prompt backups from DSPy export
+prompts/backup-*/
+
 # Editor
 .vscode/
 .idea/
