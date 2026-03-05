@@ -87,9 +87,13 @@ def compile_dossier(
         RuntimeError: Re-raised after printing session_id on rate-limit errors.
     """
     # Configure LM backend — uses proxy's configure, which modifies the same
-    # settings object that DSPy's predict module reads from
+    # settings object that DSPy's predict module reads from.
+    # num_threads=2: Agent SDK sessions are heavy; limit concurrency to avoid
+    #   rate-throttling on Claude Max subscription.
+    # max_errors=50: individual phase failures (timeouts, rate limits) are expected
+    #   with 7 sequential LLM calls per example; don't cancel the entire run.
     lm = ClaudeAgentLM(model=model)
-    dspy.configure(lm=lm)
+    dspy.configure(lm=lm, num_threads=2, max_errors=50)
 
     # Load training data
     print(f"Loading training data from {output_dir} ...")

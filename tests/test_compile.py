@@ -131,8 +131,10 @@ class TestCompileDossier:
             max_labeled_demos=1,
         )
 
-        # Verify configure was called with our LM
-        mock_dspy.configure.assert_called_once_with(lm=mock_lm)
+        # Verify configure was called with our LM and thread/error settings
+        mock_dspy.configure.assert_called_once_with(
+            lm=mock_lm, num_threads=2, max_errors=50
+        )
         # Verify optimizer was created
         mock_dspy.BootstrapFewShotWithRandomSearch.assert_called_once()
         # Verify compile was called
