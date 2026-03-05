@@ -82,3 +82,9 @@ Example = _real_dspy.Example
 InputField = _real_dspy.InputField
 OutputField = _real_dspy.OutputField
 configure = _real_dspy.configure
+
+# Critical: DSPy internals access dspy.settings and dspy.__version__ via
+# `import dspy`. Since sys.modules['dspy'] is this proxy, we MUST expose
+# the real package's settings object and version here.
+settings = _real_dspy.settings
+__version__ = _real_dspy.__version__
