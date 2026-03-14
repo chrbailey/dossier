@@ -49,16 +49,21 @@ ls output/{domain}/
 - Don't skip phases — if blocked, note the blocker and continue
 - Don't overwrite prior phase outputs without reason
 
+### Quality Gates (Autoresearch Pattern)
+- Each phase output is scored by `scripts/evaluate_phase.py` (Evidence Density Score)
+- Phases re-run with different strategies if EDS is below threshold
+- See `research-program.md` for thresholds, strategy variants, and source weighting
+- The human edits `research-program.md` to steer research strategy; agents execute it
+
 ## Verification
 
 ```bash
-# Check structure
-ls "/Volumes/OWC drive/Dev/dossier/"
-
 # Test helpers
-cd "/Volumes/OWC drive/Dev/dossier"
-scripts/.venv/bin/python scripts/whois_lookup.py example.com
-scripts/.venv/bin/python scripts/arxiv_search.py "machine learning" 3
+python3 scripts/whois_lookup.py example.com
+python3 scripts/arxiv_search.py "machine learning" 3
+
+# Evaluate phase output quality
+python3 scripts/evaluate_phase.py output/example.com/04-claims.md
 
 # Check phase outputs after a run
 cat output/*/PROGRESS.md

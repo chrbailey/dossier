@@ -1,7 +1,7 @@
 # Dossier Pipeline — Ralph Loop Orchestration
 
 ## Goal
-Execute a full SaaS due diligence analysis on the target domain. Run all 7 phases to completion, producing a unified report with executive summary.
+Execute a full SaaS due diligence analysis on the target domain. Run all 7 phases to completion with quality gates, producing a unified report with executive summary.
 
 **Done when:** All 7 phases are marked complete in PROGRESS.md → output `<promise>DOSSIER_COMPLETE</promise>`
 
@@ -9,7 +9,9 @@ Execute a full SaaS due diligence analysis on the target domain. Run all 7 phase
 
 First, read the target and initialize:
 ```bash
-cd "/Volumes/OWC drive/Dev/dossier"
+# Use the project root (wherever this repo is cloned)
+DOSSIER_ROOT="$(git rev-parse --show-toplevel 2>/dev/null || pwd)"
+cd "$DOSSIER_ROOT"
 source target.env
 echo "Target: $DOMAIN"
 ```
@@ -55,7 +57,7 @@ Task tool parameters:
     You are executing Phase {N} of a SaaS due diligence analysis.
 
     Target domain: {DOMAIN}
-    Output directory: /Volumes/OWC drive/Dev/dossier/output/{DOMAIN}/
+    Output directory: output/{DOMAIN}/
 
     {PHASE_PROMPT_CONTENT}
 
@@ -63,30 +65,50 @@ Task tool parameters:
 
     Write your output to: output/{DOMAIN}/0{N}-{phase}.md
     Write any raw data to: output/{DOMAIN}/raw/
+
+    IMPORTANT: Include direct URLs for every factual claim where possible.
+    WebFetch may be unavailable — use WebSearch as fallback.
 ```
 
-## Iteration Logic
+## Iteration Logic (Autoresearch-Enhanced)
+
+Read `research-program.md` before starting. It defines quality thresholds,
+strategy variants, and source weighting rules.
 
 Each Ralph Loop iteration:
 
 1. **Read state**: `cat output/{DOMAIN}/PROGRESS.md`
 2. **Find next work**: Identify phases that are:
-   - Not yet complete
+   - Not yet complete (or below EDS threshold and under max_attempts)
    - Not blocked (all dependencies met)
    - Not currently in progress
 3. **Dispatch**: Launch sub-agents for all unblocked phases
 4. **Wait**: Sub-agents complete their work
-5. **Update**: Mark completed phases in PROGRESS.md, increment iteration count
-6. **Check completion**: If all 7 phases complete → `<promise>DOSSIER_COMPLETE</promise>`
-7. **Continue**: If work remains, the loop continues to next iteration
+5. **Evaluate**: Run EDS evaluator on each new output:
+   ```bash
+   python3 scripts/evaluate_phase.py "output/${DOMAIN}/0N-phase.md" --phase N
+   ```
+6. **Keep or discard**:
+   - If EDS improved over previous best → keep new output, log in PROGRESS.md
+   - If EDS regressed → revert to previous best output
+   - If first attempt → keep regardless (establishes baseline)
+7. **Check quality gate**:
+   - If EDS ≥ threshold (see research-program.md) → mark phase complete
+   - If EDS < threshold AND attempts < max_attempts → re-run with next strategy variant
+   - If EDS < threshold AND attempts = max_attempts → accept best output, mark complete
+8. **Update**: Mark completed phases in PROGRESS.md, increment iteration count
+9. **Check completion**: If all 7 phases complete → `<promise>DOSSIER_COMPLETE</promise>`
+10. **Continue**: If work remains, the loop continues to next iteration
 
-### Expected Iteration Pattern
+### Expected Iteration Pattern (with quality gates)
 ```
-Iteration 1: Execute P1 Discovery
-Iteration 2: Execute P2 + P3 + P5 (parallel)
-Iteration 3: Execute P4 (needs P1 + P3)
-Iteration 4: Execute P6 (needs all prior)
-Iteration 5: Execute P7 → COMPLETE
+Iteration 1: Execute P1 Discovery → EDS 0.35
+Iteration 2: Execute P2 + P3 + P5 (parallel) → EDS varies
+Iteration 3: Execute P4 attempt 1 → EDS 0.42 (below 0.55 threshold)
+Iteration 4: Execute P4 attempt 2 (deeper sources) → EDS 0.51
+Iteration 5: Execute P4 attempt 3 (triangulation focus) → EDS 0.58 ✓ threshold met
+Iteration 6: Execute P6 (needs all prior)
+Iteration 7: Execute P7 → COMPLETE
 ```
 
 ## Error Handling
@@ -130,8 +152,10 @@ When ALL phases (P1-P7) are marked complete (or skipped after 3 retries):
 3. Output: `<promise>DOSSIER_COMPLETE</promise>`
 
 ## Important Notes
-- Always `cd "/Volumes/OWC drive/Dev/dossier"` before running scripts
-- Python scripts use `scripts/.venv/bin/python`
+- Use `DOSSIER_ROOT` or relative paths — never hardcode absolute paths
+- Python scripts: use `scripts/.venv/bin/python` if venv exists, otherwise `python3`
 - Raw data goes to `output/{DOMAIN}/raw/` directory
 - Create `output/{DOMAIN}/raw/` if it doesn't exist
 - Read target.env for the domain — never hardcode it
+- Read `research-program.md` for quality thresholds and strategy variants
+- EDS evaluator: `python3 scripts/evaluate_phase.py <file> --phase N`
