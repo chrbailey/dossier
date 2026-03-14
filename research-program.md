@@ -25,16 +25,17 @@ There is no time limit, but there IS a quality gate: the Evidence Density Score 
 6. REPEAT until EDS ≥ threshold OR max_attempts reached
 ```
 
-### Quality Thresholds (EDS)
-| Phase | Min EDS | Max Attempts |
-|-------|---------|-------------|
-| P1 Discovery | 0.40 | 2 |
-| P2 Market | 0.45 | 2 |
-| P3 Technical | 0.50 | 2 |
-| P4 Claims | 0.55 | 4 |
-| P5 Academic | 0.40 | 2 |
-| P6 Valuation | 0.45 | 3 |
-| P7 Report | 0.50 | 2 |
+### Quality Thresholds (EDS / SSCS)
+| Phase | Min Score | Max Attempts | Metric |
+|-------|-----------|-------------|--------|
+| P1 Discovery | 0.40 | 2 | EDS |
+| P2 Market | 0.45 | 2 | EDS |
+| P3 Technical | 0.50 | 2 | EDS |
+| P4 Claims | 0.55 | 4 | EDS |
+| P5 Academic | 0.40 | 2 | EDS |
+| P6 Valuation | 0.45 | 3 | EDS |
+| P7 Report | 0.50 | 2 | EDS |
+| PX Social Signals | 0.50 | 4 | SSCS |
 
 P4 gets the most attempts because it's the analytical core and benefits most from
 iteration. P1/P5 get fewer because their data sources are more deterministic.
@@ -172,6 +173,33 @@ This analysis is based entirely on publicly available data. It cannot access:
 This report is a screening tool, not a substitute for traditional due diligence
 with data room access, management interviews, and customer calls.
 ```
+
+---
+
+## Phase X: Social Signal Discovery Strategy
+
+PX uses a separate metric (SSCS — Social Signal Coverage Score) computed by
+`scripts/score_x_accounts.py`. The iteration pattern is different from research
+phases: instead of re-running the same analysis, PX expands outward through the
+social graph.
+
+**Attempt 1 (SEED):** Official accounts, CEO/founders, DevRel — expect 10-25 accounts
+**Attempt 2 (EXPAND):** Employees, former employees, customers, critics — expect 30-60 more
+**Attempt 3 (DEEPEN):** Niche voices, security researchers, competitor employees — expect 30-50 more
+**Attempt 4 (VALIDATE):** Verify, de-duplicate, rank, cut to top 100
+
+SSCS components:
+- `account_count` (15%): Are we close to 100 accounts?
+- `category_coverage` (30%): Are all 9 categories represented with ≥3 accounts?
+- `score_distribution` (20%): Average relevance score across accounts
+- `insider_ratio` (20%): ≥25% of accounts should be employees/former employees
+- `high_signal_ratio` (15%): ≥15% of accounts should score 70+/100
+
+**Key strategy principle:** Former employees are the highest-signal category.
+They have insider knowledge and less incentive to maintain the company narrative.
+Invest disproportionate search effort in finding them.
+
+See `ralph-x-signals.md` for the full orchestration protocol.
 
 ---
 

@@ -74,11 +74,19 @@ cat output/*/PROGRESS.md
 ```
 P1 Discovery ──┬──→ P2 Market ────────┐
                ├──→ P3 Technical ──┐  │
-               └──→ P5 Academic    │  │
-                                   ▼  │
-               P4 Claims (P1+P3) ──┤  │
+               ├──→ P5 Academic    │  │
+               └──→ PX Social ─┐   │  │
+                               ▼   ▼  │
+               P4 Claims (P1+P3+PX)┤  │
                                    ▼  ▼
                P6 Valuation (all) ────┤
                                       ▼
                P7 Report (all) → DONE
 ```
+
+### X Social Signal Discovery (Phase X)
+- Iterative 4-attempt discovery loop finds Top 100 relevant X accounts per company
+- Runs parallel with P2/P3/P5 after P1, feeds into P4
+- Scored by `scripts/score_x_accounts.py` (Social Signal Coverage Score)
+- Orchestrated by `ralph-x-signals.md`, prompt in `prompts/px-social-signals.md`
+- Run standalone: paste `ralph-x-signals.md` into a Ralph Loop session
