@@ -99,3 +99,24 @@ P1 Discovery ──┬──→ P2 Market ────────┐
 - Scored by `scripts/score_x_accounts.py` (Social Signal Coverage Score)
 - Orchestrated by `ralph-x-signals.md`, prompt in `prompts/px-social-signals.md`
 - Run standalone: paste `ralph-x-signals.md` into a Ralph Loop session
+
+### Dossier Pulse (Live Monitoring)
+- Continuous social signal monitor — runs indefinitely via `ralph-pulse.md`
+- SQLite-backed signal database (`scripts/signal_db.py`) — the DB IS the memory
+- Pattern detection: stance changes, cluster events, silence patterns, volume shifts
+- Dashboard at `viewer/pulse.html` — mobile-first, auto-refreshes from `pulse.json`
+- Git-as-media: commit after each scan cycle, anyone pulling repo gets latest data
+- Adaptive intervals: Crisis (15min), Active (1hr), Overnight (4hr)
+
+```bash
+# Initialize and seed pulse DB
+python3 scripts/signal_db.py init "$DOMAIN"
+python3 scripts/signal_db.py import-accounts "$DOMAIN" "output/${DOMAIN}/social-signals-x.md"
+
+# Run pulse aggregation and export
+python3 scripts/signal_db.py update-pulse "$DOMAIN"
+python3 scripts/signal_db.py export "$DOMAIN"
+
+# View dashboard
+open viewer/pulse.html?domain="$DOMAIN"
+```
