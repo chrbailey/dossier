@@ -65,6 +65,15 @@ python3 scripts/arxiv_search.py "machine learning" 3
 # Evaluate phase output quality
 python3 scripts/evaluate_phase.py output/example.com/04-claims.md
 
+# Score X social signal coverage
+python3 scripts/score_x_accounts.py output/example.com/social-signals-x.md
+
+# Check staleness of a phase output
+python3 scripts/drift_check.py output/example.com/04-claims.md --staleness
+
+# Compare two versions of a dossier
+python3 scripts/drift_check.py output/v1/ output/v2/
+
 # Check phase outputs after a run
 cat output/*/PROGRESS.md
 ```

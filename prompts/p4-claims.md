@@ -8,6 +8,7 @@ This phase is the analytical core of the dossier. It's where marketing meets rea
 ## Inputs
 - `output/{DOMAIN}/01-discovery.md` — marketing content, feature claims, company messaging
 - `output/{DOMAIN}/03-technical.md` — GitHub repos, architecture, code quality
+- `output/{DOMAIN}/social-signals-x.md` (if exists) — Top 100 relevant X accounts ranked by relevance. Use this to target searches at specific high-signal accounts instead of broad keyword searches.
 
 ## Steps
 
@@ -66,11 +67,47 @@ This is the most valuable step. Reconstruct what insiders know by triangulating 
 5. **Product reality signals**: Do user reviews describe the features that marketing claims? Common complaints that contradict marketing?
 6. **Growth signals**: Is hiring accelerating or contracting? Are they backfilling or expanding?
 
+**Using the X Signal Map (if available):**
+If `social-signals-x.md` exists, use it to enhance source coverage:
+- Search for posts from the Top 10 high-signal accounts about claimed features
+- Check former employee accounts for contradictions with marketing
+- Look at customer accounts for product reality signals
+- Track sentiment trajectory across insider accounts vs official accounts
+
 **Pattern detection across sources:**
 - When 3+ independent sources (e.g., Glassdoor review + Reddit comment + job posting) converge on the same signal, treat it as high-confidence
 - When employee signals contradict marketing, weight the employee signals higher
 - Track the timeline — a positive Glassdoor review from 3 years ago may not reflect current reality
 - Note sentiment shifts (were reviews positive 2 years ago but negative recently?)
+
+**Source dependency mapping (CRITICAL — prevents counting echoes as convergence):**
+Before claiming "3+ independent sources converge," verify actual independence:
+
+```
+INDEPENDENT (3 structurally different viewpoints):
+  SEC filing + Glassdoor review + customer G2 review
+  → Regulatory source + employee source + customer source
+
+NOT INDEPENDENT (same population, different venues):
+  Glassdoor review + Blind review + Reddit r/cscareerquestions
+  → All current/former employees → count as ONE source type: "employee sentiment"
+
+NOT INDEPENDENT (derivative chain):
+  TechCrunch article + HN discussion of that article + Reddit link to that article
+  → One primary source + two echoes → count as ONE source
+```
+
+For each triangulation claim, explicitly state:
+1. Which sources were used
+2. Whether they are structurally independent (different source types)
+3. Effective independent source count (after removing echoes)
+
+**Source controllability weighting:**
+Weight signals inversely by how easy they are to manipulate:
+- STRONG (hard to fake): SEC filings, court records, git commit history, arXiv papers
+- MODERATE (some effort to fake): Customer reviews (G2, Capterra), Reddit/HN discussions
+- WEAK (easy to manipulate): Glassdoor/Blind reviews, job postings, LinkedIn, company website
+Require at least one STRONG-weight source per VERIFIED claim.
 
 ### 4.4 Gap Analysis
 Classify each claim into one of these categories:
@@ -127,9 +164,9 @@ Write `output/{DOMAIN}/04-claims.md`:
 # Claims Validation: {COMPANY_NAME}
 
 ## Claims Inventory
-| # | Claim | Category | Materiality | Source | Evidence | Confidence |
-|---|-------|----------|-------------|--------|----------|------------|
-| 1 | | | | | | |
+| # | Claim | Category | Materiality | Source URL | Evidence | Independent Sources | Confidence |
+|---|-------|----------|-------------|-----------|----------|---------------------|------------|
+| 1 | | | | [URL] | | N (types: ...) | |
 
 ## Internal Signal Intelligence
 ### Source Coverage
@@ -181,11 +218,14 @@ Write `output/{DOMAIN}/04-claims.md`:
 ```
 
 ## Quality Criteria
-- Every claim must have a source (which page/document made the claim)
+- **Every claim must include a direct URL** to the source (e.g., the Glassdoor page, the specific Reddit thread, the job posting). Not "Glassdoor confirms" but "Glassdoor (https://glassdoor.com/...) confirms." If no URL is available from WebSearch results, note "URL not available — found via WebSearch snippet."
 - Every assessment must cite evidence (or note its absence)
 - Internal signals must be dated — a 2023 Glassdoor review is less relevant than a 2025 one
-- Triangulated estimates must show their work (which sources, what each said)
+- Triangulated estimates must show their work (which sources, what each said, and source independence verification)
+- Distinguish between direct quotes and paraphrases — use quotation marks only for actual text found in search results
 - Be fair — marketing language naturally includes some aspiration
 - Focus on CRITICAL and NOTABLE gaps; MINOR gaps can be summarized briefly
 - If the company is pre-revenue or early-stage, adjust expectations accordingly
 - If a source has zero results, note that explicitly (absence of Glassdoor reviews is itself a signal)
+- Report Glassdoor/Blind participation rates (review count / estimated employee count) and note selection bias
+- For every triangulation, state the effective independent source count after removing echoes
