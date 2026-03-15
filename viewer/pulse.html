@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>Dossier Pulse</title>
+<style>
+  :root {
+    --bg: #0a0a0f;
+    --surface: #12121a;
+    --border: #1e1e2e;
+    --text: #e0e0e8;
+    --text-dim: #6e6e82;
+    --bullish: #00d48a;
+    --bearish: #ff4466;
+    --neutral: #6e6e82;
+    --accent: #7c5cff;
+    --warn: #ffa726;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', system-ui, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .container {
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 16px;
+  }
+
+  /* Header */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 16px;
+  }
+
+  .header h1 {
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: -0.3px;
+  }
+
+  .header .domain {
+    color: var(--accent);
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .updated {
+    font-size: 11px;
+    color: var(--text-dim);
+    text-align: right;
+  }
+
+  .live-dot {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background: var(--bullish);
+    border-radius: 50%;
+    margin-right: 4px;
+    animation: blink 2s infinite;
+  }
+
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.3; }
+  }
+
+  /* Sentiment Dial */
+  .dial-container {
+    background: var(--surface);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 12px;
+    text-align: center;
+    border: 1px solid var(--border);
+  }
+
+  .dial-label {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--text-dim);
+    margin-bottom: 8px;
+  }
+
+  .dial-value {
+    font-size: 56px;
+    font-weight: 700;
+    letter-spacing: -2px;
+    line-height: 1;
+    margin-bottom: 4px;
+  }
+
+  .dial-sentiment {
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin-bottom: 16px;
+  }
+
+  .dial-bar {
+    height: 6px;
+    background: linear-gradient(to right, var(--bearish), var(--neutral), var(--bullish));
+    border-radius: 3px;
+    position: relative;
+    margin: 0 auto;
+    max-width: 280px;
+  }
+
+  .dial-needle {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background: white;
+    border-radius: 50%;
+    top: -3px;
+    transform: translateX(-50%);
+    box-shadow: 0 0 8px rgba(255,255,255,0.5);
+    transition: left 1s ease;
+  }
+
+  .dial-labels {
+    display: flex;
+    justify-content: space-between;
+    max-width: 280px;
+    margin: 6px auto 0;
+    font-size: 10px;
+    color: var(--text-dim);
+  }
+
+  /* Momentum */
+  .momentum {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 12px;
+  }
+
+  .momentum-card {
+    flex: 1;
+    background: var(--surface);
+    border-radius: 12px;
+    padding: 14px;
+    border: 1px solid var(--border);
+  }
+
+  .momentum-card .label {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--text-dim);
+    margin-bottom: 6px;
+  }
+
+  .momentum-card .value {
+    font-size: 22px;
+    font-weight: 700;
+  }
+
+  .momentum-card .sub {
+    font-size: 11px;
+    color: var(--text-dim);
+    margin-top: 2px;
+  }
+
+  /* Category Breakdown */
+  .categories {
+    background: var(--surface);
+    border-radius: 12px;
+    padding: 14px;
+    margin-bottom: 12px;
+    border: 1px solid var(--border);
+  }
+
+  .categories .section-title {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--text-dim);
+    margin-bottom: 10px;
+  }
+
+  .cat-row {
+    display: flex;
+    align-items: center;
+    padding: 6px 0;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .cat-row:last-child { border-bottom: none; }
+
+  .cat-name {
+    flex: 1;
+    font-size: 13px;
+    font-weight: 500;
+  }
+
+  .cat-bar {
+    width: 60px;
+    height: 4px;
+    background: var(--border);
+    border-radius: 2px;
+    margin: 0 10px;
+    overflow: hidden;
+  }
+
+  .cat-bar-fill {
+    height: 100%;
+    border-radius: 2px;
+    transition: width 0.5s ease;
+  }
+
+  .cat-score {
+    font-size: 13px;
+    font-weight: 600;
+    width: 45px;
+    text-align: right;
+  }
+
+  /* Signal Feed */
+  .feed {
+    background: var(--surface);
+    border-radius: 12px;
+    padding: 14px;
+    margin-bottom: 12px;
+    border: 1px solid var(--border);
+  }
+
+  .feed .section-title {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--text-dim);
+    margin-bottom: 10px;
+  }
+
+  .signal-item {
+    padding: 10px 0;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .signal-item:last-child { border-bottom: none; }
+
+  .signal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4px;
+  }
+
+  .signal-handle {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--accent);
+  }
+
+  .signal-badge {
+    font-size: 10px;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-weight: 600;
+  }
+
+  .signal-badge.bullish { background: rgba(0,212,138,0.15); color: var(--bullish); }
+  .signal-badge.bearish { background: rgba(255,68,102,0.15); color: var(--bearish); }
+  .signal-badge.neutral { background: rgba(110,110,130,0.15); color: var(--neutral); }
+
+  .signal-content {
+    font-size: 13px;
+    color: var(--text-dim);
+    line-height: 1.4;
+  }
+
+  .signal-meta {
+    font-size: 10px;
+    color: var(--text-dim);
+    margin-top: 4px;
+  }
+
+  /* Distribution bar */
+  .dist-bar {
+    display: flex;
+    height: 28px;
+    border-radius: 6px;
+    overflow: hidden;
+    margin-bottom: 6px;
+  }
+
+  .dist-bar .segment {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    font-weight: 600;
+    transition: width 0.5s ease;
+  }
+
+  .dist-bar .bullish { background: var(--bullish); color: #000; }
+  .dist-bar .neutral { background: var(--neutral); color: #fff; }
+  .dist-bar .bearish { background: var(--bearish); color: #fff; }
+
+  /* Empty state */
+  .empty {
+    text-align: center;
+    padding: 40px 20px;
+    color: var(--text-dim);
+  }
+
+  .empty h2 { font-size: 16px; margin-bottom: 8px; color: var(--text); }
+  .empty p { font-size: 13px; line-height: 1.5; }
+  .empty code {
+    display: block;
+    margin-top: 12px;
+    padding: 8px;
+    background: var(--surface);
+    border-radius: 6px;
+    font-size: 12px;
+    color: var(--accent);
+  }
+
+  /* Responsive */
+  @media (min-width: 768px) {
+    .container { max-width: 520px; }
+    .dial-value { font-size: 64px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="container" id="app">
+  <div class="empty" id="loading">
+    <h2>Dossier Pulse</h2>
+    <p>Loading signal data...</p>
+  </div>
+</div>
+
+<script>
+const PULSE_URL = '../output/{DOMAIN}/pulse.json';
+const REFRESH_INTERVAL = 60000; // 60 seconds
+
+function sentimentColor(val) {
+  if (val > 0.2) return 'var(--bullish)';
+  if (val < -0.2) return 'var(--bearish)';
+  return 'var(--neutral)';
+}
+
+function sentimentLabel(val) {
+  if (val > 0.3) return 'BULLISH';
+  if (val > 0.1) return 'SLIGHTLY BULLISH';
+  if (val > -0.1) return 'NEUTRAL';
+  if (val > -0.3) return 'SLIGHTLY BEARISH';
+  return 'BEARISH';
+}
+
+function sentimentBadge(val) {
+  if (val > 0.2) return '<span class="signal-badge bullish">BULLISH</span>';
+  if (val < -0.2) return '<span class="signal-badge bearish">BEARISH</span>';
+  return '<span class="signal-badge neutral">NEUTRAL</span>';
+}
+
+function timeAgo(dateStr) {
+  if (!dateStr) return '';
+  const diff = Date.now() - new Date(dateStr).getTime();
+  const mins = Math.floor(diff / 60000);
+  if (mins < 60) return `${mins}m ago`;
+  const hours = Math.floor(mins / 60);
+  if (hours < 24) return `${hours}h ago`;
+  return `${Math.floor(hours / 24)}d ago`;
+}
+
+function render(data) {
+  const p = data.pulse || {};
+  const s7d = p.sentiment_7d?.value || 0;
+  const s24h = p.sentiment_24h?.value || 0;
+  const momentum = p.momentum?.value || 0;
+  const signals7d = p.signals_7d?.value || 0;
+  const signals24h = p.signals_24h?.value || 0;
+  const bullPct = p.bullish_pct?.value || 33;
+  const bearPct = p.bearish_pct?.value || 33;
+  const neutPct = p.neutral_pct?.value || 34;
+  const coverage = p.account_coverage?.value || 0;
+  const totalAccounts = p.total_accounts?.value || 0;
+
+  // Needle position: -1 to +1 mapped to 0% to 100%
+  const needlePos = ((s7d + 1) / 2) * 100;
+
+  const container = document.getElementById('app');
+  container.innerHTML = `
+    <div class="header">
+      <div>
+        <h1>Dossier Pulse</h1>
+        <div class="domain">${data.domain || 'unknown'}</div>
+      </div>
+      <div class="updated">
+        <span class="live-dot"></span>
+        ${timeAgo(data.generated_at)}
+      </div>
+    </div>
+
+    <!-- Sentiment Dial -->
+    <div class="dial-container">
+      <div class="dial-label">7-Day Sentiment</div>
+      <div class="dial-value" style="color: ${sentimentColor(s7d)}">
+        ${s7d >= 0 ? '+' : ''}${(s7d * 100).toFixed(0)}
+      </div>
+      <div class="dial-sentiment" style="color: ${sentimentColor(s7d)}">
+        ${sentimentLabel(s7d)}
+      </div>
+      <div class="dial-bar">
+        <div class="dial-needle" style="left: ${needlePos}%"></div>
+      </div>
+      <div class="dial-labels">
+        <span>BEARISH</span>
+        <span>NEUTRAL</span>
+        <span>BULLISH</span>
+      </div>
+    </div>
+
+    <!-- Momentum Cards -->
+    <div class="momentum">
+      <div class="momentum-card">
+        <div class="label">24h Sentiment</div>
+        <div class="value" style="color: ${sentimentColor(s24h)}">${s24h >= 0 ? '+' : ''}${(s24h * 100).toFixed(0)}</div>
+        <div class="sub">${signals24h} signals</div>
+      </div>
+      <div class="momentum-card">
+        <div class="label">Momentum</div>
+        <div class="value" style="color: ${sentimentColor(momentum)}">${momentum >= 0 ? '+' : ''}${(momentum * 100).toFixed(0)}</div>
+        <div class="sub">${momentum > 0 ? 'Improving' : momentum < 0 ? 'Declining' : 'Flat'}</div>
+      </div>
+      <div class="momentum-card">
+        <div class="label">Coverage</div>
+        <div class="value">${(coverage * 100).toFixed(0)}%</div>
+        <div class="sub">${totalAccounts} accounts</div>
+      </div>
+    </div>
+
+    <!-- Distribution Bar -->
+    <div class="categories">
+      <div class="section-title">Signal Distribution (7d)</div>
+      <div class="dist-bar">
+        <div class="segment bullish" style="width: ${bullPct}%">${bullPct > 10 ? bullPct.toFixed(0) + '%' : ''}</div>
+        <div class="segment neutral" style="width: ${neutPct}%">${neutPct > 10 ? neutPct.toFixed(0) + '%' : ''}</div>
+        <div class="segment bearish" style="width: ${bearPct}%">${bearPct > 10 ? bearPct.toFixed(0) + '%' : ''}</div>
+      </div>
+
+      <!-- Category Breakdown -->
+      ${(data.categories || []).slice(0, 8).map(cat => {
+        const s = cat.avg_sentiment || 0;
+        const barWidth = Math.abs(s) * 100;
+        const barColor = sentimentColor(s);
+        return `
+          <div class="cat-row">
+            <div class="cat-name">${cat.category}</div>
+            <div class="cat-bar">
+              <div class="cat-bar-fill" style="width: ${barWidth}%; background: ${barColor}"></div>
+            </div>
+            <div class="cat-score" style="color: ${barColor}">${s >= 0 ? '+' : ''}${(s * 100).toFixed(0)}</div>
+          </div>
+        `;
+      }).join('')}
+    </div>
+
+    <!-- Recent Signals Feed -->
+    <div class="feed">
+      <div class="section-title">Latest Signals</div>
+      ${(data.recent_signals || []).slice(0, 15).map(sig => `
+        <div class="signal-item">
+          <div class="signal-header">
+            <span class="signal-handle">${sig.handle} ${sig.name ? '(' + sig.name + ')' : ''}</span>
+            ${sentimentBadge(sig.sentiment)}
+          </div>
+          <div class="signal-content">${sig.content || 'No content'}</div>
+          <div class="signal-meta">${sig.category || ''} · ${timeAgo(sig.detected_at)}</div>
+        </div>
+      `).join('') || '<div class="signal-item"><div class="signal-content">No signals yet. Run the pulse monitor to start collecting.</div></div>'}
+    </div>
+
+    <!-- Top Accounts -->
+    <div class="feed">
+      <div class="section-title">Top 10 Accounts</div>
+      ${(data.accounts || []).slice(0, 10).map((acc, i) => `
+        <div class="signal-item">
+          <div class="signal-header">
+            <span class="signal-handle">#${i+1} ${acc.handle}</span>
+            <span style="font-size:12px;color:var(--text-dim)">${acc.relevance}/100</span>
+          </div>
+          <div class="signal-content">${acc.name || ''} · ${acc.category || ''}</div>
+          <div class="signal-meta">${acc.followers || ''} followers · ${acc.signal_summary || ''}</div>
+        </div>
+      `).join('')}
+    </div>
+  `;
+}
+
+async function loadPulse() {
+  // Try multiple paths for pulse.json
+  const paths = [
+    '../output/' + (new URLSearchParams(window.location.search).get('domain') || 'vercel.com') + '/pulse.json',
+    './pulse.json',
+    '../pulse.json'
+  ];
+
+  for (const path of paths) {
+    try {
+      const resp = await fetch(path + '?t=' + Date.now());
+      if (resp.ok) {
+        const data = await resp.json();
+        render(data);
+        return;
+      }
+    } catch (e) { /* try next */ }
+  }
+
+  // Show empty state with instructions
+  document.getElementById('app').innerHTML = `
+    <div class="header">
+      <h1>Dossier Pulse</h1>
+    </div>
+    <div class="empty">
+      <h2>No pulse data yet</h2>
+      <p>Initialize the signal database and run the pulse monitor to start collecting signals.</p>
+      <code>
+        python3 scripts/signal_db.py init vercel.com<br>
+        python3 scripts/signal_db.py import-accounts vercel.com output/vercel.com/social-signals-x.md<br>
+        python3 scripts/signal_db.py update-pulse vercel.com<br>
+        python3 scripts/signal_db.py export vercel.com
+      </code>
+      <p style="margin-top:12px">Then open this page with:<br>
+      <code>?domain=vercel.com</code></p>
+    </div>
+  `;
+}
+
+// Initial load
+loadPulse();
+
+// Auto-refresh
+setInterval(loadPulse, REFRESH_INTERVAL);
+</script>
+</body>
+</html>

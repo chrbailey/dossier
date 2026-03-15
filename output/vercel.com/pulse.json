@@ -1,0 +1,1169 @@
+{
+  "domain": "vercel.com",
+  "generated_at": "2026-03-15T01:42:43.124038",
+  "pulse": {
+    "account_coverage": {
+      "value": 0.152,
+      "label": "",
+      "updated_at": "2026-03-15T01:42:39.805860"
+    },
+    "bearish_pct": {
+      "value": 53.3,
+      "label": "",
+      "updated_at": "2026-03-15T01:42:39.805860"
+    },
+    "bullish_pct": {
+      "value": 33.3,
+      "label": "",
+      "updated_at": "2026-03-15T01:42:39.805860"
+    },
+    "cat_competitor_count": {
+      "value": 1.0,
+      "label": "",
+      "updated_at": "2026-03-15T01:42:39.805860"
+    },
+    "cat_competitor_sentiment": {
+      "value": -0.5,
+      "label": "",
+      "updated_at": "2026-03-15T01:42:39.805860"
+    },
+    "cat_critic_count": {
+      "value": 3.0,
+      "label": "",
+      "updated_at": "2026-03-15T01:42:39.805860"
+    },
+    "cat_critic_sentiment": {
+      "value": -0.733,
+      "label": "",
+      "updated_at": "2026-03-15T01:42:39.805860"
+    },
+    "cat_current_employee_count": {
+      "value": 1.0,
+      "label": "",
+      "updated_at": "2026-03-15T01:42:39.805860"
+    },
+    "cat_current_employee_sentiment": {
+      "value": 0.8,
+      "label": "",
+      "updated_at": "2026-03-15T01:42:39.805860"
+    },
+    "cat_customer___power_user_count": {
+      "value": 1.0,
+      "label": "",
+      "updated_at": "2026-03-15T01:42:39.805860"
+    },
+    "cat_customer___power_user_sentiment": {
+      "value": 0.1,
+      "label": "",
+      "updated_at": "2026-03-15T01:42:39.805860"
+    },
+    "cat_former_employee_count": {
+      "value": 3.0,
+      "label": "",
+      "updated_at": "2026-03-15T01:42:39.805860"
+    },
+    "cat_former_employee_sentiment": {
+      "value": -0.533,
+      "label": "",
+      "updated_at": "2026-03-15T01:42:39.805860"
+    },
+    "cat_industry_analyst_count": {
+      "value": 1.0,
+      "label": "",
+      "updated_at": "2026-03-15T01:42:39.805860"
+    },
+    "cat_industry_analyst_sentiment": {
+      "value": -0.2,
+      "label": "",
+      "updated_at": "2026-03-15T01:42:39.805860"
+    },
+    "cat_leadership_count": {
+      "value": 2.0,
+      "label": "",
+      "updated_at": "2026-03-15T01:42:39.805860"
+    },
+    "cat_leadership_sentiment": {
+      "value": -0.05,
+      "label": "",
+      "updated_at": "2026-03-15T01:42:39.805860"
+    },
+    "cat_official_count": {
+      "value": 3.0,
+      "label": "",
+      "updated_at": "2026-03-15T01:42:39.805860"
+    },
+    "cat_official_sentiment": {
+      "value": 0.7,
+      "label": "",
+      "updated_at": "2026-03-15T01:42:39.805860"
+    },
+    "momentum": {
+      "value": -0.107,
+      "label": "",
+      "updated_at": "2026-03-15T01:42:39.805860"
+    },
+    "neutral_pct": {
+      "value": 13.4,
+      "label": "",
+      "updated_at": "2026-03-15T01:42:39.805860"
+    },
+    "sentiment_24h": {
+      "value": -0.141,
+      "label": "",
+      "updated_at": "2026-03-15T01:42:39.805860"
+    },
+    "sentiment_30d": {
+      "value": -0.141,
+      "label": "",
+      "updated_at": "2026-03-15T01:42:39.805860"
+    },
+    "sentiment_7d": {
+      "value": -0.141,
+      "label": "SLIGHTLY BEARISH",
+      "updated_at": "2026-03-15T01:42:39.805860"
+    },
+    "signals_24h": {
+      "value": 15.0,
+      "label": "",
+      "updated_at": "2026-03-15T01:42:39.805860"
+    },
+    "signals_30d": {
+      "value": 15.0,
+      "label": "",
+      "updated_at": "2026-03-15T01:42:39.805860"
+    },
+    "signals_7d": {
+      "value": 15.0,
+      "label": "",
+      "updated_at": "2026-03-15T01:42:39.805860"
+    },
+    "total_accounts": {
+      "value": 99.0,
+      "label": "",
+      "updated_at": "2026-03-15T01:42:39.805860"
+    }
+  },
+  "accounts": [
+    {
+      "handle": "@rauchg",
+      "name": "Guillermo Rauch",
+      "category": "Leadership",
+      "relevance": 95,
+      "followers": "382K",
+      "signal_summary": "CEO, founder. Posts AI strategy, product vision, fundraising. Netanyahu controversy source. Dual-threat: runs Rauch Capital too."
+    },
+    {
+      "handle": "@vercel",
+      "name": "Vercel",
+      "category": "Official",
+      "relevance": 93,
+      "followers": "375K",
+      "signal_summary": "Main company account. Product launches, hiring, partnerships. Creators of Next.js, v0, AI SDK."
+    },
+    {
+      "handle": "@leerob",
+      "name": "Lee Robinson",
+      "category": "Current employee",
+      "relevance": 91,
+      "followers": "225K",
+      "signal_summary": "VP DX (now at Cursor). Extremely transparent on pricing, billing, product decisions. Key public face of Vercel."
+    },
+    {
+      "handle": "@nextjs",
+      "name": "Next.js",
+      "category": "Official",
+      "relevance": 89,
+      "followers": "271K",
+      "signal_summary": "Official framework account. Major release announcements, ecosystem updates."
+    },
+    {
+      "handle": "@cramforce",
+      "name": "Malte Ubl",
+      "category": "Leadership",
+      "relevance": 88,
+      "followers": "46K",
+      "signal_summary": "CTO. Ex-Google Search Principal Engineer. Posts on self-driving infrastructure, AI Cloud architecture."
+    },
+    {
+      "handle": "@t3dotgg",
+      "name": "Theo Browne",
+      "category": "Customer / Power user",
+      "relevance": 87,
+      "followers": "300K+",
+      "signal_summary": "Creator of T3 Stack. Recently moved T3 Chat off Next.js but stayed on Vercel. High-signal candid commentary."
+    },
+    {
+      "handle": "@jaredpalmer",
+      "name": "Jared Palmer",
+      "category": "Former employee",
+      "relevance": 86,
+      "followers": "50K+",
+      "signal_summary": "Created Turborepo, was VP AI at Vercel, built v0 and AI SDK. Now at Microsoft/GitHub. Insider perspective."
+    },
+    {
+      "handle": "@shadcn",
+      "name": "shadcn (Shadab Ahmed)",
+      "category": "Current employee",
+      "relevance": 85,
+      "followers": "100K+",
+      "signal_summary": "Design Engineer at Vercel. Creator of shadcn/ui, most popular React component system. Massive ecosystem influence."
+    },
+    {
+      "handle": "@v0",
+      "name": "v0 by Vercel",
+      "category": "Official",
+      "relevance": 84,
+      "followers": "109K",
+      "signal_summary": "Official v0 AI product account. Product updates, showcases, user engagement."
+    },
+    {
+      "handle": "@dan_abramov2",
+      "name": "Dan Abramov",
+      "category": "Other (React core)",
+      "relevance": 83,
+      "followers": "250K+",
+      "signal_summary": "React co-creator (Redux, Create React App). Not at Vercel but deeply connected via RSC/React ecosystem. Influential voice."
+    },
+    {
+      "handle": "@acdlite",
+      "name": "Andrew Clark",
+      "category": "Current employee",
+      "relevance": 82,
+      "followers": "73K",
+      "signal_summary": "React core team at Vercel. Co-created Redux. Works on React + Next.js integration. Ex-Meta."
+    },
+    {
+      "handle": "@timneutkens",
+      "name": "Tim Neutkens",
+      "category": "Current employee",
+      "relevance": 81,
+      "followers": "47K",
+      "signal_summary": "Tech lead for Next.js and Turbopack at Vercel. Co-author of Next.js, MDX, ncc. Based in Netherlands."
+    },
+    {
+      "handle": "@wSokra",
+      "name": "Tobias Koppers",
+      "category": "Current employee",
+      "relevance": 80,
+      "followers": "19K",
+      "signal_summary": "Creator of webpack, now Turbopack lead at Vercel. Deep technical signals on bundler architecture."
+    },
+    {
+      "handle": "@kentcdodds",
+      "name": "Kent C. Dodds",
+      "category": "Critic",
+      "relevance": 79,
+      "followers": "200K+",
+      "signal_summary": "Remix co-founder. Wrote influential \"Why I Won't Use Next.js\" post. Key critical voice on vendor lock-in, React governance."
+    },
+    {
+      "handle": "@sebmarkbage",
+      "name": "Sebastian Markbage",
+      "category": "Current employee",
+      "relevance": 78,
+      "followers": "25K+",
+      "signal_summary": "React core engineer at Vercel. Architect of React Server Components. Deep technical signals."
+    },
+    {
+      "handle": "@steventey",
+      "name": "Steven Tey",
+      "category": "Former employee",
+      "relevance": 77,
+      "followers": "56K",
+      "signal_summary": "Ex-Vercel DevRel (2.5 years). Now building Dub.co. Insider perspective on Vercel growth phase."
+    },
+    {
+      "handle": "@lydiahallie",
+      "name": "Lydia Hallie",
+      "category": "Former employee",
+      "relevance": 76,
+      "followers": "47K",
+      "signal_summary": "Former Staff Dev Advocate at Vercel (2 years). Now Head of DX at Bun. Co-authored patterns.dev."
+    },
+    {
+      "handle": "@nutlope",
+      "name": "Hassan El Mghari",
+      "category": "Former employee",
+      "relevance": 75,
+      "followers": "72K",
+      "signal_summary": "Former Sr Dev Advocate at Vercel. Built viral AI apps (restorePhotos, RoomGPT). Now at Together AI."
+    },
+    {
+      "handle": "@shuding_",
+      "name": "Shu Ding",
+      "category": "Current employee",
+      "relevance": 74,
+      "followers": "15K+",
+      "signal_summary": "Engineer at Vercel since 2018. Created SWR, works on v0, AI SDK, Next.js, Satori. Deep technical insider."
+    },
+    {
+      "handle": "@amasad",
+      "name": "Amjad Masad",
+      "category": "Competitor",
+      "relevance": 73,
+      "followers": "433K",
+      "signal_summary": "Replit CEO. Palestinian-Jordanian-American. Offered migration deals during Netanyahu boycott. Key competitive voice."
+    },
+    {
+      "handle": "@wesamo__",
+      "name": "Wesam",
+      "category": "Former employee",
+      "relevance": 72,
+      "followers": "5K+",
+      "signal_summary": "Publicly resigned from Vercel over Netanyahu controversy. 6.4M engagements on resignation tweet. High-signal moment."
+    },
+    {
+      "handle": "@biilmann",
+      "name": "Matt Biilmann",
+      "category": "Competitor",
+      "relevance": 71,
+      "followers": "12K",
+      "signal_summary": "Netlify CEO & co-founder. Coined \"Jamstack.\" Directly competitive with Vercel on Next.js hosting."
+    },
+    {
+      "handle": "@GergelyOrosz",
+      "name": "Gergely Orosz",
+      "category": "Industry analyst",
+      "relevance": 70,
+      "followers": "200K+",
+      "signal_summary": "Pragmatic Engineer newsletter. Covers Vercel layoffs, controversies, and tech industry dynamics."
+    },
+    {
+      "handle": "@vercel_changes",
+      "name": "Vercel Changelog",
+      "category": "Official",
+      "relevance": 69,
+      "followers": "10K+",
+      "signal_summary": "Official product changelog. Tracks every feature release, API change, and infrastructure update."
+    },
+    {
+      "handle": "@balazsorban44",
+      "name": "Balazs Orban",
+      "category": "Former employee",
+      "relevance": 68,
+      "followers": "5K",
+      "signal_summary": "Creator of Auth.js/NextAuth.js. Was on Vercel IAM team. ChatGPT uses NextAuth. Stepped down as maintainer Sep 2025."
+    },
+    {
+      "handle": "@delba_oliveira",
+      "name": "Delba de Oliveira",
+      "category": "Current employee",
+      "relevance": 67,
+      "followers": "10K+",
+      "signal_summary": "Staff Dev Advocate at Vercel. Built Next.js learning platform, App Router docs, Vercel Knowledge Base."
+    },
+    {
+      "handle": "@_ijjk",
+      "name": "JJ Kasper",
+      "category": "Current employee",
+      "relevance": 66,
+      "followers": "5K+",
+      "signal_summary": "Software Engineer at Vercel. Next.js core maintainer. Open source contributor. San Francisco."
+    },
+    {
+      "handle": "@DBredvick",
+      "name": "Drew Bredvick",
+      "category": "Current employee",
+      "relevance": 65,
+      "followers": "3K+",
+      "signal_summary": "Built Vercel's first AI SDR agent. Technical insider signals on AI product development."
+    },
+    {
+      "handle": "@GeoffLewisOrg",
+      "name": "Geoff Lewis",
+      "category": "Investor",
+      "relevance": 64,
+      "followers": "30K+",
+      "signal_summary": "Bedrock founder, Vercel board member. Led Series C. Core investments: OpenAI, Vercel. Controversial ChatGPT incident."
+    },
+    {
+      "handle": "@henryheffernan",
+      "name": "Henry Heffernan",
+      "category": "Current employee",
+      "relevance": 63,
+      "followers": "15K+",
+      "signal_summary": "Design engineer at v0 / Vercel. San Francisco. Signals on design culture and hiring."
+    },
+    {
+      "handle": "@lennysan",
+      "name": "Lenny Rachitsky",
+      "category": "Industry analyst",
+      "relevance": 62,
+      "followers": "200K+",
+      "signal_summary": "Lenny's Newsletter/Podcast. Featured Rauch interview on product strategy, AI, and developer tools."
+    },
+    {
+      "handle": "@flybayer",
+      "name": "Brandon Bayer",
+      "category": "Customer / Power user",
+      "relevance": 61,
+      "followers": "15K+",
+      "signal_summary": "Creator of Blitz.js (Next.js extension). Influential in Next.js ecosystem. Startup founder."
+    },
+    {
+      "handle": "@colbyfayock",
+      "name": "Colby Fayock",
+      "category": "Customer / Power user",
+      "relevance": 60,
+      "followers": "40K+",
+      "signal_summary": "Prolific Next.js educator (YouTube, egghead). Active community voice on Next.js tutorials and best practices."
+    },
+    {
+      "handle": "@vercel_support",
+      "name": "Vercel Support",
+      "category": "Official",
+      "relevance": 59,
+      "followers": "5K+",
+      "signal_summary": "Official support account. Tracks customer issues, outage communications, and response quality signals."
+    },
+    {
+      "handle": "@0xca0a",
+      "name": "Paul Henschel",
+      "category": "Customer / Power user",
+      "relevance": 58,
+      "followers": "12K+",
+      "signal_summary": "Creator of react-three-fiber, zustand, react-spring. Built Vercel Next.js starter for r3f. Ecosystem contributor."
+    },
+    {
+      "handle": "@joevezz",
+      "name": "JoeVezz",
+      "category": "Industry analyst",
+      "relevance": 57,
+      "followers": "10K+",
+      "signal_summary": "Social media analytics on Vercel controversy. Tracked 320% mention spike, 1670% engagement spike during boycott."
+    },
+    {
+      "handle": "@hdjirdeh",
+      "name": "Houssein Djirdeh",
+      "category": "Former employee",
+      "relevance": 56,
+      "followers": "10K+",
+      "signal_summary": "Ex-Vercel contributor. Shared migration resources during boycott. 571K engagements. Former Google DevRel."
+    },
+    {
+      "handle": "@swyx",
+      "name": "Shawn Wang (swyx)",
+      "category": "Industry analyst",
+      "relevance": 55,
+      "followers": "70K+",
+      "signal_summary": "Latent Space founder. Former Netlify DevRel. Provides comparative analysis of Vercel vs competitors. Angel investor."
+    },
+    {
+      "handle": "@samselikoff",
+      "name": "Sam Selikoff",
+      "category": "Current employee",
+      "relevance": 54,
+      "followers": "15K+",
+      "signal_summary": "Software Engineer on Next.js team at Vercel. Founded Build UI. NextJS Conf speaker."
+    },
+    {
+      "handle": "@JoshWComeau",
+      "name": "Josh W. Comeau",
+      "category": "Customer / Power user",
+      "relevance": 53,
+      "followers": "100K+",
+      "signal_summary": "CSS educator. Wrote influential post on CSS in React Server Components. Nuanced Vercel/Next.js criticism."
+    },
+    {
+      "handle": "@tibo_maker",
+      "name": "Tibo",
+      "category": "Customer / Power user",
+      "relevance": 52,
+      "followers": "100K+",
+      "signal_summary": "Indie maker. Praised Vercel's Twitter reputation management (CEO DMing to fix issues)."
+    },
+    {
+      "handle": "@cassidoo",
+      "name": "Cassidy Williams",
+      "category": "Customer / Power user",
+      "relevance": 51,
+      "followers": "200K+",
+      "signal_summary": "Sr Dir Dev Advocacy at GitHub. Former Netlify DevRel. Next.js educator and conference speaker."
+    },
+    {
+      "handle": "@gennyxdavila",
+      "name": "Genny Dee",
+      "category": "Current employee",
+      "relevance": 50,
+      "followers": "2K+",
+      "signal_summary": "Director of Creative Design at Vercel. Signals on design hiring and creative direction."
+    },
+    {
+      "handle": "@kldavis4",
+      "name": "Kelly Davis",
+      "category": "Current employee",
+      "relevance": 49,
+      "followers": "1K+",
+      "signal_summary": "Software Engineer at Vercel. Orlando, FL. Technical contributor signals."
+    },
+    {
+      "handle": "@theburningmonk",
+      "name": "Yan Cui",
+      "category": "Critic",
+      "relevance": 48,
+      "followers": "30K+",
+      "signal_summary": "Serverless expert. Commented on Vercel billing surprises. Provides AWS/serverless cost comparison signals."
+    },
+    {
+      "handle": "@maple3142",
+      "name": "maple3142",
+      "category": "Security researcher",
+      "relevance": 47,
+      "followers": "5K+",
+      "signal_summary": "Published working PoC exploit for CVE-2025-55182 (React2Shell). Critical security signal source."
+    },
+    {
+      "handle": "@CloudflareDev",
+      "name": "Cloudflare Developers",
+      "category": "Competitor",
+      "relevance": 46,
+      "followers": "100K+",
+      "signal_summary": "Cloudflare Pages competitor account. Unlimited bandwidth vs Vercel pricing. Edge computing comparison signals."
+    },
+    {
+      "handle": "@reactjs",
+      "name": "React",
+      "category": "Other",
+      "relevance": 45,
+      "followers": "500K+",
+      "signal_summary": "Official React account. React Server Components announcements affect Vercel directly."
+    },
+    {
+      "handle": "@sishaar",
+      "name": "Sishaar",
+      "category": "Critic",
+      "relevance": 44,
+      "followers": "2K+",
+      "signal_summary": "Noted \"big twitter backlash on pricing has vercel subtweeting.\" Pricing criticism signal."
+    },
+    {
+      "handle": "@BowTiedWebReapr",
+      "name": "Web Reaper",
+      "category": "Critic",
+      "relevance": 43,
+      "followers": "5K+",
+      "signal_summary": "Speculated on coming Vercel layoffs. Noted company wouldn't want to slight popular Twitter devs."
+    },
+    {
+      "handle": "@jessicanono1",
+      "name": "Jessica Nono",
+      "category": "Critic",
+      "relevance": 42,
+      "followers": "5K+",
+      "signal_summary": "French tech commentator. Called out Vercel boycott early (\"Vercel vient de signer son boycott\")."
+    },
+    {
+      "handle": "@PixieOfDeath",
+      "name": "Bedazzling Bearer",
+      "category": "Critic",
+      "relevance": 41,
+      "followers": "2K+",
+      "signal_summary": "Shared Vercel alternatives during boycott. Framed CEO photo as controversy."
+    },
+    {
+      "handle": "@boycat",
+      "name": "Boycat App",
+      "category": "Critic",
+      "relevance": 40,
+      "followers": "10K+",
+      "signal_summary": "Boycott tracking app. 453K engagements on Vercel switch announcement. Founder Adil Abbuthalha migrated from Vercel."
+    },
+    {
+      "handle": "@VercelCommunity",
+      "name": "Vercel Community",
+      "category": "Official",
+      "relevance": 39,
+      "followers": "5K+",
+      "signal_summary": "Community discussion space. User support and collaboration signals."
+    },
+    {
+      "handle": "@turborepo",
+      "name": "Turborepo",
+      "category": "Official",
+      "relevance": 38,
+      "followers": "2.5K",
+      "signal_summary": "Official Turborepo account. Build system updates for monorepo ecosystem."
+    },
+    {
+      "handle": "@aisdk",
+      "name": "AI SDK",
+      "category": "Official",
+      "relevance": 37,
+      "followers": "5K+",
+      "signal_summary": "Official AI SDK account. TypeScript AI agent framework updates."
+    },
+    {
+      "handle": "@netlify",
+      "name": "Netlify",
+      "category": "Competitor",
+      "relevance": 36,
+      "followers": "100K+",
+      "signal_summary": "Primary competitor. OpenNext adapter, credit-based billing pivot. Direct comparison signals."
+    },
+    {
+      "handle": "@Railway",
+      "name": "Railway",
+      "category": "Competitor",
+      "relevance": 35,
+      "followers": "50K+",
+      "signal_summary": "Alternative deployment platform. Server rendering benchmark comparison with Vercel."
+    },
+    {
+      "handle": "@flaborsoliman",
+      "name": "Fly.io",
+      "category": "Competitor",
+      "relevance": 34,
+      "followers": "30K+",
+      "signal_summary": "Edge deployment competitor. CLI-first approach vs Vercel's GUI-focused DX."
+    },
+    {
+      "handle": "@renderplatform",
+      "name": "Render",
+      "category": "Competitor",
+      "relevance": 33,
+      "followers": "20K+",
+      "signal_summary": "Unified cloud platform competitor. All-in-one vs Vercel's frontend-first approach."
+    },
+    {
+      "handle": "@sophiebits",
+      "name": "Sophie Alpert",
+      "category": "Other (React core)",
+      "relevance": 32,
+      "followers": "50K+",
+      "signal_summary": "Former React team manager at Meta. Industry perspective on React governance and Vercel influence."
+    },
+    {
+      "handle": "@sebienlorber",
+      "name": "Sebastien Lorber",
+      "category": "Industry analyst",
+      "relevance": 31,
+      "followers": "15K+",
+      "signal_summary": "This Week In React newsletter. Weekly coverage of Next.js/Vercel ecosystem. Tracked docs bias removal."
+    },
+    {
+      "handle": "@0xSigil",
+      "name": "Sigil",
+      "category": "Customer / Power user",
+      "relevance": 30,
+      "followers": "5K+",
+      "signal_summary": "Posts about Vercel leadership. Mentioned O1Visa connections at Vercel."
+    },
+    {
+      "handle": "@mihail_eric",
+      "name": "Mihail Eric",
+      "category": "Customer / Power user",
+      "relevance": 29,
+      "followers": "10K+",
+      "signal_summary": "AI engineer. Shared first impressions of v0, noted it's \"not yet at a stage where I can meaningfully bake it into my workflow.\""
+    },
+    {
+      "handle": "@vinhnx",
+      "name": "Vinh Nguyen",
+      "category": "Customer / Power user",
+      "relevance": 28,
+      "followers": "3K+",
+      "signal_summary": "Developer. \"Twitter twin\" of Vercel CEO. Community engagement signals."
+    },
+    {
+      "handle": "@rickhanlonii",
+      "name": "Ricky Hanlon",
+      "category": "Other (React core)",
+      "relevance": 27,
+      "followers": "10K+",
+      "signal_summary": "React core team. Snowboarding coder. React Native bridge signals."
+    },
+    {
+      "handle": "@lachlan2k",
+      "name": "Lachlan Davidson",
+      "category": "Security researcher",
+      "relevance": 26,
+      "followers": "2K+",
+      "signal_summary": "Discovered CVE-2025-55182 (React2Shell RCE, CVSS 10.0). Responsible disclosure to Vercel."
+    },
+    {
+      "handle": "@zhero__",
+      "name": "Rachid Allam",
+      "category": "Security researcher",
+      "relevance": 25,
+      "followers": "1K+",
+      "signal_summary": "Co-discovered CVE-2025-29927 (Next.js middleware bypass, CVSS 9.1). Bug bounty recipient."
+    },
+    {
+      "handle": "@inzo_",
+      "name": "Yassir Alam",
+      "category": "Security researcher",
+      "relevance": 24,
+      "followers": "1K+",
+      "signal_summary": "Co-discovered CVE-2025-29927. Responsible disclosure with Vercel."
+    },
+    {
+      "handle": "@vercel_dev",
+      "name": "Vercel Developers",
+      "category": "Official",
+      "relevance": 23,
+      "followers": "5K+",
+      "signal_summary": "Developer-focused companion account. SDK updates, template releases."
+    },
+    {
+      "handle": "@dubdotco",
+      "name": "Dub (Steven Tey's startup)",
+      "category": "Former employee (adjacent)",
+      "relevance": 22,
+      "followers": "10K+",
+      "signal_summary": "Link management platform by ex-Vercel DevRel. Used by Vercel marketing. Open-source."
+    },
+    {
+      "handle": "@bunjavascript",
+      "name": "Bun",
+      "category": "Competitor (adjacent)",
+      "relevance": 21,
+      "followers": "100K+",
+      "signal_summary": "JavaScript runtime. Hired Lydia Hallie from Vercel. Alternative infrastructure signals."
+    },
+    {
+      "handle": "@jason",
+      "name": "Jason Calacanis",
+      "category": "Investor (adjacent)",
+      "relevance": 20,
+      "followers": "932K",
+      "signal_summary": "All-In podcast host. Startup ecosystem commentary touching on Vercel's valuation and AI positioning."
+    },
+    {
+      "handle": "@twistartups",
+      "name": "This Week in Startups",
+      "category": "Industry analyst",
+      "relevance": 19,
+      "followers": "200K+",
+      "signal_summary": "Startup news coverage. Tracks Vercel fundraising, valuation, and competitive landscape."
+    },
+    {
+      "handle": "@together_ai",
+      "name": "Together AI",
+      "category": "Competitor (adjacent)",
+      "relevance": 18,
+      "followers": "30K+",
+      "signal_summary": "Hired Hassan El Mghari from Vercel. AI infrastructure that intersects with Vercel AI SDK."
+    },
+    {
+      "handle": "@cursor_ai",
+      "name": "Cursor",
+      "category": "Former employee (adjacent)",
+      "relevance": 17,
+      "followers": "100K+",
+      "signal_summary": "AI code editor. Lee Robinson joined from Vercel. Signals on DX talent movement."
+    },
+    {
+      "handle": "@bekacru",
+      "name": "Bereket Engida",
+      "category": "Customer / Power user",
+      "relevance": 16,
+      "followers": "2K+",
+      "signal_summary": "New Auth.js lead maintainer after Balazs stepped down. Community governance signal."
+    },
+    {
+      "handle": "@huozhi",
+      "name": "Jiachi Liu",
+      "category": "Current employee",
+      "relevance": 15,
+      "followers": "3K+",
+      "signal_summary": "Vercel engineer. SWR contributor, Next.js maintainer. Deep technical contributor."
+    },
+    {
+      "handle": "@styfle",
+      "name": "Steven Stalberger",
+      "category": "Current employee",
+      "relevance": 14,
+      "followers": "3K+",
+      "signal_summary": "Vercel engineer. Next.js contributor, thanked in multiple releases."
+    },
+    {
+      "handle": "@leeerob",
+      "name": "Lee Robinson (alt handle)",
+      "category": "Current employee",
+      "relevance": 13,
+      "followers": "5K+",
+      "signal_summary": "Alternate handle for Lee Robinson. Cara app incident response (96K billing issue)."
+    },
+    {
+      "handle": "@zemotion",
+      "name": "Jingna Zhang",
+      "category": "Customer / Power user",
+      "relevance": 12,
+      "followers": "50K+",
+      "signal_summary": "Cara app founder. Hit 500K users, faced Vercel billing spike. Public pricing controversy case study."
+    },
+    {
+      "handle": "@sbstryker",
+      "name": "Sam Stryker",
+      "category": "Other",
+      "relevance": 11,
+      "followers": "50K+",
+      "signal_summary": "Tech journalist. Commented on layoff patterns across tech companies. Context for Vercel employment signals."
+    },
+    {
+      "handle": "@EthanEvansVP",
+      "name": "Ethan Evans",
+      "category": "Industry analyst",
+      "relevance": 10,
+      "followers": "100K+",
+      "signal_summary": "Ex-Amazon VP. Career advice around layoffs/recovery. Context for Vercel employee movement."
+    },
+    {
+      "handle": "@OdotJdot",
+      "name": "O.J.",
+      "category": "Customer / Power user",
+      "relevance": 9,
+      "followers": "2K+",
+      "signal_summary": "Tracked Vercel \"Twitter aura\" during boycott. Community sentiment signals."
+    },
+    {
+      "handle": "@matthewcp",
+      "name": "Matthew Phillips",
+      "category": "Competitor (adjacent)",
+      "relevance": 8,
+      "followers": "5K+",
+      "signal_summary": "Astro core team. Alternative framework gaining traction from Next.js complexity complaints."
+    },
+    {
+      "handle": "@raborsoliman",
+      "name": "Rachel Nabors",
+      "category": "Other (React core)",
+      "relevance": 7,
+      "followers": "20K+",
+      "signal_summary": "React docs lead. Influences how Next.js/Vercel is presented in official React documentation."
+    },
+    {
+      "handle": "@addyosmani",
+      "name": "Addy Osmani",
+      "category": "Industry analyst",
+      "relevance": 6,
+      "followers": "400K+",
+      "signal_summary": "Google Chrome engineer. Co-authored patterns.dev with ex-Vercel employee Lydia Hallie. Web performance authority."
+    },
+    {
+      "handle": "@Replit",
+      "name": "Replit",
+      "category": "Competitor",
+      "relevance": 5,
+      "followers": "200K+",
+      "signal_summary": "Official Replit account. Offered $50-$20K migration credits during Vercel boycott."
+    },
+    {
+      "handle": "@mattzcarey",
+      "name": "Matt Carey",
+      "category": "Customer / Power user",
+      "relevance": 4,
+      "followers": "2K+",
+      "signal_summary": "Open source developer. OpenNext adapter contributor helping Next.js run outside Vercel."
+    },
+    {
+      "handle": "@pilcrowonpaper",
+      "name": "Pilcrow",
+      "category": "Customer / Power user",
+      "relevance": 3,
+      "followers": "5K+",
+      "signal_summary": "Auth library developer. Lucia auth alternative to Auth.js/NextAuth. Ecosystem competition signal."
+    },
+    {
+      "handle": "@leventalpha",
+      "name": "Daniel Levine",
+      "category": "Investor",
+      "relevance": 2,
+      "followers": "5K+",
+      "signal_summary": "Accel partner. Led Vercel Series A, co-led Series F. \"Vercel changed how developers work.\""
+    },
+    {
+      "handle": "@feedspot",
+      "name": "Feedspot",
+      "category": "Industry analyst",
+      "relevance": 1,
+      "followers": "10K+",
+      "signal_summary": "Tracks VC influencers invested in Vercel. Ecosystem mapping signal."
+    },
+    {
+      "handle": "@northflank",
+      "name": "Northflank",
+      "category": "Critic",
+      "relevance": 1,
+      "followers": "5K+",
+      "signal_summary": "Published \"Why we ditched Next.js\" post. 200-400ms page renders, weekly crashes. Migration case study."
+    },
+    {
+      "handle": "@vcmike",
+      "name": "Mike Hirshland",
+      "category": "Investor",
+      "relevance": 1,
+      "followers": "5K+",
+      "signal_summary": "Resolute VC co-founder. Led early seed rounds including Vercel. Early-stage insider."
+    },
+    {
+      "handle": "@susanstledger",
+      "name": "Susan St. Ledger",
+      "category": "Investor / Board",
+      "relevance": 1,
+      "followers": "2K+",
+      "signal_summary": "Board member (Dec 2025). Former HashiCorp President. Enterprise go-to-market signal."
+    },
+    {
+      "handle": "@paborsoliman",
+      "name": "Steffan Tomlinson",
+      "category": "Investor / Board",
+      "relevance": 1,
+      "followers": "2K+",
+      "signal_summary": "Board member (Dec 2024). Stripe CFO. Financial and IPO readiness signal."
+    },
+    {
+      "handle": "@jdewittgrosser",
+      "name": "Jeanne DeWitt Grosser",
+      "category": "Leadership",
+      "relevance": 1,
+      "followers": "3K+",
+      "signal_summary": "COO (Mar 2025). Former Stripe CBO. Scaled Stripe from $100M to billions. Go-to-market signal."
+    },
+    {
+      "handle": "@dhh",
+      "name": "David Heinemeier Hansson",
+      "category": "Critic",
+      "relevance": 1,
+      "followers": "400K+",
+      "signal_summary": "Rails creator. Advocates self-hosting, anti-cloud vendor. Philosophical opponent to Vercel's model."
+    },
+    {
+      "handle": "@OfflineProtocol",
+      "name": "Offline Protocol",
+      "category": "Critic",
+      "relevance": 1,
+      "followers": "5K+",
+      "signal_summary": "Company that cancelled Vercel enterprise contract during boycott. Enterprise churn signal."
+    }
+  ],
+  "recent_signals": [
+    {
+      "handle": "@nextjs",
+      "content": "Next.js 15 release with Turbopack stable, React 19 support. Major framework milestone.",
+      "sentiment": 0.6,
+      "relevance": 0.7,
+      "category": "Official",
+      "signal_type": "product_update",
+      "detected_at": "2026-03-15 01:40:09",
+      "name": "Next.js",
+      "followers": "271K"
+    },
+    {
+      "handle": "@GergelyOrosz",
+      "content": "Pragmatic Engineer covers Vercel layoffs, controversies, and tech industry dynamics. Balanced but critical.",
+      "sentiment": -0.2,
+      "relevance": 0.65,
+      "category": "Industry analyst",
+      "signal_type": "coverage",
+      "detected_at": "2026-03-15 01:40:09",
+      "name": "Gergely Orosz",
+      "followers": "200K+"
+    },
+    {
+      "handle": "@maple3142",
+      "content": "CVE-2025-29927 (CVSS 9.1) Next.js middleware bypass vulnerability. Critical security disclosure.",
+      "sentiment": -0.7,
+      "relevance": 0.85,
+      "category": "Critic",
+      "signal_type": "security",
+      "detected_at": "2026-03-15 01:40:09",
+      "name": "maple3142",
+      "followers": "5K+"
+    },
+    {
+      "handle": "@zhero__",
+      "content": "CVE-2025-55182 (CVSS 10.0) React2Shell RCE vulnerability disclosed. Added to CISA KEV catalog.",
+      "sentiment": -0.8,
+      "relevance": 0.9,
+      "category": "Critic",
+      "signal_type": "security",
+      "detected_at": "2026-03-15 01:40:09",
+      "name": "Rachid Allam",
+      "followers": "1K+"
+    },
+    {
+      "handle": "@shadcn",
+      "content": "shadcn/ui became most popular React component system. Massive ecosystem influence for Vercel developer tooling.",
+      "sentiment": 0.8,
+      "relevance": 0.65,
+      "category": "Current employee",
+      "signal_type": "product_update",
+      "detected_at": "2026-03-15 01:40:09",
+      "name": "shadcn (Shadab Ahmed)",
+      "followers": "100K+"
+    },
+    {
+      "handle": "@cramforce",
+      "content": "CTO posts on self-driving infrastructure and AI Cloud architecture. Technical vision for Vercel platform.",
+      "sentiment": 0.5,
+      "relevance": 0.7,
+      "category": "Leadership",
+      "signal_type": "post",
+      "detected_at": "2026-03-15 01:40:09",
+      "name": "Malte Ubl",
+      "followers": "46K"
+    },
+    {
+      "handle": "@kentcdodds",
+      "content": "Published influential Why I Wont Use Next.js post. Key critical voice on vendor lock-in and React governance.",
+      "sentiment": -0.7,
+      "relevance": 0.7,
+      "category": "Critic",
+      "signal_type": "post",
+      "detected_at": "2026-03-15 01:40:09",
+      "name": "Kent C. Dodds",
+      "followers": "200K+"
+    },
+    {
+      "handle": "@v0",
+      "content": "v0 AI product reaching $42M ARR with 3.5M+ unique users. Teams/Enterprise >50% of v0 revenue.",
+      "sentiment": 0.7,
+      "relevance": 0.8,
+      "category": "Official",
+      "signal_type": "product_update",
+      "detected_at": "2026-03-15 01:40:09",
+      "name": "v0 by Vercel",
+      "followers": "109K"
+    },
+    {
+      "handle": "@amasad",
+      "content": "Replit CEO offered $50-$20K migration credits to developers leaving Vercel during boycott controversy",
+      "sentiment": -0.5,
+      "relevance": 0.75,
+      "category": "Competitor",
+      "signal_type": "competitive_move",
+      "detected_at": "2026-03-15 01:40:09",
+      "name": "Amjad Masad",
+      "followers": "433K"
+    },
+    {
+      "handle": "@t3dotgg",
+      "content": "Moved T3 Chat off Next.js but stayed on Vercel hosting. Candid commentary on framework vs platform separation.",
+      "sentiment": 0.1,
+      "relevance": 0.7,
+      "category": "Customer / Power user",
+      "signal_type": "post",
+      "detected_at": "2026-03-15 01:40:09",
+      "name": "Theo Browne",
+      "followers": "300K+"
+    },
+    {
+      "handle": "@jaredpalmer",
+      "content": "Left Vercel VP AI role for Microsoft/GitHub. Built v0 and AI SDK \u2014 key technical departures from AI team.",
+      "sentiment": -0.4,
+      "relevance": 0.8,
+      "category": "Former employee",
+      "signal_type": "departure",
+      "detected_at": "2026-03-15 01:40:09",
+      "name": "Jared Palmer",
+      "followers": "50K+"
+    },
+    {
+      "handle": "@leerob",
+      "content": "Departed Vercel for Cursor. Previously most transparent exec on pricing and product decisions.",
+      "sentiment": -0.3,
+      "relevance": 0.8,
+      "category": "Former employee",
+      "signal_type": "departure",
+      "detected_at": "2026-03-15 01:40:09",
+      "name": "Lee Robinson",
+      "followers": "225K"
+    },
+    {
+      "handle": "@vercel",
+      "content": "Series F announced: $300M at $9.3B valuation, led by Accel and GIC",
+      "sentiment": 0.8,
+      "relevance": 0.85,
+      "category": "Official",
+      "signal_type": "announcement",
+      "detected_at": "2026-03-15 01:40:09",
+      "name": "Vercel",
+      "followers": "375K"
+    },
+    {
+      "handle": "@wesamo__",
+      "content": "Public resignation from Vercel over CEO Netanyahu controversy. 6.4M engagements on resignation tweet.",
+      "sentiment": -0.9,
+      "relevance": 0.9,
+      "category": "Former employee",
+      "signal_type": "post",
+      "detected_at": "2026-03-15 01:40:09",
+      "name": "Wesam",
+      "followers": "5K+"
+    },
+    {
+      "handle": "@rauchg",
+      "content": "Netanyahu selfie controversy triggered 320% mention spike, employee resignations, competitor migration offers",
+      "sentiment": -0.6,
+      "relevance": 0.95,
+      "category": "Leadership",
+      "signal_type": "controversy",
+      "detected_at": "2026-03-15 01:40:09",
+      "name": "Guillermo Rauch",
+      "followers": "382K"
+    }
+  ],
+  "history": [
+    {
+      "date": "2026-03-15",
+      "metric": "signals_24h",
+      "value": 15.0,
+      "signal_count": 15
+    },
+    {
+      "date": "2026-03-15",
+      "metric": "sentiment_7d",
+      "value": -0.141,
+      "signal_count": 15
+    },
+    {
+      "date": "2026-03-15",
+      "metric": "sentiment_24h",
+      "value": -0.141,
+      "signal_count": 15
+    }
+  ],
+  "categories": [
+    {
+      "category": "Official",
+      "count": 3,
+      "avg_sentiment": 0.7
+    },
+    {
+      "category": "Former employee",
+      "count": 3,
+      "avg_sentiment": -0.533
+    },
+    {
+      "category": "Critic",
+      "count": 3,
+      "avg_sentiment": -0.733
+    },
+    {
+      "category": "Leadership",
+      "count": 2,
+      "avg_sentiment": -0.05
+    },
+    {
+      "category": "Industry analyst",
+      "count": 1,
+      "avg_sentiment": -0.2
+    },
+    {
+      "category": "Customer / Power user",
+      "count": 1,
+      "avg_sentiment": 0.1
+    },
+    {
+      "category": "Current employee",
+      "count": 1,
+      "avg_sentiment": 0.8
+    },
+    {
+      "category": "Competitor",
+      "count": 1,
+      "avg_sentiment": -0.5
+    }
+  ]
+}
