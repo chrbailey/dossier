@@ -19,6 +19,7 @@
   --sierra: #60a5fa;
   --vercel: #a78bfa;
   --cerebras: #fbbf24;
+  --okta: #f87171;
   --proceed: #34d399;
   --lean: #2dd4bf;
   --caution: #facc15;
@@ -48,16 +49,17 @@ section{padding:56px 0;border-bottom:1px solid var(--border)}
 .sec-title{font-size:26px;font-weight:400;color:#eceef1;margin-bottom:36px}
 
 /* ── Ranking Cards ── */
-.rankings{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px}
+.rankings{display:grid;grid-template-columns:repeat(auto-fit,minmax(195px,1fr));gap:14px}
 .rcard{background:var(--bg-card);border:1px solid var(--border);border-radius:6px;padding:24px 22px;position:relative;transition:border-color .3s,transform .2s}
 .rcard:hover{border-color:rgba(201,168,76,0.35);transform:translateY(-1px)}
 .rcard-1{border-top:2px solid var(--glean)}
 .rcard-2{border-top:2px solid var(--sierra)}
 .rcard-3{border-top:2px solid var(--vercel)}
 .rcard-4{border-top:2px solid var(--cerebras)}
+.rcard-5{border-top:2px solid var(--okta)}
 .rcard .rnum{position:absolute;top:14px;right:18px;font-size:40px;font-weight:400;color:var(--text-muted);opacity:.3}
 .rcard .rco{font-size:19px;font-weight:600;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif;margin-bottom:3px}
-.rcard-1 .rco{color:var(--glean)}.rcard-2 .rco{color:var(--sierra)}.rcard-3 .rco{color:var(--vercel)}.rcard-4 .rco{color:var(--cerebras)}
+.rcard-1 .rco{color:var(--glean)}.rcard-2 .rco{color:var(--sierra)}.rcard-3 .rco{color:var(--vercel)}.rcard-4 .rco{color:var(--cerebras)}.rcard-5 .rco{color:var(--okta)}
 .vbadge{display:inline-block;padding:2px 10px;border-radius:3px;font-family:'SF Mono',Menlo,monospace;font-size:9.5px;font-weight:600;letter-spacing:.6px;text-transform:uppercase;margin:8px 0 14px}
 .vb-proceed{background:rgba(52,211,153,.12);color:var(--proceed);border:1px solid rgba(52,211,153,.25)}
 .vb-lean{background:rgba(45,212,191,.12);color:var(--lean);border:1px solid rgba(45,212,191,.25)}
@@ -85,6 +87,7 @@ section{padding:56px 0;border-bottom:1px solid var(--border)}
 .slayer{display:flex;align-items:center;padding:18px 22px;border-radius:5px;gap:16px;transition:transform .25s}
 .slayer:hover{transform:translateX(3px)}
 .sl4{background:linear-gradient(90deg,rgba(52,211,153,.1),rgba(96,165,250,.06));border-left:3px solid var(--glean)}
+.sl3-5{background:linear-gradient(90deg,rgba(248,113,113,.08),rgba(167,139,250,.06));border-left:3px solid var(--okta)}
 .sl3{background:rgba(167,139,250,.07);border-left:3px solid var(--vercel)}
 .sl2{background:rgba(251,191,36,.06);border-left:3px solid var(--cerebras)}
 .sl1{background:rgba(77,90,110,.08);border-left:3px solid var(--text-muted)}
@@ -92,6 +95,7 @@ section{padding:56px 0;border-bottom:1px solid var(--border)}
 .scos{flex:1;font-size:15px;font-weight:500;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif}
 .srisk{font-family:'SF Mono',Menlo,monospace;font-size:10px;padding:3px 10px;border-radius:3px;letter-spacing:.5px;white-space:nowrap}
 .sr-best{background:rgba(52,211,153,.12);color:var(--proceed)}.sr-mod{background:rgba(250,204,21,.1);color:var(--caution)}.sr-high{background:rgba(251,146,60,.1);color:var(--qualified)}.sr-base{background:rgba(77,90,110,.12);color:var(--text-muted)}
+.sr-low-mod{background:rgba(248,113,113,.1);color:var(--okta)}
 
 /* ── Insights ── */
 .insight{padding:18px 0 18px 22px;border-left:2px solid var(--border);margin-bottom:20px;transition:border-color .3s}
@@ -123,7 +127,7 @@ section{padding:56px 0;border-bottom:1px solid var(--border)}
 /* ── Animation ── */
 @keyframes rise{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
 .anim{animation:rise .5s ease-out forwards;opacity:0}
-.d1{animation-delay:.05s}.d2{animation-delay:.12s}.d3{animation-delay:.19s}.d4{animation-delay:.26s}
+.d1{animation-delay:.05s}.d2{animation-delay:.12s}.d3{animation-delay:.19s}.d4{animation-delay:.26s}.d5{animation-delay:.33s}
 
 /* ── Responsive ── */
 @media(max-width:600px){
@@ -142,10 +146,10 @@ section{padding:56px 0;border-bottom:1px solid var(--border)}
 <div class="wrap">
   <div class="hero-tag"><span>Dossier v0.1.0</span> &middot; Calibrated Output</div>
   <h1>AI Claims <em>Reality</em> Index</h1>
-  <p class="hero-desc sans">Automated SaaS due diligence across four AI infrastructure companies. Seven-phase analysis with latent space bias correction, fact-checking, CEO pushback simulation, and cross-dossier calibration.</p>
+  <p class="hero-desc sans">Automated SaaS due diligence across five AI infrastructure companies. Seven-phase analysis with latent space bias correction, fact-checking, CEO pushback simulation, and cross-dossier calibration.</p>
   <div class="hero-stats">
     <span class="hero-stat"><b>February 2026</b></span>
-    <span class="hero-stat"><b>4</b> Companies</span>
+    <span class="hero-stat"><b>5</b> Companies</span>
     <span class="hero-stat"><b>40+</b> Public Sources</span>
     <span class="hero-stat"><b>13</b> Analysis Phases</span>
     <span class="hero-stat"><b>18</b> Fact-Checked Claims</span>
@@ -187,6 +191,13 @@ section{padding:56px 0;border-bottom:1px solid var(--border)}
       <div class="rmets"><b>WSE-3</b> chip &middot; <b>$23B</b> val &middot; <b>$2.55B</b> raised<br>OpenAI <b>$10B</b> deal &middot; <b>102</b> patents</div>
       <p class="rdesc">Highest potential outcome ($50B+ IPO) but lowest probability. Technology is 5/5 but business is 3.5/5. 6-12 month execution window. Conviction investors only.</p>
     </div>
+    <div class="rcard rcard-5 anim d5">
+      <span class="rnum">5</span>
+      <div class="rco">Okta</div>
+      <span class="vbadge vb-caution">Proceed w/ Caution</span>
+      <div class="rmets"><b>$2.61B</b> revenue &middot; <b>11%</b> growth &middot; <b>5.5x</b> multiple<br><b>~5,734</b> team &middot; <b>7,000+</b> connectors</div>
+      <p class="rdesc">Dominant identity platform with deepest integration network. Mature financial profile with strong margins but decelerating growth. AI features layered onto proven enterprise moat.</p>
+    </div>
   </div>
 </div>
 </section>
@@ -206,6 +217,7 @@ section{padding:56px 0;border-bottom:1px solid var(--border)}
         <tr><td class="cname" style="color:var(--sierra)">Sierra</td><td>3.8 / 5</td><td>3.1 / 4</td><td><span class="vbadge vb-lean" style="margin:0">Lean Proceed</span></td><td>Medium</td><td class="mono" style="color:var(--text)">$10B (67-100x)</td></tr>
         <tr><td class="cname" style="color:var(--vercel)">Vercel</td><td>3.2 / 4.2 *</td><td>2.95 / 4</td><td><span class="vbadge vb-caution" style="margin:0">Caution</span></td><td>Medium-High</td><td class="mono" style="color:var(--text)">$9.3B (46.5x)</td></tr>
         <tr><td class="cname" style="color:var(--cerebras)">Cerebras</td><td>5.0 / 3.5 &dagger;</td><td>3.0 / 4</td><td><span class="vbadge vb-qualified" style="margin:0">Qualified</span></td><td>Medium</td><td class="mono" style="color:var(--text)">$23B (46-85x)</td></tr>
+        <tr><td class="cname" style="color:var(--okta)">Okta</td><td>3.0 / 5</td><td>3.25 / 4</td><td><span class="vbadge vb-caution" style="margin:0">Caution</span></td><td>Medium-High</td><td class="mono" style="color:var(--text)">$14.4B (5.5x)</td></tr>
       </tbody>
     </table>
   </div>
@@ -246,6 +258,11 @@ section{padding:56px 0;border-bottom:1px solid var(--border)}
       <span class="scos"><span style="color:var(--glean)">Glean</span> &middot; <span style="color:var(--sierra)">Sierra</span></span>
       <span class="srisk sr-best">Best Risk-Adjusted</span>
     </div>
+    <div class="slayer sl3-5">
+      <span class="slabel">Layer 3.5 &middot; Identity</span>
+      <span class="scos" style="color:var(--okta)">Okta</span>
+      <span class="srisk sr-low-mod">Low-Moderate Risk</span>
+    </div>
     <div class="slayer sl3">
       <span class="slabel">Layer 3 &middot; Platform</span>
       <span class="scos" style="color:var(--vercel)">Vercel</span>
@@ -278,22 +295,22 @@ section{padding:56px 0;border-bottom:1px solid var(--border)}
   <div class="insight">
     <div class="inum">FINDING 02</div>
     <h3 class="sans">Revenue Multiples Are Inverted</h3>
-    <p>Sierra at 67-100x has the highest multiple and weakest disclosed fundamentals. Glean at 36x has the lowest multiple despite equal growth (100%), more defensible moats, and higher ratings. The market is pricing founder brand and narrative over business fundamentals.</p>
+    <p>Sierra at 67-100x has the highest multiple and weakest disclosed fundamentals. Glean at 36x has the lowest multiple despite equal growth (100%), more defensible moats, and higher ratings. Okta at 5.5x shows mature-stage compression despite 7,000+ connectors and dominant market position. The market is pricing founder brand and narrative over business fundamentals.</p>
   </div>
   <div class="insight">
     <div class="inum">FINDING 03</div>
     <h3 class="sans">Correlated Systemic Risk</h3>
-    <p>All four companies depend on continued enterprise AI spending momentum. An "AI winter" or budget rationalization hits all simultaneously. Cerebras depends on OpenAI expansion. Sierra and Glean depend on enterprise AI agent budgets. Vercel depends on AI dev tool market growth.</p>
+    <p>All five companies depend on continued enterprise AI spending momentum. An "AI winter" or budget rationalization hits all simultaneously. Cerebras depends on OpenAI expansion. Sierra and Glean depend on enterprise AI agent budgets. Vercel depends on AI dev tool market growth. Okta benefits from AI-driven identity complexity but faces growth ceiling constraints.</p>
   </div>
   <div class="insight">
     <div class="inum">FINDING 04</div>
     <h3 class="sans">NRR: The Missing Metric</h3>
-    <p>At 36-100x revenue multiples, Net Revenue Retention is the difference between "durable growth flywheel" and "front-loaded logo acquisition that churns." None of these companies disclose it. Every verdict above is provisional until NRR is verified.</p>
+    <p>At 36-100x revenue multiples, Net Revenue Retention is the difference between "durable growth flywheel" and "front-loaded logo acquisition that churns." None of the high-growth companies disclose it. Okta's public NRR (~115%) provides a benchmark. Every verdict above is provisional until NRR is verified.</p>
   </div>
   <div class="insight">
     <div class="inum">FINDING 05</div>
     <h3 class="sans">The Gross Margin Inversion</h3>
-    <p>Deepest AI = worst margins. Cerebras (38-41%), Sierra (est. 40-65%), Glean (est. 65-75%), Vercel (~76%). Each incremental dollar of AI revenue carries higher inference cost than traditional SaaS. The question: at what scale do these margins become self-sustaining?</p>
+    <p>Deepest AI = worst margins. Cerebras (38-41%), Sierra (est. 40-65%), Glean (est. 65-75%), Okta (76%), Vercel (~76%). Each incremental dollar of AI revenue carries higher inference cost than traditional SaaS. Okta's mature 76% margin demonstrates the endpoint for identity-layer companies.</p>
   </div>
 </div>
 </section>
@@ -367,6 +384,33 @@ section{padding:56px 0;border-bottom:1px solid var(--border)}
 </div>
 </section>
 
+<!-- ═══════════ COMPOSITE RADAR ═══════════ -->
+<section>
+<div class="wrap">
+  <div class="sec-label">Composite Scoring</div>
+  <h2 class="sec-title">Six-Axis Comparative Radar</h2>
+  <div class="cgrid">
+    <div class="cbox" style="grid-column:1/-1;max-width:640px;margin:0 auto">
+      <h3>All Companies &mdash; Normalized 0-10 Scale</h3>
+      <canvas id="compositeRadar"></canvas>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- ═══════════ SCATTER PLOT ═══════════ -->
+<section>
+<div class="wrap">
+  <div class="sec-label">Valuation Landscape</div>
+  <h2 class="sec-title">Growth vs. Valuation Multiple</h2>
+  <div class="cbox" style="max-width:780px;margin:0 auto">
+    <h3>Bubble Size = Revenue</h3>
+    <canvas id="scatterChart" style="height:420px"></canvas>
+    <p class="sans" style="font-size:11.5px;color:var(--text-muted);margin-top:14px;line-height:1.6">X-axis: revenue growth rate (%). Y-axis: EV/Revenue multiple. Bubble area proportional to total revenue. Okta's combination of low growth + low multiple + massive revenue anchors the bottom-left &mdash; the mature SaaS quadrant.</p>
+  </div>
+</div>
+</section>
+
 <!-- ═══════════ FOOTER ═══════════ -->
 <footer class="foot">
 <div class="wrap">
@@ -391,7 +435,8 @@ if(typeof Chart!=='undefined'){
         {label:'Glean',data:[3.7,3.9,5.0,3.5,3.8],borderColor:'#34d399',backgroundColor:'rgba(52,211,153,0.07)',borderWidth:2,pointRadius:3,pointBackgroundColor:'#34d399'},
         {label:'Sierra',data:[3.8,3.9,4.5,2.6,3.2],borderColor:'#60a5fa',backgroundColor:'rgba(96,165,250,0.07)',borderWidth:2,pointRadius:3,pointBackgroundColor:'#60a5fa'},
         {label:'Vercel',data:[3.7,3.7,4.0,4.0,3.6],borderColor:'#a78bfa',backgroundColor:'rgba(167,139,250,0.07)',borderWidth:2,pointRadius:3,pointBackgroundColor:'#a78bfa'},
-        {label:'Cerebras',data:[4.25,3.75,3.5,2.0,4.5],borderColor:'#fbbf24',backgroundColor:'rgba(251,191,36,0.07)',borderWidth:2,pointRadius:3,pointBackgroundColor:'#fbbf24'}
+        {label:'Cerebras',data:[4.25,3.75,3.5,2.0,4.5],borderColor:'#fbbf24',backgroundColor:'rgba(251,191,36,0.07)',borderWidth:2,pointRadius:3,pointBackgroundColor:'#fbbf24'},
+        {label:'Okta',data:[3.0,4.1,1.1,4.0,4.5],borderColor:'#f87171',backgroundColor:'rgba(248,113,113,0.07)',borderWidth:2,pointRadius:3,pointBackgroundColor:'#f87171'}
       ]
     },
     options:{
@@ -406,11 +451,11 @@ if(typeof Chart!=='undefined'){
   new Chart(document.getElementById('marginChart'),{
     type:'bar',
     data:{
-      labels:['Vercel','Glean','Sierra','Cerebras'],
+      labels:['Okta','Vercel','Glean','Sierra','Cerebras'],
       datasets:[{
         label:'Est. Gross Margin %',
-        data:[76,70,52,40],
-        backgroundColor:['#a78bfa','#34d399','#60a5fa','#fbbf24'],
+        data:[76,76,70,52,40],
+        backgroundColor:['#f87171','#a78bfa','#34d399','#60a5fa','#fbbf24'],
         borderRadius:3,
         barPercentage:0.55
       }]
@@ -424,6 +469,70 @@ if(typeof Chart!=='undefined'){
         y:{grid:{display:false},ticks:{font:{size:12,weight:'500'}}}
       },
       plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>c.parsed.x+'% (estimated)'}}}
+    }
+  });
+
+  // Composite Radar — 6-axis, 0-10 scale
+  new Chart(document.getElementById('compositeRadar'),{
+    type:'radar',
+    data:{
+      labels:['AI Depth','Moat Strength','Financial Health','Growth Rate','Margin Quality','Risk Level'],
+      datasets:[
+        {label:'Glean',data:[7.4,7,5,8,7,5],borderColor:'#34d399',backgroundColor:'rgba(52,211,153,0.06)',borderWidth:2,pointRadius:3,pointBackgroundColor:'#34d399'},
+        {label:'Vercel',data:[6.4,7.2,6,8,9,5],borderColor:'#a78bfa',backgroundColor:'rgba(167,139,250,0.06)',borderWidth:2,pointRadius:3,pointBackgroundColor:'#a78bfa'},
+        {label:'Sierra',data:[7.6,6,3,10,4,7],borderColor:'#60a5fa',backgroundColor:'rgba(96,165,250,0.06)',borderWidth:2,pointRadius:3,pointBackgroundColor:'#60a5fa'},
+        {label:'Cerebras',data:[10,8,4,9,3,7],borderColor:'#fbbf24',backgroundColor:'rgba(251,191,36,0.06)',borderWidth:2,pointRadius:3,pointBackgroundColor:'#fbbf24'},
+        {label:'Okta',data:[6,9,10,2,9,4],borderColor:'#f87171',backgroundColor:'rgba(248,113,113,0.06)',borderWidth:2,pointRadius:3,pointBackgroundColor:'#f87171'}
+      ]
+    },
+    options:{
+      responsive:true,
+      maintainAspectRatio:true,
+      scales:{r:{beginAtZero:true,max:10,ticks:{stepSize:2,font:{size:9},backdropColor:'transparent'},grid:{color:'rgba(30,42,58,0.5)'},angleLines:{color:'rgba(30,42,58,0.5)'},pointLabels:{font:{size:10.5},color:'#8893a5'}}},
+      plugins:{legend:{position:'bottom',labels:{padding:14,usePointStyle:true,pointStyle:'circle',font:{size:11}}}}
+    }
+  });
+
+  // Scatter — Growth vs Valuation Multiple (bubble = revenue)
+  new Chart(document.getElementById('scatterChart'),{
+    type:'bubble',
+    data:{
+      datasets:[
+        {label:'Glean',data:[{x:100,y:36,r:14}],backgroundColor:'rgba(52,211,153,0.6)',borderColor:'#34d399',borderWidth:1.5},
+        {label:'Vercel',data:[{x:90,y:46.5,r:14}],backgroundColor:'rgba(167,139,250,0.6)',borderColor:'#a78bfa',borderWidth:1.5},
+        {label:'Sierra',data:[{x:450,y:83,r:12}],backgroundColor:'rgba(96,165,250,0.6)',borderColor:'#60a5fa',borderWidth:1.5},
+        {label:'Cerebras',data:[{x:390,y:52,r:19}],backgroundColor:'rgba(251,191,36,0.6)',borderColor:'#fbbf24',borderWidth:1.5},
+        {label:'Okta',data:[{x:11,y:5.5,r:42}],backgroundColor:'rgba(248,113,113,0.6)',borderColor:'#f87171',borderWidth:1.5}
+      ]
+    },
+    options:{
+      responsive:true,
+      maintainAspectRatio:false,
+      scales:{
+        x:{
+          title:{display:true,text:'Revenue Growth Rate (%)',font:{size:12},color:'#8893a5'},
+          grid:{color:'rgba(30,42,58,0.35)'},
+          ticks:{callback:v=>v+'%',font:{size:10.5}},
+          min:0,
+          max:500
+        },
+        y:{
+          title:{display:true,text:'EV / Revenue Multiple',font:{size:12},color:'#8893a5'},
+          grid:{color:'rgba(30,42,58,0.35)'},
+          ticks:{callback:v=>v+'x',font:{size:10.5}},
+          min:0,
+          max:100
+        }
+      },
+      plugins:{
+        legend:{position:'bottom',labels:{padding:14,usePointStyle:true,pointStyle:'circle',font:{size:11}}},
+        tooltip:{callbacks:{
+          label:function(ctx){
+            var d=ctx.raw;
+            return ctx.dataset.label+': Growth '+d.x+'%, Multiple '+d.y+'x';
+          }
+        }}
+      }
     }
   });
 }

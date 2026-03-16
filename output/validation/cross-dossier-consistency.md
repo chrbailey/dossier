@@ -1,9 +1,11 @@
 # Cross-Dossier Validation Report
 
-**Date:** 2026-02-19
+**Date:** 2026-02-19 (updated 2026-03-16 to include Okta)
 **Analyst:** Validation Agent (Claude Opus 4.6)
-**Scope:** 4 completed dossiers -- Sierra AI, Vercel, Glean, Cerebras
+**Scope:** 5 completed dossiers -- Okta, Sierra AI, Vercel, Glean, Cerebras
 **Purpose:** Scoring calibration, consistency checks, contradiction detection, gap identification
+
+> **Update Note (2026-03-16):** This report was originally scoped to 4 companies. Okta (NASDAQ: OKTA) has been integrated into all comparison tables. Okta is the only public company in the set, providing SEC-verified financial data that serves as a calibration anchor. Full cross-portfolio analysis including gap remediation, portfolio thesis, and scenario modeling is in `output/cross-portfolio-analysis.md` and `output/portfolio-thesis.md`.
 
 ---
 
@@ -13,6 +15,7 @@
 
 | Company | AI Reality Score | Justification Summary |
 |---------|:----------------:|----------------------|
+| Okta | 3.0/5 | Applied ML in production (Identity Threat Protection, behavioral analytics), active ML hiring, but marketed as "AI-native" when still building foundational ML services. No publications. |
 | Vercel | 3.2/5 | AI application company with real revenue (v0 $42M ARR), no proprietary models, integration layer |
 | Sierra | 3.5/5 | Multi-model orchestration with real enterprise deployment, no proprietary model, "LLM wrapper" criticism |
 | Glean | 4.0/5 | Genuine applied ML at scale (search ranking, entity extraction, GraphRAG), no publications |
@@ -58,6 +61,7 @@ Vercel is the most clearly an "AI application company, not AI infrastructure com
 
 | Company | Build vs Buy Score | Core Tech Score | Data/Content Score | Network/Trust Score |
 |---------|:------------------:|:--------------:|:------------------:|:------------------:|
+| Okta | 3.25/4 | 2.5 (Open standards, Keycloak exists) | 3.5 (7,000+ OIN connectors, compliance certs) | 4.0 (17K customers, Gartner Leader 9yr, brand trust) |
 | Glean | 2.7/4 | ~2.0 (Search, RAG easy) | 4.0 (Data/network effects) | 4.0 (GTM) |
 | Sierra | 2.82/4 | 2.25 | 3.17 | 4.0 (Founder network) |
 | Vercel | 2.95/4 | 2.5 | 3.0 | 4.0 (Next.js community) |
@@ -104,6 +108,7 @@ Every other company in this set can be replicated by a well-funded software team
 
 | Company | Verdict | Valuation | Multiple | Growth |
 |---------|---------|-----------|----------|--------|
+| Okta | PROCEED WITH CAUTION | $14.7B (mkt cap) | 5.5x EV/Rev | 11% |
 | Sierra | PROCEED WITH CAUTION | $10B | 67-100x ARR | 400-500% |
 | Vercel | PROCEED WITH CAUTION | $9.3B | 46.5x ARR | 80-100% |
 | Glean | PROCEED WITH CAUTION | $7.2B | 36x ARR | 100% |
@@ -207,6 +212,7 @@ The STRONG CANDIDATE verdict is appropriate because Cerebras occupies a fundamen
 
 | Company | Glassdoor | Blind | Narrative Impact on Verdict |
 |---------|-----------|-------|----------------------------|
+| Okta | 3.7/5 (~200+ reviews) | Mgmt 3.0/5, "PIP culture", offshoring concerns | Listed as structural concern; annual layoff cycle (3 consecutive Feb layoffs) |
 | Sierra | 5.0/5 (11 reviews) | Mixed, "snake-oily" threads | Noted as yellow flag; thin sample acknowledged |
 | Vercel | 4.1/5 (115 reviews) | 3.9/5 (37 reviews), Mgmt 3.1/5 | Listed as Key Risk #3 |
 | Glean | 4.2/5 (80 reviews) | 3.7/5 (51 reviews), WLB 3.1/5 | Listed as Key Risk #2 |
@@ -235,6 +241,7 @@ Sierra gets the gentlest treatment despite the "snake-oily" Blind threads, likel
 
 | Company | NRR Estimate | Confidence | VC Reaction |
 |---------|:------------:|:----------:|-------------|
+| Okta | 106% (disclosed, declining from 120%) | HIGH | "NRR below 110% for an identity platform with 76% GM = expansion is stalling. Where's the second act?" |
 | Sierra | 120-150% | LOW | "Show me cohort data or I can't underwrite the durability of $150M ARR" |
 | Vercel | 110-120% | LOW | "At 46.5x, I need to see NRR > 130% to believe the flywheel works" |
 | Glean | 120-140% | LOW | "If NRR is below 120%, the 100% growth is all new logos, which is expensive and fragile" |
@@ -248,6 +255,7 @@ Only Vercel and Cerebras have estimated gross margins. Sierra and Glean do not.
 
 | Company | Gross Margin | Confidence | Issue |
 |---------|:------------:|:----------:|-------|
+| Okta | 76% | HIGH (SEC filing) | Strong SaaS margins; 98% subscription revenue. Calibration anchor for the portfolio. |
 | Sierra | 40-65% (est.) | LOW | Multi-model inference costs are high; outcome-based pricing absorbs cost variance |
 | Vercel | ~76% | MEDIUM | Reported by Getlatka; strong for cloud infra |
 | Glean | 65-75% (est.) | LOW | LLM API costs + GCP infrastructure |
@@ -259,8 +267,9 @@ A VC would immediately ask: "How do these companies' margin structures constrain
 
 ### 5.3 MISSING: Capital Efficiency Comparison
 
-| Company | Capital Raised | ARR | Revenue per $1 Raised |
+| Company | Capital Raised | ARR/Revenue | Revenue per $1 Raised |
 |---------|:-------------:|:---:|:---------------------:|
+| Okta | $187M (IPO) + retained earnings | $2,610M | $13.90 (17 years of compounding; calibration anchor) |
 | Sierra | $635M | $150M | $0.24 |
 | Vercel | $863M | $200M | $0.23 |
 | Glean | $765M | $200M | $0.26 |
@@ -301,6 +310,7 @@ Cerebras provides compute to OpenAI, which provides models to Sierra, Glean, and
 
 | Company | Regulatory Exposure | Assessment |
 |---------|-------------------|------------|
+| Okta | SOC 1/2/3, ISO 27001/17/18, FedRAMP High, HIPAA, GDPR | MEDIUM -- highest compliance portfolio in the set; SEC public company obligations |
 | Sierra | HIPAA (R1 healthcare), GDPR (EU customers), state AI regulation | HIGH -- customer-facing AI in regulated industries |
 | Vercel | Standard cloud compliance (SOC 2, ISO 27001) | LOW -- infrastructure, not application-level |
 | Glean | HIPAA, GDPR, enterprise data governance, EU AI Act | HIGH -- processes enterprise data across regulated industries |
@@ -351,16 +361,17 @@ This is particularly important for Vercel, where the executive summary notes tha
 
 ## 7. Relative Ranking (Risk-Adjusted)
 
-If forced to rank these four as investment opportunities today:
+If forced to rank these five as investment opportunities today:
 
 | Rank | Company | Rationale |
 |:----:|---------|-----------|
 | 1 | **Cerebras** | Irreplicable moat, transformative anchor deal, favorable competitive consolidation. Highest risk/reward but the moat is physical, not narrational. Time-sensitive. |
 | 2 | **Glean** | Best risk-adjusted entry (lowest multiple at 36x), most defensible operational moat (connectors), clearest enterprise PMF. Culture risk is the key monitor. |
-| 3 | **Vercel** | Real community moat (Next.js), validated AI pivot (v0), reasonable multiple (46.5x). But Cloudflare threat is structural and pricing friction is self-inflicted. |
-| 4 | **Sierra** | Fastest revenue ramp is genuinely impressive. But highest multiple (67-100x), zero disclosed health metrics, "LLM wrapper" vulnerability, and configuration-dependent safety. The bet is entirely on trajectory and founder brand. |
+| 3 | **Okta** | Only profitable company in the set. $730M FCF, 7,000+ integration moat, 5.5x EV/Rev. Lowest upside but lowest risk. Portfolio anchor and calibration benchmark. Growth deceleration (11%) and NRR decline (106%) cap the ceiling. |
+| 4 | **Vercel** | Real community moat (Next.js), validated AI pivot (v0), reasonable multiple (46.5x). But Cloudflare threat is structural and pricing friction is self-inflicted. |
+| 5 | **Sierra** | Fastest revenue ramp is genuinely impressive. But highest multiple (67-100x), zero disclosed health metrics, "LLM wrapper" vulnerability, and configuration-dependent safety. The bet is entirely on trajectory and founder brand. |
 
 ---
 
 *Validation report generated by Dossier v0.1.0 -- cross-dossier consistency analysis.*
-*All findings based on data collected 2026-02-18 to 2026-02-19 across 4 completed due diligence pipelines.*
+*All findings based on data collected 2026-02-18 to 2026-02-19 across 5 completed due diligence pipelines (Okta added 2026-03-16).*
