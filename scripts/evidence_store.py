@@ -143,6 +143,7 @@ class EvidenceStore:
         contract_id: str,
         tier: Optional[str] = None,
         source_id: Optional[str] = None,
+        cycle_number: Optional[int] = None,
         limit: int = 100,
     ) -> List[Dict[str, Any]]:
         """Query evidence with optional filters."""
@@ -154,6 +155,9 @@ class EvidenceStore:
         if source_id:
             sql += " AND source_id = ?"
             params.append(source_id)
+        if cycle_number is not None:
+            sql += " AND cycle_number = ?"
+            params.append(cycle_number)
         sql += " ORDER BY created_at DESC LIMIT ?"
         params.append(limit)
         return [dict(r) for r in self.conn.execute(sql, params).fetchall()]
@@ -274,3 +278,80 @@ class EvidenceStore:
             (contract_id,),
         ).fetchall()
         return {r["tier"]: r["cnt"] for r in rows}
+
+    def score_evidence(
+        self,
+        contract_id: str,
+        evidence_hash: str,
+        scores: Dict[str, float],
+        scorer: str,
+        cycle_number: int,
+    ) -> Optional[float]:
+        """Batch-score evidence across multiple dimensions.
+
+        Args:
+            scores: Dict mapping dimension name to score (0.0-1.0).
+            scorer: Who scored (e.g., 'llm', 'rule', 'hybrid').
+
+        Returns:
+            Composite score (weighted average) or None if evidence not found.
+            Weights are equal unless caller pre-weights the scores dict.
+        """
+        row = self.get(evidence_hash)
+        if not row or row["contract_id"] != contract_id:
+            return None
+        eid = row["id"]
+        for dim, score in scores.items():
+            self.add_signal(eid, contract_id, dim, score, scorer, cycle_number)
+        composite = sum(scores.values()) / len(scores) if scores else 0.0
+        # Update evidence confidence to composite score
+        self.conn.execute(
+            "UPDATE evidence SET confidence = ?, updated_at = ? WHERE hash = ?",
+            (round(composite, 3), _now(), evidence_hash),
+        )
+        self.conn.commit()
+        return round(composite, 3)
+
+    def query_signals(
+        self,
+        contract_id: str,
+        cycle_number: Optional[int] = None,
+        dimension: Optional[str] = None,
+        evidence_id: Optional[int] = None,
+    ) -> List[Dict[str, Any]]:
+        """Query signals with optional filters."""
+        sql = "SELECT * FROM signals WHERE contract_id = ?"
+        params: list = [contract_id]
+        if cycle_number is not None:
+            sql += " AND cycle_number = ?"
+            params.append(cycle_number)
+        if dimension:
+            sql += " AND dimension = ?"
+            params.append(dimension)
+        if evidence_id is not None:
+            sql += " AND evidence_id = ?"
+            params.append(evidence_id)
+        sql += " ORDER BY created_at DESC"
+        return [dict(r) for r in self.conn.execute(sql, params).fetchall()]
+
+    def get_silence_events(
+        self,
+        contract_id: str,
+        cycle_number: Optional[int] = None,
+    ) -> List[Dict[str, Any]]:
+        """Get silence evidence (metadata.type == 'silence').
+
+        Silence events are regular evidence items with metadata containing:
+        - type: "silence"
+        - last_seen: ISO timestamp of last known activity
+        - days_silent: integer
+        - confidence: 0.0-1.0 (how confident we are this is real silence vs search artifact)
+        """
+        sql = """SELECT * FROM evidence
+                 WHERE contract_id = ? AND metadata LIKE '%"type": "silence"%'"""
+        params: list = [contract_id]
+        if cycle_number is not None:
+            sql += " AND cycle_number = ?"
+            params.append(cycle_number)
+        sql += " ORDER BY created_at DESC"
+        return [dict(r) for r in self.conn.execute(sql, params).fetchall()]

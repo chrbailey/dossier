@@ -56,3 +56,4 @@ Summary of:
 - Use Firecrawl for all URL fetching — it handles JS rendering
 - If a URL fails to fetch, log the failure but continue with other candidates
 - The evidence store handles dedup — duplicates auto-increment corroboration_count
+- **Fallback**: If Firecrawl is unavailable, use WebSearch to get content summaries. Note "partial capture" in the output and mark evidence metadata with `"capture_method": "websearch_summary"` so downstream phases know the content depth is limited.

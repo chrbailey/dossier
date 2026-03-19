@@ -46,3 +46,4 @@ Include:
 - Do NOT try to use X/Twitter API directly
 - If a source has no recent content, that IS a finding — record it as a silence candidate
 - Respect the contract's freshnessHorizon — skip content older than that
+- **Fallback**: If Firecrawl is unavailable (not authenticated), use WebSearch as fallback. WebSearch returns summaries not full text — note this as a collection limitation in your output. WebSearch as WebFetch fallback produces high-quality output.

@@ -41,10 +41,15 @@ For each artifact in contract.phases.synthesis.outputArtifacts:
 - Behavioral divergence flags
 
 ## Cross-Cycle Delta
-If contract.phases.synthesis.crossCycleDelta is true:
+If contract.phases.synthesis.crossCycleDelta is true AND this is NOT cycle 1:
 - Read prior cycle's pattern report
 - Highlight: new patterns, disappeared patterns, intensified patterns, reversed patterns
 - Use prefix markers: `[NEW]`, `[GONE]`, `[STRONGER]`, `[WEAKER]`, `[REVERSED]`
+
+If this IS cycle 1:
+- Skip delta comparison
+- Prefix all output artifacts with: "BASELINE CYCLE — establishing initial patterns"
+- The context pack should note: "This is the first observation. All patterns are [NEW] by definition."
 
 ## Output
 Write all artifacts to their configured paths within `${storagePath}/`.

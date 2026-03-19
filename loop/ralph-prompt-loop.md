@@ -47,6 +47,14 @@ P1 Goal Frame
               → P8 Next-Loop Planning
 ```
 
+### First-Cycle Handling
+
+On cycle 1 (no prior data exists):
+- **P5 Scoring**: Run, but skip promotion candidate evaluation (no baselines). Instead, establish the baseline tier distribution.
+- **P6 Synthesis**: Run, but skip cross-cycle delta (no prior cycle to compare). Prefix the context pack with "BASELINE CYCLE — no prior data for comparison."
+- **P7 Memory Promotion**: Run, but only auto-promote raw→working for evidence with confidence >= 0.3. Skip all promotions requiring human review or corroboration (impossible on first cycle).
+- **All other phases**: Run normally.
+
 ### Per-Phase Execution
 For each phase:
 1. Read the phase prompt from `loop/prompts/p{N}-{phase}.md`
