@@ -506,8 +506,9 @@ class TestContractStoreIntegration:
             store.promote(self.CONTRACT_ID, h, "verified", confidence=0.6)
 
         counts = store.tier_counts(self.CONTRACT_ID)
-        assert counts.get("raw", 0) == 5    # 10 - 5 promoted
+        num_sources = len(sources)
+        assert counts.get("raw", 0) == num_sources - 5  # all minus 5 promoted
         assert counts.get("working", 0) == 3  # 5 - 2 promoted further
         assert counts.get("verified", 0) == 2
         total = sum(counts.values())
-        assert total == len(sources)
+        assert total == num_sources

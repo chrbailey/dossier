@@ -98,6 +98,51 @@
           "freshnessHorizon": 72,
           "domains": ["developer-tools", "llm-applications", "open-source"],
           "verificationRequired": false
+        },
+        {
+          "sourceId": "ilya-sutskever",
+          "name": "Ilya Sutskever",
+          "tier": "primary",
+          "trustWeight": 0.95,
+          "freshnessHorizon": 720,
+          "domains": ["ai-research", "scaling", "safety", "ssi"],
+          "verificationRequired": false
+        },
+        {
+          "sourceId": "fei-fei-li",
+          "name": "Fei-Fei Li",
+          "tier": "primary",
+          "trustWeight": 0.85,
+          "freshnessHorizon": 336,
+          "domains": ["ai-research", "spatial-intelligence", "world-labs"],
+          "verificationRequired": false
+        },
+        {
+          "sourceId": "clement-delangue",
+          "name": "Clement Delangue",
+          "tier": "secondary",
+          "trustWeight": 0.75,
+          "freshnessHorizon": 72,
+          "domains": ["open-source", "huggingface", "model-ecosystem"],
+          "verificationRequired": false
+        },
+        {
+          "sourceId": "percy-liang",
+          "name": "Percy Liang",
+          "tier": "primary",
+          "trustWeight": 0.85,
+          "freshnessHorizon": 336,
+          "domains": ["ai-benchmarks", "helm", "stanford-crfm"],
+          "verificationRequired": false
+        },
+        {
+          "sourceId": "qwen-team",
+          "name": "Qwen Team (Alibaba)",
+          "tier": "secondary",
+          "trustWeight": 0.7,
+          "freshnessHorizon": 72,
+          "domains": ["chinese-ai", "open-source", "foundation-models"],
+          "verificationRequired": true
         }
       ],
       "freshnessHorizon": 168,
@@ -108,7 +153,7 @@
       ]
     },
     "candidateDiscovery": {
-      "allowedSources": ["karpathy", "dario-amodei", "sama", "demis-hassabis", "yann-lecun", "jim-fan", "emad-mostaque", "harrison-chase", "swyx", "simon-willison"],
+      "allowedSources": ["karpathy", "dario-amodei", "sama", "demis-hassabis", "yann-lecun", "jim-fan", "emad-mostaque", "harrison-chase", "swyx", "simon-willison", "ilya-sutskever", "fei-fei-li", "clement-delangue", "percy-liang", "qwen-team"],
       "blockedSources": [],
       "discoveryStrategy": "breadth_first",
       "maxCandidatesPerCycle": 50
