@@ -77,3 +77,49 @@ P1 Discovery ──┬──→ P2 Market ────────┐
                                       ▼
                P7 Report (all) → DONE
 ```
+
+## Research Loop Mode
+
+In addition to SaaS due diligence (the original mode), Dossier supports contract-driven research loops.
+
+### How To Run
+
+```bash
+# 1. Check/edit the contract
+cat contracts/signal-curation.json
+
+# 2. Run the loop via Ralph Loop
+export CONTRACT=contracts/signal-curation.json
+# /ralph-loop --max-iterations 10 --completion-promise "LOOP_COMPLETE"
+# When prompted, read loop/ralph-prompt-loop.md and execute
+```
+
+### File Conventions
+- Contracts: `contracts/*.json`
+- Loop orchestrator: `loop/ralph-prompt-loop.md`
+- Phase prompts: `loop/prompts/p{N}-{phase}.md`
+- Evidence database: `data/evidence.db`
+- Cycle outputs: `output/{contract-storage-path}/cycle-{N}/`
+- Reports: `output/{contract-storage-path}/reports/`
+- Context packs: `output/{contract-storage-path}/context/`
+
+### Evidence Store
+```bash
+# Query evidence
+python3 -c "from scripts.evidence_store import EvidenceStore; s = EvidenceStore(); print(s.tier_counts('RLC.DOSSIER.SIGNAL.001')); s.close()"
+
+# Check anti-recursion
+python3 -c "from scripts.evidence_store import EvidenceStore; s = EvidenceStore(); print('entropy:', s.source_entropy('RLC.DOSSIER.SIGNAL.001')); print('self_cite:', s.self_citation_ratio('RLC.DOSSIER.SIGNAL.001')); s.close()"
+```
+
+### Self-Citation Thresholds
+- Recursion guard warns at 20% (`control.recursionGuards.maxSelfCitationRatio`)
+- Early exit halts at 30% (`control.earlyExitConditions`)
+- This gives a 10% buffer between warning and hard stop
+
+### PromptSpeak Governance
+When PromptSpeak MCP tools are available:
+- Frame validation at cycle start
+- Hold gates at checkpoint intervals
+- Audit logging on completion
+- Frame: `⊕◇⟳▶α` (strict, technical, iterative, execute, primary)
