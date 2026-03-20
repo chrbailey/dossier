@@ -334,6 +334,49 @@ class EvidenceStore:
         sql += " ORDER BY created_at DESC"
         return [dict(r) for r in self.conn.execute(sql, params).fetchall()]
 
+    def compute_corroboration(self, contract_id: str) -> Dict[str, int]:
+        """Compute cross-source corroboration for all evidence.
+
+        Two evidence items corroborate each other when they share topic tags
+        but come from different sources. For each item, corroboration_count =
+        number of distinct OTHER sources with overlapping topic tags.
+
+        Returns dict of {hash: new_corroboration_count}.
+        """
+        evidence = self.query(contract_id, limit=10000)
+        # Build tag -> set of (source_id, hash) mapping
+        tag_sources: Dict[str, List[tuple]] = {}
+        item_tags: Dict[str, List[str]] = {}
+        for e in evidence:
+            tags = []
+            if e["metadata"]:
+                try:
+                    meta = json.loads(e["metadata"]) if isinstance(e["metadata"], str) else e["metadata"]
+                    tags = meta.get("topic_tags", [])
+                except (json.JSONDecodeError, AttributeError):
+                    pass
+            item_tags[e["hash"]] = tags
+            for tag in tags:
+                tag_sources.setdefault(tag, []).append((e["source_id"], e["hash"]))
+
+        # For each item, count distinct sources sharing any tag (excluding self)
+        results = {}
+        for e in evidence:
+            other_sources = set()
+            for tag in item_tags.get(e["hash"], []):
+                for src_id, h in tag_sources.get(tag, []):
+                    if src_id != e["source_id"]:
+                        other_sources.add(src_id)
+            count = len(other_sources)
+            if count != e["corroboration_count"]:
+                self.conn.execute(
+                    "UPDATE evidence SET corroboration_count = ?, updated_at = ? WHERE hash = ?",
+                    (count, _now(), e["hash"]),
+                )
+            results[e["hash"]] = count
+        self.conn.commit()
+        return results
+
     def get_silence_events(
         self,
         contract_id: str,
