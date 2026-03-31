@@ -1,0 +1,119 @@
+{
+  "contractId": "RLC.DOSSIER.SIGNAL.002",
+  "version": 1,
+  "name": "Weekly Signal Monitor (Event-Dependent Questions)",
+  "description": "Lightweight weekly sweep for 6 event-dependent questions from the converged signal curation loop",
+  "parentContract": "RLC.DOSSIER.SIGNAL.001",
+  "frame": "⊘◇◀α",
+  "questions": [
+    {
+      "id": "Q1",
+      "label": "Anthropic v. Trump court ruling",
+      "searchQueries": [
+        "Anthropic lawsuit Trump administration ruling",
+        "Anthropic v. Trump court decision 2026",
+        "Anthropic supply chain designation court"
+      ],
+      "triggerType": "court_ruling",
+      "relatedHashes": ["0dc66a56", "283dc6b0", "24b66bac"],
+      "expectedWindow": "2026-Q2/Q3",
+      "resolved": false
+    },
+    {
+      "id": "Q2",
+      "label": "NDAA June 2026 AI governance deadline",
+      "searchQueries": [
+        "NDAA 2026 AI governance enforcement",
+        "FY2026 NDAA artificial intelligence compliance",
+        "Pentagon AI governance team deadline June 2026"
+      ],
+      "triggerType": "legislative_deadline",
+      "relatedHashes": ["aee96e9d"],
+      "expectedWindow": "2026-06",
+      "resolved": false
+    },
+    {
+      "id": "Q3",
+      "label": "SAE consciousness replication on Anthropic models",
+      "searchQueries": [
+        "sparse autoencoder consciousness replication Claude",
+        "SAE deception features Anthropic models",
+        "AI consciousness empirical replication 2026"
+      ],
+      "triggerType": "research_publication",
+      "relatedHashes": ["681b2b9b", "c6b0cc1d"],
+      "expectedWindow": "unknown",
+      "resolved": false
+    },
+    {
+      "id": "Q4",
+      "label": "Kalinowski Senate testimony",
+      "searchQueries": [
+        "Kalinowski Senate testimony AI",
+        "Kalinowski Congress hearing 2026",
+        "OpenAI whistleblower Senate AI committee"
+      ],
+      "triggerType": "congressional_hearing",
+      "relatedHashes": ["9146b931", "23643bc9"],
+      "expectedWindow": "2026-Q2",
+      "resolved": false
+    },
+    {
+      "id": "Q5",
+      "label": "V-JEPA generalization to language tasks",
+      "searchQueries": [
+        "V-JEPA language tasks results",
+        "V-JEPA NLP benchmark",
+        "JEPA text generalization LeCun 2026"
+      ],
+      "triggerType": "research_publication",
+      "relatedHashes": ["41eb0f91", "9eb3f5ee"],
+      "expectedWindow": "2026-H1",
+      "resolved": false
+    },
+    {
+      "id": "Q6",
+      "label": "Pentagon in-house AI viability",
+      "searchQueries": [
+        "Pentagon in-house AI development",
+        "DoD AI without Anthropic OpenAI",
+        "military AI internal capability 2026"
+      ],
+      "triggerType": "policy_procurement",
+      "relatedHashes": ["5dd1fcda"],
+      "expectedWindow": "2026-H2",
+      "resolved": false
+    }
+  ],
+  "phases": {
+    "discovery": {
+      "strategy": "targeted",
+      "maxResultsPerQuery": 5,
+      "freshnessHorizon": 168,
+      "fallbackToWebSearch": true
+    },
+    "capture": {
+      "captureFields": ["post_text", "timestamp", "url", "topic_tags"],
+      "hashAlgorithm": "sha256",
+      "deduplication": { "strategy": "exact", "semanticThreshold": 0.85 }
+    },
+    "synthesis": {
+      "updateContextPack": true,
+      "contextPackPath": "output/signal-curation/context/pack.md",
+      "appendixPath": "output/signal-curation/reports/monitor-log.md",
+      "onlyUpdateIfNewEvidence": true
+    }
+  },
+  "control": {
+    "cadence": "weekly",
+    "maxRuntime": 600,
+    "completionCondition": "all_questions_resolved",
+    "autoResolve": false,
+    "evidenceDb": "data/evidence.db",
+    "parentContractId": "RLC.DOSSIER.SIGNAL.001"
+  },
+  "storagePath": "output/signal-curation/",
+  "status": "active",
+  "createdAt": "2026-03-20T00:00:00Z",
+  "createdBy": "christopherbailey"
+}
