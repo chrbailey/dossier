@@ -5,6 +5,12 @@ Cross-reference the company's marketing claims against technical evidence, exter
 
 This phase is the analytical core of the dossier. It's where marketing meets reality.
 
+**CRITICAL SOURCE TRUST RULE:** The target company controls their own website,
+blog, docs, llms.txt, and all first-party content. Every claim extracted in
+step 4.1 is an ASSERTION TO BE TESTED, not evidence. A claim is only VERIFIED
+when corroborated by 2+ INDEPENDENT sources (trust >= 0.8). A first-party
+source can never verify its own claim.
+
 ## Inputs
 - `output/{DOMAIN}/01-discovery.md` — marketing content, feature claims, company messaging
 - `output/{DOMAIN}/03-technical.md` — GitHub repos, architecture, code quality
@@ -71,6 +77,13 @@ This is the most valuable step. Reconstruct what insiders know by triangulating 
 - When employee signals contradict marketing, weight the employee signals higher
 - Track the timeline — a positive Glassdoor review from 3 years ago may not reflect current reality
 - Note sentiment shifts (were reviews positive 2 years ago but negative recently?)
+
+**LLM-Optimized Content / Astroturfing Detection:**
+- If Phase 1 flagged llms.txt or similar files, note which claims originate ONLY from those files
+- Watch for suspiciously uniform positive language across reviews (astroturfing signal)
+- New Glassdoor/G2 accounts posting glowing reviews in clusters = likely managed reputation
+- If a "third-party" source links back to the company's own blog or data = AFFILIATED, not INDEPENDENT
+- Any claim that ONLY appears in LLM-optimized content and nowhere else = UNVERIFIABLE at best
 
 ### 4.4 Gap Analysis
 Classify each claim into one of these categories:
@@ -189,3 +202,6 @@ Write `output/{DOMAIN}/04-claims.md`:
 - Focus on CRITICAL and NOTABLE gaps; MINOR gaps can be summarized briefly
 - If the company is pre-revenue or early-stage, adjust expectations accordingly
 - If a source has zero results, note that explicitly (absence of Glassdoor reviews is itself a signal)
+- Tag every evidence source with its trust class (FIRST-PARTY / AFFILIATED / INDEPENDENT / ADVERSARIAL)
+- A claim supported ONLY by first-party sources cannot be rated higher than PLAUSIBLE
+- Add a "Source Provenance" section to the output listing how many data points came from each trust class

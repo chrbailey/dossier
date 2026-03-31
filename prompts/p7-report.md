@@ -9,6 +9,7 @@ Read ALL prior phase outputs:
 - `output/{DOMAIN}/02-market.md`
 - `output/{DOMAIN}/03-technical.md`
 - `output/{DOMAIN}/04-claims.md`
+- `output/{DOMAIN}/04.5-red-team.md` — **READ THIS CAREFULLY. It may downgrade P4 conclusions.**
 - `output/{DOMAIN}/05-academic.md`
 - `output/{DOMAIN}/06-valuation.md`
 
@@ -21,8 +22,14 @@ Also read the templates:
 Read all phase outputs. Identify:
 - Cross-references (e.g., market claims that P4 validated/invalidated)
 - Contradictions between phases (e.g., claimed team size vs LinkedIn signals)
+- **Red Team adjustments** — where P4.5 downgraded claims, use the adjusted ratings
 - Strongest and weakest evidence areas
 - Overall narrative arc (what story does the data tell?)
+
+**Source Trust Integration:** Count and report the source provenance across the entire dossier:
+- How many conclusions rest on INDEPENDENT sources only?
+- How many have FIRST-PARTY influence that survived red team review?
+- What is the overall "independence ratio" of the dossier's evidence base?
 
 ### 7.2 Confidence Matrix
 Rate each section on two dimensions:
@@ -112,3 +119,6 @@ Full PRD-format report with all sections populated from phase outputs.
 - Confidence matrix must be honest — low-confidence areas should be clearly marked
 - Recommendations must be actionable and specific
 - The report should read as a professional due diligence document, not a data dump
+- Include a "Source Provenance Summary" section showing the independence ratio
+- If the Red Team flagged LLM-optimized content influence, note it prominently in the executive summary
+- Where P4 and P4.5 disagree, present both assessments and explain the discrepancy

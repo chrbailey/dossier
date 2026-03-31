@@ -103,8 +103,23 @@ Write `output/{DOMAIN}/03-technical.md`:
 - (3-5 most important technical insights)
 ```
 
+## Source Trust Rules
+
+GitHub repos and code are relatively trustworthy — code doesn't lie the way
+marketing copy does. However:
+- README files and documentation = FIRST-PARTY marketing (trust 0.2). A README
+  can claim "enterprise-grade" while the code has zero tests.
+- Actual code, CI configs, test suites, dependency manifests = INDEPENDENT evidence (trust 0.8).
+  These are hard to fake.
+- Star counts can be gamed. Weight contributor count and commit frequency higher.
+- If the company's website or llms.txt claims specific technical capabilities,
+  verify against actual repo contents. Log discrepancies.
+
+Tag findings as CODE-VERIFIED (saw it in the repo) vs CLAIMED (company says so but no repo evidence).
+
 ## Quality Criteria
 - Repository data should be current (use gh CLI for live data)
 - Distinguish between public repos and likely private infrastructure
 - Note what you CAN'T see — a company with 3 public repos may have 300 private ones
 - Architecture assessment should be clearly labeled as inference where appropriate
+- Every technical claim must be tagged CODE-VERIFIED or CLAIMED

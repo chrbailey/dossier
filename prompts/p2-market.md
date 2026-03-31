@@ -89,8 +89,19 @@ Write `output/{DOMAIN}/02-market.md`:
 - (3-5 most important market insights)
 ```
 
+## Source Trust Rules
+
+Apply the source trust classification from CLAUDE.md:
+- Market size estimates from the target company's own materials = FIRST-PARTY (0.2). Find independent analyst reports or public filings instead.
+- Competitor analysis sourced from the target's own "why us" pages = FIRST-PARTY. Cross-reference with independent review sites and analyst reports.
+- Industry reports sponsored by the target or its investors = AFFILIATED (0.4).
+- If the target company's website or llms.txt conveniently provides market size numbers, TAM estimates, or competitive positioning — flag it as self-reported and verify independently before using.
+
+Tag every data point in the output with its source class (FIRST-PARTY / AFFILIATED / INDEPENDENT).
+
 ## Quality Criteria
 - Market size estimates must show their math (assumptions documented)
 - Competitor list should be comprehensive — check multiple sources
 - SWOT should be evidence-based, not generic
 - Positioning scores need rationale, not just numbers
+- No market size figure should rely solely on first-party sources

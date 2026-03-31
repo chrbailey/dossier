@@ -24,7 +24,8 @@ If it already exists, read it to determine current state.
 ```
 P1 → unlocks P2, P3, P5
 P1 + P3 → unlocks P4
-P1 + P2 + P3 + P4 + P5 → unlocks P6
+P4 → unlocks P4.5 (Red Team)
+P1 + P2 + P3 + P4 + P4.5 + P5 → unlocks P6
 P6 → unlocks P7
 ```
 
@@ -32,7 +33,8 @@ P6 → unlocks P7
 When multiple phases are unblocked, dispatch them as parallel sub-agents using the Task tool:
 - **After P1 completes:** Launch P2, P3, P5 in parallel (3 agents)
 - **After P3 completes:** Launch P4 (if P1 also done)
-- **After P4 + P5 complete:** Launch P6
+- **After P4 completes:** Launch P4.5 Red Team (reads P1, P3, P4)
+- **After P4.5 + P5 complete:** Launch P6
 - **After P6 completes:** Launch P7
 
 ### Per-Phase Execution
@@ -85,8 +87,9 @@ Each Ralph Loop iteration:
 Iteration 1: Execute P1 Discovery
 Iteration 2: Execute P2 + P3 + P5 (parallel)
 Iteration 3: Execute P4 (needs P1 + P3)
-Iteration 4: Execute P6 (needs all prior)
-Iteration 5: Execute P7 → COMPLETE
+Iteration 4: Execute P4.5 Red Team (needs P4)
+Iteration 5: Execute P6 (needs all prior including P4.5)
+Iteration 6: Execute P7 → COMPLETE
 ```
 
 ## Error Handling
@@ -115,13 +118,14 @@ Add notable findings to the `## Notes` section.
 
 ## Completion
 
-When ALL phases (P1-P7) are marked complete (or skipped after 3 retries):
+When ALL phases (P1-P7, including P4.5) are marked complete (or skipped after 3 retries):
 
 1. Verify all output files exist:
    - `output/{DOMAIN}/01-discovery.md`
    - `output/{DOMAIN}/02-market.md`
    - `output/{DOMAIN}/03-technical.md`
    - `output/{DOMAIN}/04-claims.md`
+   - `output/{DOMAIN}/04.5-red-team.md`
    - `output/{DOMAIN}/05-academic.md`
    - `output/{DOMAIN}/06-valuation.md`
    - `output/{DOMAIN}/07-report.md`

@@ -94,8 +94,20 @@ Write `output/{DOMAIN}/05-academic.md`:
 - (3-5 most important academic/IP insights)
 ```
 
+## Source Trust Rules
+
+- arXiv papers authored by the company's own team = FIRST-PARTY. They demonstrate
+  research activity but are self-selected (companies don't publish their failures).
+- arXiv papers by independent researchers in the same space = INDEPENDENT.
+- Patent filings are legal documents — relatively trustworthy as evidence of IP
+  investment, but patent CLAIMS about capability are aspirational, not proven.
+- If the company's llms.txt or website claims "published research" or "PhD team,"
+  verify against actual arXiv/Scholar results. Log discrepancies.
+- Open-source alternative searches via GitHub = INDEPENDENT evidence.
+
 ## Quality Criteria
 - Clearly distinguish company publications from general research
 - Note when founders have no academic track record (that's data too)
 - Open-source alternatives should be genuinely comparable, not superficially similar
 - Patent analysis is necessarily surface-level from public data — note this limitation
+- Tag each source with trust class (FIRST-PARTY / INDEPENDENT)

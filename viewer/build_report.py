@@ -33,12 +33,15 @@ def _inline(text):
     """Process inline markdown: bold, italic, code, links, status tags."""
     # Inline code (before bold/italic to avoid conflicts)
     text = re.sub(r'`([^`]+)`', r'<code class="inline">\1</code>', text)
-    # Links
-    text = re.sub(
-        r'\[([^\]]+)\]\(([^)]+)\)',
-        r'<a href="\2" target="_blank" rel="noopener">\1</a>',
-        text
-    )
+    # Links — validate URL scheme to prevent javascript: XSS
+    def _safe_link(m):
+        label, url = m.group(1), m.group(2)
+        # Only allow http(s) and mailto schemes
+        if not re.match(r'^https?://|^mailto:', url, re.IGNORECASE):
+            return html_mod.escape(f'[{label}]({url})')
+        safe_url = html_mod.escape(url, quote=True)
+        return f'<a href="{safe_url}" target="_blank" rel="noopener">{label}</a>'
+    text = re.sub(r'\[([^\]]+)\]\(([^)]+)\)', _safe_link, text)
     # Bold status keywords: **VERIFIED** → styled span
     for kw, cls in STATUS_KEYWORDS.items():
         text = text.replace(

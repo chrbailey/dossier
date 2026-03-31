@@ -126,9 +126,20 @@ Write `output/{DOMAIN}/06-valuation.md`:
 - (3-5 most important valuation/replication insights)
 ```
 
+## Source Trust Rules
+
+This phase synthesizes all prior phases. Apply these rules:
+- Revenue/growth estimates from the company's own materials = FIRST-PARTY (0.2).
+  Prefer triangulated estimates from P4 over self-reported figures.
+- If P4.5 (Red Team) downgraded any claims used here, use the downgraded ratings.
+- SaaS metrics should be derived from INDEPENDENT signals (team size from LinkedIn,
+  customer count from review volume, growth from hiring pace) not company press releases.
+- Replication assessment should use CODE-VERIFIED findings from P3, not CLAIMED capabilities.
+
 ## Quality Criteria
 - All estimates must show their reasoning — no numbers without rationale
 - Clearly separate facts from inferences
 - Replication assessment should be honest — some things are genuinely hard
 - Agent swarm plan should be concrete enough to act on
 - Build vs Buy scoring should help decision-making, not just be academic
+- Note which inputs came from red-team-adjusted vs original P4 ratings
