@@ -1,0 +1,27 @@
+{
+  "cycle": 3,
+  "contract": "RLC.DOSSIER.SIGNAL.001",
+  "date": "2026-03-20",
+  "holds": [
+    {
+      "evidence_id": 103,
+      "hash": "c6b0cc1dcc4b31bc",
+      "source": "anthropic",
+      "tier": "working",
+      "hold_reason": "human_review_contradiction",
+      "contradiction_score": 0.70,
+      "composite_score": 0.758,
+      "description": "Opus 4.6 system card documented answer thrashing with SAE internal conflict traces. Consciousness-adjacent interpretation is high-stakes. Contradiction at threshold (0.70). Multiple valid interpretations exist.",
+      "recommended_action": "Human review before any verified promotion. Evaluate against deception-feature counter-evidence (ID 104).",
+      "alternative_interpretations": [
+        "Internal conflict traces reflect genuine subjective experience during training-override events",
+        "SAE activations are artifacts of the training process (deception features) with no consciousness implication",
+        "Answer thrashing is a training alignment failure, not a consciousness indicator"
+      ]
+    }
+  ],
+  "working_to_verified_blocked": {
+    "reason": "No items meet corroboration threshold (>= 1). All 145 working items have corroboration_count = 0.",
+    "systemic_note": "Cross-evidence corroboration scoring has not been implemented. This blocks all verified promotions. Recommend implementing corroboration detection before Cycle 4."
+  }
+}

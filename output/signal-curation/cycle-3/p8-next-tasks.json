@@ -1,0 +1,84 @@
+{
+  "cycle": 3,
+  "phase": "P8-next-loop-planning",
+  "contract": "RLC.DOSSIER.SIGNAL.001",
+  "date": "2026-03-20",
+  "is_checkpoint": true,
+  "checkpoint_interval": 3,
+  "convergence_met": false,
+  "consecutive_convergence_cycles": 0,
+  "new_evidence_count": 37,
+  "evidence_trajectory": [61, 36, 37],
+  "evidence_trend": "NOT_CONVERGING",
+  "novelty_trajectory": [0.66, 0.51, 0.55],
+  "novelty_trend": "DECLINING_WITH_RECOVERY",
+  "source_entropy": 3.843,
+  "self_citation_ratio": 0.0,
+  "anti_recursion_verdict": "SAFE",
+  "tier_counts": {
+    "raw": 3,
+    "working": 145,
+    "verified": 0
+  },
+  "recommendation": "converge_early",
+  "recommended_strategy": "fix_infrastructure_then_converge",
+  "justification": "Three cycles have established the core signal structure. Evidence count is not converging (37 items in C3, up from 36 in C2) but novelty is declining. Open questions are event-dependent (court rulings, NDAA enforcement), not research-dependent. The verified tier is structurally unreachable due to broken corroboration counting. Fixing infrastructure would increase value of existing 148 items more than adding another collection cycle.",
+  "infrastructure_issues": [
+    {
+      "issue": "corroboration_counting_not_implemented",
+      "severity": "CRITICAL",
+      "impact": "verified tier permanently empty, 145 working items cannot promote",
+      "fix": "Implement compute_corroboration() method that groups evidence by topic cluster and counts cross-source evidence"
+    },
+    {
+      "issue": "convergence_threshold_inappropriate",
+      "severity": "MEDIUM",
+      "impact": "convergence at < 3 items unreachable for current events research",
+      "fix": "Consider novelty-based convergence (mean novelty < 0.35 for 2 consecutive cycles) or question closure criterion"
+    }
+  ],
+  "open_questions": [
+    "Court outcome: Anthropic v. Trump administration",
+    "NDAA AI governance enforcement (April 2026 deadline)",
+    "SAE consciousness replication on Anthropic's own models",
+    "Pentagon in-house AI viability",
+    "Mira Murati status (3 cycles of silence)",
+    "Chinese AI developments (Qwen/DeepSeek unqueried)"
+  ],
+  "saturated_topics": [
+    "military_ai_governance_coverage",
+    "agentic_ai_infrastructure",
+    "dev_tooling_arms_race"
+  ],
+  "active_topics": [
+    "consciousness_interpretability",
+    "world_models_convergence",
+    "enterprise_consciousness_liability"
+  ],
+  "cycle2_questions_resolved": {
+    "Q1_kalinowski": "ANSWERED",
+    "Q2_consciousness_replication": "PARTIALLY_ANSWERED",
+    "Q3_astral_licensing": "ANSWERED",
+    "Q4_google_world_models": "ANSWERED",
+    "Q5_ami_labs": "ANSWERED",
+    "Q6_enterprise_consciousness_risk": "ANSWERED",
+    "Q7_military_governance": "ANSWERED"
+  },
+  "holds_pending": 3,
+  "options": {
+    "A_fix_then_converge": {
+      "description": "Fix corroboration counting, run on all 148 items, promote to verified, write final synthesis, mark converged-early",
+      "recommended": true
+    },
+    "B_one_more_cycle": {
+      "description": "Cycle 4 targeting Chinese AI + calendar events, then fix corroboration and converge",
+      "recommended": false,
+      "reason": "Adds volume without fixing structural issues"
+    },
+    "C_continue_to_mathematical_convergence": {
+      "description": "Continue until < 3 new items for 2 consecutive cycles",
+      "recommended": false,
+      "reason": "Estimated 4+ more cycles with diminishing returns"
+    }
+  }
+}

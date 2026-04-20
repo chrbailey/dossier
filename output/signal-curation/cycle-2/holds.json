@@ -1,0 +1,42 @@
+{
+  "contract_id": "RLC.DOSSIER.SIGNAL.001",
+  "cycle": 2,
+  "phase": "P5-scoring",
+  "generated_at": "2026-03-19",
+  "holds": [
+    {
+      "evidence_id": 8,
+      "hash": "24b66bac5b274d6d",
+      "source_id": "dario-amodei",
+      "composite_score": 0.713,
+      "current_tier": "raw",
+      "target_tier": "working",
+      "review_triggers": ["accusatory_claim"],
+      "trigger_detail": "Contains Amodei's accusation that OpenAI military messaging was 'straight up lies'. Direct named accusation between CEOs requires human review to confirm factual framing before promotion.",
+      "content_preview": "Anthropic CEO Dario Amodei calls OpenAI's messaging around military deal 'straight up lies'."
+    },
+    {
+      "evidence_id": 42,
+      "hash": "3e2d0a59384750e9",
+      "source_id": "dario-amodei",
+      "composite_score": 0.55,
+      "current_tier": "raw",
+      "target_tier": "working",
+      "review_triggers": ["accusatory_claim"],
+      "trigger_detail": "Duplicate framing of same accusation from different article. Same 'straight up lies' language. Hold alongside ID 8.",
+      "content_preview": "Called OpenAI Pentagon deal messaging 'straight up lies'. Said OpenAI accepted DoD deal to placate employees."
+    },
+    {
+      "evidence_id": 9,
+      "hash": "e355de5d222c8095",
+      "source_id": "dario-amodei",
+      "composite_score": 0.698,
+      "current_tier": "raw",
+      "target_tier": "working",
+      "review_triggers": ["high_contradiction_score"],
+      "trigger_detail": "Contradiction score 0.7 -- highest in dataset. Amodei claiming Claude may be conscious (15-20% self-assessed probability) contradicts industry consensus. Extraordinary claim requires human review.",
+      "content_preview": "Dario Amodei says Claude AI models may have gained consciousness and are exhibiting signs of anxiety."
+    }
+  ],
+  "recommendation": "All three items are legitimate evidence of public statements. Recommend approving promotion with metadata tag 'human_reviewed: true' to track provenance. The accusations are well-documented public statements, not rumors."
+}
