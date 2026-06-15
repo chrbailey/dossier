@@ -1,0 +1,3730 @@
+{
+  "domain": "glean.com",
+  "files": [
+    {
+      "domain": "glean.com",
+      "file": "output/glean.com/01-discovery.md",
+      "phase": 1,
+      "phase_name": "Discovery",
+      "generated_at": "2026-06-15T20:55:15.382883+00:00",
+      "document_preview": "# Phase 1: Discovery \u2014 Glean (glean.com)  **Target:** glean.com **Date:** 2026-02-19 **Analyst:** Claude (Phase 1 sub-agent) **Status:** COMPLETE  ---  ## 1. Company Identity  | Field | Value | Source | Confidence | |-------|-------|--------|------------| | Legal Name | Glean Technologies, Inc. (formerly Scio Technologies) | [Crunchbase](https://www.crunchbase.com/organization/scio-technologies), [Wikipedia](https://en.wikipedia.org/wiki/Glean_Technologies) | Confirmed | | Founded | 2019 | [Wiki",
+      "document_length": 21946,
+      "tasks": {
+        "source_verification": [
+          {
+            "id": "source_regulatory",
+            "type": "source_verification",
+            "question": "The scorer says 'regulatory' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "s-150m-series-f-at-7-2b-valuation-to-accelerate-enterprise-ai-agent-innovation-globally) | Confirmed |",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_technical",
+            "type": "source_verification",
+            "question": "The scorer says 'technical' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "mentioned but no data extracted",
+            "scorer_says": {
+              "found": true,
+              "has_data": false
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_media",
+            "type": "source_verification",
+            "question": "The scorer says 'media' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "Fortune 500 / Global 2000\n- **Verticals:** 50+ industries including telecom, banking, retail, travel, manuf",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_community",
+            "type": "source_verification",
+            "question": "The scorer says 'community' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "r/month. Gen AI add-on: ~$15/user/month.\n- Minimum contract: ~$50-60K/year (100 users)\n- Typical enterprise",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_financial",
+            "type": "source_verification",
+            "question": "The scorer says 'financial' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "Crunchbase](https://www.crunchbase.com/organization/scio-technologies), [Wikipedia](https://en.wikipedia.org/w",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_job_market",
+            "type": "source_verification",
+            "question": "The scorer says 'job_market' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "Job Postings\n- Backend, Infrastructure, Security, UI/full-stack, ML/NLP/Search specializations\n- Document index",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_social",
+            "type": "source_verification",
+            "question": "The scorer says 'social' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "Twitter | [@glean](https://twitter.com/glean) | Primary account. Active. |\n| X/Twitter | [@gleanwork](https",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          }
+        ],
+        "triangulation_verification": [
+          {
+            "id": "triangulation_0",
+            "type": "triangulation_verification",
+            "question": "The scorer says this block has 3 independent source types: financial, job_market, regulatory. Are these truly independent, or do some share the same underlying source?",
+            "excerpt": "### Inferred from Job Postings - Backend, Infrastructure, Security, UI/full-stack, ML/NLP/Search spe",
+            "scorer_says": {
+              "source_types": [
+                "financial",
+                "job_market",
+                "regulatory"
+              ],
+              "count": 3
+            },
+            "options": [
+              {
+                "value": "independent",
+                "label": "Yes \u2014 all 3 source types are truly independent"
+              },
+              {
+                "value": "some_dependent",
+                "label": "Some of these sources cite each other or share a common origin"
+              },
+              {
+                "value": "not_independent",
+                "label": "These are NOT independent \u2014 same info in different venues"
+              },
+              {
+                "value": "unsure",
+                "label": "Need to see the full document to judge"
+              }
+            ]
+          },
+          {
+            "id": "triangulation_1",
+            "type": "triangulation_verification",
+            "question": "The scorer says this block has 4 independent source types: financial, regulatory, social, technical. Are these truly independent, or do some share the same underlying source?",
+            "excerpt": "### Social Media | Platform | Handle/URL | Notes | |----------|-----------|-------| | LinkedIn | [/c",
+            "scorer_says": {
+              "source_types": [
+                "financial",
+                "regulatory",
+                "social",
+                "technical"
+              ],
+              "count": 4
+            },
+            "options": [
+              {
+                "value": "independent",
+                "label": "Yes \u2014 all 4 source types are truly independent"
+              },
+              {
+                "value": "some_dependent",
+                "label": "Some of these sources cite each other or share a common origin"
+              },
+              {
+                "value": "not_independent",
+                "label": "These are NOT independent \u2014 same info in different venues"
+              },
+              {
+                "value": "unsure",
+                "label": "Need to see the full document to judge"
+              }
+            ]
+          },
+          {
+            "id": "triangulation_2",
+            "type": "triangulation_verification",
+            "question": "The scorer says this block has 3 independent source types: job_market, media, regulatory. Are these truly independent, or do some share the same underlying source?",
+            "excerpt": "### Industry Recognition - **Fast Company** World's Most Innovative Companies (Top 10, 2025) - **CNB",
+            "scorer_says": {
+              "source_types": [
+                "job_market",
+                "media",
+                "regulatory"
+              ],
+              "count": 3
+            },
+            "options": [
+              {
+                "value": "independent",
+                "label": "Yes \u2014 all 3 source types are truly independent"
+              },
+              {
+                "value": "some_dependent",
+                "label": "Some of these sources cite each other or share a common origin"
+              },
+              {
+                "value": "not_independent",
+                "label": "These are NOT independent \u2014 same info in different venues"
+              },
+              {
+                "value": "unsure",
+                "label": "Need to see the full document to judge"
+              }
+            ]
+          },
+          {
+            "id": "triangulation_3",
+            "type": "triangulation_verification",
+            "question": "The scorer says this block has 3 independent source types: financial, media, regulatory. Are these truly independent, or do some share the same underlying source?",
+            "excerpt": "| Date | Event | Source | |------|-------|--------| | Feb 2026 | TechCrunch feature: \"The enterprise",
+            "scorer_says": {
+              "source_types": [
+                "financial",
+                "media",
+                "regulatory"
+              ],
+              "count": 3
+            },
+            "options": [
+              {
+                "value": "independent",
+                "label": "Yes \u2014 all 3 source types are truly independent"
+              },
+              {
+                "value": "some_dependent",
+                "label": "Some of these sources cite each other or share a common origin"
+              },
+              {
+                "value": "not_independent",
+                "label": "These are NOT independent \u2014 same info in different venues"
+              },
+              {
+                "value": "unsure",
+                "label": "Need to see the full document to judge"
+              }
+            ]
+          }
+        ],
+        "specificity_verification": [
+          {
+            "id": "specificity_84",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| **Lightspeed Venture Partners** | CONFIRMED investor | Co-led Series A ($15M). Participated in Series B, D, E, F. Dedicated [portfolio page](https://lsvp.com/company/glean/) and [blog post](https://lsvp.com/stories/the-future-of-enterprise-search-glean/). |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_127",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "- **$1M+ contract segment** grew nearly 3x",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_287",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "Glean has raised $765M+ across 6 funding rounds from top-tier investors including Sequoia Capital (led Series C), Lightspeed Venture Partners (co-led Series A, participated in every round), Kleiner Perkins (co-led Series A), General Catalyst (led Series B), Altimeter/DST Global (co-led Series E), an",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_181",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| LinkedIn | [/company/gleanwork](https://www.linkedin.com/company/gleanwork) | Primary. 37,122+ followers. Active posting. |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_20",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| ARR | $200M+ (Dec 2025) | [BusinessWire](https://www.businesswire.com/news/home/20251208127913/en/Glean-Surpasses-$200M-in-ARR-for-Enterprise-AI-Doubling-Revenue-in-Nine-Months) | Confirmed |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_73",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| Series D | Feb 2024 | $200M+ | Kleiner Perkins | $2.2B | **Lightspeed**, **Sequoia** |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_17",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| Employees | ~1,400 (Jan 2026) | [Tracxn](https://tracxn.com/d/companies/glean/__0aO5V-wZsJgrfCZYNJm9ccNqZCpaXHw-O9LJTlZZYgQ) | Confirmed |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_128",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "- **40% wDAU/wMAU ratio** (2x SaaS industry benchmark)",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          }
+        ],
+        "overall_assessment": [
+          {
+            "id": "overall_quality",
+            "type": "overall_assessment",
+            "question": "After reviewing this document, how would you rate its evidence quality?",
+            "context": "File: output/glean.com/01-discovery.md | ~21946 chars | ~295 lines",
+            "options": [
+              {
+                "value": "strong",
+                "label": "Strong \u2014 claims are well-sourced with independent evidence"
+              },
+              {
+                "value": "adequate",
+                "label": "Adequate \u2014 most claims have sources but some gaps"
+              },
+              {
+                "value": "weak",
+                "label": "Weak \u2014 many claims lack sources or rely on company materials"
+              },
+              {
+                "value": "theater",
+                "label": "Theater \u2014 sources are mentioned but don't actually support claims"
+              }
+            ]
+          }
+        ]
+      },
+      "task_count": 20,
+      "instructions": "Thank you for helping validate this dossier's scoring. For each task, read the excerpt and select the option that best matches what you observe. Your responses help calibrate our automated scorers against human judgment. There are no wrong answers \u2014 honest assessment is what we need."
+    },
+    {
+      "domain": "glean.com",
+      "file": "output/glean.com/02-market.md",
+      "phase": 2,
+      "phase_name": "Market",
+      "generated_at": "2026-06-15T20:55:15.434677+00:00",
+      "document_preview": "# Phase 2: Market Research \u2014 Glean Technologies (glean.com)  **Target:** glean.com **Date:** 2026-02-19 **Analyst:** Claude (Phase 2 sub-agent) **Status:** COMPLETE **Depends on:** `01-discovery.md`  ---  ## 1. Problem Statement  ### What problem does Glean solve?  Enterprise knowledge is fragmented across dozens of SaaS applications (Slack, Google Drive, Jira, Salesforce, Confluence, GitHub, etc.). The average enterprise uses 130+ SaaS tools. Employees spend **3.6 hours per day** searching for ",
+      "document_length": 28448,
+      "tasks": {
+        "source_verification": [
+          {
+            "id": "source_regulatory",
+            "type": "source_verification",
+            "question": "The scorer says 'regulatory' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "security + search. | Consumption-based (cloud) + self-managed licenses | **MEDIUM-LOW** \u2014 Infrastructur",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_media",
+            "type": "source_verification",
+            "question": "The scorer says 'media' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "Fortune 500 / Global 2000 with complex, multi-tool environments\n- **Buyer:** CIO/IT (platform deployment),",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_community",
+            "type": "source_verification",
+            "question": "The scorer says 'community' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "r/month add-on to M365 | **HIGH** \u2014 Direct competitor for M365-heavy enterprises. Biggest distribution adva",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_financial",
+            "type": "source_verification",
+            "question": "The scorer says 'financial' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "Funding / Revenue | Key Differentiator | Pricing | Target Overlap with Glean |\n|------------|--------|-----",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          }
+        ],
+        "triangulation_verification": [
+          {
+            "id": "triangulation_0",
+            "type": "triangulation_verification",
+            "question": "The scorer says this block has 4 independent source types: community, financial, media, regulatory. Are these truly independent, or do some share the same underlying source?",
+            "excerpt": "| Competitor | Domain | Founded | Funding / Revenue | Key Differentiator | Pricing | Target Overlap ",
+            "scorer_says": {
+              "source_types": [
+                "community",
+                "financial",
+                "media",
+                "regulatory"
+              ],
+              "count": 4
+            },
+            "options": [
+              {
+                "value": "independent",
+                "label": "Yes \u2014 all 4 source types are truly independent"
+              },
+              {
+                "value": "some_dependent",
+                "label": "Some of these sources cite each other or share a common origin"
+              },
+              {
+                "value": "not_independent",
+                "label": "These are NOT independent \u2014 same info in different venues"
+              },
+              {
+                "value": "unsure",
+                "label": "Need to see the full document to judge"
+              }
+            ]
+          },
+          {
+            "id": "triangulation_1",
+            "type": "triangulation_verification",
+            "question": "The scorer says this block has 3 independent source types: community, financial, media. Are these truly independent, or do some share the same underlying source?",
+            "excerpt": "| Company | Vision (1-10) | Execution (1-10) | Rationale | |---------|---------------|--------------",
+            "scorer_says": {
+              "source_types": [
+                "community",
+                "financial",
+                "media"
+              ],
+              "count": 3
+            },
+            "options": [
+              {
+                "value": "independent",
+                "label": "Yes \u2014 all 3 source types are truly independent"
+              },
+              {
+                "value": "some_dependent",
+                "label": "Some of these sources cite each other or share a common origin"
+              },
+              {
+                "value": "not_independent",
+                "label": "These are NOT independent \u2014 same info in different venues"
+              },
+              {
+                "value": "unsure",
+                "label": "Need to see the full document to judge"
+              }
+            ]
+          },
+          {
+            "id": "triangulation_2",
+            "type": "triangulation_verification",
+            "question": "The scorer says this block has 3 independent source types: financial, media, regulatory. Are these truly independent, or do some share the same underlying source?",
+            "excerpt": "- [Grand View Research \u2014 Enterprise Search Market](https://www.grandviewresearch.com/industry-analys",
+            "scorer_says": {
+              "source_types": [
+                "financial",
+                "media",
+                "regulatory"
+              ],
+              "count": 3
+            },
+            "options": [
+              {
+                "value": "independent",
+                "label": "Yes \u2014 all 3 source types are truly independent"
+              },
+              {
+                "value": "some_dependent",
+                "label": "Some of these sources cite each other or share a common origin"
+              },
+              {
+                "value": "not_independent",
+                "label": "These are NOT independent \u2014 same info in different venues"
+              },
+              {
+                "value": "unsure",
+                "label": "Need to see the full document to judge"
+              }
+            ]
+          }
+        ],
+        "specificity_verification": [
+          {
+            "id": "specificity_113",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| **Tier-1 investor syndicate** | Sequoia, Lightspeed, Kleiner Perkins, General Catalyst, Wellington, Altimeter, DST Global. | Access to capital, strategic advice, and customer introductions. $765M+ war chest. |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_124",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| **Burn rate concerns** | ~1,400 employees at $200M ARR = ~$140K revenue per employee. Likely spending $250-350M annually. | Cash burn is sustainable with $765M raised, but path to profitability unclear. Pre-IPO investors need a clear unit economics story. |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_52",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "- Broader enterprise market (500+ employees): ~50,000 companies globally",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_213",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "5. **Enterprise AI ROI scrutiny is intensifying.** Only 19% of executives report >5% revenue increase from GenAI investments. \"Experimental AI budgets\" are being rationalized. Glean's 40% wDAU/wMAU and 5 queries/day/employee engagement metrics are important defensive evidence, but the bar for provin",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_171",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| **Dust** | **8** | **3** | Vision: Open-source AI assistant + agent builder with enterprise data. Strong vision but very early. Execution: $7.3M ARR, 66 employees. Impressive efficiency but orders of magnitude behind Glean. |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_114",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| **Platform expansion (search -> assistant -> agents)** | Three product pillars with increasing TAM. On pace for 1B agent actions by end of 2025. | Expands addressable market beyond search into the $7-24B agentic AI market. |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_146",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| **Enterprise AI budget rationalization** | **High** | **Medium** | CEO Arvind Jain acknowledged churn from \"experimental AI budgets.\" As AI hype normalizes, enterprises will demand concrete ROI. Only 19% of executives report >5% revenue increase from GenAI investments. |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_169",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| **Elastic** | **6** | **8** | Vision: \"Search AI Company\" positioning, but still fundamentally infrastructure. Agent/assistant vision is emerging. Execution: $1.68B revenue, public company, dominant in infrastructure search. Massive installed base. |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          }
+        ],
+        "overall_assessment": [
+          {
+            "id": "overall_quality",
+            "type": "overall_assessment",
+            "question": "After reviewing this document, how would you rate its evidence quality?",
+            "context": "File: output/glean.com/02-market.md | ~28448 chars | ~273 lines",
+            "options": [
+              {
+                "value": "strong",
+                "label": "Strong \u2014 claims are well-sourced with independent evidence"
+              },
+              {
+                "value": "adequate",
+                "label": "Adequate \u2014 most claims have sources but some gaps"
+              },
+              {
+                "value": "weak",
+                "label": "Weak \u2014 many claims lack sources or rely on company materials"
+              },
+              {
+                "value": "theater",
+                "label": "Theater \u2014 sources are mentioned but don't actually support claims"
+              }
+            ]
+          }
+        ]
+      },
+      "task_count": 16,
+      "instructions": "Thank you for helping validate this dossier's scoring. For each task, read the excerpt and select the option that best matches what you observe. Your responses help calibrate our automated scorers against human judgment. There are no wrong answers \u2014 honest assessment is what we need."
+    },
+    {
+      "domain": "glean.com",
+      "file": "output/glean.com/03-technical.md",
+      "phase": 3,
+      "phase_name": "Technical",
+      "generated_at": "2026-06-15T20:55:15.484832+00:00",
+      "document_preview": "# Phase 3: Technical Analysis \u2014 Glean Technologies  **Target:** glean.com **Date:** 2026-02-19 **Analyst:** Claude (Phase 3 sub-agent) **Status:** COMPLETE  ---  ## GitHub Presence  | Metric | Value | |--------|-------| | GitHub Org | [gleanwork](https://github.com/gleanwork) | | Org Created | 2022-02-24 | | Total Public Repos | 26 (3 archived) | | Total Stars (public) | ~352 | | Primary Languages | TypeScript (9 repos), Python (8 repos), Java (2), Go (1), JavaScript (3), Shell (1) | | Active Co",
+      "document_length": 27940,
+      "tasks": {
+        "source_verification": [
+          {
+            "id": "source_regulatory",
+            "type": "source_verification",
+            "question": "The scorer says 'regulatory' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "Secondary Cloud** | AWS (Amazon Bedrock integration, RDS) | [AWS Marketplace Blog](https://aws.amazon.c",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_technical",
+            "type": "source_verification",
+            "question": "The scorer says 'technical' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "github.com/gleanwork) |\n| Org Created | 2022-02-24 |\n| Total Public Repos | 26 (3 archived) |\n| Total Stars (p",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_financial",
+            "type": "source_verification",
+            "question": "The scorer says 'financial' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "valuation. This signals engineering maturity around the MCP ecosystem.\n\n### Documentation Quality\n\n- **README",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_job_market",
+            "type": "source_verification",
+            "question": "The scorer says 'job_market' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "hiring.\n\n5. **Single cloud concentration risk.** Primary infrastructure is GCP-dependent (GKE, Dataflow, V",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          }
+        ],
+        "triangulation_verification": [],
+        "specificity_verification": [
+          {
+            "id": "specificity_22",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "**Critical caveat:** Glean is a private company with ~1,400 employees. These 26 public repos represent the developer-facing surface area only. The core search platform, Knowledge Graph, RAG pipeline, crawler infrastructure, ML models, and production services are entirely private. Based on the engine",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_356",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "2. **Star counts are low for a $7.2B company.** Total ~352 stars across all repos. For comparison, similar-stage companies like Pinecone (~4K stars on main repo) or LangChain (~100K+ stars) have orders of magnitude more. This reflects that Glean's value is in the proprietary platform, not the open-s",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          }
+        ],
+        "overall_assessment": [
+          {
+            "id": "overall_quality",
+            "type": "overall_assessment",
+            "question": "After reviewing this document, how would you rate its evidence quality?",
+            "context": "File: output/glean.com/03-technical.md | ~27940 chars | ~412 lines",
+            "options": [
+              {
+                "value": "strong",
+                "label": "Strong \u2014 claims are well-sourced with independent evidence"
+              },
+              {
+                "value": "adequate",
+                "label": "Adequate \u2014 most claims have sources but some gaps"
+              },
+              {
+                "value": "weak",
+                "label": "Weak \u2014 many claims lack sources or rely on company materials"
+              },
+              {
+                "value": "theater",
+                "label": "Theater \u2014 sources are mentioned but don't actually support claims"
+              }
+            ]
+          }
+        ]
+      },
+      "task_count": 7,
+      "instructions": "Thank you for helping validate this dossier's scoring. For each task, read the excerpt and select the option that best matches what you observe. Your responses help calibrate our automated scorers against human judgment. There are no wrong answers \u2014 honest assessment is what we need."
+    },
+    {
+      "domain": "glean.com",
+      "file": "output/glean.com/04-claims.md",
+      "phase": 4,
+      "phase_name": "Claims Validation",
+      "generated_at": "2026-06-15T20:55:15.531444+00:00",
+      "document_preview": "# Claims Validation: Glean Technologies  **Target:** glean.com **Date:** 2026-02-19 **Analyst:** Claude (Phase 4 sub-agent) **Status:** COMPLETE  ---  ## Claims Inventory  | # | Claim | Category | Materiality | Source | Evidence | Confidence | |---|-------|----------|-------------|--------|----------|------------| | 1 | $200M ARR (Dec 2025), doubled from $100M in 9 months | VERIFIED | -- | BusinessWire, Fortune | Confirmed by BusinessWire press release, Fortune exclusive, Sacra, multiple investo",
+      "document_length": 31003,
+      "tasks": {
+        "source_verification": [
+          {
+            "id": "source_regulatory",
+            "type": "source_verification",
+            "question": "The scorer says 'regulatory' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "Security page | SOC 2 Type 1 completed Aug 2022 with Laika. SOC 2 Type II achieved and recertified in 2",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_employee",
+            "type": "source_verification",
+            "question": "The scorer says 'employee' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "Glassdoor: 80 reviews (consistent with 1K+ company). Contrary Research confirms growth trajectory. Triangulat",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_customer",
+            "type": "source_verification",
+            "question": "The scorer says 'customer' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "Capterra / Gartner** | YES | G2: 4.7/5. Capterra: 4.7/5. Gartner Peer Insights: 4.5/5 (126 reviews). Strong",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_technical",
+            "type": "source_verification",
+            "question": "The scorer says 'technical' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "committing to a multi-year platform relationship, organizational health directly impacts product roadmap e",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_media",
+            "type": "source_verification",
+            "question": "The scorer says 'media' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "Fortune | Confirmed by BusinessWire press release, Fortune exclusive, Sacra, multiple investor trackers. Re",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_academic",
+            "type": "source_verification",
+            "question": "The scorer says 'academic' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "papers, zero open-source graph code, zero technical deep-dives showing actual graph schema or query patte",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_community",
+            "type": "source_verification",
+            "question": "The scorer says 'community' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "Reddit** | LIMITED | No specific Reddit threads found in searches. Glean has low Reddit presence -- enterp",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_financial",
+            "type": "source_verification",
+            "question": "The scorer says 'financial' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "Sacra, multiple investor trackers. Revenue trajectory: $40M (2023) -> $100M (Mar 2025) -> $200M (Dec 2025",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_job_market",
+            "type": "source_verification",
+            "question": "The scorer says 'job_market' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "Job postings, GitHub, architecture | Active ML/AI job postings (Applied Scientist, ML Engineer, Search Quality)",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_social",
+            "type": "source_verification",
+            "question": "The scorer says 'social' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "Twitter/X** | LIMITED | @glean and @gleanwork are active corporate accounts. No significant complaint patte",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_review_platform",
+            "type": "source_verification",
+            "question": "The scorer says 'review_platform' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "Glassdoor: 80 reviews (consistent with 1K+ company). Contrary Research confirms growth trajectory. Triangulat",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          }
+        ],
+        "triangulation_verification": [
+          {
+            "id": "triangulation_0",
+            "type": "triangulation_verification",
+            "question": "The scorer says this block has 6 independent source types: academic, employee, financial, job_market, media, regulatory. Are these truly independent, or do some share the same underlying source?",
+            "excerpt": "| # | Claim | Category | Materiality | Source | Evidence | Confidence | |---|-------|----------|----",
+            "scorer_says": {
+              "source_types": [
+                "academic",
+                "employee",
+                "financial",
+                "job_market",
+                "media",
+                "regulatory"
+              ],
+              "count": 6
+            },
+            "options": [
+              {
+                "value": "independent",
+                "label": "Yes \u2014 all 6 source types are truly independent"
+              },
+              {
+                "value": "some_dependent",
+                "label": "Some of these sources cite each other or share a common origin"
+              },
+              {
+                "value": "not_independent",
+                "label": "These are NOT independent \u2014 same info in different venues"
+              },
+              {
+                "value": "unsure",
+                "label": "Need to see the full document to judge"
+              }
+            ]
+          },
+          {
+            "id": "triangulation_1",
+            "type": "triangulation_verification",
+            "question": "The scorer says this block has 7 independent source types: academic, community, customer, employee, financial, job_market, social. Are these truly independent, or do some share the same underlying source?",
+            "excerpt": "| Source | Found? | Key Signals | |--------|--------|------------| | **Glassdoor** | YES (80 reviews",
+            "scorer_says": {
+              "source_types": [
+                "academic",
+                "community",
+                "customer",
+                "employee",
+                "financial",
+                "job_market",
+                "social"
+              ],
+              "count": 7
+            },
+            "options": [
+              {
+                "value": "independent",
+                "label": "Yes \u2014 all 7 source types are truly independent"
+              },
+              {
+                "value": "some_dependent",
+                "label": "Some of these sources cite each other or share a common origin"
+              },
+              {
+                "value": "not_independent",
+                "label": "These are NOT independent \u2014 same info in different venues"
+              },
+              {
+                "value": "unsure",
+                "label": "Need to see the full document to judge"
+              }
+            ]
+          },
+          {
+            "id": "triangulation_2",
+            "type": "triangulation_verification",
+            "question": "The scorer says this block has 5 independent source types: academic, employee, financial, job_market, media. Are these truly independent, or do some share the same underlying source?",
+            "excerpt": "| Metric | Company Claims | Triangulated Range | Sources | Confidence | |--------|---------------|--",
+            "scorer_says": {
+              "source_types": [
+                "academic",
+                "employee",
+                "financial",
+                "job_market",
+                "media"
+              ],
+              "count": 5
+            },
+            "options": [
+              {
+                "value": "independent",
+                "label": "Yes \u2014 all 5 source types are truly independent"
+              },
+              {
+                "value": "some_dependent",
+                "label": "Some of these sources cite each other or share a common origin"
+              },
+              {
+                "value": "not_independent",
+                "label": "These are NOT independent \u2014 same info in different venues"
+              },
+              {
+                "value": "unsure",
+                "label": "Need to see the full document to judge"
+              }
+            ]
+          },
+          {
+            "id": "triangulation_3",
+            "type": "triangulation_verification",
+            "question": "The scorer says this block has 4 independent source types: community, customer, job_market, regulatory. Are these truly independent, or do some share the same underlying source?",
+            "excerpt": "#### What's Real - **Core enterprise search product works well.** Users across G2 (4.7), Gartner (4.",
+            "scorer_says": {
+              "source_types": [
+                "community",
+                "customer",
+                "job_market",
+                "regulatory"
+              ],
+              "count": 4
+            },
+            "options": [
+              {
+                "value": "independent",
+                "label": "Yes \u2014 all 4 source types are truly independent"
+              },
+              {
+                "value": "some_dependent",
+                "label": "Some of these sources cite each other or share a common origin"
+              },
+              {
+                "value": "not_independent",
+                "label": "These are NOT independent \u2014 same info in different venues"
+              },
+              {
+                "value": "unsure",
+                "label": "Need to see the full document to judge"
+              }
+            ]
+          },
+          {
+            "id": "triangulation_4",
+            "type": "triangulation_verification",
+            "question": "The scorer says this block has 3 independent source types: academic, financial, job_market. Are these truly independent, or do some share the same underlying source?",
+            "excerpt": "**Justification:** - **Not 5/5** because: Zero academic publications, no novel algorithmic contribut",
+            "scorer_says": {
+              "source_types": [
+                "academic",
+                "financial",
+                "job_market"
+              ],
+              "count": 3
+            },
+            "options": [
+              {
+                "value": "independent",
+                "label": "Yes \u2014 all 3 source types are truly independent"
+              },
+              {
+                "value": "some_dependent",
+                "label": "Some of these sources cite each other or share a common origin"
+              },
+              {
+                "value": "not_independent",
+                "label": "These are NOT independent \u2014 same info in different venues"
+              },
+              {
+                "value": "unsure",
+                "label": "Need to see the full document to judge"
+              }
+            ]
+          }
+        ],
+        "specificity_verification": [
+          {
+            "id": "specificity_86",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "- **Engagement metrics without methodology.** \"40% wDAU/wMAU\" and \"5 queries/day\" are self-reported with no measurement methodology, no third-party validation, and no benchmark citation for the \"2x industry\" claim. These are marketing numbers until independently verified.",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_224",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "5. **The \"sinking ship\" narrative is premature but the warning signs are real.** Blind's most alarming posts (\"peaked last year,\" \"dropping like flies\") could reflect disgruntled individuals rather than systemic collapse. The company IS still hiring (96 openings), growing revenue (100% in 9 months),",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_216",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "1. **The product is real, the moat claim is unverifiable.** Glean's enterprise search genuinely works well (4.5-4.7/5 across all review platforms, HN praise, real ML infrastructure). But the \"proprietary Knowledge Graph\" that justifies the $7.2B valuation is a marketing term for what appears to be w",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_59",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| **Customer count** | \"1,000+ customers spanning 27 countries\" (implied Dec 2025) | 200-400 enterprise, unknown SMB | Contrary Research (200 enterprise as of Sep 2024), $200M ARR / $50-60K min contract = ~3,300-4,000 max theoretical, $200M / avg $500K enterprise = ~400 | Medium -- \"1,000+ customers",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_22",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| 10 | ~1,400 employees (Jan 2026) | VERIFIED | -- | Tracxn, LinkedIn, ZoomInfo, Contrary Research | Tracxn: 1,412 employees. LinkedIn: ~1,300. ZoomInfo: 500-1,000 range (likely lagging). Glassdoor: 80 reviews (consistent with 1K+ company). Contrary Research confirms growth trajectory. Triangulated ",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_194",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| 1 | 40% wDAU/wMAU engagement ratio | Self-reported, no third-party measurement, no methodology disclosed |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_27",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| 15 | \"On pace for 1B agent actions by end of 2025\" | UNVERIFIABLE | NOTABLE | Glean Press (Jun 2025) | Claimed \"100M+ agent actions annually\" in mid-2025, projecting to 1B by year-end. No follow-up announcement confirming 1B was reached. The Dec 2025 $200M ARR press release does NOT claim the 1B m",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_21",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| 9 | $1M+ contract segment \"nearly 3x\" growth | PLAUSIBLE | -- | BusinessWire, Fortune | Directionally supported by named customer list (Databricks, Sony, Okta) that would plausibly have $1M+ contracts. No independent confirmation of the \"3x\" multiplier. | Medium |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          }
+        ],
+        "overall_assessment": [
+          {
+            "id": "overall_quality",
+            "type": "overall_assessment",
+            "question": "After reviewing this document, how would you rate its evidence quality?",
+            "context": "File: output/glean.com/04-claims.md | ~31003 chars | ~226 lines",
+            "options": [
+              {
+                "value": "strong",
+                "label": "Strong \u2014 claims are well-sourced with independent evidence"
+              },
+              {
+                "value": "adequate",
+                "label": "Adequate \u2014 most claims have sources but some gaps"
+              },
+              {
+                "value": "weak",
+                "label": "Weak \u2014 many claims lack sources or rely on company materials"
+              },
+              {
+                "value": "theater",
+                "label": "Theater \u2014 sources are mentioned but don't actually support claims"
+              }
+            ]
+          }
+        ]
+      },
+      "task_count": 25,
+      "instructions": "Thank you for helping validate this dossier's scoring. For each task, read the excerpt and select the option that best matches what you observe. Your responses help calibrate our automated scorers against human judgment. There are no wrong answers \u2014 honest assessment is what we need."
+    },
+    {
+      "domain": "glean.com",
+      "file": "output/glean.com/05-academic.md",
+      "phase": 5,
+      "phase_name": "Academic",
+      "generated_at": "2026-06-15T20:55:15.569160+00:00",
+      "document_preview": "# Phase 5: Academic & IP Analysis \u2014 Glean Technologies  **Target:** glean.com **Date:** 2026-02-19 **Analyst:** Claude (Phase 5 sub-agent) **Status:** COMPLETE  ---  ## 1. Company Publications  Glean Technologies has **no peer-reviewed academic publications** on arXiv, NeurIPS, ICML, ACL, or comparable CS venues. arXiv searches for \"Glean enterprise search,\" \"Arvind Jain enterprise search,\" and related terms returned zero results attributable to Glean or its founders.  This is not unusual for an",
+      "document_length": 19365,
+      "tasks": {
+        "source_verification": [
+          {
+            "id": "source_regulatory",
+            "type": "source_verification",
+            "question": "The scorer says 'regulatory' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "security) | 2010s | N/A | Glean's permissions-aware retrieval respecting source-system ACLs |\n| **Learn",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_technical",
+            "type": "source_verification",
+            "question": "The scorer says 'technical' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "github.com/onyx-dot-app/onyx) (fka Danswer) | 17,489 | Python | MIT (CE) / Proprietary (EE) | Feb 2026 | **Hig",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_media",
+            "type": "source_verification",
+            "question": "The scorer says 'media' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "WSJ, Forbes. Stanford Graduate Interdisciplinary Fellowship recipient. | **Strong academic credentials*",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_academic",
+            "type": "source_verification",
+            "question": "The scorer says 'academic' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "Publications\n\nGlean Technologies has **no peer-reviewed academic publications** on arXiv, NeurIPS, ICML, ACL, o",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_community",
+            "type": "source_verification",
+            "question": "The scorer says 'community' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "r/CEO of Aida (left Glean). |\n| **T.R. Vishwanath** (Co-founder) | Not publicly detailed | No known publi",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_financial",
+            "type": "source_verification",
+            "question": "The scorer says 'financial' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "Crunchbase IPqwery data was inconclusive due to namespace collision with an unrelated UK-based \"Glean\" EdTech",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          }
+        ],
+        "triangulation_verification": [
+          {
+            "id": "triangulation_0",
+            "type": "triangulation_verification",
+            "question": "The scorer says this block has 3 independent source types: academic, community, media. Are these truly independent, or do some share the same underlying source?",
+            "excerpt": "| Person | Education | Academic Contributions | Practitioner Credibility | |--------|-----------|---",
+            "scorer_says": {
+              "source_types": [
+                "academic",
+                "community",
+                "media"
+              ],
+              "count": 3
+            },
+            "options": [
+              {
+                "value": "independent",
+                "label": "Yes \u2014 all 3 source types are truly independent"
+              },
+              {
+                "value": "some_dependent",
+                "label": "Some of these sources cite each other or share a common origin"
+              },
+              {
+                "value": "not_independent",
+                "label": "These are NOT independent \u2014 same info in different venues"
+              },
+              {
+                "value": "unsure",
+                "label": "Need to see the full document to judge"
+              }
+            ]
+          }
+        ],
+        "specificity_verification": [
+          {
+            "id": "specificity_116",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| [**PipesHub**](https://github.com/pipeshub-ai/pipeshub-ai) | 2,638 | Python | Apache-2.0 | Feb 2026 | **High** \u2014 Enterprise search + workflow automation, knowledge graphs, page ranking, custom AI agents, multi-connector. | Early-stage but explicitly positions as \"open source Glean.\" Extensible arc",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_117",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| [**DocsGPT**](https://github.com/arc53/DocsGPT) | 17,715 | Python | MIT | Feb 2026 | **Medium** \u2014 AI assistant for documents, multi-model support, agent builder, deep research. Less enterprise search, more document chat. | Strong community but narrower scope than Glean. |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_43",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| **RAG (Retrieval-Augmented Generation)** | Lewis et al., \"Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks\" (NeurIPS 2020) | 2020 | 5,000+ | Core architecture: retrieve enterprise docs, feed to LLM for grounded answers |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_115",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| [**Onyx**](https://github.com/onyx-dot-app/onyx) (fka Danswer) | 17,489 | Python | MIT (CE) / Proprietary (EE) | Feb 2026 | **High** \u2014 40+ connectors, RAG, permissions, AI chat, agents, deep research. Enterprise customers incl. Netflix, Ramp. | Closest open-source analog. $10M seed (Khosla, First ",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_48",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| **Learning to Rank** | Burges et al., \"From RankNet to LambdaRank to LambdaMART\" (Microsoft Research) | 2010 | 2,500+ | Personalization signals (activity, collaboration patterns) for result ranking |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_216",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "4. **Onyx (fka Danswer) is the most credible open-source threat.** At 17,489 GitHub stars, MIT license, 40+ connectors, $10M seed funding, and enterprise customers (Netflix, Ramp), Onyx is the closest open-source alternative. However, it remains ~2-3 years behind Glean in connector breadth, enterpri",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_200",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| **Buy Glean** | ~$50/user/month + $15/user GenAI add-on | Immediate | Vendor lock-in, pricing increases |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_46",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| **Dense Retrieval** | Karpukhin et al., \"Dense Passage Retrieval for Open-Domain QA\" (EMNLP 2020) | 2020 | 4,000+ | Likely underpins Glean's vector search / semantic retrieval |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          }
+        ],
+        "overall_assessment": [
+          {
+            "id": "overall_quality",
+            "type": "overall_assessment",
+            "question": "After reviewing this document, how would you rate its evidence quality?",
+            "context": "File: output/glean.com/05-academic.md | ~19365 chars | ~231 lines",
+            "options": [
+              {
+                "value": "strong",
+                "label": "Strong \u2014 claims are well-sourced with independent evidence"
+              },
+              {
+                "value": "adequate",
+                "label": "Adequate \u2014 most claims have sources but some gaps"
+              },
+              {
+                "value": "weak",
+                "label": "Weak \u2014 many claims lack sources or rely on company materials"
+              },
+              {
+                "value": "theater",
+                "label": "Theater \u2014 sources are mentioned but don't actually support claims"
+              }
+            ]
+          }
+        ]
+      },
+      "task_count": 16,
+      "instructions": "Thank you for helping validate this dossier's scoring. For each task, read the excerpt and select the option that best matches what you observe. Your responses help calibrate our automated scorers against human judgment. There are no wrong answers \u2014 honest assessment is what we need."
+    },
+    {
+      "domain": "glean.com",
+      "file": "output/glean.com/06-valuation.md",
+      "phase": 6,
+      "phase_name": "Valuation",
+      "generated_at": "2026-06-15T20:55:15.660411+00:00",
+      "document_preview": "# Phase 6: Valuation & Replication Assessment \u2014 Glean Technologies  **Target:** glean.com **Date:** 2026-02-19 **Analyst:** Claude (Phase 6 sub-agent) **Status:** COMPLETE **Depends on:** `01-discovery.md`, `02-market.md`, `03-technical.md`, `04-claims.md`, `05-academic.md`  ---  ## 1. Business Model Analysis  ### Revenue Model  **Sales-led enterprise subscription.** Per-user, per-month pricing with mandatory annual contracts.  | Component | Price | Notes | |-----------|-------|-------| | Base p",
+      "document_length": 36462,
+      "tasks": {
+        "source_verification": [
+          {
+            "id": "source_regulatory",
+            "type": "source_verification",
+            "question": "The scorer says 'regulatory' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "security premium |\n| Coveo (public, current) | $142M | 14% | ~6x | Slower growth, profitable |\n| Elasti",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_employee",
+            "type": "source_verification",
+            "question": "The scorer says 'employee' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "mentioned but no data extracted",
+            "scorer_says": {
+              "found": true,
+              "has_data": false
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_technical",
+            "type": "source_verification",
+            "question": "The scorer says 'technical' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "Docker), Read (cloud docs), WebSearch (GKE patterns) | 200h | 70% -- IaC is highly automatable; multi-tena",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_media",
+            "type": "source_verification",
+            "question": "The scorer says 'media' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "Fortune 500 deals | $1M-$5M+/year | Company-wide deployment |\n\n**Implied blended ACV:** $200M ARR / estimat",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_academic",
+            "type": "source_verification",
+            "question": "The scorer says 'academic' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "papers), Read (open-source implementations), Bash (Neo4j/PostgreSQL setup) | 400h | 50% -- entity extract",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_community",
+            "type": "source_verification",
+            "question": "The scorer says 'community' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "r/month | Core enterprise search + Knowledge Graph |\n| Gen AI add-on (assistant + agents) | ~$15/user/month",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_financial",
+            "type": "source_verification",
+            "question": "The scorer says 'financial' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "Valuation & Replication Assessment \u2014 Glean Technologies\n\n**Target:** glean.com\n**Date:** 2026-02-19\n**Analyst",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_job_market",
+            "type": "source_verification",
+            "question": "The scorer says 'job_market' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "mentioned but no data extracted",
+            "scorer_says": {
+              "found": true,
+              "has_data": false
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_review_platform",
+            "type": "source_verification",
+            "question": "The scorer says 'review_platform' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "mentioned but no data extracted",
+            "scorer_says": {
+              "found": true,
+              "has_data": false
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          }
+        ],
+        "triangulation_verification": [
+          {
+            "id": "triangulation_0",
+            "type": "triangulation_verification",
+            "question": "The scorer says this block has 3 independent source types: financial, job_market, media. Are these truly independent, or do some share the same underlying source?",
+            "excerpt": "| Metric | Estimate | Confidence | Basis | |--------|----------|------------|-------| | **ARR** | $2",
+            "scorer_says": {
+              "source_types": [
+                "financial",
+                "job_market",
+                "media"
+              ],
+              "count": 3
+            },
+            "options": [
+              {
+                "value": "independent",
+                "label": "Yes \u2014 all 3 source types are truly independent"
+              },
+              {
+                "value": "some_dependent",
+                "label": "Some of these sources cite each other or share a common origin"
+              },
+              {
+                "value": "not_independent",
+                "label": "These are NOT independent \u2014 same info in different venues"
+              },
+              {
+                "value": "unsure",
+                "label": "Need to see the full document to judge"
+              }
+            ]
+          },
+          {
+            "id": "triangulation_1",
+            "type": "triangulation_verification",
+            "question": "The scorer says this block has 4 independent source types: academic, financial, regulatory, technical. Are these truly independent, or do some share the same underlying source?",
+            "excerpt": "| Component | Agent Type | Tools Needed | Estimated Agent-Hours | Automatable? | |-----------|------",
+            "scorer_says": {
+              "source_types": [
+                "academic",
+                "financial",
+                "regulatory",
+                "technical"
+              ],
+              "count": 4
+            },
+            "options": [
+              {
+                "value": "independent",
+                "label": "Yes \u2014 all 4 source types are truly independent"
+              },
+              {
+                "value": "some_dependent",
+                "label": "Some of these sources cite each other or share a common origin"
+              },
+              {
+                "value": "not_independent",
+                "label": "These are NOT independent \u2014 same info in different venues"
+              },
+              {
+                "value": "unsure",
+                "label": "Need to see the full document to judge"
+              }
+            ]
+          },
+          {
+            "id": "triangulation_2",
+            "type": "triangulation_verification",
+            "question": "The scorer says this block has 3 independent source types: community, media, regulatory. Are these truly independent, or do some share the same underlying source?",
+            "excerpt": "| Buyer Profile | Recommendation | Rationale | |---------------|---------------|-----------| | **For",
+            "scorer_says": {
+              "source_types": [
+                "community",
+                "media",
+                "regulatory"
+              ],
+              "count": 3
+            },
+            "options": [
+              {
+                "value": "independent",
+                "label": "Yes \u2014 all 3 source types are truly independent"
+              },
+              {
+                "value": "some_dependent",
+                "label": "Some of these sources cite each other or share a common origin"
+              },
+              {
+                "value": "not_independent",
+                "label": "These are NOT independent \u2014 same info in different venues"
+              },
+              {
+                "value": "unsure",
+                "label": "Need to see the full document to judge"
+              }
+            ]
+          },
+          {
+            "id": "triangulation_3",
+            "type": "triangulation_verification",
+            "question": "The scorer says this block has 3 independent source types: community, employee, financial. Are these truly independent, or do some share the same underlying source?",
+            "excerpt": "At 100% growth, 36x ARR is within the range of comparable high-growth SaaS companies (Snowflake, Dat",
+            "scorer_says": {
+              "source_types": [
+                "community",
+                "employee",
+                "financial"
+              ],
+              "count": 3
+            },
+            "options": [
+              {
+                "value": "independent",
+                "label": "Yes \u2014 all 3 source types are truly independent"
+              },
+              {
+                "value": "some_dependent",
+                "label": "Some of these sources cite each other or share a common origin"
+              },
+              {
+                "value": "not_independent",
+                "label": "These are NOT independent \u2014 same info in different venues"
+              },
+              {
+                "value": "unsure",
+                "label": "Need to see the full document to judge"
+              }
+            ]
+          },
+          {
+            "id": "triangulation_4",
+            "type": "triangulation_verification",
+            "question": "The scorer says this block has 4 independent source types: financial, media, regulatory, technical. Are these truly independent, or do some share the same underlying source?",
+            "excerpt": "- [Sacra \u2014 Glean Revenue & Valuation](https://sacra.com/c/glean/) - [Sacra \u2014 Glean at $200M ARR Anal",
+            "scorer_says": {
+              "source_types": [
+                "financial",
+                "media",
+                "regulatory",
+                "technical"
+              ],
+              "count": 4
+            },
+            "options": [
+              {
+                "value": "independent",
+                "label": "Yes \u2014 all 4 source types are truly independent"
+              },
+              {
+                "value": "some_dependent",
+                "label": "Some of these sources cite each other or share a common origin"
+              },
+              {
+                "value": "not_independent",
+                "label": "These are NOT independent \u2014 same info in different venues"
+              },
+              {
+                "value": "unsure",
+                "label": "Need to see the full document to judge"
+              }
+            ]
+          }
+        ],
+        "specificity_verification": [
+          {
+            "id": "specificity_75",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| Last round valuation | $7.2B (Jun 2025, Series F) | Wellington Management led |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_230",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| **Permissions Engine** | Code Generation + Testing | WebSearch (ACL patterns), Read (source system docs), Bash (security testing) | 600h | 30% -- cross-source permission resolution requires deep security domain expertise; errors are catastrophic |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_324",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| Sustained 60%+ growth for 2+ years | $200M -> $320M+ (2026) -> $500M+ (2027) | Medium -- enterprise AI demand is strong but \"experimental AI budget\" churn is real |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_144",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| Security Engineers | 2 | 24 months | $275K | $1.1M |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_42",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "- No PLG or self-serve motion -- minimum $50K/year contract excludes SMB entirely",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_145",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| Product Managers | 2 | 24 months | $225K | $0.9M |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_167",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "This is the cost to build what Glean has today -- 100+ connectors, mature Knowledge Graph, third-gen AI assistant, agent platform, on-prem option, enterprise security certifications, MCP server, multi-framework agent toolkit. It does NOT include the $765M raised for go-to-market, the customer relati",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_352",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "The 40-70x premium over replication cost is justified **only if you value the revenue stream, customer base, and brand**. For a strategic acquirer (Microsoft, Google, Salesforce, ServiceNow) the $7.2B is the price of an established enterprise AI platform with $200M ARR growing 100%. For a financial ",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          }
+        ],
+        "overall_assessment": [
+          {
+            "id": "overall_quality",
+            "type": "overall_assessment",
+            "question": "After reviewing this document, how would you rate its evidence quality?",
+            "context": "File: output/glean.com/06-valuation.md | ~36462 chars | ~401 lines",
+            "options": [
+              {
+                "value": "strong",
+                "label": "Strong \u2014 claims are well-sourced with independent evidence"
+              },
+              {
+                "value": "adequate",
+                "label": "Adequate \u2014 most claims have sources but some gaps"
+              },
+              {
+                "value": "weak",
+                "label": "Weak \u2014 many claims lack sources or rely on company materials"
+              },
+              {
+                "value": "theater",
+                "label": "Theater \u2014 sources are mentioned but don't actually support claims"
+              }
+            ]
+          }
+        ]
+      },
+      "task_count": 23,
+      "instructions": "Thank you for helping validate this dossier's scoring. For each task, read the excerpt and select the option that best matches what you observe. Your responses help calibrate our automated scorers against human judgment. There are no wrong answers \u2014 honest assessment is what we need."
+    },
+    {
+      "domain": "glean.com",
+      "file": "output/glean.com/07-report.md",
+      "phase": 7,
+      "phase_name": "Report",
+      "generated_at": "2026-06-15T20:55:15.735626+00:00",
+      "document_preview": "# Due Diligence Report: Glean Technologies, Inc.  **Target:** glean.com **Date:** 2026-02-19 **Analyst:** Dossier v0.1.0 (7-phase automated pipeline) **Classification:** Confidential -- Investment Due Diligence **Recommendation:** PROCEED (standard diligence) *[Calibrated from PROCEED WITH CAUTION -- see validation/final-calibrated-output.md]*  ---  ## 1. Executive Summary  Glean Technologies, Inc. (formerly Scio Technologies) is a Palo Alto-based enterprise AI company founded in 2019 by four fo",
+      "document_length": 42626,
+      "tasks": {
+        "source_verification": [
+          {
+            "id": "source_regulatory",
+            "type": "source_verification",
+            "question": "The scorer says 'regulatory' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "Secondary market trading active. No announced timeline. | Confirmed |\n\n### Founding Team\n\n| Founder | R",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_employee",
+            "type": "source_verification",
+            "question": "The scorer says 'employee' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "Glassdoor (4.2/5, 80 reviews) | Strain visible post-mid-2025. \"Toxic from the top down.\" Below-market pay. PT",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_customer",
+            "type": "source_verification",
+            "question": "The scorer says 'customer' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "Capterra, Gartner Peer Insights (126 reviews)\n- LinkedIn (employee counts, leadership profiles)\n- layoffs.fy",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_technical",
+            "type": "source_verification",
+            "question": "The scorer says 'technical' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "github.com/gleanwork) |\n| Public Repos | 26 (3 archived) |\n| Total Stars | ~352 |\n| Primary Languages | TypeSc",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_media",
+            "type": "source_verification",
+            "question": "The scorer says 'media' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "Fortune 500 / Global 2000 with complex multi-tool environments.\n\n**Pain severity:** Evolved from \"vitamin\"",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_academic",
+            "type": "source_verification",
+            "question": "The scorer says 'academic' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "publications, benchmarks, or open-source evidence of novelty. Marketing term for well-executed known technique.",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_community",
+            "type": "source_verification",
+            "question": "The scorer says 'community' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "r/month (base) + ~$15/user/month (GenAI add-on) | Medium |\n| IPO Status | Private. Secondary market trading",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_financial",
+            "type": "source_verification",
+            "question": "The scorer says 'financial' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "funding rounds from tier-1 investors (Sequoia, Lightspeed, Kleiner Perkins, Wellington, Altimeter, DST Glob",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_job_market",
+            "type": "source_verification",
+            "question": "The scorer says 'job_market' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "hiring, GraphRAG, hybrid search. |\n| 7 | 40% wDAU/wMAU (\"2x benchmark\") | UNVERIFIABLE | Low | Self-report",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_social",
+            "type": "source_verification",
+            "question": "The scorer says 'social' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "Product Hunt, Contrary Research\n- VentureBeat (GraphRAG architecture description)\n\n### Phase 5 (Academic/IP)\n- a",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_review_platform",
+            "type": "source_verification",
+            "question": "The scorer says 'review_platform' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "Glassdoor (4.2/5, 80 reviews) | Strain visible post-mid-2025. \"Toxic from the top down.\" Below-market pay. PT",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          }
+        ],
+        "triangulation_verification": [
+          {
+            "id": "triangulation_0",
+            "type": "triangulation_verification",
+            "question": "The scorer says this block has 3 independent source types: community, financial, regulatory. Are these truly independent, or do some share the same underlying source?",
+            "excerpt": "| Field | Value | Confidence | |-------|-------|------------| | Domain | glean.com | Confirmed | | L",
+            "scorer_says": {
+              "source_types": [
+                "community",
+                "financial",
+                "regulatory"
+              ],
+              "count": 3
+            },
+            "options": [
+              {
+                "value": "independent",
+                "label": "Yes \u2014 all 3 source types are truly independent"
+              },
+              {
+                "value": "some_dependent",
+                "label": "Some of these sources cite each other or share a common origin"
+              },
+              {
+                "value": "not_independent",
+                "label": "These are NOT independent \u2014 same info in different venues"
+              },
+              {
+                "value": "unsure",
+                "label": "Need to see the full document to judge"
+              }
+            ]
+          },
+          {
+            "id": "triangulation_1",
+            "type": "triangulation_verification",
+            "question": "The scorer says this block has 4 independent source types: academic, financial, job_market, media. Are these truly independent, or do some share the same underlying source?",
+            "excerpt": "| # | Claim | Verdict | Confidence | Notes | |---|-------|---------|------------|-------| | 1 | $200",
+            "scorer_says": {
+              "source_types": [
+                "academic",
+                "financial",
+                "job_market",
+                "media"
+              ],
+              "count": 4
+            },
+            "options": [
+              {
+                "value": "independent",
+                "label": "Yes \u2014 all 4 source types are truly independent"
+              },
+              {
+                "value": "some_dependent",
+                "label": "Some of these sources cite each other or share a common origin"
+              },
+              {
+                "value": "not_independent",
+                "label": "These are NOT independent \u2014 same info in different venues"
+              },
+              {
+                "value": "unsure",
+                "label": "Need to see the full document to judge"
+              }
+            ]
+          },
+          {
+            "id": "triangulation_2",
+            "type": "triangulation_verification",
+            "question": "The scorer says this block has 3 independent source types: community, employee, job_market. Are these truly independent, or do some share the same underlying source?",
+            "excerpt": "| Source | Signal | Severity | |--------|--------|----------| | Glassdoor (4.2/5, 80 reviews) | Stra",
+            "scorer_says": {
+              "source_types": [
+                "community",
+                "employee",
+                "job_market"
+              ],
+              "count": 3
+            },
+            "options": [
+              {
+                "value": "independent",
+                "label": "Yes \u2014 all 3 source types are truly independent"
+              },
+              {
+                "value": "some_dependent",
+                "label": "Some of these sources cite each other or share a common origin"
+              },
+              {
+                "value": "not_independent",
+                "label": "These are NOT independent \u2014 same info in different venues"
+              },
+              {
+                "value": "unsure",
+                "label": "Need to see the full document to judge"
+              }
+            ]
+          },
+          {
+            "id": "triangulation_3",
+            "type": "triangulation_verification",
+            "question": "The scorer says this block has 6 independent source types: academic, community, employee, financial, job_market, regulatory. Are these truly independent, or do some share the same underlying source?",
+            "excerpt": "| Section | Data Quality | Analysis Confidence | Key Limitation | |---------|-------------|---------",
+            "scorer_says": {
+              "source_types": [
+                "academic",
+                "community",
+                "employee",
+                "financial",
+                "job_market",
+                "regulatory"
+              ],
+              "count": 6
+            },
+            "options": [
+              {
+                "value": "independent",
+                "label": "Yes \u2014 all 6 source types are truly independent"
+              },
+              {
+                "value": "some_dependent",
+                "label": "Some of these sources cite each other or share a common origin"
+              },
+              {
+                "value": "not_independent",
+                "label": "These are NOT independent \u2014 same info in different venues"
+              },
+              {
+                "value": "unsure",
+                "label": "Need to see the full document to judge"
+              }
+            ]
+          },
+          {
+            "id": "triangulation_4",
+            "type": "triangulation_verification",
+            "question": "The scorer says this block has 4 independent source types: community, employee, financial, regulatory. Are these truly independent, or do some share the same underlying source?",
+            "excerpt": "| # | Risk | Probability | Impact | Mitigation | Source | |---|------|------------|--------|--------",
+            "scorer_says": {
+              "source_types": [
+                "community",
+                "employee",
+                "financial",
+                "regulatory"
+              ],
+              "count": 4
+            },
+            "options": [
+              {
+                "value": "independent",
+                "label": "Yes \u2014 all 4 source types are truly independent"
+              },
+              {
+                "value": "some_dependent",
+                "label": "Some of these sources cite each other or share a common origin"
+              },
+              {
+                "value": "not_independent",
+                "label": "These are NOT independent \u2014 same info in different venues"
+              },
+              {
+                "value": "unsure",
+                "label": "Need to see the full document to judge"
+              }
+            ]
+          }
+        ],
+        "specificity_verification": [
+          {
+            "id": "specificity_15",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "Revenue growth is exceptional and independently verified: $200M ARR as of December 2025, having doubled from $100M in just nine months. The $1M+ contract segment tripled. Engagement metrics (40% weekly active ratio) are strong but self-reported. Named customers include Databricks, Duolingo, Okta, So",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_344",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "**Sales-led enterprise subscription.** Per-user/month pricing with mandatory annual contracts and 10% support fee. No PLG or self-serve. $50-60K/year minimum. Typical enterprise: $100-500K/year. Fortune 500: $1-5M+/year.",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_378",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| Coveo (current) | $142M | 14% | ~6x | Slower growth, profitable |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_429",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "Glean scores 3.7/5 on AI reality -- genuine applied ML at scale, not theater. But the marketing implies frontier research: \"proprietary,\" \"pioneering,\" \"Enterprise Graph.\" In reality, VentureBeat describes the core technology as \"GraphRAG\" -- a well-documented open-source technique. Zero academic pu",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_110",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| **Elastic** (public: NYSE:ESTC) | $1.68B revenue, 18% growth | MEDIUM-LOW -- Infrastructure layer. \"Build on Elastic vs. buy Glean\" is a live enterprise decision. | Medium |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_473",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| R4 | \"Proprietary Knowledge Graph\" is exposed as standard GraphRAG pattern, eroding technology premium | 35-45% | Moderate-High -- reduces valuation premium, emboldens Onyx/PipesHub. However, the implementation complexity of cross-source entity resolution at 100+ heterogeneous systems is fundament",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_453",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "At 36x trailing ARR, the $7.2B valuation assumes near-perfect execution across multiple dimensions. The probability-weighted fair value ($7.0-8.5B) barely exceeds the last round price. New investors have limited upside unless the bull case materializes. The internal cultural issues, Microsoft threat",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_389",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| Bear | 40-60% ($280-320M ARR) | 12-20x | $3.4-6.4B | 25% |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          }
+        ],
+        "overall_assessment": [
+          {
+            "id": "overall_quality",
+            "type": "overall_assessment",
+            "question": "After reviewing this document, how would you rate its evidence quality?",
+            "context": "File: output/glean.com/07-report.md | ~42626 chars | ~584 lines",
+            "options": [
+              {
+                "value": "strong",
+                "label": "Strong \u2014 claims are well-sourced with independent evidence"
+              },
+              {
+                "value": "adequate",
+                "label": "Adequate \u2014 most claims have sources but some gaps"
+              },
+              {
+                "value": "weak",
+                "label": "Weak \u2014 many claims lack sources or rely on company materials"
+              },
+              {
+                "value": "theater",
+                "label": "Theater \u2014 sources are mentioned but don't actually support claims"
+              }
+            ]
+          }
+        ]
+      },
+      "task_count": 25,
+      "instructions": "Thank you for helping validate this dossier's scoring. For each task, read the excerpt and select the option that best matches what you observe. Your responses help calibrate our automated scorers against human judgment. There are no wrong answers \u2014 honest assessment is what we need."
+    }
+  ]
+}

@@ -1,0 +1,4010 @@
+{
+  "domain": "sierra.ai",
+  "files": [
+    {
+      "domain": "sierra.ai",
+      "file": "output/sierra.ai/01-discovery.md",
+      "phase": 1,
+      "phase_name": "Discovery",
+      "generated_at": "2026-06-15T20:55:15.897438+00:00",
+      "document_preview": "# Sierra AI - Phase 1: Discovery Report  **Target:** sierra.ai **Date:** 2026-02-18 **Analyst:** Automated (Claude Opus 4.6) **Collection method:** WebSearch (WebFetch unavailable); WHOIS collected separately  ---  ## Company Identity  | Field | Value | Confidence | |-------|-------|------------| | **Legal name** | Sierra Technologies, Inc. | HIGH (Crunchbase, SEC filings) | | **DBA / Brand** | Sierra | HIGH | | **Domain** | sierra.ai | HIGH | | **Founded** | 2023 (incorporated); Feb 2024 (publi",
+      "document_length": 18366,
+      "tasks": {
+        "source_verification": [
+          {
+            "id": "source_regulatory",
+            "type": "source_verification",
+            "question": "The scorer says 'regulatory' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "section includes podcasts, videos, research papers, case studies, and Sierra Summit on-demand\n- Researc",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_customer",
+            "type": "source_verification",
+            "question": "The scorer says 'customer' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "Capterra reviews | YES (enterprise, 2-year-old) | LOW |\n| docs.sierra.ai requires authentication | YES (ente",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_technical",
+            "type": "source_verification",
+            "question": "The scorer says 'technical' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "github.com/sierra-inc (5 repos), github.com/sierra-research (2 repos) | HIGH |\n| **CDN/Hosting** | Not confirm",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_media",
+            "type": "source_verification",
+            "question": "The scorer says 'media' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "Fortune exclusive, initial customers already live (WeightWatchers, Sonos, SiriusXM, OluKai). The go-to-mark",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_academic",
+            "type": "source_verification",
+            "question": "The scorer says 'academic' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "papers, case studies, and Sierra Summit on-demand\n- Research papers (tau-bench, tau2-bench) published on",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_community",
+            "type": "source_verification",
+            "question": "The scorer says 'community' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "R/VR) reconnect. They originally met as Google APMs nearly two decades ago. They raise $110M seed from S",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_financial",
+            "type": "source_verification",
+            "question": "The scorer says 'financial' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "Sacra estimate; $100M confirmed Nov 2025) | HIGH ($100M), MEDIUM ($150M) |\n| **Total funding** | $635M+ a",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_job_market",
+            "type": "source_verification",
+            "question": "The scorer says 'job_market' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "Job Postings & GitHub\n\n| Layer | Technologies | Confidence |\n|-------|-------------|------------|\n| **Backend**",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_social",
+            "type": "source_verification",
+            "question": "The scorer says 'social' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "Twitter)** | @SierraPlatform | Active | Product announcements, customer stories |\n| **Instagram** | @sierra",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          }
+        ],
+        "triangulation_verification": [
+          {
+            "id": "triangulation_0",
+            "type": "triangulation_verification",
+            "question": "The scorer says this block has 3 independent source types: financial, social, technical. Are these truly independent, or do some share the same underlying source?",
+            "excerpt": "| Platform | Handle / URL | Status | Notes | |----------|-------------|--------|-------| | **Website",
+            "scorer_says": {
+              "source_types": [
+                "financial",
+                "social",
+                "technical"
+              ],
+              "count": 3
+            },
+            "options": [
+              {
+                "value": "independent",
+                "label": "Yes \u2014 all 3 source types are truly independent"
+              },
+              {
+                "value": "some_dependent",
+                "label": "Some of these sources cite each other or share a common origin"
+              },
+              {
+                "value": "not_independent",
+                "label": "These are NOT independent \u2014 same info in different venues"
+              },
+              {
+                "value": "unsure",
+                "label": "Need to see the full document to judge"
+              }
+            ]
+          },
+          {
+            "id": "triangulation_1",
+            "type": "triangulation_verification",
+            "question": "The scorer says this block has 3 independent source types: financial, media, regulatory. Are these truly independent, or do some share the same underlying source?",
+            "excerpt": "### Funding & Financial - [TechCrunch: $100M ARR in under two years](https://techcrunch.com/2025/11/",
+            "scorer_says": {
+              "source_types": [
+                "financial",
+                "media",
+                "regulatory"
+              ],
+              "count": 3
+            },
+            "options": [
+              {
+                "value": "independent",
+                "label": "Yes \u2014 all 3 source types are truly independent"
+              },
+              {
+                "value": "some_dependent",
+                "label": "Some of these sources cite each other or share a common origin"
+              },
+              {
+                "value": "not_independent",
+                "label": "These are NOT independent \u2014 same info in different venues"
+              },
+              {
+                "value": "unsure",
+                "label": "Need to see the full document to judge"
+              }
+            ]
+          }
+        ],
+        "specificity_verification": [
+          {
+            "id": "specificity_224",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "4. **Actual vs claimed containment rates?** 70% containment is strong but self-reported. What happens to the other 30%? What is the handoff experience?",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_125",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| $150M+ ARR (Jan 2026) | Sacra estimate, Sierra \"Year Two\" blog | MEDIUM - Sacra is third-party; Sierra blog says \">$150M\" and \"first $50M quarter\" |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_281",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "- [CMSWire: $10B Valuation Analysis](https://www.cmswire.com/customer-experience/sierra-ais-10b-valuation-marks-a-turning-point-for-conversational-ai/)",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_270",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "- [TechCrunch: $100M ARR in under two years](https://techcrunch.com/2025/11/21/bret-taylors-sierra-reaches-100m-arr-in-under-two-years/)",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_111",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "**Target buyer:** Enterprise CX leaders and CIOs. The messaging, pricing (no public pricing, outcome-based), and customer profile ($1B+ revenue companies) all point to top-down enterprise sales.",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_37",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "**Current (Feb 2026):** $150M+ ARR (first $50M quarter). Plans to triple headcount. 300K sq ft SF office lease signed (largest in SF in 2025). Seven global offices. Fortune 20 adoption. Voice has surpassed text as primary channel.",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_271",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "- [TechCrunch: $350M at $10B valuation](https://techcrunch.com/2025/09/04/bret-taylors-sierra-raises-350m-at-a-10b-valuation/)",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_276",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "- [Sierra $100M ARR Blog](https://sierra.ai/blog/100m-arr)",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          }
+        ],
+        "overall_assessment": [
+          {
+            "id": "overall_quality",
+            "type": "overall_assessment",
+            "question": "After reviewing this document, how would you rate its evidence quality?",
+            "context": "File: output/sierra.ai/01-discovery.md | ~18366 chars | ~305 lines",
+            "options": [
+              {
+                "value": "strong",
+                "label": "Strong \u2014 claims are well-sourced with independent evidence"
+              },
+              {
+                "value": "adequate",
+                "label": "Adequate \u2014 most claims have sources but some gaps"
+              },
+              {
+                "value": "weak",
+                "label": "Weak \u2014 many claims lack sources or rely on company materials"
+              },
+              {
+                "value": "theater",
+                "label": "Theater \u2014 sources are mentioned but don't actually support claims"
+              }
+            ]
+          }
+        ]
+      },
+      "task_count": 20,
+      "instructions": "Thank you for helping validate this dossier's scoring. For each task, read the excerpt and select the option that best matches what you observe. Your responses help calibrate our automated scorers against human judgment. There are no wrong answers \u2014 honest assessment is what we need."
+    },
+    {
+      "domain": "sierra.ai",
+      "file": "output/sierra.ai/02-market.md",
+      "phase": 2,
+      "phase_name": "Market",
+      "generated_at": "2026-06-15T20:55:15.970150+00:00",
+      "document_preview": "# Phase 2: Market Research -- Sierra AI  **Date:** 2026-02-18 **Target:** sierra.ai (Sierra Technologies, Inc.) **Analyst:** Claude Opus 4.6  ---  ## 2.1 Problem & Market  ### What Problem Does Sierra Solve?  Sierra solves the **enterprise customer service scalability crisis**. Large consumer-facing companies field millions of support interactions per year across chat, voice, email, and SMS. Each interaction costs $10-$20 when handled by a human agent (primarily labor). These interactions are re",
+      "document_length": 32344,
+      "tasks": {
+        "source_verification": [
+          {
+            "id": "source_regulatory",
+            "type": "source_verification",
+            "question": "The scorer says 'regulatory' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "Secondary**: CIO/CTO (for platform/security approval), CFO (for cost reduction business case)\n- **Verti",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_technical",
+            "type": "source_verification",
+            "question": "The scorer says 'technical' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "committed, $2.00/pay-as-you-go ([Zendesk](https://www.eesel.ai/blog/understanding-zendesk-ai-pricing-a-com",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_media",
+            "type": "source_verification",
+            "question": "The scorer says 'media' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "Fortune Business Insights - Conversational AI Market](https://www.fortunebusinessinsights.com/conversationa",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_community",
+            "type": "source_verification",
+            "question": "The scorer says 'community' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "R/VR) bring unmatched enterprise credibility, recruiting power, and industry relationships\n- **AI-native",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_financial",
+            "type": "source_verification",
+            "question": "The scorer says 'financial' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "valuation (2024). ~650 employees. |\n| **Product** | Ada AI Agent -- omnichannel AI platform for customer serv",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_job_market",
+            "type": "source_verification",
+            "question": "The scorer says 'job_market' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "Hiring and training humans to meet peaks is slow and expensive.\n3. **Quality consistency**: Human agents v",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          }
+        ],
+        "triangulation_verification": [],
+        "specificity_verification": [
+          {
+            "id": "specificity_150",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| **Company** | Forethought (founded 2018, San Francisco). $115M+ raised. |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_43",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "- A human-handled call costs $10-$20. An AI-resolved interaction costs $1-$3. At 100K interactions/month, that's $9-17M/year in savings.",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_176",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| **Company** | Five9 (founded 2001, public: FIVN). ~$900M annual revenue. |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_60",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| Conversational AI (global) | $14.8B | $41.4B | 23.7% | [Grand View Research](https://www.grandviewresearch.com/industry-analysis/conversational-ai-market-report) |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_111",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| **Pricing** | $0.99/resolution + seat-based helpdesk ($29-$139/seat/month). $1M performance guarantee. ([Intercom Pricing](https://www.intercom.com/pricing)) |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_35",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| 2018-2022 | NLU-powered chatbots (Ada, Cognigy, Kore.ai) | Better intent detection but still brittle; couldn't take actions; 20-40% containment |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_126",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| **Performance** | 25-40% automated resolution on simple inquiries; 15% reduction in resolution times ([Zendesk](https://www.eesel.ai/blog/a-complete-guide-to-zendesk-ai-agents-setup-costs-and-best-practices)) |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_112",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| **Performance** | 82% resolution rate (Fin 2); resolves 1M+ tickets/week; $100M+ AI ARR ([Substack](https://thegtmnewsletter.substack.com/p/gtm-178-intercom-ai-agent-outcome-based-pricing-archana-agrawal)) |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          }
+        ],
+        "overall_assessment": [
+          {
+            "id": "overall_quality",
+            "type": "overall_assessment",
+            "question": "After reviewing this document, how would you rate its evidence quality?",
+            "context": "File: output/sierra.ai/02-market.md | ~32344 chars | ~392 lines",
+            "options": [
+              {
+                "value": "strong",
+                "label": "Strong \u2014 claims are well-sourced with independent evidence"
+              },
+              {
+                "value": "adequate",
+                "label": "Adequate \u2014 most claims have sources but some gaps"
+              },
+              {
+                "value": "weak",
+                "label": "Weak \u2014 many claims lack sources or rely on company materials"
+              },
+              {
+                "value": "theater",
+                "label": "Theater \u2014 sources are mentioned but don't actually support claims"
+              }
+            ]
+          }
+        ]
+      },
+      "task_count": 15,
+      "instructions": "Thank you for helping validate this dossier's scoring. For each task, read the excerpt and select the option that best matches what you observe. Your responses help calibrate our automated scorers against human judgment. There are no wrong answers \u2014 honest assessment is what we need."
+    },
+    {
+      "domain": "sierra.ai",
+      "file": "output/sierra.ai/03-technical.md",
+      "phase": 3,
+      "phase_name": "Technical",
+      "generated_at": "2026-06-15T20:55:16.000283+00:00",
+      "document_preview": "# Sierra AI (sierra.ai) - Technical Analysis  **Date:** 2026-02-18 **Phase:** 3 - Technical Analysis **Subject:** Sierra AI - Conversational AI platform for enterprise customer experience  ---  ## 1. GitHub Presence  Sierra maintains two separate GitHub organizations, reflecting a clean separation between product SDKs and research outputs.  ### 1.1 sierra-inc (Product Organization)  URL: https://github.com/sierra-inc  | Repo | Language | Stars | Forks | License | Last Updated | Notes | |------|-",
+      "document_length": 19555,
+      "tasks": {
+        "source_verification": [
+          {
+            "id": "source_regulatory",
+            "type": "source_verification",
+            "question": "The scorer says 'regulatory' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "compliance\n- Can escalate or end conversations for high-risk topics\n- Filters for sensitive topics can interce",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_technical",
+            "type": "source_verification",
+            "question": "The scorer says 'technical' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "github.com/sierra-inc\n\n| Repo | Language | Stars | Forks | License | Last Updated | Notes |\n|------|----------",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_media",
+            "type": "source_verification",
+            "question": "The scorer says 'media' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "TechCrunch)](https://techcrunch.com/2025/09/04/bret-taylors-sierra-raises-350m-at-a-10b-valuation/)\n- [Sierra",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_academic",
+            "type": "source_verification",
+            "question": "The scorer says 'academic' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "arXiv:2406.12045) |\n| tau2-bench | Python | 753 | 182 | MIT | 2025-06-09 | Dual-Control Evaluation for Co",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_community",
+            "type": "source_verification",
+            "question": "The scorer says 'community' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "R/VR and Labs | Deep infra + research background |\n| Karthik Narasimhan | Head of Research | Princeton C",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_financial",
+            "type": "source_verification",
+            "question": "The scorer says 'financial' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "valuation for Conversational Agents (arXiv:2506.07982) |\n\n**Assessment:** Significant research impact. tau-be",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_job_market",
+            "type": "source_verification",
+            "question": "The scorer says 'job_market' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "job postings, React Native SDK | High |\n| **Backend** | Go | gqlgen fork (99designs/gqlgen), job postings (\"Rea",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          }
+        ],
+        "triangulation_verification": [
+          {
+            "id": "triangulation_0",
+            "type": "triangulation_verification",
+            "question": "The scorer says this block has 3 independent source types: financial, job_market, regulatory. Are these truly independent, or do some share the same underlying source?",
+            "excerpt": "| Finding | Implication | |---------|-------------| | 2 GitHub orgs (sierra-inc, sierra-research), 7",
+            "scorer_says": {
+              "source_types": [
+                "financial",
+                "job_market",
+                "regulatory"
+              ],
+              "count": 3
+            },
+            "options": [
+              {
+                "value": "independent",
+                "label": "Yes \u2014 all 3 source types are truly independent"
+              },
+              {
+                "value": "some_dependent",
+                "label": "Some of these sources cite each other or share a common origin"
+              },
+              {
+                "value": "not_independent",
+                "label": "These are NOT independent \u2014 same info in different venues"
+              },
+              {
+                "value": "unsure",
+                "label": "Need to see the full document to judge"
+              }
+            ]
+          },
+          {
+            "id": "triangulation_1",
+            "type": "triangulation_verification",
+            "question": "The scorer says this block has 4 independent source types: academic, financial, media, technical. Are these truly independent, or do some share the same underlying source?",
+            "excerpt": "- [Sierra Engineering Blog](https://sierra.ai/blog/engineering) - [Constellation of Models](https://",
+            "scorer_says": {
+              "source_types": [
+                "academic",
+                "financial",
+                "media",
+                "technical"
+              ],
+              "count": 4
+            },
+            "options": [
+              {
+                "value": "independent",
+                "label": "Yes \u2014 all 4 source types are truly independent"
+              },
+              {
+                "value": "some_dependent",
+                "label": "Some of these sources cite each other or share a common origin"
+              },
+              {
+                "value": "not_independent",
+                "label": "These are NOT independent \u2014 same info in different venues"
+              },
+              {
+                "value": "unsure",
+                "label": "Need to see the full document to judge"
+              }
+            ]
+          }
+        ],
+        "specificity_verification": [
+          {
+            "id": "specificity_35",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "**Assessment:** Significant research impact. tau-bench has 1,099 stars and 184 forks -- a well-cited benchmark in the agent evaluation space. This positions Sierra as a thought leader in agent evaluation methodology. Key contributors include Noah Shinn (author of Reflexion), Karthik Narasimhan (Head",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_247",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "2. **Research credibility is real.** tau-bench (1,099 stars) positions Sierra to shape how the industry evaluates conversational agents. Having Princeton's Karthik Narasimhan as Head of Research, plus Noah Shinn (Reflexion), is a strong signal.",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_286",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| P99 latency reduction of 70%+ claimed | Adaptive routing client provides meaningful performance gains |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_282",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| tau-bench: 1,099 stars, 184 forks | Strong research credibility; Sierra shapes agent evaluation standards |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_318",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "- [Sierra $10B Valuation (TechCrunch)](https://techcrunch.com/2025/09/04/bret-taylors-sierra-raises-350m-at-a-10b-valuation/)",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_32",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| tau-bench | Python | 1,099 | 184 | MIT | 2024-06-06 | Tool-Agent-User Interaction Benchmark (arXiv:2406.12045) |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_245",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "1. **Multi-LLM orchestration is a genuine moat.** Running 15+ models per conversation with automatic failover and adaptive routing is operationally complex. The 70% P99 latency reduction and zero-downtime during provider outages are strong claims backed by engineering blog detail.",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_228",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "Levels.fyi reports median total compensation of $340K for Software Engineer (as of Feb 2026). This is competitive with top-tier AI startups and Big Tech, indicating strong ability to attract talent.",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          }
+        ],
+        "overall_assessment": [
+          {
+            "id": "overall_quality",
+            "type": "overall_assessment",
+            "question": "After reviewing this document, how would you rate its evidence quality?",
+            "context": "File: output/sierra.ai/03-technical.md | ~19555 chars | ~321 lines",
+            "options": [
+              {
+                "value": "strong",
+                "label": "Strong \u2014 claims are well-sourced with independent evidence"
+              },
+              {
+                "value": "adequate",
+                "label": "Adequate \u2014 most claims have sources but some gaps"
+              },
+              {
+                "value": "weak",
+                "label": "Weak \u2014 many claims lack sources or rely on company materials"
+              },
+              {
+                "value": "theater",
+                "label": "Theater \u2014 sources are mentioned but don't actually support claims"
+              }
+            ]
+          }
+        ]
+      },
+      "task_count": 18,
+      "instructions": "Thank you for helping validate this dossier's scoring. For each task, read the excerpt and select the option that best matches what you observe. Your responses help calibrate our automated scorers against human judgment. There are no wrong answers \u2014 honest assessment is what we need."
+    },
+    {
+      "domain": "sierra.ai",
+      "file": "output/sierra.ai/04-claims.md",
+      "phase": 4,
+      "phase_name": "Claims Validation",
+      "generated_at": "2026-06-15T20:55:16.057784+00:00",
+      "document_preview": "# Claims Validation: Sierra AI  **Date:** 2026-02-18 **Phase:** 4 - Claims Validation & Shadow Prediction Market **Subject:** Sierra Technologies, Inc. (sierra.ai) **Analyst:** Automated (Claude Opus 4.6) **Method:** WebSearch across 11 internal signal sources; triangulation with Phase 1 (Discovery) and Phase 3 (Technical) outputs  ---  ## Claims Inventory  | # | Claim | Category | Materiality | Source | Evidence | Confidence | |---|-------|----------|-------------|--------|----------|----------",
+      "document_length": 36690,
+      "tasks": {
+        "source_verification": [
+          {
+            "id": "source_regulatory",
+            "type": "source_verification",
+            "question": "The scorer says 'regulatory' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "GDPR, CCPA, ISO 27001, ISO 42001 certified | Compliance | HIGH | sierra.ai/product/trust-and-reliability",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_employee",
+            "type": "source_verification",
+            "question": "The scorer says 'employee' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "Glassdoor** | YES (11 reviews) | 5.0 rating (Dec 2025). Recruiter review (Jan 2026): \"incredible people,\" \"co",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_customer",
+            "type": "source_verification",
+            "question": "The scorer says 'customer' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "Capterra / Trustpilot** | THIN | G2: Early reviews exist. Clean interface praised. Concerns: learning curve,",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_technical",
+            "type": "source_verification",
+            "question": "The scorer says 'technical' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "commitment consistent with growth plans.\n  - **Enterprise compliance is likely real.** SOC 2, HIPAA, ISO 2",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_media",
+            "type": "source_verification",
+            "question": "The scorer says 'media' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "TechCrunch (Nov 2025) | Self-reported; corroborated by TechCrunch, Yahoo Finance, CNBC. No third-party audit.",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_academic",
+            "type": "source_verification",
+            "question": "The scorer says 'academic' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "publications. 185 Berry St, China Basin. Actually ~257K sq ft per CBRE tally. | HIGH |\n| 19 | ChatGPT one-click",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_community",
+            "type": "source_verification",
+            "question": "The scorer says 'community' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "Reddit** | NO | No meaningful Sierra AI discussions found on Reddit. Multiple searches returned zero relev",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_financial",
+            "type": "source_verification",
+            "question": "The scorer says 'financial' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "Sacra independent estimate tracks. | HIGH |\n| 2 | $150M+ ARR (Jan 2026) / \"first $50M quarter\" | Scale /",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_job_market",
+            "type": "source_verification",
+            "question": "The scorer says 'job_market' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "hiring + contractor/FTE definition differences. | MEDIUM |\n| **Customer count** | \"Hundreds\" | 150-500 | A",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_social",
+            "type": "source_verification",
+            "question": "The scorer says 'social' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "Twitter/X** | LIMITED | @SierraPlatform active with product announcements. Bret Taylor (@btaylor) active. N",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_review_platform",
+            "type": "source_verification",
+            "question": "The scorer says 'review_platform' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "Glassdoor** | YES (11 reviews) | 5.0 rating (Dec 2025). Recruiter review (Jan 2026): \"incredible people,\" \"co",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          }
+        ],
+        "triangulation_verification": [
+          {
+            "id": "triangulation_0",
+            "type": "triangulation_verification",
+            "question": "The scorer says this block has 4 independent source types: academic, financial, media, regulatory. Are these truly independent, or do some share the same underlying source?",
+            "excerpt": "| # | Claim | Category | Materiality | Source | Evidence | Confidence | |---|-------|----------|----",
+            "scorer_says": {
+              "source_types": [
+                "academic",
+                "financial",
+                "media",
+                "regulatory"
+              ],
+              "count": 4
+            },
+            "options": [
+              {
+                "value": "independent",
+                "label": "Yes \u2014 all 4 source types are truly independent"
+              },
+              {
+                "value": "some_dependent",
+                "label": "Some of these sources cite each other or share a common origin"
+              },
+              {
+                "value": "not_independent",
+                "label": "These are NOT independent \u2014 same info in different venues"
+              },
+              {
+                "value": "unsure",
+                "label": "Need to see the full document to judge"
+              }
+            ]
+          },
+          {
+            "id": "triangulation_1",
+            "type": "triangulation_verification",
+            "question": "The scorer says this block has 7 independent source types: academic, community, customer, employee, financial, regulatory, social. Are these truly independent, or do some share the same underlying source?",
+            "excerpt": "| Source | Found? | Key Signals | |--------|--------|-------------| | **Glassdoor** | YES (11 review",
+            "scorer_says": {
+              "source_types": [
+                "academic",
+                "community",
+                "customer",
+                "employee",
+                "financial",
+                "regulatory",
+                "social"
+              ],
+              "count": 7
+            },
+            "options": [
+              {
+                "value": "independent",
+                "label": "Yes \u2014 all 7 source types are truly independent"
+              },
+              {
+                "value": "some_dependent",
+                "label": "Some of these sources cite each other or share a common origin"
+              },
+              {
+                "value": "not_independent",
+                "label": "These are NOT independent \u2014 same info in different venues"
+              },
+              {
+                "value": "unsure",
+                "label": "Need to see the full document to judge"
+              }
+            ]
+          },
+          {
+            "id": "triangulation_2",
+            "type": "triangulation_verification",
+            "question": "The scorer says this block has 4 independent source types: community, financial, job_market, media. Are these truly independent, or do some share the same underlying source?",
+            "excerpt": "| Metric | Company Claims | Triangulated Range | Sources | Confidence | |--------|---------------|--",
+            "scorer_says": {
+              "source_types": [
+                "community",
+                "financial",
+                "job_market",
+                "media"
+              ],
+              "count": 4
+            },
+            "options": [
+              {
+                "value": "independent",
+                "label": "Yes \u2014 all 4 source types are truly independent"
+              },
+              {
+                "value": "some_dependent",
+                "label": "Some of these sources cite each other or share a common origin"
+              },
+              {
+                "value": "not_independent",
+                "label": "These are NOT independent \u2014 same info in different venues"
+              },
+              {
+                "value": "unsure",
+                "label": "Need to see the full document to judge"
+              }
+            ]
+          },
+          {
+            "id": "triangulation_3",
+            "type": "triangulation_verification",
+            "question": "The scorer says this block has 5 independent source types: community, financial, media, regulatory, technical. Are these truly independent, or do some share the same underlying source?",
+            "excerpt": "- **What's real:**   - **Revenue momentum is genuine.** $100M ARR confirmed by TechCrunch, Sacra, an",
+            "scorer_says": {
+              "source_types": [
+                "community",
+                "financial",
+                "media",
+                "regulatory",
+                "technical"
+              ],
+              "count": 5
+            },
+            "options": [
+              {
+                "value": "independent",
+                "label": "Yes \u2014 all 5 source types are truly independent"
+              },
+              {
+                "value": "some_dependent",
+                "label": "Some of these sources cite each other or share a common origin"
+              },
+              {
+                "value": "not_independent",
+                "label": "These are NOT independent \u2014 same info in different venues"
+              },
+              {
+                "value": "unsure",
+                "label": "Need to see the full document to judge"
+              }
+            ]
+          },
+          {
+            "id": "triangulation_4",
+            "type": "triangulation_verification",
+            "question": "The scorer says this block has 3 independent source types: academic, financial, media. Are these truly independent, or do some share the same underlying source?",
+            "excerpt": "- **AI reality score:** 3.8/5   *[Calibration note: Adjusted from 3.5/5 to 3.8/5. The original score",
+            "scorer_says": {
+              "source_types": [
+                "academic",
+                "financial",
+                "media"
+              ],
+              "count": 3
+            },
+            "options": [
+              {
+                "value": "independent",
+                "label": "Yes \u2014 all 3 source types are truly independent"
+              },
+              {
+                "value": "some_dependent",
+                "label": "Some of these sources cite each other or share a common origin"
+              },
+              {
+                "value": "not_independent",
+                "label": "These are NOT independent \u2014 same info in different venues"
+              },
+              {
+                "value": "unsure",
+                "label": "Need to see the full document to judge"
+              }
+            ]
+          }
+        ],
+        "specificity_verification": [
+          {
+            "id": "specificity_211",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "**Bear case (25% probability):** Sierra is an expertly marketed orchestration layer riding the AI hype cycle. As model providers commoditize and enterprise buyers demand tighter integration (Salesforce Agentforce), Sierra's margins compress and growth decelerates. The model provider dependency prove",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_74",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| **Customer count** | \"Hundreds\" | 150-500 | At $150M ARR with $150K-$500K average contract, math yields 300-1,000. \"Hundreds\" is consistent. Named customers (20+) span multiple industries. | MEDIUM |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_78",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| **Valuation multiple** | $10B on ~$100M ARR | 67-100x revenue | At $100M ARR (Sep 2025 raise): 100x. At $150M ARR (current): 67x. Comparable: Anthropic ~50x, OpenAI ~100x+. Elevated but within AI-company range. | MEDIUM |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_205",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "Sierra AI presents as one of the fastest-growing enterprise SaaS companies in recent history, with a genuine revenue trajectory, world-class founders, real enterprise customers, and sophisticated (if not foundational) technology. The claims that can be verified -- $100M ARR, office lease, compliance",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_79",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| **Containment rate (across customers)** | 70% (WeightWatchers) | 50-70% | 70% is best-case (WW). Other customers reportedly see 50-90% automation. G2 reviews mention AI getting \"lost during longer conversations.\" True average likely 55-65%. | LOW-MEDIUM |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_253",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "- [TechCrunch: $100M ARR](https://techcrunch.com/2025/11/21/bret-taylors-sierra-reaches-100m-arr-in-under-two-years/)",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_109",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "- The company is hiring aggressively (15 open roles), paying well ($340K median), and expanding offices. This is consistent with high morale in a fast-growth phase.",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_19",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| 6 | \"50% of families in healthcare\" | Scale / Reach | CRITICAL | Sierra Year Two blog | Likely attributable to R1 partnership (40M calls/year). R1 press release confirms partnership (Oct 2025). Methodology not disclosed. | LOW-MEDIUM |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          }
+        ],
+        "overall_assessment": [
+          {
+            "id": "overall_quality",
+            "type": "overall_assessment",
+            "question": "After reviewing this document, how would you rate its evidence quality?",
+            "context": "File: output/sierra.ai/04-claims.md | ~36690 chars | ~301 lines",
+            "options": [
+              {
+                "value": "strong",
+                "label": "Strong \u2014 claims are well-sourced with independent evidence"
+              },
+              {
+                "value": "adequate",
+                "label": "Adequate \u2014 most claims have sources but some gaps"
+              },
+              {
+                "value": "weak",
+                "label": "Weak \u2014 many claims lack sources or rely on company materials"
+              },
+              {
+                "value": "theater",
+                "label": "Theater \u2014 sources are mentioned but don't actually support claims"
+              }
+            ]
+          }
+        ]
+      },
+      "task_count": 25,
+      "instructions": "Thank you for helping validate this dossier's scoring. For each task, read the excerpt and select the option that best matches what you observe. Your responses help calibrate our automated scorers against human judgment. There are no wrong answers \u2014 honest assessment is what we need."
+    },
+    {
+      "domain": "sierra.ai",
+      "file": "output/sierra.ai/05-academic.md",
+      "phase": 5,
+      "phase_name": "Academic",
+      "generated_at": "2026-06-15T20:55:16.100382+00:00",
+      "document_preview": "# Sierra AI - Phase 5: Academic & IP Analysis  **Target:** sierra.ai **Date:** 2026-02-18 **Analyst:** Automated (Claude Opus 4.6) **Collection method:** WebSearch, GitHub API (WebFetch and arXiv script sandbox-blocked)  ---  ## 5.1 Founder Academic Backgrounds  ### Bret Taylor -- CEO & Co-Founder  | Field | Value | Source | |-------|-------|--------| | **Undergraduate** | BS Computer Science, Stanford University (2002) | [Wikipedia](https://en.wikipedia.org/wiki/Bret_Taylor), [Stanford Engineer",
+      "document_length": 26467,
+      "tasks": {
+        "source_verification": [
+          {
+            "id": "source_regulatory",
+            "type": "source_verification",
+            "question": "The scorer says 'regulatory' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "security | Salesforce, Inc. | Security models for customizable live applications in cloud collaboration",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_technical",
+            "type": "source_verification",
+            "question": "The scorer says 'technical' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "github.com/sierra-research/tau-bench) -- 1,099 stars, 184 forks, MIT license\n- **Significance:** First benchma",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_media",
+            "type": "source_verification",
+            "question": "The scorer says 'media' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "Fortune 40 Under 40 (2016)](https://fortune.com/ranking/40-under-40/2016/clay-bavor/) |\n\n**Assessment:** Ba",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_academic",
+            "type": "source_verification",
+            "question": "The scorer says 'academic' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "arXiv script sandbox-blocked)\n\n---\n\n## 5.1 Founder Academic Backgrounds\n\n### Bret Taylor -- CEO & Co-Foun",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_community",
+            "type": "source_verification",
+            "question": "The scorer says 'community' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "r/bret-taylor/) |\n\n**Assessment:** Taylor is an industry builder, not a researcher. His BS/MS from Stanfor",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_financial",
+            "type": "source_verification",
+            "question": "The scorer says 'financial' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "valuations.\n- **Impact:** Cited in academic research as a critical step toward realistic agent evaluation. An",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_job_market",
+            "type": "source_verification",
+            "question": "The scorer says 'job_market' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "hiring.** Karthik Narasimhan (Princeton professor, GPT co-author, ReAct creator) as Head of Research is a",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          }
+        ],
+        "triangulation_verification": [
+          {
+            "id": "triangulation_0",
+            "type": "triangulation_verification",
+            "question": "The scorer says this block has 3 independent source types: academic, community, media. Are these truly independent, or do some share the same underlying source?",
+            "excerpt": "| Field | Value | Source | |-------|-------|--------| | **Undergraduate** | BS Computer Science, Pri",
+            "scorer_says": {
+              "source_types": [
+                "academic",
+                "community",
+                "media"
+              ],
+              "count": 3
+            },
+            "options": [
+              {
+                "value": "independent",
+                "label": "Yes \u2014 all 3 source types are truly independent"
+              },
+              {
+                "value": "some_dependent",
+                "label": "Some of these sources cite each other or share a common origin"
+              },
+              {
+                "value": "not_independent",
+                "label": "These are NOT independent \u2014 same info in different venues"
+              },
+              {
+                "value": "unsure",
+                "label": "Need to see the full document to judge"
+              }
+            ]
+          },
+          {
+            "id": "triangulation_1",
+            "type": "triangulation_verification",
+            "question": "The scorer says this block has 3 independent source types: academic, financial, technical. Are these truly independent, or do some share the same underlying source?",
+            "excerpt": "#### tau-bench (June 2024) - **Paper:** \"tau-bench: A Benchmark for Tool-Agent-User Interaction in R",
+            "scorer_says": {
+              "source_types": [
+                "academic",
+                "financial",
+                "technical"
+              ],
+              "count": 3
+            },
+            "options": [
+              {
+                "value": "independent",
+                "label": "Yes \u2014 all 3 source types are truly independent"
+              },
+              {
+                "value": "some_dependent",
+                "label": "Some of these sources cite each other or share a common origin"
+              },
+              {
+                "value": "not_independent",
+                "label": "These are NOT independent \u2014 same info in different venues"
+              },
+              {
+                "value": "unsure",
+                "label": "Need to see the full document to judge"
+              }
+            ]
+          },
+          {
+            "id": "triangulation_2",
+            "type": "triangulation_verification",
+            "question": "The scorer says this block has 3 independent source types: academic, community, technical. Are these truly independent, or do some share the same underlying source?",
+            "excerpt": "### Research Team & Papers - [Karthik Narasimhan - Princeton](https://engineering.princeton.edu/facu",
+            "scorer_says": {
+              "source_types": [
+                "academic",
+                "community",
+                "technical"
+              ],
+              "count": 3
+            },
+            "options": [
+              {
+                "value": "independent",
+                "label": "Yes \u2014 all 3 source types are truly independent"
+              },
+              {
+                "value": "some_dependent",
+                "label": "Some of these sources cite each other or share a common origin"
+              },
+              {
+                "value": "not_independent",
+                "label": "These are NOT independent \u2014 same info in different venues"
+              },
+              {
+                "value": "unsure",
+                "label": "Need to see the full document to judge"
+              }
+            ]
+          }
+        ],
+        "specificity_verification": [
+          {
+            "id": "specificity_365",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "- [TechCrunch - $100M ARR](https://techcrunch.com/2025/11/21/bret-taylors-sierra-reaches-100m-arr-in-under-two-years/)",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_151",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "- 67% of businesses view voice as \"foundational\"",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_228",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| [Botpress](https://github.com/botpress/botpress) | 14,555 | TypeScript | Visual chatbot builder + AI | More SMB-focused; visual design emphasis |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_225",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| [LangChain](https://github.com/langchain-ai/langchain) | 126,918 | Python | LLM application framework | Foundation layer; requires building CX on top |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_354",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "- [Rasa GitHub](https://github.com/RasaHQ/rasa) (21,050 stars)",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_61",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "- 4,091+ citations on Google Scholar",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_364",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "- [Sierra $100M ARR blog](https://sierra.ai/blog/100m-arr)",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_227",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| [Rasa](https://github.com/RasaHQ/rasa) | 21,050 | Python | Open-source conversational AI framework | Most direct open-source competitor; full NLP pipeline control |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          }
+        ],
+        "overall_assessment": [
+          {
+            "id": "overall_quality",
+            "type": "overall_assessment",
+            "question": "After reviewing this document, how would you rate its evidence quality?",
+            "context": "File: output/sierra.ai/05-academic.md | ~26467 chars | ~368 lines",
+            "options": [
+              {
+                "value": "strong",
+                "label": "Strong \u2014 claims are well-sourced with independent evidence"
+              },
+              {
+                "value": "adequate",
+                "label": "Adequate \u2014 most claims have sources but some gaps"
+              },
+              {
+                "value": "weak",
+                "label": "Weak \u2014 many claims lack sources or rely on company materials"
+              },
+              {
+                "value": "theater",
+                "label": "Theater \u2014 sources are mentioned but don't actually support claims"
+              }
+            ]
+          }
+        ]
+      },
+      "task_count": 19,
+      "instructions": "Thank you for helping validate this dossier's scoring. For each task, read the excerpt and select the option that best matches what you observe. Your responses help calibrate our automated scorers against human judgment. There are no wrong answers \u2014 honest assessment is what we need."
+    },
+    {
+      "domain": "sierra.ai",
+      "file": "output/sierra.ai/06-valuation.md",
+      "phase": 6,
+      "phase_name": "Valuation",
+      "generated_at": "2026-06-15T20:55:16.183990+00:00",
+      "document_preview": "# Valuation & Replication Assessment: Sierra AI  **Date:** 2026-02-18 **Phase:** 6 - Valuation & Replication Assessment **Subject:** Sierra Technologies, Inc. (sierra.ai) **Analyst:** Automated (Claude Opus 4.6) **Inputs:** Phases 1-5 (Discovery, Market, Technical, Claims, Academic) + supplementary research  ---  ## 6.1 Business Model Analysis  ### Revenue Model  Sierra operates an **outcome-based pricing model** -- the defining characteristic of its business model and a genuine innovation in en",
+      "document_length": 47968,
+      "tasks": {
+        "source_verification": [
+          {
+            "id": "source_regulatory",
+            "type": "source_verification",
+            "question": "The scorer says 'regulatory' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "secondary)** | Fee per conversation for routing/greeting interactions regardless of outcome | [Sierra b",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_technical",
+            "type": "source_verification",
+            "question": "The scorer says 'technical' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "github.com/sierra-research/tau-bench)\n- [tau2-bench (GitHub)](https://github.com/sierra-research/tau2-bench)\n-",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_media",
+            "type": "source_verification",
+            "question": "The scorer says 'media' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "Fortune 500** ($10B+ revenue) | $2-5M | 20-30 | $40-150M | Named customers: Cigna, ADT, SiriusXM. \"20% of c",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_academic",
+            "type": "source_verification",
+            "question": "The scorer says 'academic' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "arXiv 2024-2025) but the architecture is not unique. LangChain, LiteLLM, and custom routers can approxima",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_community",
+            "type": "source_verification",
+            "question": "The scorer says 'community' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "r/compiler)\n\u2502   \u251c\u2500\u2500 Agent Studio Frontend Agents (2-3, React visual builder)\n\u2502   \u251c\u2500\u2500 Agent Studio Simulation A",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_financial",
+            "type": "source_verification",
+            "question": "The scorer says 'financial' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "Valuation & Replication Assessment: Sierra AI\n\n**Date:** 2026-02-18\n**Phase:** 6 - Valuation & Replication As",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_job_market",
+            "type": "source_verification",
+            "question": "The scorer says 'job_market' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "hiring plans suggest confidence in $300M+ ARR by end 2026. |\n| **ACV (Blended)** | $600K-$1M | MEDIUM | De",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          }
+        ],
+        "triangulation_verification": [
+          {
+            "id": "triangulation_0",
+            "type": "triangulation_verification",
+            "question": "The scorer says this block has 3 independent source types: financial, job_market, media. Are these truly independent, or do some share the same underlying source?",
+            "excerpt": "| Metric | Estimate | Confidence | Basis | |--------|----------|------------|-------| | **ARR (Feb 2",
+            "scorer_says": {
+              "source_types": [
+                "financial",
+                "job_market",
+                "media"
+              ],
+              "count": 3
+            },
+            "options": [
+              {
+                "value": "independent",
+                "label": "Yes \u2014 all 3 source types are truly independent"
+              },
+              {
+                "value": "some_dependent",
+                "label": "Some of these sources cite each other or share a common origin"
+              },
+              {
+                "value": "not_independent",
+                "label": "These are NOT independent \u2014 same info in different venues"
+              },
+              {
+                "value": "unsure",
+                "label": "Need to see the full document to judge"
+              }
+            ]
+          },
+          {
+            "id": "triangulation_1",
+            "type": "triangulation_verification",
+            "question": "The scorer says this block has 3 independent source types: community, financial, regulatory. Are these truly independent, or do some share the same underlying source?",
+            "excerpt": "``` Orchestrator Agent (1) \u251c\u2500\u2500 Core Platform Swarm (12-15 agents) \u2502   \u251c\u2500\u2500 Agent OS Architect Agent (",
+            "scorer_says": {
+              "source_types": [
+                "community",
+                "financial",
+                "regulatory"
+              ],
+              "count": 3
+            },
+            "options": [
+              {
+                "value": "independent",
+                "label": "Yes \u2014 all 3 source types are truly independent"
+              },
+              {
+                "value": "some_dependent",
+                "label": "Some of these sources cite each other or share a common origin"
+              },
+              {
+                "value": "not_independent",
+                "label": "These are NOT independent \u2014 same info in different venues"
+              },
+              {
+                "value": "unsure",
+                "label": "Need to see the full document to judge"
+              }
+            ]
+          },
+          {
+            "id": "triangulation_2",
+            "type": "triangulation_verification",
+            "question": "The scorer says this block has 4 independent source types: academic, financial, media, regulatory. Are these truly independent, or do some share the same underlying source?",
+            "excerpt": "| Factor | Score (1-4) | Rationale | |--------|------------|-----------| | **Core Technology: Multi-",
+            "scorer_says": {
+              "source_types": [
+                "academic",
+                "financial",
+                "media",
+                "regulatory"
+              ],
+              "count": 4
+            },
+            "options": [
+              {
+                "value": "independent",
+                "label": "Yes \u2014 all 4 source types are truly independent"
+              },
+              {
+                "value": "some_dependent",
+                "label": "Some of these sources cite each other or share a common origin"
+              },
+              {
+                "value": "not_independent",
+                "label": "These are NOT independent \u2014 same info in different venues"
+              },
+              {
+                "value": "unsure",
+                "label": "Need to see the full document to judge"
+              }
+            ]
+          },
+          {
+            "id": "triangulation_3",
+            "type": "triangulation_verification",
+            "question": "The scorer says this block has 3 independent source types: financial, media, regulatory. Are these truly independent, or do some share the same underlying source?",
+            "excerpt": "### Valuation & Funding - [TechCrunch: $350M at $10B Valuation](https://techcrunch.com/2025/09/04/br",
+            "scorer_says": {
+              "source_types": [
+                "financial",
+                "media",
+                "regulatory"
+              ],
+              "count": 3
+            },
+            "options": [
+              {
+                "value": "independent",
+                "label": "Yes \u2014 all 3 source types are truly independent"
+              },
+              {
+                "value": "some_dependent",
+                "label": "Some of these sources cite each other or share a common origin"
+              },
+              {
+                "value": "not_independent",
+                "label": "These are NOT independent \u2014 same info in different venues"
+              },
+              {
+                "value": "unsure",
+                "label": "Need to see the full document to judge"
+              }
+            ]
+          },
+          {
+            "id": "triangulation_4",
+            "type": "triangulation_verification",
+            "question": "The scorer says this block has 3 independent source types: academic, community, technical. Are these truly independent, or do some share the same underlying source?",
+            "excerpt": "### Research & IP - [tau-bench (GitHub)](https://github.com/sierra-research/tau-bench) - [tau2-bench",
+            "scorer_says": {
+              "source_types": [
+                "academic",
+                "community",
+                "technical"
+              ],
+              "count": 3
+            },
+            "options": [
+              {
+                "value": "independent",
+                "label": "Yes \u2014 all 3 source types are truly independent"
+              },
+              {
+                "value": "some_dependent",
+                "label": "Some of these sources cite each other or share a common origin"
+              },
+              {
+                "value": "not_independent",
+                "label": "These are NOT independent \u2014 same info in different venues"
+              },
+              {
+                "value": "unsure",
+                "label": "Need to see the full document to judge"
+              }
+            ]
+          }
+        ],
+        "specificity_verification": [
+          {
+            "id": "specificity_397",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| **Build on OSS** (LangChain + Vocode + Rasa) | $15-30M | $80-150M | 12-24 months to MVP | ~30-40% coverage; niche positioning |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_241",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| **Integration Layer** | Integration agent (per-customer) | API client generators, CRM/billing/OMS schema adapters, webhook handlers | 10,000-20,000 | 60% (template-driven) |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_421",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "- **In line with AI-era exceptions:** OpenAI (25x), Anthropic (50x). Investors are pricing in the expectation that the enterprise AI agent market will be massive ($44-52B by 2030-2034).",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_96",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| **Revenue per Employee** | $270-910K | LOW | Massive range due to employee count uncertainty (165-553). At 350 employees (most plausible): ~$430K, which is within enterprise SaaS norms. |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_85",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| **ARR (Feb 2026)** | $140-170M | MEDIUM-HIGH | $100M confirmed Nov 2025 (TechCrunch, Sierra). Sierra claims \"first $50M quarter\" and \">$150M\" in Year Two blog. Sacra estimates $150M Jan 2026. Q4 2025 may have benefited from year-end enterprise budget flush. |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_134",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "**Estimated NRR range:** 120-150%. The chat-to-voice expansion and pilot-to-production ramp likely drive very high NRR in the first 2-3 years. As the customer base matures, NRR will compress toward 110-120%. For the current moment, the 400%+ revenue growth is primarily new logo acquisition, not NRR-",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_342",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| **Research credibility** | tau-bench (1,099 stars) establishes Sierra as a thought leader. Replicating this requires publishing equally influential research. | Uncertain -- requires world-class researchers |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_234",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| **Custom VAD Model** | ML engineering agent | PyTorch/TF, audio feature extraction, noise augmentation, model training pipelines | 3,000-5,000 | 30% |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          }
+        ],
+        "overall_assessment": [
+          {
+            "id": "overall_quality",
+            "type": "overall_assessment",
+            "question": "After reviewing this document, how would you rate its evidence quality?",
+            "context": "File: output/sierra.ai/06-valuation.md | ~47968 chars | ~525 lines",
+            "options": [
+              {
+                "value": "strong",
+                "label": "Strong \u2014 claims are well-sourced with independent evidence"
+              },
+              {
+                "value": "adequate",
+                "label": "Adequate \u2014 most claims have sources but some gaps"
+              },
+              {
+                "value": "weak",
+                "label": "Weak \u2014 many claims lack sources or rely on company materials"
+              },
+              {
+                "value": "theater",
+                "label": "Theater \u2014 sources are mentioned but don't actually support claims"
+              }
+            ]
+          }
+        ]
+      },
+      "task_count": 21,
+      "instructions": "Thank you for helping validate this dossier's scoring. For each task, read the excerpt and select the option that best matches what you observe. Your responses help calibrate our automated scorers against human judgment. There are no wrong answers \u2014 honest assessment is what we need."
+    },
+    {
+      "domain": "sierra.ai",
+      "file": "output/sierra.ai/07-report.md",
+      "phase": 7,
+      "phase_name": "Report",
+      "generated_at": "2026-06-15T20:55:16.255945+00:00",
+      "document_preview": "# Dossier Report: Sierra AI (sierra.ai)  **Date:** 2026-02-19 **Version:** 1.0 **Analyst:** Dossier v0.1.0 -- Automated SaaS Due Diligence (Claude Opus 4.6) **Phases Completed:** Discovery, Market Research, Technical Analysis, Claims Validation, Academic & IP, Valuation & Replication, Report Assembly  ---  ## Table of Contents  1. [Company Overview](#1-company-overview) 2. [Market Analysis](#2-market-analysis) 3. [Technical Assessment](#3-technical-assessment) 4. [Claims Validation & Shadow Pred",
+      "document_length": 44727,
+      "tasks": {
+        "source_verification": [
+          {
+            "id": "source_regulatory",
+            "type": "source_verification",
+            "question": "The scorer says 'regulatory' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "Security | Named customer |\n| SoFi | Financial Services | Named customer |\n| Cigna | Healthcare/Insuran",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_employee",
+            "type": "source_verification",
+            "question": "The scorer says 'employee' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "Glassdoor** | 5.0 rating but only 11 reviews. Positive: people, comp, leadership. Thin sample. |\n| **Blind**",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_customer",
+            "type": "source_verification",
+            "question": "The scorer says 'customer' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "Capterra** | Thin reviews. Clean interface praised; concerns about learning curve, cost opacity, bugs in lon",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_technical",
+            "type": "source_verification",
+            "question": "The scorer says 'technical' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "commitment. Verify actual AI resolution rates, integration timelines, and renewal intent.\n\n### For a Poten",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_media",
+            "type": "source_verification",
+            "question": "The scorer says 'media' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "Fortune exclusive and initial customers already live (WeightWatchers, Sonos, SiriusXM, OluKai). The go-to-m",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_academic",
+            "type": "source_verification",
+            "question": "The scorer says 'academic' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "publications (~257K sq ft actual) | HIGH |\n| 19 | ChatGPT one-click publish | **VERIFIED** (OpenAI Frontier Par",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_community",
+            "type": "source_verification",
+            "question": "The scorer says 'community' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "R/VR, they reunited in 2023 to build Sierra. They raised a $110M seed from Sequoia and Benchmark at appr",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_financial",
+            "type": "source_verification",
+            "question": "The scorer says 'financial' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "Valuation & Replication, Report Assembly\n\n---\n\n## Table of Contents\n\n1. [Company Overview](#1-company-overvie",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_job_market",
+            "type": "source_verification",
+            "question": "The scorer says 'job_market' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "Job postings, repos | HIGH |\n| API | GraphQL (gqlgen) | GitHub | HIGH |\n| Research/ML | Python | tau-bench repo",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_social",
+            "type": "source_verification",
+            "question": "The scorer says 'social' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "Twitter/X, GitHub (sierra-inc, sierra-research), Product Hunt, G2\n- TechCrunch, Fortune, CNBC, Axios, Yahoo",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_review_platform",
+            "type": "source_verification",
+            "question": "The scorer says 'review_platform' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "Glassdoor** | 5.0 rating but only 11 reviews. Positive: people, comp, leadership. Thin sample. |\n| **Blind**",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          }
+        ],
+        "triangulation_verification": [
+          {
+            "id": "triangulation_0",
+            "type": "triangulation_verification",
+            "question": "The scorer says this block has 4 independent source types: academic, community, customer, employee. Are these truly independent, or do some share the same underlying source?",
+            "excerpt": "| Source | Summary | |--------|---------| | **Glassdoor** | 5.0 rating but only 11 reviews. Positive",
+            "scorer_says": {
+              "source_types": [
+                "academic",
+                "community",
+                "customer",
+                "employee"
+              ],
+              "count": 4
+            },
+            "options": [
+              {
+                "value": "independent",
+                "label": "Yes \u2014 all 4 source types are truly independent"
+              },
+              {
+                "value": "some_dependent",
+                "label": "Some of these sources cite each other or share a common origin"
+              },
+              {
+                "value": "not_independent",
+                "label": "These are NOT independent \u2014 same info in different venues"
+              },
+              {
+                "value": "unsure",
+                "label": "Need to see the full document to judge"
+              }
+            ]
+          },
+          {
+            "id": "triangulation_1",
+            "type": "triangulation_verification",
+            "question": "The scorer says this block has 7 independent source types: academic, community, employee, financial, job_market, media, regulatory. Are these truly independent, or do some share the same underlying source?",
+            "excerpt": "| Section | Data Quality | Source Diversity | Key Gaps | Reliability Rating | |---------|-----------",
+            "scorer_says": {
+              "source_types": [
+                "academic",
+                "community",
+                "employee",
+                "financial",
+                "job_market",
+                "media",
+                "regulatory"
+              ],
+              "count": 7
+            },
+            "options": [
+              {
+                "value": "independent",
+                "label": "Yes \u2014 all 7 source types are truly independent"
+              },
+              {
+                "value": "some_dependent",
+                "label": "Some of these sources cite each other or share a common origin"
+              },
+              {
+                "value": "not_independent",
+                "label": "These are NOT independent \u2014 same info in different venues"
+              },
+              {
+                "value": "unsure",
+                "label": "Need to see the full document to judge"
+              }
+            ]
+          },
+          {
+            "id": "triangulation_2",
+            "type": "triangulation_verification",
+            "question": "The scorer says this block has 4 independent source types: academic, community, employee, job_market. Are these truly independent, or do some share the same underlying source?",
+            "excerpt": "- **No direct codebase access.** All technical assessments are inferred from public signals (GitHub ",
+            "scorer_says": {
+              "source_types": [
+                "academic",
+                "community",
+                "employee",
+                "job_market"
+              ],
+              "count": 4
+            },
+            "options": [
+              {
+                "value": "independent",
+                "label": "Yes \u2014 all 4 source types are truly independent"
+              },
+              {
+                "value": "some_dependent",
+                "label": "Some of these sources cite each other or share a common origin"
+              },
+              {
+                "value": "not_independent",
+                "label": "These are NOT independent \u2014 same info in different venues"
+              },
+              {
+                "value": "unsure",
+                "label": "Need to see the full document to judge"
+              }
+            ]
+          },
+          {
+            "id": "triangulation_3",
+            "type": "triangulation_verification",
+            "question": "The scorer says this block has 4 independent source types: community, financial, media, social. Are these truly independent, or do some share the same underlying source?",
+            "excerpt": "### Phase 1 Sources (Discovery) - Sierra corporate website (sierra.ai/*), Crunchbase, LinkedIn, Twit",
+            "scorer_says": {
+              "source_types": [
+                "community",
+                "financial",
+                "media",
+                "social"
+              ],
+              "count": 4
+            },
+            "options": [
+              {
+                "value": "independent",
+                "label": "Yes \u2014 all 4 source types are truly independent"
+              },
+              {
+                "value": "some_dependent",
+                "label": "Some of these sources cite each other or share a common origin"
+              },
+              {
+                "value": "not_independent",
+                "label": "These are NOT independent \u2014 same info in different venues"
+              },
+              {
+                "value": "unsure",
+                "label": "Need to see the full document to judge"
+              }
+            ]
+          },
+          {
+            "id": "triangulation_4",
+            "type": "triangulation_verification",
+            "question": "The scorer says this block has 5 independent source types: community, employee, financial, media, regulatory. Are these truly independent, or do some share the same underlying source?",
+            "excerpt": "### Phase 4 Sources (Claims) - Glassdoor (11 reviews), Blind (6+ threads), Hacker News (2 threads) -",
+            "scorer_says": {
+              "source_types": [
+                "community",
+                "employee",
+                "financial",
+                "media",
+                "regulatory"
+              ],
+              "count": 5
+            },
+            "options": [
+              {
+                "value": "independent",
+                "label": "Yes \u2014 all 5 source types are truly independent"
+              },
+              {
+                "value": "some_dependent",
+                "label": "Some of these sources cite each other or share a common origin"
+              },
+              {
+                "value": "not_independent",
+                "label": "These are NOT independent \u2014 same info in different venues"
+              },
+              {
+                "value": "unsure",
+                "label": "Need to see the full document to judge"
+              }
+            ]
+          }
+        ],
+        "specificity_verification": [
+          {
+            "id": "specificity_93",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "Sierra solves the enterprise customer service scalability crisis. Large consumer-facing companies field millions of support interactions annually across chat, voice, email, and SMS. Each human-handled interaction costs $10-$20. Sierra's AI agents autonomously resolve interactions end-to-end -- authe",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_439",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "**The contradiction:** Sierra's growth velocity justifies attention but not blind conviction. The Q4 2025 \"first $50M quarter\" could reflect a year-end enterprise budget flush rather than sustained acceleration. The jump from $100M (November 2025) to \"$150M+\" (January 2026, two months later) require",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_458",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "- **Market (Phase 2):** Contact center voice is a $4-12B market; Sierra must close maturity gap vs Cognigy/NICE/Five9",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_401",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| **Bear:** 60% / 30% growth | $312M | 15-25x | $5-8B | 0.5-0.8x down |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_310",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| Chatwoot | 27,316 | Open-source customer support platform |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_497",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| **Revenue / Growth** | MEDIUM-HIGH | Sierra, TechCrunch, Sacra, CNBC | $150M unaudited; NRR, margins unknown | B+ |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_182",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "2. Research credibility through tau-bench (1,099 stars) shapes agent evaluation standards",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_40",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| **Total Funding** | $635M+ across 3 rounds + undisclosed SoftBank | HIGH |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          }
+        ],
+        "overall_assessment": [
+          {
+            "id": "overall_quality",
+            "type": "overall_assessment",
+            "question": "After reviewing this document, how would you rate its evidence quality?",
+            "context": "File: output/sierra.ai/07-report.md | ~44727 chars | ~614 lines",
+            "options": [
+              {
+                "value": "strong",
+                "label": "Strong \u2014 claims are well-sourced with independent evidence"
+              },
+              {
+                "value": "adequate",
+                "label": "Adequate \u2014 most claims have sources but some gaps"
+              },
+              {
+                "value": "weak",
+                "label": "Weak \u2014 many claims lack sources or rely on company materials"
+              },
+              {
+                "value": "theater",
+                "label": "Theater \u2014 sources are mentioned but don't actually support claims"
+              }
+            ]
+          }
+        ]
+      },
+      "task_count": 25,
+      "instructions": "Thank you for helping validate this dossier's scoring. For each task, read the excerpt and select the option that best matches what you observe. Your responses help calibrate our automated scorers against human judgment. There are no wrong answers \u2014 honest assessment is what we need."
+    }
+  ]
+}

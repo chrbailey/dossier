@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dossier Scorer Validation</title>
+<style>
+  :root {
+    --bg: #0d1117;
+    --surface: #161b22;
+    --border: #30363d;
+    --text: #e6edf3;
+    --text-muted: #8b949e;
+    --accent: #58a6ff;
+    --green: #3fb950;
+    --yellow: #d29922;
+    --red: #f85149;
+    --purple: #bc8cff;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    min-height: 100vh;
+  }
+  .container { max-width: 800px; margin: 0 auto; padding: 20px; }
+
+  header {
+    text-align: center;
+    padding: 40px 20px 30px;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 30px;
+  }
+  header h1 { font-size: 1.8em; margin-bottom: 8px; }
+  header p { color: var(--text-muted); max-width: 600px; margin: 0 auto; }
+
+  .domain-select {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  .domain-select h2 { font-size: 1.1em; margin-bottom: 12px; }
+  .domain-select input {
+    width: 100%;
+    padding: 10px 14px;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    color: var(--text);
+    font-size: 1em;
+  }
+  .domain-select input:focus { outline: none; border-color: var(--accent); }
+  .domain-select .hint { color: var(--text-muted); font-size: 0.85em; margin-top: 6px; }
+  .domain-btn {
+    margin-top: 12px;
+    padding: 10px 20px;
+    background: var(--accent);
+    color: var(--bg);
+    border: none;
+    border-radius: 6px;
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .domain-btn:hover { opacity: 0.9; }
+  .domain-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+
+  .progress-bar {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin-bottom: 20px;
+    display: none;
+  }
+  .progress-bar .bar {
+    height: 6px;
+    background: var(--border);
+    border-radius: 3px;
+    overflow: hidden;
+    margin-top: 8px;
+  }
+  .progress-bar .fill {
+    height: 100%;
+    background: var(--green);
+    border-radius: 3px;
+    transition: width 0.3s;
+  }
+  .progress-text { display: flex; justify-content: space-between; font-size: 0.9em; }
+  .progress-text span:last-child { color: var(--text-muted); }
+
+  .task-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 24px;
+    margin-bottom: 16px;
+    display: none;
+  }
+  .task-card.active { display: block; }
+  .task-type {
+    display: inline-block;
+    font-size: 0.75em;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 3px 8px;
+    border-radius: 4px;
+    margin-bottom: 12px;
+  }
+  .task-type.source { background: rgba(88,166,255,0.15); color: var(--accent); }
+  .task-type.triangulation { background: rgba(188,140,255,0.15); color: var(--purple); }
+  .task-type.specificity { background: rgba(210,153,34,0.15); color: var(--yellow); }
+  .task-type.overall { background: rgba(63,185,80,0.15); color: var(--green); }
+
+  .task-question {
+    font-size: 1.05em;
+    margin-bottom: 16px;
+    line-height: 1.5;
+  }
+  .task-excerpt {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 14px;
+    margin-bottom: 16px;
+    font-family: 'SFMono-Regular', Consolas, monospace;
+    font-size: 0.85em;
+    line-height: 1.5;
+    max-height: 200px;
+    overflow-y: auto;
+    white-space: pre-wrap;
+    word-break: break-word;
+    color: var(--text-muted);
+  }
+  .scorer-says {
+    font-size: 0.85em;
+    color: var(--text-muted);
+    margin-bottom: 12px;
+    padding: 8px 12px;
+    background: rgba(88,166,255,0.08);
+    border-radius: 4px;
+    border-left: 3px solid var(--accent);
+  }
+  .scorer-says strong { color: var(--accent); }
+
+  .options { display: flex; flex-direction: column; gap: 8px; }
+  .option-btn {
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 12px 16px;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    color: var(--text);
+    font-size: 0.95em;
+    cursor: pointer;
+    transition: all 0.15s;
+  }
+  .option-btn:hover { border-color: var(--accent); background: rgba(88,166,255,0.08); }
+  .option-btn.selected {
+    border-color: var(--green);
+    background: rgba(63,185,80,0.1);
+  }
+
+  .notes-field {
+    width: 100%;
+    margin-top: 12px;
+    padding: 10px 14px;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    color: var(--text);
+    font-size: 0.9em;
+    resize: vertical;
+    min-height: 60px;
+    font-family: inherit;
+  }
+  .notes-field::placeholder { color: var(--text-muted); }
+  .notes-field:focus { outline: none; border-color: var(--accent); }
+
+  .nav-buttons {
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
+    justify-content: space-between;
+  }
+  .nav-btn {
+    padding: 10px 24px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    background: var(--surface);
+    color: var(--text);
+    font-size: 0.95em;
+    cursor: pointer;
+  }
+  .nav-btn:hover { border-color: var(--accent); }
+  .nav-btn.primary { background: var(--accent); color: var(--bg); border-color: var(--accent); font-weight: 600; }
+  .nav-btn.primary:hover { opacity: 0.9; }
+  .nav-btn:disabled { opacity: 0.4; cursor: not-allowed; }
+
+  .results {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 24px;
+    display: none;
+  }
+  .results h2 { margin-bottom: 16px; }
+  .results pre {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 14px;
+    font-size: 0.85em;
+    overflow-x: auto;
+    max-height: 400px;
+    overflow-y: auto;
+  }
+  .results .actions { margin-top: 16px; display: flex; gap: 12px; flex-wrap: wrap; }
+
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 12px;
+    margin-bottom: 20px;
+  }
+  .stat-card {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 12px;
+    text-align: center;
+  }
+  .stat-card .num { font-size: 1.5em; font-weight: 700; }
+  .stat-card .label { font-size: 0.8em; color: var(--text-muted); }
+
+  #error-msg {
+    background: rgba(248,81,73,0.1);
+    border: 1px solid var(--red);
+    border-radius: 6px;
+    padding: 12px;
+    margin-bottom: 16px;
+    display: none;
+    color: var(--red);
+  }
+
+  @media (max-width: 600px) {
+    .container { padding: 12px; }
+    header { padding: 24px 12px 20px; }
+    header h1 { font-size: 1.4em; }
+    .task-card { padding: 16px; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>Dossier Scorer Validation</h1>
+  <p>Help calibrate our automated scoring by checking what the scorer claims
+     against what you actually see in the document. Your answers become
+     ground truth for improving accuracy.</p>
+</header>
+
+<div class="container">
+  <div id="error-msg"></div>
+
+  <div class="domain-select" id="domain-select">
+    <h2>Select a company to validate</h2>
+    <input type="text" id="domain-input" placeholder="e.g. vercel.com" autocomplete="off">
+    <div class="hint">Enter the domain of a company that has validation tasks generated.</div>
+    <button class="domain-btn" id="load-btn" onclick="loadTasks()">Load Validation Tasks</button>
+  </div>
+
+  <div class="progress-bar" id="progress">
+    <div class="progress-text">
+      <span id="progress-label">Task 1 of 20</span>
+      <span id="progress-phase">Phase 4: Claims</span>
+    </div>
+    <div class="bar"><div class="fill" id="progress-fill" style="width: 0%"></div></div>
+  </div>
+
+  <div id="task-container"></div>
+
+  <div class="nav-buttons" id="nav" style="display:none">
+    <button class="nav-btn" id="prev-btn" onclick="prevTask()" disabled>Previous</button>
+    <button class="nav-btn" id="skip-btn" onclick="skipTask()">Skip</button>
+    <button class="nav-btn primary" id="next-btn" onclick="nextTask()">Next</button>
+  </div>
+
+  <div class="results" id="results">
+    <h2>Validation Complete</h2>
+    <div class="stats" id="stats"></div>
+    <p>Download your responses and share them back. They become ground truth
+       for calibrating the scorer.</p>
+    <pre id="results-json"></pre>
+    <div class="actions">
+      <button class="nav-btn primary" onclick="downloadResults()">Download Results JSON</button>
+      <button class="nav-btn" onclick="copyResults()">Copy to Clipboard</button>
+      <button class="nav-btn" onclick="startOver()">Validate Another</button>
+    </div>
+  </div>
+</div>
+
+<script>
+let tasksData = null;
+let allTasks = [];
+let currentIdx = 0;
+let responses = {};
+let validatorId = 'v_' + Math.random().toString(36).slice(2, 10);
+
+function showError(msg) {
+  const el = document.getElementById('error-msg');
+  el.textContent = msg;
+  el.style.display = 'block';
+  setTimeout(() => el.style.display = 'none', 8000);
+}
+
+async function loadTasks() {
+  const domain = document.getElementById('domain-input').value.trim();
+  if (!domain) { showError('Enter a domain name'); return; }
+
+  const btn = document.getElementById('load-btn');
+  btn.disabled = true;
+  btn.textContent = 'Loading...';
+
+  try {
+    const url = `data/${domain}/validation-tasks.json`;
+    const resp = await fetch(url);
+    if (!resp.ok) throw new Error(`No tasks found for ${domain} (${resp.status})`);
+    tasksData = await resp.json();
+
+    allTasks = [];
+    for (const file of tasksData.files || []) {
+      for (const [type, tasks] of Object.entries(file.tasks || {})) {
+        for (const task of tasks) {
+          allTasks.push({ ...task, phase: file.phase, phase_name: file.phase_name, file: file.file });
+        }
+      }
+    }
+
+    if (allTasks.length === 0) { showError('No tasks found in this file'); return; }
+
+    document.getElementById('domain-select').style.display = 'none';
+    document.getElementById('progress').style.display = 'block';
+    document.getElementById('nav').style.display = 'flex';
+
+    currentIdx = 0;
+    responses = {};
+    renderTask();
+  } catch (e) {
+    showError(e.message);
+  } finally {
+    btn.disabled = false;
+    btn.textContent = 'Load Validation Tasks';
+  }
+}
+
+function renderTask() {
+  if (currentIdx >= allTasks.length) { showResults(); return; }
+
+  const task = allTasks[currentIdx];
+  const total = allTasks.length;
+
+  document.getElementById('progress-label').textContent = `Task ${currentIdx + 1} of ${total}`;
+  document.getElementById('progress-phase').textContent = `Phase ${task.phase}: ${task.phase_name}`;
+  document.getElementById('progress-fill').style.width = `${(currentIdx / total) * 100}%`;
+
+  const typeClass = task.type.includes('source') ? 'source' :
+                    task.type.includes('triangulation') ? 'triangulation' :
+                    task.type.includes('specificity') ? 'specificity' : 'overall';
+
+  const typeName = task.type.replace(/_/g, ' ');
+
+  let scorerHtml = '';
+  if (task.scorer_says) {
+    scorerHtml = `<div class="scorer-says"><strong>Scorer claims:</strong> ${JSON.stringify(task.scorer_says)}</div>`;
+  }
+
+  let excerptHtml = '';
+  if (task.excerpt) {
+    excerptHtml = `<div class="task-excerpt">${escapeHtml(task.excerpt)}</div>`;
+  }
+
+  const prevResponse = responses[task.id];
+  const optionsHtml = (task.options || []).map(opt => {
+    const selected = prevResponse && prevResponse.value === opt.value ? ' selected' : '';
+    return `<button class="option-btn${selected}" onclick="selectOption('${task.id}', '${opt.value}', this)">${escapeHtml(opt.label)}</button>`;
+  }).join('');
+
+  const prevNotes = prevResponse ? (prevResponse.notes || '') : '';
+
+  const container = document.getElementById('task-container');
+  container.innerHTML = `
+    <div class="task-card active">
+      <span class="task-type ${typeClass}">${typeName}</span>
+      <div class="task-question">${escapeHtml(task.question)}</div>
+      ${scorerHtml}
+      ${excerptHtml}
+      <div class="options">${optionsHtml}</div>
+      <textarea class="notes-field" id="notes-${task.id}"
+        placeholder="Optional: add notes about your reasoning..."
+        oninput="saveNotes('${task.id}', this.value)">${escapeHtml(prevNotes)}</textarea>
+    </div>
+  `;
+
+  document.getElementById('prev-btn').disabled = currentIdx === 0;
+  document.getElementById('next-btn').textContent = currentIdx === total - 1 ? 'Finish' : 'Next';
+}
+
+function selectOption(taskId, value, btn) {
+  btn.parentElement.querySelectorAll('.option-btn').forEach(b => b.classList.remove('selected'));
+  btn.classList.add('selected');
+
+  if (!responses[taskId]) responses[taskId] = {};
+  responses[taskId].value = value;
+  responses[taskId].task_id = taskId;
+  responses[taskId].task_type = allTasks[currentIdx].type;
+  responses[taskId].timestamp = new Date().toISOString();
+}
+
+function saveNotes(taskId, notes) {
+  if (!responses[taskId]) responses[taskId] = {};
+  responses[taskId].notes = notes;
+}
+
+function nextTask() {
+  currentIdx++;
+  if (currentIdx >= allTasks.length) { showResults(); return; }
+  renderTask();
+}
+
+function prevTask() {
+  if (currentIdx > 0) { currentIdx--; renderTask(); }
+}
+
+function skipTask() {
+  const task = allTasks[currentIdx];
+  responses[task.id] = { task_id: task.id, value: 'skipped', task_type: task.type, timestamp: new Date().toISOString() };
+  nextTask();
+}
+
+function showResults() {
+  document.getElementById('task-container').innerHTML = '';
+  document.getElementById('nav').style.display = 'none';
+  document.getElementById('progress').style.display = 'none';
+
+  const answered = Object.values(responses).filter(r => r.value && r.value !== 'skipped').length;
+  const skipped = Object.values(responses).filter(r => r.value === 'skipped').length;
+  const total = allTasks.length;
+
+  // Compute agreement stats
+  let scorerAgrees = 0;
+  let scorerDisagrees = 0;
+  for (const [id, resp] of Object.entries(responses)) {
+    if (resp.value === 'skipped' || resp.value === 'unsure') continue;
+    const task = allTasks.find(t => t.id === id);
+    if (!task) continue;
+    if (task.type === 'source_verification') {
+      const scorerSaysData = task.scorer_says && task.scorer_says.has_data;
+      const humanSaysData = resp.value === 'has_data';
+      if (scorerSaysData === humanSaysData) scorerAgrees++;
+      else scorerDisagrees++;
+    }
+    if (task.type === 'triangulation_verification') {
+      if (resp.value === 'independent') scorerAgrees++;
+      else scorerDisagrees++;
+    }
+  }
+
+  document.getElementById('stats').innerHTML = `
+    <div class="stat-card"><div class="num">${answered}</div><div class="label">Answered</div></div>
+    <div class="stat-card"><div class="num">${skipped}</div><div class="label">Skipped</div></div>
+    <div class="stat-card"><div class="num" style="color:var(--green)">${scorerAgrees}</div><div class="label">Scorer Correct</div></div>
+    <div class="stat-card"><div class="num" style="color:var(--red)">${scorerDisagrees}</div><div class="label">Scorer Wrong</div></div>
+  `;
+
+  const output = {
+    validator_id: validatorId,
+    domain: tasksData.domain,
+    completed_at: new Date().toISOString(),
+    summary: { total, answered, skipped, scorer_agrees: scorerAgrees, scorer_disagrees: scorerDisagrees },
+    responses: responses,
+  };
+
+  document.getElementById('results-json').textContent = JSON.stringify(output, null, 2);
+  document.getElementById('results').style.display = 'block';
+  document.getElementById('progress-fill').style.width = '100%';
+}
+
+function downloadResults() {
+  const output = {
+    validator_id: validatorId,
+    domain: tasksData.domain,
+    completed_at: new Date().toISOString(),
+    summary: {
+      total: allTasks.length,
+      answered: Object.values(responses).filter(r => r.value && r.value !== 'skipped').length,
+      skipped: Object.values(responses).filter(r => r.value === 'skipped').length,
+    },
+    responses: responses,
+  };
+  const blob = new Blob([JSON.stringify(output, null, 2)], { type: 'application/json' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = `validation-${tasksData.domain}-${validatorId}.json`;
+  a.click();
+  URL.revokeObjectURL(url);
+}
+
+function copyResults() {
+  const text = document.getElementById('results-json').textContent;
+  navigator.clipboard.writeText(text).then(() => {
+    showError('Copied to clipboard!');
+    document.getElementById('error-msg').style.borderColor = 'var(--green)';
+    document.getElementById('error-msg').style.color = 'var(--green)';
+  });
+}
+
+function startOver() {
+  document.getElementById('results').style.display = 'none';
+  document.getElementById('domain-select').style.display = 'block';
+  tasksData = null;
+  allTasks = [];
+  responses = {};
+  currentIdx = 0;
+}
+
+function escapeHtml(s) {
+  if (!s) return '';
+  return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+}
+
+document.getElementById('domain-input').addEventListener('keypress', e => {
+  if (e.key === 'Enter') loadTasks();
+});
+
+const params = new URLSearchParams(window.location.search);
+if (params.get('domain')) {
+  document.getElementById('domain-input').value = params.get('domain');
+  loadTasks();
+}
+</script>
+</body>
+</html>

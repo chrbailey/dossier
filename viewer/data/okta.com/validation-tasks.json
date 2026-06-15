@@ -1,0 +1,3601 @@
+{
+  "domain": "okta.com",
+  "files": [
+    {
+      "domain": "okta.com",
+      "file": "output/okta.com/01-discovery.md",
+      "phase": 1,
+      "phase_name": "Discovery",
+      "generated_at": "2026-06-15T20:55:09.781372+00:00",
+      "document_preview": "# Discovery: okta.com  **Analysis Date:** 2026-02-18 **Analyst:** Automated SaaS Due Diligence (Phase 1)  ---  ## Company Identity  | Field | Value | Source | |-------|-------|--------| | **Legal Name** | Okta, Inc. | [SEC S-1 Filing](https://www.sec.gov/Archives/edgar/data/1660134/000119312517080301/d289173ds1.htm) | | **Domain** | okta.com | Direct | | **Founded** | 2009 (as Saasure Inc., CA); reincorporated 2010 as Okta, Inc. (DE) | [SEC Filing](https://www.sec.gov/Archives/edgar/data/1660134",
+      "document_length": 18384,
+      "tasks": {
+        "source_verification": [
+          {
+            "id": "source_regulatory",
+            "type": "source_verification",
+            "question": "The scorer says 'regulatory' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "SEC S-1 Filing](https://www.sec.gov/Archives/edgar/data/1660134/000119312517080301/d289173ds1.htm) |\n|",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_customer",
+            "type": "source_verification",
+            "question": "The scorer says 'customer' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "Capterra** | 4.7/5.0 | ~905-927 reviews | [Capterra](https://www.capterra.com/p/119653/Okta/reviews/) |\n| **",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_technical",
+            "type": "source_verification",
+            "question": "The scorer says 'technical' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "github.com/okta](https://github.com/okta) | 87 repositories; SDKs in Java, Go, .NET, Python, Kotlin, Swift, Ja",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_media",
+            "type": "source_verification",
+            "question": "The scorer says 'media' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "Fortune](https://fortune.com/2021/05/03/okta-auth0-deal-stock-login-acquisition/) |\n\n### Primary Product De",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_academic",
+            "type": "source_verification",
+            "question": "The scorer says 'academic' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "paper](https://www.okta.com/resources/whitepaper/how-okta-builds-and-runs-scalable-infrastructure/), job",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_community",
+            "type": "source_verification",
+            "question": "The scorer says 'community' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "r/data/1660134/000119312517080301/d289173ds1.htm) |\n| **Domain** | okta.com | Direct |\n| **Founded** | 200",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_financial",
+            "type": "source_verification",
+            "question": "The scorer says 'financial' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "PitchBook reports 5,914; other sources report up to 7,064 as of Jan 31, 2026; LinkedIn range: 5,001-10,000) |",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_job_market",
+            "type": "source_verification",
+            "question": "The scorer says 'job_market' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "job postings |\n| **Kubernetes** | HIGH | Job postings, [architecture interview](https://platocommunity.substack",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_social",
+            "type": "source_verification",
+            "question": "The scorer says 'social' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "Twitter)** | [@okta](https://x.com/okta) | ~42,500 followers; active posting on identity security, AI, ente",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_review_platform",
+            "type": "source_verification",
+            "question": "The scorer says 'review_platform' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "layoffs or restructuring have occurred in FY2026. SEC 10-K filing would provide authoritative number.\n- **",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          }
+        ],
+        "triangulation_verification": [
+          {
+            "id": "triangulation_0",
+            "type": "triangulation_verification",
+            "question": "The scorer says this block has 4 independent source types: community, financial, media, regulatory. Are these truly independent, or do some share the same underlying source?",
+            "excerpt": "| Field | Value | Source | |-------|-------|--------| | **Legal Name** | Okta, Inc. | [SEC S-1 Filin",
+            "scorer_says": {
+              "source_types": [
+                "community",
+                "financial",
+                "media",
+                "regulatory"
+              ],
+              "count": 4
+            },
+            "options": [
+              {
+                "value": "independent",
+                "label": "Yes \u2014 all 4 source types are truly independent"
+              },
+              {
+                "value": "some_dependent",
+                "label": "Some of these sources cite each other or share a common origin"
+              },
+              {
+                "value": "not_independent",
+                "label": "These are NOT independent \u2014 same info in different venues"
+              },
+              {
+                "value": "unsure",
+                "label": "Need to see the full document to judge"
+              }
+            ]
+          },
+          {
+            "id": "triangulation_1",
+            "type": "triangulation_verification",
+            "question": "The scorer says this block has 3 independent source types: regulatory, social, technical. Are these truly independent, or do some share the same underlying source?",
+            "excerpt": "| Platform | Handle/URL | Details | Source | |----------|-----------|---------|--------| | **LinkedI",
+            "scorer_says": {
+              "source_types": [
+                "regulatory",
+                "social",
+                "technical"
+              ],
+              "count": 3
+            },
+            "options": [
+              {
+                "value": "independent",
+                "label": "Yes \u2014 all 3 source types are truly independent"
+              },
+              {
+                "value": "some_dependent",
+                "label": "Some of these sources cite each other or share a common origin"
+              },
+              {
+                "value": "not_independent",
+                "label": "These are NOT independent \u2014 same info in different venues"
+              },
+              {
+                "value": "unsure",
+                "label": "Need to see the full document to judge"
+              }
+            ]
+          },
+          {
+            "id": "triangulation_2",
+            "type": "triangulation_verification",
+            "question": "The scorer says this block has 3 independent source types: community, customer, regulatory. Are these truly independent, or do some share the same underlying source?",
+            "excerpt": "**Review sentiment summary** (across platforms): - **Strengths:** Intuitive SSO, broad app integrati",
+            "scorer_says": {
+              "source_types": [
+                "community",
+                "customer",
+                "regulatory"
+              ],
+              "count": 3
+            },
+            "options": [
+              {
+                "value": "independent",
+                "label": "Yes \u2014 all 3 source types are truly independent"
+              },
+              {
+                "value": "some_dependent",
+                "label": "Some of these sources cite each other or share a common origin"
+              },
+              {
+                "value": "not_independent",
+                "label": "These are NOT independent \u2014 same info in different venues"
+              },
+              {
+                "value": "unsure",
+                "label": "Need to see the full document to judge"
+              }
+            ]
+          },
+          {
+            "id": "triangulation_3",
+            "type": "triangulation_verification",
+            "question": "The scorer says this block has 4 independent source types: academic, community, job_market, technical. Are these truly independent, or do some share the same underlying source?",
+            "excerpt": "| Technology | Confidence | Signal Source | |-----------|------------|---------------| | **AWS (prim",
+            "scorer_says": {
+              "source_types": [
+                "academic",
+                "community",
+                "job_market",
+                "technical"
+              ],
+              "count": 4
+            },
+            "options": [
+              {
+                "value": "independent",
+                "label": "Yes \u2014 all 4 source types are truly independent"
+              },
+              {
+                "value": "some_dependent",
+                "label": "Some of these sources cite each other or share a common origin"
+              },
+              {
+                "value": "not_independent",
+                "label": "These are NOT independent \u2014 same info in different venues"
+              },
+              {
+                "value": "unsure",
+                "label": "Need to see the full document to judge"
+              }
+            ]
+          }
+        ],
+        "specificity_verification": [
+          {
+            "id": "specificity_18",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| **Market Cap** | ~$15.1-15.5 billion (Feb 2026) | [companiesmarketcap.com](https://companiesmarketcap.com/okta/marketcap/), [StockAnalysis](https://stockanalysis.com/stocks/okta/market-cap/) |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_127",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| Starter Suite | $6/user/month | Getting started with identity |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_128",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| Essentials Suite | $17/user/month | Scaling identity security |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_17",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| **Funding Status** | Public: NASDAQ: OKTA (IPO April 7, 2017 at $17/share, raised $187M) | [CNBC](https://www.cnbc.com/2017/04/07/okta-ipo-share-price-nasdaq-trading.html), [Crunchbase](https://www.crunchbase.com/organization/okta) |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_69",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| **LinkedIn** | [Okta, Inc.](https://www.linkedin.com/company/okta-inc-) | 5,001-10,000 employees listed; active company page with Life, Jobs sections | WebSearch |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_228",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "- **Exact current employee count:** Sources range from 5,914 to 7,064 \u2014 unclear if recent layoffs or restructuring have occurred in FY2026. SEC 10-K filing would provide authoritative number.",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_44",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "3. **Scale and reliability** \u2014 99.99% uptime SLA, processes billions of authentications, cell-based multi-tenant architecture",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_214",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "1. **Okta is the dominant pure-play public identity company** \u2014 $2.6B revenue, ~$15B market cap, NASDAQ-listed since 2017. The Auth0 acquisition ($6.5B, 2021) gave them both enterprise (top-down) and developer (bottom-up) go-to-market motions. Only CyberArk remains as a comparable pure-play public I",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          }
+        ],
+        "overall_assessment": [
+          {
+            "id": "overall_quality",
+            "type": "overall_assessment",
+            "question": "After reviewing this document, how would you rate its evidence quality?",
+            "context": "File: output/okta.com/01-discovery.md | ~18384 chars | ~237 lines",
+            "options": [
+              {
+                "value": "strong",
+                "label": "Strong \u2014 claims are well-sourced with independent evidence"
+              },
+              {
+                "value": "adequate",
+                "label": "Adequate \u2014 most claims have sources but some gaps"
+              },
+              {
+                "value": "weak",
+                "label": "Weak \u2014 many claims lack sources or rely on company materials"
+              },
+              {
+                "value": "theater",
+                "label": "Theater \u2014 sources are mentioned but don't actually support claims"
+              }
+            ]
+          }
+        ]
+      },
+      "task_count": 23,
+      "instructions": "Thank you for helping validate this dossier's scoring. For each task, read the excerpt and select the option that best matches what you observe. Your responses help calibrate our automated scorers against human judgment. There are no wrong answers \u2014 honest assessment is what we need."
+    },
+    {
+      "domain": "okta.com",
+      "file": "output/okta.com/02-market.md",
+      "phase": 2,
+      "phase_name": "Market",
+      "generated_at": "2026-06-15T20:55:09.829535+00:00",
+      "document_preview": "# Phase 2: Market Research -- Okta, Inc. (NASDAQ: OKTA)  **Analysis Date:** 2026-02-18 **Domain:** okta.com **Analyst:** Claude Opus 4.6 (automated SaaS due diligence)  ---  ## 1. Problem Statement  ### What Problem Does Okta Solve?  Okta solves the **identity fragmentation problem**: as organizations adopt dozens to hundreds of SaaS applications, cloud infrastructure, and hybrid environments, they face an exponentially growing challenge of managing who can access what, when, and how -- across e",
+      "document_length": 30820,
+      "tasks": {
+        "source_verification": [
+          {
+            "id": "source_regulatory",
+            "type": "source_verification",
+            "question": "The scorer says 'regulatory' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "Security gaps**: Credentials sprawl across systems, each a potential breach vector. 80%+ of breaches in",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_media",
+            "type": "source_verification",
+            "question": "The scorer says 'media' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "Fortune 500 as customers |\n| **Target Segment** | Large enterprise compliance-driven buyers |\n| **Overlap w",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_community",
+            "type": "source_verification",
+            "question": "The scorer says 'community' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "r/mo, P2 $9/user/mo standalone; often included in E3/E5 bundles |\n| **Target Segment** | Microsoft-centr",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_financial",
+            "type": "source_verification",
+            "question": "The scorer says 'financial' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "valuation multiples.\n- **NRR declining**: Net retention rate dropped from 120%+ historically to 106% in Q2 FY",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_review_platform",
+            "type": "source_verification",
+            "question": "The scorer says 'review_platform' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "layoffs reduce federal user counts. Enterprise cost optimization programs scrutinize per-user SaaS costs.",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          }
+        ],
+        "triangulation_verification": [
+          {
+            "id": "triangulation_0",
+            "type": "triangulation_verification",
+            "question": "The scorer says this block has 3 independent source types: community, financial, regulatory. Are these truly independent, or do some share the same underlying source?",
+            "excerpt": "- **Revenue growth decelerating**: From 40%+ (FY2022) to 15% (FY2025) to 9-10% guided (FY2026). The ",
+            "scorer_says": {
+              "source_types": [
+                "community",
+                "financial",
+                "regulatory"
+              ],
+              "count": 3
+            },
+            "options": [
+              {
+                "value": "independent",
+                "label": "Yes \u2014 all 3 source types are truly independent"
+              },
+              {
+                "value": "some_dependent",
+                "label": "Some of these sources cite each other or share a common origin"
+              },
+              {
+                "value": "not_independent",
+                "label": "These are NOT independent \u2014 same info in different venues"
+              },
+              {
+                "value": "unsure",
+                "label": "Need to see the full document to judge"
+              }
+            ]
+          }
+        ],
+        "specificity_verification": [
+          {
+            "id": "specificity_195",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "- **Dual-product portfolio (Workforce + CIAM)**: The Auth0 acquisition ($6.5B, 2021) gave Okta the leading developer-first CIAM platform alongside its enterprise workforce product. This two-sided coverage is unique among pure-play vendors.",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_66",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| CIAM Segment | $14.12B | 2025 | 9.7% | [MarketsandMarkets (CIAM)](https://www.marketsandmarkets.com/Market-Reports/consumer-iam-market-87038588.html) |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_319",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "- **Thoma Bravo merges ForgeRock into Ping Identity** ($2.3B, 2023) -- PE-driven consolidation",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_203",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "- **Revenue growth decelerating**: From 40%+ (FY2022) to 15% (FY2025) to 9-10% guided (FY2026). The growth narrative is fading, which compresses valuation multiples.",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_182",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| Ping Identity/ForgeRock | $500-700M (est.) | High | High | Moderate |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_15",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "- **Security gaps**: Credentials sprawl across systems, each a potential breach vector. 80%+ of breaches involve compromised credentials (Verizon DBIR).",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_205",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "- **Security breach history damages trust**: The Lapsus$ breach (2022) and support system breach (2023) damaged the credibility of an identity security company. $60M securities settlement. Customers detected breaches before Okta disclosed them -- a lasting trust scar. ([Krebs on Security](https://kr",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_214",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "- **CIAM is the faster-growing segment**: CIAM (~9.7-13% CAGR) outpaces workforce IAM and is less exposed to Microsoft bundling. Auth0's developer-first model has room to grow in a market projected to reach $22-31B by 2030-2032.",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          }
+        ],
+        "overall_assessment": [
+          {
+            "id": "overall_quality",
+            "type": "overall_assessment",
+            "question": "After reviewing this document, how would you rate its evidence quality?",
+            "context": "File: output/okta.com/02-market.md | ~30820 chars | ~374 lines",
+            "options": [
+              {
+                "value": "strong",
+                "label": "Strong \u2014 claims are well-sourced with independent evidence"
+              },
+              {
+                "value": "adequate",
+                "label": "Adequate \u2014 most claims have sources but some gaps"
+              },
+              {
+                "value": "weak",
+                "label": "Weak \u2014 many claims lack sources or rely on company materials"
+              },
+              {
+                "value": "theater",
+                "label": "Theater \u2014 sources are mentioned but don't actually support claims"
+              }
+            ]
+          }
+        ]
+      },
+      "task_count": 15,
+      "instructions": "Thank you for helping validate this dossier's scoring. For each task, read the excerpt and select the option that best matches what you observe. Your responses help calibrate our automated scorers against human judgment. There are no wrong answers \u2014 honest assessment is what we need."
+    },
+    {
+      "domain": "okta.com",
+      "file": "output/okta.com/03-technical.md",
+      "phase": 3,
+      "phase_name": "Technical",
+      "generated_at": "2026-06-15T20:55:09.868829+00:00",
+      "document_preview": "# Okta, Inc. -- Technical Analysis (Phase 3)  **Target:** okta.com **Date:** 2026-02-18 **Data Sources:** GitHub API (gh CLI), web search, public documentation  ---  ## 1. GitHub Presence Summary  Okta operates **4 GitHub organizations** (plus Auth0's inherited org), with a combined **943+ public repositories** and significant open-source influence in the identity/JWT ecosystem.  | Organization | Public Repos | Followers | Created | Purpose | |---|---|---|---|---| | [okta](https://github.com/okt",
+      "document_length": 24135,
+      "tasks": {
+        "source_verification": [
+          {
+            "id": "source_regulatory",
+            "type": "source_verification",
+            "question": "The scorer says 'regulatory' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "Secondary cloud** | GCP (first cell deployed, multi-cloud expansion underway) |\n| **Regions** | North A",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_technical",
+            "type": "source_verification",
+            "question": "The scorer says 'technical' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "github.com/okta) | 87 | 622 | 2010-08 | Core SDKs, sign-in widget, Terraform provider, MCP server |\n| [auth0](",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_academic",
+            "type": "source_verification",
+            "question": "The scorer says 'academic' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "paper](https://www.okta.com/resources/whitepaper/how-okta-builds-and-runs-scalable-infrastructure/)\n- [Ok",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_community",
+            "type": "source_verification",
+            "question": "The scorer says 'community' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "r/Vue SDKs, Auth0 JWT libs | okta-auth-js, okta-signin-widget, node-jsonwebtoken |\n| **Java** | Spring Bo",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          }
+        ],
+        "triangulation_verification": [
+          {
+            "id": "triangulation_0",
+            "type": "triangulation_verification",
+            "question": "The scorer says this block has 3 independent source types: academic, community, technical. Are these truly independent, or do some share the same underlying source?",
+            "excerpt": "- GitHub API via `gh` CLI (repos, issues, releases, contents, contributors) - [Okta Architecture Whi",
+            "scorer_says": {
+              "source_types": [
+                "academic",
+                "community",
+                "technical"
+              ],
+              "count": 3
+            },
+            "options": [
+              {
+                "value": "independent",
+                "label": "Yes \u2014 all 3 source types are truly independent"
+              },
+              {
+                "value": "some_dependent",
+                "label": "Some of these sources cite each other or share a common origin"
+              },
+              {
+                "value": "not_independent",
+                "label": "These are NOT independent \u2014 same info in different venues"
+              },
+              {
+                "value": "unsure",
+                "label": "Need to see the full document to judge"
+              }
+            ]
+          }
+        ],
+        "specificity_verification": [
+          {
+            "id": "specificity_43",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| [java-jwt](https://github.com/auth0/java-jwt) | 6,204 | 943 | 26 | Java | MIT | 2026-02-18 |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_26",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| Repos with 1,000+ stars | 7 (all Auth0 JWT/SDK repos) |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_49",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| [lock](https://github.com/auth0/lock) | 1,140 | 558 | -- | JavaScript | MIT | 2026-02-18 |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_45",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| [jwt-decode](https://github.com/auth0/jwt-decode) | 3,387 | 341 | 14 | TypeScript | MIT | 2026-02-18 |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_48",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| [go-jwt-middleware](https://github.com/auth0/go-jwt-middleware) | 1,184 | 209 | 11 | Go | MIT | 2026-02-17 |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_44",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| [express-jwt](https://github.com/auth0/express-jwt) | 4,512 | 440 | 66 | TypeScript | MIT | 2026-02-13 |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_42",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| [node-jsonwebtoken](https://github.com/auth0/node-jsonwebtoken) | 18,145 | 1,264 | 185 | JavaScript | MIT | 2026-02-18 |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_47",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| [nextjs-auth0](https://github.com/auth0/nextjs-auth0) | 2,282 | 452 | 32 | TypeScript | MIT | 2026-02-18 |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          }
+        ],
+        "overall_assessment": [
+          {
+            "id": "overall_quality",
+            "type": "overall_assessment",
+            "question": "After reviewing this document, how would you rate its evidence quality?",
+            "context": "File: output/okta.com/03-technical.md | ~24135 chars | ~409 lines",
+            "options": [
+              {
+                "value": "strong",
+                "label": "Strong \u2014 claims are well-sourced with independent evidence"
+              },
+              {
+                "value": "adequate",
+                "label": "Adequate \u2014 most claims have sources but some gaps"
+              },
+              {
+                "value": "weak",
+                "label": "Weak \u2014 many claims lack sources or rely on company materials"
+              },
+              {
+                "value": "theater",
+                "label": "Theater \u2014 sources are mentioned but don't actually support claims"
+              }
+            ]
+          }
+        ]
+      },
+      "task_count": 14,
+      "instructions": "Thank you for helping validate this dossier's scoring. For each task, read the excerpt and select the option that best matches what you observe. Your responses help calibrate our automated scorers against human judgment. There are no wrong answers \u2014 honest assessment is what we need."
+    },
+    {
+      "domain": "okta.com",
+      "file": "output/okta.com/04-claims.md",
+      "phase": 4,
+      "phase_name": "Claims Validation",
+      "generated_at": "2026-06-15T20:55:09.930137+00:00",
+      "document_preview": "# Phase 4: Claims Validation -- Okta, Inc. (NASDAQ: OKTA)  **Analysis Date:** 2026-02-18 **Domain:** okta.com **Analyst:** Claude Opus 4.6 (automated SaaS due diligence) **Data Sources:** WebSearch (external), GitHub API (Phase 3), SEC filings (Phase 1), Glassdoor, Blind, Reddit, Hacker News, G2/Capterra, Gartner, job postings, news archives  ---  ## 1. Claims Inventory  Every verifiable claim extracted from Phase 1 (Discovery) and Phase 3 (Technical), mapped against external evidence.  | # | Cl",
+      "document_length": 38173,
+      "tasks": {
+        "source_verification": [
+          {
+            "id": "source_regulatory",
+            "type": "source_verification",
+            "question": "The scorer says 'regulatory' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "SEC filings (Phase 1), Glassdoor, Blind, Reddit, Hacker News, G2/Capterra, Gartner, job postings, news",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_employee",
+            "type": "source_verification",
+            "question": "The scorer says 'employee' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "Glassdoor, Blind, Reddit, Hacker News, G2/Capterra, Gartner, job postings, news archives\n\n---\n\n## 1. Claims I",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_customer",
+            "type": "source_verification",
+            "question": "The scorer says 'customer' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "Capterra, Gartner, job postings, news archives\n\n---\n\n## 1. Claims Inventory\n\nEvery verifiable claim extracte",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_technical",
+            "type": "source_verification",
+            "question": "The scorer says 'technical' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "npm downloads | Technology | MINOR | GitHub, npm | Directly verified. This is Auth0 IP acquired in 2021",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_media",
+            "type": "source_verification",
+            "question": "The scorer says 'media' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "TechCrunch / BankInfoSecurity](https://techcrunch.com/2025/02/04/okta-lays-off-180-employees-nearly-one-year-a",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_academic",
+            "type": "source_verification",
+            "question": "The scorer says 'academic' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "paper | Extensively documented in whitepapers, eBooks, architecture blog. Canadian cell launched Nov 2025",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_community",
+            "type": "source_verification",
+            "question": "The scorer says 'community' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "Reddit, Hacker News, G2/Capterra, Gartner, job postings, news archives\n\n---\n\n## 1. Claims Inventory\n\nEvery",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_financial",
+            "type": "source_verification",
+            "question": "The scorer says 'financial' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "PitchBook reports 5,914. Higher figures (7,064) likely include contractors. | VERIFIED (5,914 per SEC; ~5,734",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_job_market",
+            "type": "source_verification",
+            "question": "The scorer says 'job_market' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "job postings, news archives\n\n---\n\n## 1. Claims Inventory\n\nEvery verifiable claim extracted from Phase 1 (Discov",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_review_platform",
+            "type": "source_verification",
+            "question": "The scorer says 'review_platform' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "Glassdoor, Blind, Reddit, Hacker News, G2/Capterra, Gartner, job postings, news archives\n\n---\n\n## 1. Claims I",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          }
+        ],
+        "triangulation_verification": [
+          {
+            "id": "triangulation_0",
+            "type": "triangulation_verification",
+            "question": "The scorer says this block has 5 independent source types: community, customer, employee, job_market, regulatory. Are these truly independent, or do some share the same underlying source?",
+            "excerpt": "**Analysis Date:** 2026-02-18 **Domain:** okta.com **Analyst:** Claude Opus 4.6 (automated SaaS due ",
+            "scorer_says": {
+              "source_types": [
+                "community",
+                "customer",
+                "employee",
+                "job_market",
+                "regulatory"
+              ],
+              "count": 5
+            },
+            "options": [
+              {
+                "value": "independent",
+                "label": "Yes \u2014 all 5 source types are truly independent"
+              },
+              {
+                "value": "some_dependent",
+                "label": "Some of these sources cite each other or share a common origin"
+              },
+              {
+                "value": "not_independent",
+                "label": "These are NOT independent \u2014 same info in different venues"
+              },
+              {
+                "value": "unsure",
+                "label": "Need to see the full document to judge"
+              }
+            ]
+          },
+          {
+            "id": "triangulation_1",
+            "type": "triangulation_verification",
+            "question": "The scorer says this block has 6 independent source types: academic, financial, job_market, regulatory, review_platform, technical. Are these truly independent, or do some share the same underlying source?",
+            "excerpt": "| # | Claim | Category | Materiality | Source | Evidence | Confidence | |---|-------|----------|----",
+            "scorer_says": {
+              "source_types": [
+                "academic",
+                "financial",
+                "job_market",
+                "regulatory",
+                "review_platform",
+                "technical"
+              ],
+              "count": 6
+            },
+            "options": [
+              {
+                "value": "independent",
+                "label": "Yes \u2014 all 6 source types are truly independent"
+              },
+              {
+                "value": "some_dependent",
+                "label": "Some of these sources cite each other or share a common origin"
+              },
+              {
+                "value": "not_independent",
+                "label": "These are NOT independent \u2014 same info in different venues"
+              },
+              {
+                "value": "unsure",
+                "label": "Need to see the full document to judge"
+              }
+            ]
+          },
+          {
+            "id": "triangulation_2",
+            "type": "triangulation_verification",
+            "question": "The scorer says this block has 6 independent source types: community, customer, employee, job_market, media, regulatory. Are these truly independent, or do some share the same underlying source?",
+            "excerpt": "| Source | Data Quality | Date Range | Key Signal | |--------|-------------|------------|-----------",
+            "scorer_says": {
+              "source_types": [
+                "community",
+                "customer",
+                "employee",
+                "job_market",
+                "media",
+                "regulatory"
+              ],
+              "count": 6
+            },
+            "options": [
+              {
+                "value": "independent",
+                "label": "Yes \u2014 all 6 source types are truly independent"
+              },
+              {
+                "value": "some_dependent",
+                "label": "Some of these sources cite each other or share a common origin"
+              },
+              {
+                "value": "not_independent",
+                "label": "These are NOT independent \u2014 same info in different venues"
+              },
+              {
+                "value": "unsure",
+                "label": "Need to see the full document to judge"
+              }
+            ]
+          },
+          {
+            "id": "triangulation_3",
+            "type": "triangulation_verification",
+            "question": "The scorer says this block has 3 independent source types: job_market, regulatory, review_platform. Are these truly independent, or do some share the same underlying source?",
+            "excerpt": "| Metric | Okta's Claim | Triangulated Estimate | Confidence | Notes | |--------|-------------|-----",
+            "scorer_says": {
+              "source_types": [
+                "job_market",
+                "regulatory",
+                "review_platform"
+              ],
+              "count": 3
+            },
+            "options": [
+              {
+                "value": "independent",
+                "label": "Yes \u2014 all 3 source types are truly independent"
+              },
+              {
+                "value": "some_dependent",
+                "label": "Some of these sources cite each other or share a common origin"
+              },
+              {
+                "value": "not_independent",
+                "label": "These are NOT independent \u2014 same info in different venues"
+              },
+              {
+                "value": "unsure",
+                "label": "Need to see the full document to judge"
+              }
+            ]
+          },
+          {
+            "id": "triangulation_4",
+            "type": "triangulation_verification",
+            "question": "The scorer says this block has 4 independent source types: academic, community, regulatory, technical. Are these truly independent, or do some share the same underlying source?",
+            "excerpt": "| Claim | Evidence | |-------|---------| | $2.61B FY2025 revenue, 15% YoY growth | [SEC filing](http",
+            "scorer_says": {
+              "source_types": [
+                "academic",
+                "community",
+                "regulatory",
+                "technical"
+              ],
+              "count": 4
+            },
+            "options": [
+              {
+                "value": "independent",
+                "label": "Yes \u2014 all 4 source types are truly independent"
+              },
+              {
+                "value": "some_dependent",
+                "label": "Some of these sources cite each other or share a common origin"
+              },
+              {
+                "value": "not_independent",
+                "label": "These are NOT independent \u2014 same info in different venues"
+              },
+              {
+                "value": "unsure",
+                "label": "Need to see the full document to judge"
+              }
+            ]
+          }
+        ],
+        "specificity_verification": [
+          {
+            "id": "specificity_316",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "3. **Auth0 integration is destroying the developer asset Okta paid $6.5B for.** Developer support quality has \"dramatically declined,\" layoffs hit Auth0 veterans, forced migration from Rules/Hooks to Actions created engineering burden, and dual SDK ecosystems confuse developers. Auth0's open-source ",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_24",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| C10 | Serves \"thousands of enterprise organizations\" | Customer | MINOR | Marketing | 19,650+ customers as of FY2025 end. 4,800+ customers spending >$100K/year. Third-party sources (Enlyft) show 26,720 companies using Okta. \"Thousands\" is an understatement. | VERIFIED |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_23",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| C9 | 5,900-7,100 employees | Team | MINOR | Multiple sources | 10-K filing: 5,914 employees (Jan 31, 2025). After Feb 2025 layoffs of 180, effective count ~5,734. LinkedIn reports 5,001-10,000 (range). PitchBook reports 5,914. Higher figures (7,064) likely include contractors. | VERIFIED (5,914 pe",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_264",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| 99.9978% uptime in 2020 | Self-reported from a single year. No independent audit. | LOW -- the SLA (99.99%) is contractual and enforceable. The specific 99.9978% figure is marketing. |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_21",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| C7 | Cell-based multi-tenant architecture | Technology | MINOR | Architecture blog, whitepaper | Extensively documented in whitepapers, eBooks, architecture blog. Canadian cell launched Nov 2025. 1,000+ Kubernetes clusters confirmed via The New Stack interview. Third-party validation from Plato Co",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_80",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "5. **Integration breadth** -- 7,000+ OIN integrations is a defensible moat. Multiple third-party sources confirm.",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_30",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| C16 | node-jsonwebtoken: 18,145 stars, ~26M weekly npm downloads | Technology | MINOR | GitHub, npm | Directly verified. This is Auth0 IP acquired in 2021, not originally Okta-developed. | VERIFIED |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_66",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| Monthly blocked attacks | \"3B+ identity attacks monthly\" | Plausible at scale | MEDIUM | 19,650 customers generating billions of auth attempts makes 3B blocked attacks plausible. |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          }
+        ],
+        "overall_assessment": [
+          {
+            "id": "overall_quality",
+            "type": "overall_assessment",
+            "question": "After reviewing this document, how would you rate its evidence quality?",
+            "context": "File: output/okta.com/04-claims.md | ~38173 chars | ~379 lines",
+            "options": [
+              {
+                "value": "strong",
+                "label": "Strong \u2014 claims are well-sourced with independent evidence"
+              },
+              {
+                "value": "adequate",
+                "label": "Adequate \u2014 most claims have sources but some gaps"
+              },
+              {
+                "value": "weak",
+                "label": "Weak \u2014 many claims lack sources or rely on company materials"
+              },
+              {
+                "value": "theater",
+                "label": "Theater \u2014 sources are mentioned but don't actually support claims"
+              }
+            ]
+          }
+        ]
+      },
+      "task_count": 24,
+      "instructions": "Thank you for helping validate this dossier's scoring. For each task, read the excerpt and select the option that best matches what you observe. Your responses help calibrate our automated scorers against human judgment. There are no wrong answers \u2014 honest assessment is what we need."
+    },
+    {
+      "domain": "okta.com",
+      "file": "output/okta.com/05-academic.md",
+      "phase": 5,
+      "phase_name": "Academic",
+      "generated_at": "2026-06-15T20:55:09.957346+00:00",
+      "document_preview": "# Academic & IP Analysis: okta.com  **Analysis Date:** 2026-02-18 **Analyst:** Automated SaaS Due Diligence (Phase 5)  ---  ## Company Publications  Okta does not publish peer-reviewed academic research. The company's publication output is industry-facing: whitepapers, blog posts, and trend reports.  | Publication | Type | Year | Authors / Team | Relevance | |-------------|------|------|---------------|-----------| | Secure Sign-in Trends Report | Annual industry report | 2025 | Okta Research | ",
+      "document_length": 17245,
+      "tasks": {
+        "source_verification": [
+          {
+            "id": "source_regulatory",
+            "type": "source_verification",
+            "question": "The scorer says 'regulatory' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "Secure Sign-in Trends Report | Annual industry report | 2025 | Okta Research | Analysis of billions of",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_technical",
+            "type": "source_verification",
+            "question": "The scorer says 'technical' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "github.com/keycloak/keycloak) | 32,904 | Java | Apache-2.0 | 2026-02-19 | **High** -- SSO, MFA, SAML/OIDC/OAut",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_academic",
+            "type": "source_verification",
+            "question": "The scorer says 'academic' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "Publications\n\nOkta does not publish peer-reviewed academic research. The company's publication output is indust",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_community",
+            "type": "source_verification",
+            "question": "The scorer says 'community' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "hn (W3C, 2019) | Adaptive MFA policies, risk-based step-up |\n| Provisioning / Lifecycle | SCIM 2.0 (IE",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          }
+        ],
+        "triangulation_verification": [
+          {
+            "id": "triangulation_0",
+            "type": "triangulation_verification",
+            "question": "The scorer says this block has 3 independent source types: community, regulatory, technical. Are these truly independent, or do some share the same underlying source?",
+            "excerpt": "| Project | Stars | Language | License | Last Updated | Feature Overlap | Notes | |---------|-------",
+            "scorer_says": {
+              "source_types": [
+                "community",
+                "regulatory",
+                "technical"
+              ],
+              "count": 3
+            },
+            "options": [
+              {
+                "value": "independent",
+                "label": "Yes \u2014 all 3 source types are truly independent"
+              },
+              {
+                "value": "some_dependent",
+                "label": "Some of these sources cite each other or share a common origin"
+              },
+              {
+                "value": "not_independent",
+                "label": "These are NOT independent \u2014 same info in different venues"
+              },
+              {
+                "value": "unsure",
+                "label": "Need to see the full document to judge"
+              }
+            ]
+          }
+        ],
+        "specificity_verification": [
+          {
+            "id": "specificity_117",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| [SuperTokens](https://github.com/supertokens/supertokens-core) | 14,920 | Java | Custom | 2026-02-19 | **Medium** -- Auth for apps (login, session mgmt, MFA). Developer-focused. | Closest to Auth0 (Customer Identity). Less enterprise IAM features. |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_118",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| [Ory Kratos](https://github.com/ory/kratos) | 13,448 | Go | Apache-2.0 | 2026-02-18 | **Medium** -- Headless identity mgmt, passkeys, social sign-in, MFA, SAML, TOTP | Modular architecture (Kratos + Hydra + Keto + Oathkeeper). API-first. |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_119",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| [ZITADEL](https://github.com/zitadel/zitadel) | 13,004 | Go | AGPL-3.0 | 2026-02-19 | **High** -- Multi-tenant, SSO, MFA, SAML/OIDC/OAuth, SCIM, developer APIs | Cloud-native, built for microservices. Strong multi-tenancy. |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_130",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "2. **Managed service** -- No infrastructure management, 99.99% SLA",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_115",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| [Keycloak](https://github.com/keycloak/keycloak) | 32,904 | Java | Apache-2.0 | 2026-02-19 | **High** -- SSO, MFA, SAML/OIDC/OAuth, user federation, identity brokering | Red Hat-backed. Most complete OSS Okta alternative. Enterprise-grade. |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_100",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "Okta's patent portfolio of ~139 filings is **modest for a $15B company**. For comparison:",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_120",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| [Casdoor](https://github.com/casdoor/casdoor) | 13,022 | Go | Apache-2.0 | 2026-02-19 | **High** -- SSO, OAuth 2.1, OIDC, SAML, LDAP, SCIM, WebAuthn, MFA | AI-first positioning, MCP gateway. Documentation quality concerns. |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_82",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| Grant rate | ~52% (as of Jan 2024) | [GreyB Insights](https://insights.greyb.com/okta-patents/) |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          }
+        ],
+        "overall_assessment": [
+          {
+            "id": "overall_quality",
+            "type": "overall_assessment",
+            "question": "After reviewing this document, how would you rate its evidence quality?",
+            "context": "File: output/okta.com/05-academic.md | ~17245 chars | ~188 lines",
+            "options": [
+              {
+                "value": "strong",
+                "label": "Strong \u2014 claims are well-sourced with independent evidence"
+              },
+              {
+                "value": "adequate",
+                "label": "Adequate \u2014 most claims have sources but some gaps"
+              },
+              {
+                "value": "weak",
+                "label": "Weak \u2014 many claims lack sources or rely on company materials"
+              },
+              {
+                "value": "theater",
+                "label": "Theater \u2014 sources are mentioned but don't actually support claims"
+              }
+            ]
+          }
+        ]
+      },
+      "task_count": 14,
+      "instructions": "Thank you for helping validate this dossier's scoring. For each task, read the excerpt and select the option that best matches what you observe. Your responses help calibrate our automated scorers against human judgment. There are no wrong answers \u2014 honest assessment is what we need."
+    },
+    {
+      "domain": "okta.com",
+      "file": "output/okta.com/06-valuation.md",
+      "phase": 6,
+      "phase_name": "Valuation",
+      "generated_at": "2026-06-15T20:55:10.009090+00:00",
+      "document_preview": "# Valuation & Replication Assessment: okta.com  **Analysis Date:** 2026-02-18 **Analyst:** Automated SaaS Due Diligence (Phase 6)  ---  ## 6.1 Business Model Analysis  ### Revenue Model  Okta operates a **subscription-first SaaS model** with 98% of revenue from recurring subscriptions and ~2% from professional services. Revenue is recognized ratably over contract terms (typically 1-3 years, billed annually).  | Revenue Stream | FY2025 Revenue | % of Total | Growth (YoY) | |---------------|------",
+      "document_length": 29426,
+      "tasks": {
+        "source_verification": [
+          {
+            "id": "source_regulatory",
+            "type": "source_verification",
+            "question": "The scorer says 'regulatory' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "security-products/), [Auth0 Pricing Changes](https://auth0.com/blog/upcoming-pricing-changes-for-the-cu",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_technical",
+            "type": "source_verification",
+            "question": "The scorer says 'technical' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "github.com/okta), [Auth0 GitHub Organization](https://github.com/auth0), [Okta Architecture Whitepaper](https:",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_academic",
+            "type": "source_verification",
+            "question": "The scorer says 'academic' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "paper](https://www.okta.com/sites/default/files/2020-10/Okta's-Architecture-eBook.pdf)\n\n#### Major Compon",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_community",
+            "type": "source_verification",
+            "question": "The scorer says 'community' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "r/month, billed annually):\n\n| Tier | Price | Target Segment | Key Features |\n|------|-------|--------------",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_financial",
+            "type": "source_verification",
+            "question": "The scorer says 'financial' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "Valuation & Replication Assessment: okta.com\n\n**Analysis Date:** 2026-02-18\n**Analyst:** Automated SaaS Due D",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_review_platform",
+            "type": "source_verification",
+            "question": "The scorer says 'review_platform' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "layoffs |\n| **Revenue per Employee** | ~$400K-$442K | FY2025 | Medium | $2.61B / 5,914-6,500 employees |\n|",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          }
+        ],
+        "triangulation_verification": [
+          {
+            "id": "triangulation_0",
+            "type": "triangulation_verification",
+            "question": "The scorer says this block has 3 independent source types: academic, community, regulatory. Are these truly independent, or do some share the same underlying source?",
+            "excerpt": "Sources: [Okta Trust - Compliance](https://trust.okta.com/compliance/), [Okta Integration Network](h",
+            "scorer_says": {
+              "source_types": [
+                "academic",
+                "community",
+                "regulatory"
+              ],
+              "count": 3
+            },
+            "options": [
+              {
+                "value": "independent",
+                "label": "Yes \u2014 all 3 source types are truly independent"
+              },
+              {
+                "value": "some_dependent",
+                "label": "Some of these sources cite each other or share a common origin"
+              },
+              {
+                "value": "not_independent",
+                "label": "These are NOT independent \u2014 same info in different venues"
+              },
+              {
+                "value": "unsure",
+                "label": "Need to see the full document to judge"
+              }
+            ]
+          },
+          {
+            "id": "triangulation_1",
+            "type": "triangulation_verification",
+            "question": "The scorer says this block has 3 independent source types: academic, community, regulatory. Are these truly independent, or do some share the same underlying source?",
+            "excerpt": "- [Okta FY2025 Results](https://investor.okta.com/news-and-events/news-releases/news-details/2025/Ok",
+            "scorer_says": {
+              "source_types": [
+                "academic",
+                "community",
+                "regulatory"
+              ],
+              "count": 3
+            },
+            "options": [
+              {
+                "value": "independent",
+                "label": "Yes \u2014 all 3 source types are truly independent"
+              },
+              {
+                "value": "some_dependent",
+                "label": "Some of these sources cite each other or share a common origin"
+              },
+              {
+                "value": "not_independent",
+                "label": "These are NOT independent \u2014 same info in different venues"
+              },
+              {
+                "value": "unsure",
+                "label": "Need to see the full document to judge"
+              }
+            ]
+          }
+        ],
+        "specificity_verification": [
+          {
+            "id": "specificity_54",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| Auth0 / Customer Identity | ~5,000+ | ~$40K avg | ~7% ($200M) |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_80",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| **cRPO** | $2.328B | Q3 FY2026 | High | Reported; up 13% YoY |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_163",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| Integration connectors (OIN) | 7,000+ apps | 4-6 years; each requires vendor cooperation, testing, maintenance |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_203",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| **Infrastructure (IaC)** | DevOps/SRE agents | 4-6 | Terraform generators, Kubernetes manifests, Argo CD configs, Helm charts | 8,000-12,000 | 70% |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_318",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| Infrastructure & Operations | 3.0 | 15% | 0.45 |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_177",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| **Phase 2: Lifecycle + Provisioning** | 20-25 engineers | 12 months | $10-15M | SCIM provisioning, JML workflows, 50 core integrations |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_106",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| $100K+ Customers | ~4,200 | ~4,460 | ~4,705 | ~5,100 (est.) | Steady 7-8% growth |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_107",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| Operating Margin (non-GAAP) | ~5% | ~15% | ~22% | ~26% | Rapid expansion |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          }
+        ],
+        "overall_assessment": [
+          {
+            "id": "overall_quality",
+            "type": "overall_assessment",
+            "question": "After reviewing this document, how would you rate its evidence quality?",
+            "context": "File: output/okta.com/06-valuation.md | ~29426 chars | ~383 lines",
+            "options": [
+              {
+                "value": "strong",
+                "label": "Strong \u2014 claims are well-sourced with independent evidence"
+              },
+              {
+                "value": "adequate",
+                "label": "Adequate \u2014 most claims have sources but some gaps"
+              },
+              {
+                "value": "weak",
+                "label": "Weak \u2014 many claims lack sources or rely on company materials"
+              },
+              {
+                "value": "theater",
+                "label": "Theater \u2014 sources are mentioned but don't actually support claims"
+              }
+            ]
+          }
+        ]
+      },
+      "task_count": 17,
+      "instructions": "Thank you for helping validate this dossier's scoring. For each task, read the excerpt and select the option that best matches what you observe. Your responses help calibrate our automated scorers against human judgment. There are no wrong answers \u2014 honest assessment is what we need."
+    },
+    {
+      "domain": "okta.com",
+      "file": "output/okta.com/07-report.md",
+      "phase": 7,
+      "phase_name": "Report",
+      "generated_at": "2026-06-15T20:55:10.065746+00:00",
+      "document_preview": "# Product Requirements Document: Okta, Inc.  **Analysis Date:** 2026-02-18 **Domain:** okta.com **Analyst:** Dossier v0.1.0 -- Automated SaaS Due Diligence (Phases 1-7) **Model:** Claude Opus 4.6  ---  ## 1. Executive Summary  Okta, Inc. is the largest pure-play cloud identity and access management (IAM) company, operating two product lines: **Workforce Identity Cloud** (SSO, MFA, lifecycle management, identity governance for employees) and **Customer Identity Cloud** (Auth0-powered authenticati",
+      "document_length": 35960,
+      "tasks": {
+        "source_verification": [
+          {
+            "id": "source_regulatory",
+            "type": "source_verification",
+            "question": "The scorer says 'regulatory' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "secutive year and holds approximately 20-22% of the cloud IAM market.\n\nHowever, the due diligence revea",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_employee",
+            "type": "source_verification",
+            "question": "The scorer says 'employee' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "Glassdoor: 3.7/5 (below tech industry avg ~3.9); 66% recommend; 60% positive business outlook\n- Blind: Manage",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_technical",
+            "type": "source_verification",
+            "question": "The scorer says 'technical' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "Repository | Stars | Weekly Downloads | License |\n|---|---|---|---|\n| auth0/node-jsonwebtoken | 18,145 | ~26M",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_academic",
+            "type": "source_verification",
+            "question": "The scorer says 'academic' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "papers, confirmed by The New Stack) |\n| **Primary cloud** | AWS (multi-AZ, active-active-active) | HIGH |",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_community",
+            "type": "source_verification",
+            "question": "The scorer says 'community' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "hn, DPoP (RFC 9449). SDKs auto-generated from OpenAPI specifications.\n\n**Forward-looking signals:** Of",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_financial",
+            "type": "source_verification",
+            "question": "The scorer says 'financial' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "valuation.\n\n---\n\n## 2. Company Profile\n\n| Field | Value |\n|-------|-------|\n| **Domain** | okta.com |\n| **Com",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_job_market",
+            "type": "source_verification",
+            "question": "The scorer says 'job_market' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "hiring for ML roles in Feb 2026 confirms the ML team is still being built. No ML research publications fou",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_review_platform",
+            "type": "source_verification",
+            "question": "The scorer says 'review_platform' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "layoffs. Revenue growth is decelerating (22% to 11% over 3 years) under structural pressure from Microsoft",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          }
+        ],
+        "triangulation_verification": [
+          {
+            "id": "triangulation_0",
+            "type": "triangulation_verification",
+            "question": "The scorer says this block has 3 independent source types: financial, regulatory, review_platform. Are these truly independent, or do some share the same underlying source?",
+            "excerpt": "However, the due diligence reveals material concerns. Serial security breaches (4+ incidents in 3 ye",
+            "scorer_says": {
+              "source_types": [
+                "financial",
+                "regulatory",
+                "review_platform"
+              ],
+              "count": 3
+            },
+            "options": [
+              {
+                "value": "independent",
+                "label": "Yes \u2014 all 3 source types are truly independent"
+              },
+              {
+                "value": "some_dependent",
+                "label": "Some of these sources cite each other or share a common origin"
+              },
+              {
+                "value": "not_independent",
+                "label": "These are NOT independent \u2014 same info in different venues"
+              },
+              {
+                "value": "unsure",
+                "label": "Need to see the full document to judge"
+              }
+            ]
+          },
+          {
+            "id": "triangulation_1",
+            "type": "triangulation_verification",
+            "question": "The scorer says this block has 3 independent source types: financial, regulatory, review_platform. Are these truly independent, or do some share the same underlying source?",
+            "excerpt": "| Field | Value | |-------|-------| | **Domain** | okta.com | | **Company Name** | Okta, Inc. | | **",
+            "scorer_says": {
+              "source_types": [
+                "financial",
+                "regulatory",
+                "review_platform"
+              ],
+              "count": 3
+            },
+            "options": [
+              {
+                "value": "independent",
+                "label": "Yes \u2014 all 3 source types are truly independent"
+              },
+              {
+                "value": "some_dependent",
+                "label": "Some of these sources cite each other or share a common origin"
+              },
+              {
+                "value": "not_independent",
+                "label": "These are NOT independent \u2014 same info in different venues"
+              },
+              {
+                "value": "unsure",
+                "label": "Need to see the full document to judge"
+              }
+            ]
+          },
+          {
+            "id": "triangulation_2",
+            "type": "triangulation_verification",
+            "question": "The scorer says this block has 3 independent source types: regulatory, review_platform, technical. Are these truly independent, or do some share the same underlying source?",
+            "excerpt": "| # | Claim | Category | Verdict | Gap? | |---|-------|----------|---------|------| | C1 | \"The Iden",
+            "scorer_says": {
+              "source_types": [
+                "regulatory",
+                "review_platform",
+                "technical"
+              ],
+              "count": 3
+            },
+            "options": [
+              {
+                "value": "independent",
+                "label": "Yes \u2014 all 3 source types are truly independent"
+              },
+              {
+                "value": "some_dependent",
+                "label": "Some of these sources cite each other or share a common origin"
+              },
+              {
+                "value": "not_independent",
+                "label": "These are NOT independent \u2014 same info in different venues"
+              },
+              {
+                "value": "unsure",
+                "label": "Need to see the full document to judge"
+              }
+            ]
+          },
+          {
+            "id": "triangulation_3",
+            "type": "triangulation_verification",
+            "question": "The scorer says this block has 5 independent source types: academic, community, employee, financial, regulatory. Are these truly independent, or do some share the same underlying source?",
+            "excerpt": "| Section | Analysis Confidence | Data Quality | Notes | |---------|-------------------|------------",
+            "scorer_says": {
+              "source_types": [
+                "academic",
+                "community",
+                "employee",
+                "financial",
+                "regulatory"
+              ],
+              "count": 5
+            },
+            "options": [
+              {
+                "value": "independent",
+                "label": "Yes \u2014 all 5 source types are truly independent"
+              },
+              {
+                "value": "some_dependent",
+                "label": "Some of these sources cite each other or share a common origin"
+              },
+              {
+                "value": "not_independent",
+                "label": "These are NOT independent \u2014 same info in different venues"
+              },
+              {
+                "value": "unsure",
+                "label": "Need to see the full document to judge"
+              }
+            ]
+          },
+          {
+            "id": "triangulation_4",
+            "type": "triangulation_verification",
+            "question": "The scorer says this block has 3 independent source types: community, regulatory, technical. Are these truly independent, or do some share the same underlying source?",
+            "excerpt": "3. **Conduct independent security posture review.** Given the 4+ breach incidents in 3 years and the",
+            "scorer_says": {
+              "source_types": [
+                "community",
+                "regulatory",
+                "technical"
+              ],
+              "count": 3
+            },
+            "options": [
+              {
+                "value": "independent",
+                "label": "Yes \u2014 all 3 source types are truly independent"
+              },
+              {
+                "value": "some_dependent",
+                "label": "Some of these sources cite each other or share a common origin"
+              },
+              {
+                "value": "not_independent",
+                "label": "These are NOT independent \u2014 same info in different venues"
+              },
+              {
+                "value": "unsure",
+                "label": "Need to see the full document to judge"
+              }
+            ]
+          }
+        ],
+        "specificity_verification": [
+          {
+            "id": "specificity_262",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "- Glassdoor: 3.7/5 (below tech industry avg ~3.9); 66% recommend; 60% positive business outlook",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_13",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "Okta's competitive position rests on three pillars: the Okta Integration Network (7,000+ pre-built connectors creating network effects), vendor neutrality (works across any cloud, device, or application stack), and dual-market coverage (enterprise top-down + developer bottom-up via Auth0). The compa",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_95",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| **CyberArk / Palo Alto Networks** | $1.37B ARR | Growing | Low | **High (rising)** -- $25B acquisition creates security-platform bundling |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_357",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| $100K+ Customers | ~4,200 | ~4,460 | ~4,705 | ~5,100 (est.) | Steady 7-8% growth |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_370",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| **Engineering Cost** | $83-127M (traditional); $25-40M (agent swarm) |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_31",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| **Market Cap** | ~$14.7B (Feb 18, 2026) |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_390",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "- 10+ compliance certifications (2-4 years, $2-5M in audit fees)",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_309",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| SuperTokens | 14,920 | Custom | MEDIUM (auth for apps, login, session) | MEDIUM -- closest to Auth0 |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          }
+        ],
+        "overall_assessment": [
+          {
+            "id": "overall_quality",
+            "type": "overall_assessment",
+            "question": "After reviewing this document, how would you rate its evidence quality?",
+            "context": "File: output/okta.com/07-report.md | ~35960 chars | ~494 lines",
+            "options": [
+              {
+                "value": "strong",
+                "label": "Strong \u2014 claims are well-sourced with independent evidence"
+              },
+              {
+                "value": "adequate",
+                "label": "Adequate \u2014 most claims have sources but some gaps"
+              },
+              {
+                "value": "weak",
+                "label": "Weak \u2014 many claims lack sources or rely on company materials"
+              },
+              {
+                "value": "theater",
+                "label": "Theater \u2014 sources are mentioned but don't actually support claims"
+              }
+            ]
+          }
+        ]
+      },
+      "task_count": 22,
+      "instructions": "Thank you for helping validate this dossier's scoring. For each task, read the excerpt and select the option that best matches what you observe. Your responses help calibrate our automated scorers against human judgment. There are no wrong answers \u2014 honest assessment is what we need."
+    }
+  ]
+}

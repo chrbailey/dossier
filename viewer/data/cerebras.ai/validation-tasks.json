@@ -1,0 +1,3755 @@
+{
+  "domain": "cerebras.ai",
+  "files": [
+    {
+      "domain": "cerebras.ai",
+      "file": "output/cerebras.ai/01-discovery.md",
+      "phase": 1,
+      "phase_name": "Discovery",
+      "generated_at": "2026-06-15T20:55:10.680012+00:00",
+      "document_preview": "# Phase 1: Discovery \u2014 Cerebras Systems (cerebras.ai)  **Date:** 2026-02-19 **Analyst:** Dossier Pipeline (automated) **Confidence Level:** HIGH \u2014 Cerebras is a well-documented pre-IPO company with extensive public disclosure via S-1 filing, press releases, and media coverage.  ---  ## 1. Company Identity  | Field | Value | Source | |-------|-------|--------| | **Legal Name** | Cerebras Systems, Inc. | [SEC S-1 Filing](https://www.sec.gov/Archives/edgar/data/2021728/000162828024041596/cerebras-s",
+      "document_length": 28996,
+      "tasks": {
+        "source_verification": [
+          {
+            "id": "source_regulatory",
+            "type": "source_verification",
+            "question": "The scorer says 'regulatory' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "S-1 filing, press releases, and media coverage.\n\n---\n\n## 1. Company Identity\n\n| Field | Value | Source",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_technical",
+            "type": "source_verification",
+            "question": "The scorer says 'technical' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "committed at least $225M to the Series H round. Because Benchmark deliberately caps its funds under $450M,",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_media",
+            "type": "source_verification",
+            "question": "The scorer says 'media' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "Bloomberg](https://www.bloomberg.com/news/articles/2026-02-04/cerebras-raises-1-billion-in-funding-at-23-bill",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_community",
+            "type": "source_verification",
+            "question": "The scorer says 'community' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "r/data/2021728/000162828024041596/cerebras-sx1.htm) |\n| **Founded** | March 2016 | [Crunchbase](https://ww",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_financial",
+            "type": "source_verification",
+            "question": "The scorer says 'financial' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "Crunchbase](https://www.crunchbase.com/organization/cerebras-systems), [Wikipedia](https://en.wikipedia.org/wi",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_job_market",
+            "type": "source_verification",
+            "question": "The scorer says 'job_market' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "job postings)\n\n| Area | Technologies | Source |\n|------|-------------|--------|\n| Chip Design | ASIC/SoC, 3D ph",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_social",
+            "type": "source_verification",
+            "question": "The scorer says 'social' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "Twitter)** | [@CerebrasSystems](https://x.com/CerebrasSystems), [@cerebras](https://x.com/cerebras) | Activ",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          }
+        ],
+        "triangulation_verification": [
+          {
+            "id": "triangulation_0",
+            "type": "triangulation_verification",
+            "question": "The scorer says this block has 4 independent source types: community, financial, media, regulatory. Are these truly independent, or do some share the same underlying source?",
+            "excerpt": "| Field | Value | Source | |-------|-------|--------| | **Legal Name** | Cerebras Systems, Inc. | [S",
+            "scorer_says": {
+              "source_types": [
+                "community",
+                "financial",
+                "media",
+                "regulatory"
+              ],
+              "count": 4
+            },
+            "options": [
+              {
+                "value": "independent",
+                "label": "Yes \u2014 all 4 source types are truly independent"
+              },
+              {
+                "value": "some_dependent",
+                "label": "Some of these sources cite each other or share a common origin"
+              },
+              {
+                "value": "not_independent",
+                "label": "These are NOT independent \u2014 same info in different venues"
+              },
+              {
+                "value": "unsure",
+                "label": "Need to see the full document to judge"
+              }
+            ]
+          },
+          {
+            "id": "triangulation_1",
+            "type": "triangulation_verification",
+            "question": "The scorer says this block has 3 independent source types: financial, media, regulatory. Are these truly independent, or do some share the same underlying source?",
+            "excerpt": "| Round | Date | Amount | Valuation | Lead Investor(s) | Source | |-------|------|--------|---------",
+            "scorer_says": {
+              "source_types": [
+                "financial",
+                "media",
+                "regulatory"
+              ],
+              "count": 3
+            },
+            "options": [
+              {
+                "value": "independent",
+                "label": "Yes \u2014 all 3 source types are truly independent"
+              },
+              {
+                "value": "some_dependent",
+                "label": "Some of these sources cite each other or share a common origin"
+              },
+              {
+                "value": "not_independent",
+                "label": "These are NOT independent \u2014 same info in different venues"
+              },
+              {
+                "value": "unsure",
+                "label": "Need to see the full document to judge"
+              }
+            ]
+          },
+          {
+            "id": "triangulation_2",
+            "type": "triangulation_verification",
+            "question": "The scorer says this block has 4 independent source types: community, financial, media, regulatory. Are these truly independent, or do some share the same underlying source?",
+            "excerpt": "| Date | Event | Source | |------|-------|--------| | Mid-2024 | Confidential IPO filing | [EBC](htt",
+            "scorer_says": {
+              "source_types": [
+                "community",
+                "financial",
+                "media",
+                "regulatory"
+              ],
+              "count": 4
+            },
+            "options": [
+              {
+                "value": "independent",
+                "label": "Yes \u2014 all 4 source types are truly independent"
+              },
+              {
+                "value": "some_dependent",
+                "label": "Some of these sources cite each other or share a common origin"
+              },
+              {
+                "value": "not_independent",
+                "label": "These are NOT independent \u2014 same info in different venues"
+              },
+              {
+                "value": "unsure",
+                "label": "Need to see the full document to judge"
+              }
+            ]
+          },
+          {
+            "id": "triangulation_3",
+            "type": "triangulation_verification",
+            "question": "The scorer says this block has 3 independent source types: financial, social, technical. Are these truly independent, or do some share the same underlying source?",
+            "excerpt": "| Platform | URL / Handle | Status | Source | |----------|-------------|--------|--------| | **Websi",
+            "scorer_says": {
+              "source_types": [
+                "financial",
+                "social",
+                "technical"
+              ],
+              "count": 3
+            },
+            "options": [
+              {
+                "value": "independent",
+                "label": "Yes \u2014 all 3 source types are truly independent"
+              },
+              {
+                "value": "some_dependent",
+                "label": "Some of these sources cite each other or share a common origin"
+              },
+              {
+                "value": "not_independent",
+                "label": "These are NOT independent \u2014 same info in different venues"
+              },
+              {
+                "value": "unsure",
+                "label": "Need to see the full document to judge"
+              }
+            ]
+          },
+          {
+            "id": "triangulation_4",
+            "type": "triangulation_verification",
+            "question": "The scorer says this block has 3 independent source types: financial, media, regulatory. Are these truly independent, or do some share the same underlying source?",
+            "excerpt": "| Company | Approach | Funding | Valuation | Status | Source | |---------|---------|---------|------",
+            "scorer_says": {
+              "source_types": [
+                "financial",
+                "media",
+                "regulatory"
+              ],
+              "count": 3
+            },
+            "options": [
+              {
+                "value": "independent",
+                "label": "Yes \u2014 all 3 source types are truly independent"
+              },
+              {
+                "value": "some_dependent",
+                "label": "Some of these sources cite each other or share a common origin"
+              },
+              {
+                "value": "not_independent",
+                "label": "These are NOT independent \u2014 same info in different venues"
+              },
+              {
+                "value": "unsure",
+                "label": "Need to see the full document to judge"
+              }
+            ]
+          }
+        ],
+        "specificity_verification": [
+          {
+            "id": "specificity_238",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| **Groq** | LPU (deterministic streaming) | $750M+ | $6.9B | NVIDIA licensing + asset deal (Dec 24, 2025); Groq continues operating independently | [Fortune](https://fortune.com/2026/01/05/nvidia-groq-deal-ai-chip-startups-in-play/) |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_42",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "All five co-founders previously worked together at **SeaMicro**, a microserver company founded in 2007 by Feldman and Lauterbach, sold to AMD in 2012 for ~$334-357M. This is a reunited team with deep hardware architecture experience.",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_332",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "- [TechCrunch: Benchmark $225M](https://techcrunch.com/2026/02/06/benchmark-raises-225m-in-special-funds-to-double-down-on-cerebras/)",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_118",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| GPT-OSS-120B (OpenAI) | \u2014 | 3,000 tok/s | [Cerebras Blog](https://www.cerebras.ai/blog/openai-codexspark) |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_146",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| **OpenAI** | >$10B | Through 2028 | 750 MW of compute capacity for AI inference | [CNBC](https://www.cnbc.com/2026/01/14/cerebras-scores-openai-deal-worth-over-10-billion.html) |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_19",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| **Valuation** | $23 billion (Series H, Feb 2026) | [Bloomberg](https://www.bloomberg.com/news/articles/2026-02-04/cerebras-raises-1-billion-in-funding-at-23-billion-valuation) |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_331",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "- [Bloomberg: $1B Series H](https://www.bloomberg.com/news/articles/2026-02-04/cerebras-raises-1-billion-in-funding-at-23-billion-valuation)",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_63",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| Series F | Nov 2021 | $250M | \u2014 | Alpha Wave Global, Abu Dhabi Growth Fund | [Wikipedia](https://en.wikipedia.org/wiki/Cerebras) |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          }
+        ],
+        "overall_assessment": [
+          {
+            "id": "overall_quality",
+            "type": "overall_assessment",
+            "question": "After reviewing this document, how would you rate its evidence quality?",
+            "context": "File: output/cerebras.ai/01-discovery.md | ~28996 chars | ~343 lines",
+            "options": [
+              {
+                "value": "strong",
+                "label": "Strong \u2014 claims are well-sourced with independent evidence"
+              },
+              {
+                "value": "adequate",
+                "label": "Adequate \u2014 most claims have sources but some gaps"
+              },
+              {
+                "value": "weak",
+                "label": "Weak \u2014 many claims lack sources or rely on company materials"
+              },
+              {
+                "value": "theater",
+                "label": "Theater \u2014 sources are mentioned but don't actually support claims"
+              }
+            ]
+          }
+        ]
+      },
+      "task_count": 21,
+      "instructions": "Thank you for helping validate this dossier's scoring. For each task, read the excerpt and select the option that best matches what you observe. Your responses help calibrate our automated scorers against human judgment. There are no wrong answers \u2014 honest assessment is what we need."
+    },
+    {
+      "domain": "cerebras.ai",
+      "file": "output/cerebras.ai/02-market.md",
+      "phase": 2,
+      "phase_name": "Market",
+      "generated_at": "2026-06-15T20:55:10.743837+00:00",
+      "document_preview": "# Phase 2: Market Research \u2014 Cerebras Systems (cerebras.ai)  **Date:** 2026-02-19 **Analyst:** Dossier Pipeline (automated) **Confidence Level:** HIGH \u2014 Extensive public data from S-1 filing, analyst reports, and industry coverage. Hardware/semiconductor market sizing is well-documented by multiple research firms.  **NOTE:** Cerebras is a HARDWARE + CLOUD INFRASTRUCTURE company, not typical SaaS. Standard SaaS market frameworks (ARR multiples, NRR, etc.) do not apply directly. This analysis uses",
+      "document_length": 35046,
+      "tasks": {
+        "source_verification": [
+          {
+            "id": "source_regulatory",
+            "type": "source_verification",
+            "question": "The scorer says 'regulatory' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "second for large models on GPU clusters.\n2. **Energy inefficiency:** 40-60% of data center power is con",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_technical",
+            "type": "source_verification",
+            "question": "The scorer says 'technical' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "commitment is the ultimate validation \u2014 they wouldn't sign a deal of that magnitude for a \"nice to have.\"",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_media",
+            "type": "source_verification",
+            "question": "The scorer says 'media' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "Bloomberg Intelligence \u2014 ASIC and inference-optimized accelerator segment, excludes general-purpose GPUs used",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_academic",
+            "type": "source_verification",
+            "question": "The scorer says 'academic' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "arxiv](https://arxiv.org/html/2503.11698v1) |\n| **AI chip export controls** | MIXED. US export restrictio",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_community",
+            "type": "source_verification",
+            "question": "The scorer says 'community' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "r/AI accelerator market frameworks instead.\n\n---\n\n## 1. Problem Statement\n\n### What Problem Does Cerebra",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_financial",
+            "type": "source_verification",
+            "question": "The scorer says 'financial' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "Valuation / Market Cap | Key Differentiator | Target Overlap with Cerebras | Source |\n|---------|---------|--",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          }
+        ],
+        "triangulation_verification": [
+          {
+            "id": "triangulation_0",
+            "type": "triangulation_verification",
+            "question": "The scorer says this block has 3 independent source types: financial, media, regulatory. Are these truly independent, or do some share the same underlying source?",
+            "excerpt": "| Company | Approach | Revenue (est. 2025) | Valuation / Market Cap | Key Differentiator | Target Ov",
+            "scorer_says": {
+              "source_types": [
+                "financial",
+                "media",
+                "regulatory"
+              ],
+              "count": 3
+            },
+            "options": [
+              {
+                "value": "independent",
+                "label": "Yes \u2014 all 3 source types are truly independent"
+              },
+              {
+                "value": "some_dependent",
+                "label": "Some of these sources cite each other or share a common origin"
+              },
+              {
+                "value": "not_independent",
+                "label": "These are NOT independent \u2014 same info in different venues"
+              },
+              {
+                "value": "unsure",
+                "label": "Need to see the full document to judge"
+              }
+            ]
+          },
+          {
+            "id": "triangulation_1",
+            "type": "triangulation_verification",
+            "question": "The scorer says this block has 4 independent source types: academic, financial, media, regulatory. Are these truly independent, or do some share the same underlying source?",
+            "excerpt": "| Trend | Impact on Cerebras | Timeframe | Source | |-------|-------------------|-----------|-------",
+            "scorer_says": {
+              "source_types": [
+                "academic",
+                "financial",
+                "media",
+                "regulatory"
+              ],
+              "count": 4
+            },
+            "options": [
+              {
+                "value": "independent",
+                "label": "Yes \u2014 all 4 source types are truly independent"
+              },
+              {
+                "value": "some_dependent",
+                "label": "Some of these sources cite each other or share a common origin"
+              },
+              {
+                "value": "not_independent",
+                "label": "These are NOT independent \u2014 same info in different venues"
+              },
+              {
+                "value": "unsure",
+                "label": "Need to see the full document to judge"
+              }
+            ]
+          },
+          {
+            "id": "triangulation_2",
+            "type": "triangulation_verification",
+            "question": "The scorer says this block has 5 independent source types: academic, community, financial, media, regulatory. Are these truly independent, or do some share the same underlying source?",
+            "excerpt": "### Cerebras-Specific - [Sacra: Cerebras Revenue and Financials](https://sacra.com/c/cerebras-system",
+            "scorer_says": {
+              "source_types": [
+                "academic",
+                "community",
+                "financial",
+                "media",
+                "regulatory"
+              ],
+              "count": 5
+            },
+            "options": [
+              {
+                "value": "independent",
+                "label": "Yes \u2014 all 5 source types are truly independent"
+              },
+              {
+                "value": "some_dependent",
+                "label": "Some of these sources cite each other or share a common origin"
+              },
+              {
+                "value": "not_independent",
+                "label": "These are NOT independent \u2014 same info in different venues"
+              },
+              {
+                "value": "unsure",
+                "label": "Need to see the full document to judge"
+              }
+            ]
+          }
+        ],
+        "specificity_verification": [
+          {
+            "id": "specificity_66",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| IBM + enterprise | $100-300M/year | Multiple enterprise contracts at $5-50M each |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_267",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "Inference compute is projected to grow from 50% (2025) to 67% (2026) to 80%+ (long-term) of total AI compute. This is the single biggest market trend favoring Cerebras. The company correctly repositioned from a training-focused pitch (CS-1/CS-2 era) to an inference-first narrative (inference cloud, ",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_54",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| **SAM** | **$104B by 2030** (AI ASIC accelerators + inference chips) | Bloomberg Intelligence \u2014 ASIC and inference-optimized accelerator segment, excludes general-purpose GPUs used only for training | MEDIUM-HIGH | [Bloomberg Intelligence](https://www.bloomberg.com/company/press/ai-accelerator-mar",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_36",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "3. **AMD MI300/MI400**: Second-source GPU alternative. ~10-15% market share, growing. CUDA compatibility improving via ROCm.",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_30",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| **AI developers (inference API)** | MEDIUM \u2014 speed enables new application categories (agentic AI) | $1K-$1M/year | Startups, ISVs building on open-source models |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_93",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| **AWS (Trainium)** | Custom ASIC (Trainium3, Inferentia) | Internal use | Captive (Amazon ~$2T) | Cloud-native, 30-50% cost reduction for AWS workloads, Anthropic partnership | LOW-MEDIUM \u2014 captive to AWS ecosystem | [TechCrunch](https://techcrunch.com/2025/12/02/amazon-releases-an-impressive-new-",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_34",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "1. **NVIDIA GPU clusters** (90%+ market share): H100/H200/Blackwell systems. Proven, mature ecosystem (CUDA), but expensive and power-hungry at scale.",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_69",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| **Total SOM (2027 est.)** | **$3-4.1B/year** | Dominated by OpenAI deal |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          }
+        ],
+        "overall_assessment": [
+          {
+            "id": "overall_quality",
+            "type": "overall_assessment",
+            "question": "After reviewing this document, how would you rate its evidence quality?",
+            "context": "File: output/cerebras.ai/02-market.md | ~35046 chars | ~317 lines",
+            "options": [
+              {
+                "value": "strong",
+                "label": "Strong \u2014 claims are well-sourced with independent evidence"
+              },
+              {
+                "value": "adequate",
+                "label": "Adequate \u2014 most claims have sources but some gaps"
+              },
+              {
+                "value": "weak",
+                "label": "Weak \u2014 many claims lack sources or rely on company materials"
+              },
+              {
+                "value": "theater",
+                "label": "Theater \u2014 sources are mentioned but don't actually support claims"
+              }
+            ]
+          }
+        ]
+      },
+      "task_count": 18,
+      "instructions": "Thank you for helping validate this dossier's scoring. For each task, read the excerpt and select the option that best matches what you observe. Your responses help calibrate our automated scorers against human judgment. There are no wrong answers \u2014 honest assessment is what we need."
+    },
+    {
+      "domain": "cerebras.ai",
+      "file": "output/cerebras.ai/03-technical.md",
+      "phase": 3,
+      "phase_name": "Technical",
+      "generated_at": "2026-06-15T20:55:10.799591+00:00",
+      "document_preview": "# Phase 3: Technical Analysis \u2014 Cerebras Systems (cerebras.ai)  **Date:** 2026-02-19 **Analyst:** Dossier Pipeline (automated) **Confidence Level:** HIGH for public-facing code and inference API; MEDIUM for internal hardware/firmware/compiler stack (proprietary, limited public visibility).  **NOTE:** Cerebras is a hardware + systems company, not web SaaS. This analysis covers: (1) public GitHub presence and SDK quality, (2) wafer-scale architecture innovation, (3) software stack (CSoft, CSL, com",
+      "document_length": 30633,
+      "tasks": {
+        "source_verification": [
+          {
+            "id": "source_regulatory",
+            "type": "source_verification",
+            "question": "The scorer says 'regulatory' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "s-100-yield) |\n\n**Architecture innovation (assessed: EXCEPTIONAL):** Wafer-scale integration has been d",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_technical",
+            "type": "source_verification",
+            "question": "The scorer says 'technical' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "github.com/cerebras) (13 repos), [CerebrasResearch](https://github.com/CerebrasResearch) (8 repos) |\n| Total P",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_academic",
+            "type": "source_verification",
+            "question": "The scorer says 'academic' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "publications. The vast majority of Cerebras' engineering \u2014 chip design, RTL, firmware, compiler internals, manu",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_community",
+            "type": "source_verification",
+            "question": "The scorer says 'community' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "r/Cline integration |\n| [sdk-examples](https://github.com/Cerebras/sdk-examples) | 33 | Python | May 2025 |",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_financial",
+            "type": "source_verification",
+            "question": "The scorer says 'financial' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "valuation of LLMs on Cerebras hardware |\n| **Cerebras-Trilabs** | DOE collaboration | 2025 | TeX preprint | H",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          }
+        ],
+        "triangulation_verification": [
+          {
+            "id": "triangulation_0",
+            "type": "triangulation_verification",
+            "question": "The scorer says this block has 3 independent source types: academic, community, technical. Are these truly independent, or do some share the same underlying source?",
+            "excerpt": "| Repo | Stars | Language | Last Commit | CI | Tests | License | Purpose | |------|-------|---------",
+            "scorer_says": {
+              "source_types": [
+                "academic",
+                "community",
+                "technical"
+              ],
+              "count": 3
+            },
+            "options": [
+              {
+                "value": "independent",
+                "label": "Yes \u2014 all 3 source types are truly independent"
+              },
+              {
+                "value": "some_dependent",
+                "label": "Some of these sources cite each other or share a common origin"
+              },
+              {
+                "value": "not_independent",
+                "label": "These are NOT independent \u2014 same info in different venues"
+              },
+              {
+                "value": "unsure",
+                "label": "Need to see the full document to judge"
+              }
+            ]
+          }
+        ],
+        "specificity_verification": [
+          {
+            "id": "specificity_214",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| Llama 4 Maverick | 2,500+ | ~1,000 (B200) | **2.5x** faster | [Cerebras PR](https://www.cerebras.ai/press-release/maverick) |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_76",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "1. **Yield management:** Small core design (0.05 mm\u00b2 vs. GPU's ~6 mm\u00b2 per SM) means each defect disables 100x less silicon. Dynamic routing routes around defective cores. 1-1.5% spare cores provide redundancy. Result: 100% yield on full-wafer chips at TSMC.",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_331",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| **Stars trajectory** | MODERATE | Modelzoo (1,125) is respectable for hardware company. Total ~2K across all repos. |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_146",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| **Pricing** | $0.10-$12.00 per M tokens depending on model | Competitive |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_82",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "4. **Communication fabric:** 900,000 cores connected in a 2D mesh. Each core communicates with neighbors via \"wavelets\" \u2014 32-bit messages delivered in a single clock cycle. No external network fabric needed within the chip.",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_31",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| [modelzoo](https://github.com/Cerebras/modelzoo) | 1,125 | Python | Jan 2026 | No | No | Apache-2.0 | Reference ML model implementations for Cerebras hardware |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_215",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| DeepSeek R1 70B | 1,500 | ~26 (GPUs) | **57x** faster | [Cerebras Blog](https://www.cerebras.ai/blog/2026Insights) |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_355",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "1. **Public repo maintenance is weak.** Modelzoo \u2014 their most-starred repo (1,125 stars) \u2014 has 26 open issues, many with 0 comments for months. Community PRs go unreviewed. This signals that open-source is not a strategic priority, which limits developer ecosystem growth.",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          }
+        ],
+        "overall_assessment": [
+          {
+            "id": "overall_quality",
+            "type": "overall_assessment",
+            "question": "After reviewing this document, how would you rate its evidence quality?",
+            "context": "File: output/cerebras.ai/03-technical.md | ~30633 chars | ~407 lines",
+            "options": [
+              {
+                "value": "strong",
+                "label": "Strong \u2014 claims are well-sourced with independent evidence"
+              },
+              {
+                "value": "adequate",
+                "label": "Adequate \u2014 most claims have sources but some gaps"
+              },
+              {
+                "value": "weak",
+                "label": "Weak \u2014 many claims lack sources or rely on company materials"
+              },
+              {
+                "value": "theater",
+                "label": "Theater \u2014 sources are mentioned but don't actually support claims"
+              }
+            ]
+          }
+        ]
+      },
+      "task_count": 15,
+      "instructions": "Thank you for helping validate this dossier's scoring. For each task, read the excerpt and select the option that best matches what you observe. Your responses help calibrate our automated scorers against human judgment. There are no wrong answers \u2014 honest assessment is what we need."
+    },
+    {
+      "domain": "cerebras.ai",
+      "file": "output/cerebras.ai/04-claims.md",
+      "phase": 4,
+      "phase_name": "Claims Validation",
+      "generated_at": "2026-06-15T20:55:10.870733+00:00",
+      "document_preview": "# Phase 4: Claims Validation \u2014 Cerebras Systems (cerebras.ai)  **Date:** 2026-02-19 **Analyst:** Dossier Pipeline (automated) **Confidence Level:** HIGH \u2014 Cerebras is a well-documented pre-IPO company with S-1 filing, extensive press coverage, multiple employee review platforms, active HN/Reddit/Blind discussions, and independent third-party benchmarks.  **NOTE:** Cerebras is a hardware + cloud infrastructure company, not SaaS. Claims validation applies to hardware performance, inference speed, ",
+      "document_length": 40272,
+      "tasks": {
+        "source_verification": [
+          {
+            "id": "source_regulatory",
+            "type": "source_verification",
+            "question": "The scorer says 'regulatory' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "S-1 filing, extensive press coverage, multiple employee review platforms, active HN/Reddit/Blind discus",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_employee",
+            "type": "source_verification",
+            "question": "The scorer says 'employee' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "Glassdoor** | YES (57 reviews) | 4.1/5 overall, 90% recommend. Pros: smart people, good pay, catered lunches,",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_customer",
+            "type": "source_verification",
+            "question": "The scorer says 'customer' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "customer reviews. Artificial Analysis provides independent performance rankings. |\n\n### Triangulated Estimates\n\n| M",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_technical",
+            "type": "source_verification",
+            "question": "The scorer says 'technical' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "committed compute has been questioned (WSJ noted OpenAI has $600B in cloud contracts against ~$13B revenue",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_media",
+            "type": "source_verification",
+            "question": "The scorer says 'media' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "Bloomberg](https://www.bloomberg.com/news/articles/2026-01-14/openai-forges-10-billion-deal-with-cerebras-for",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_academic",
+            "type": "source_verification",
+            "question": "The scorer says 'academic' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "peer-reviewed presentation (CTO Sean Lie), arXiv:2503.11698. No competing wafer-scale chip exists. | HIGH |\n| 2",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_community",
+            "type": "source_verification",
+            "question": "The scorer says 'community' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "r/data/2021728/000162828024041596/cerebras-sx1.htm), [Sacra](https://sacra.com/c/cerebras-systems/) | Net",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_financial",
+            "type": "source_verification",
+            "question": "The scorer says 'financial' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "valuation (Series H, Feb 2026) | **VERIFIED** | Financial | [Bloomberg](https://www.bloomberg.com/news/articl",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_job_market",
+            "type": "source_verification",
+            "question": "The scorer says 'job_market' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "hiring (64-75 open positions). Roles span chip design, compiler, ML, systems, DevOps, finance. |\n| **Layof",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_social",
+            "type": "source_verification",
+            "question": "The scorer says 'social' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "Twitter/X** | LIMITED | No significant former employee complaints surfaced. Active corporate account (@Cere",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_review_platform",
+            "type": "source_verification",
+            "question": "The scorer says 'review_platform' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "Glassdoor** | YES (57 reviews) | 4.1/5 overall, 90% recommend. Pros: smart people, good pay, catered lunches,",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          }
+        ],
+        "triangulation_verification": [
+          {
+            "id": "triangulation_0",
+            "type": "triangulation_verification",
+            "question": "The scorer says this block has 3 independent source types: community, employee, regulatory. Are these truly independent, or do some share the same underlying source?",
+            "excerpt": "**Date:** 2026-02-19 **Analyst:** Dossier Pipeline (automated) **Confidence Level:** HIGH \u2014 Cerebras",
+            "scorer_says": {
+              "source_types": [
+                "community",
+                "employee",
+                "regulatory"
+              ],
+              "count": 3
+            },
+            "options": [
+              {
+                "value": "independent",
+                "label": "Yes \u2014 all 3 source types are truly independent"
+              },
+              {
+                "value": "some_dependent",
+                "label": "Some of these sources cite each other or share a common origin"
+              },
+              {
+                "value": "not_independent",
+                "label": "These are NOT independent \u2014 same info in different venues"
+              },
+              {
+                "value": "unsure",
+                "label": "Need to see the full document to judge"
+              }
+            ]
+          },
+          {
+            "id": "triangulation_1",
+            "type": "triangulation_verification",
+            "question": "The scorer says this block has 5 independent source types: academic, community, financial, media, regulatory. Are these truly independent, or do some share the same underlying source?",
+            "excerpt": "| # | Claim | Category | Materiality | Source | Evidence | Confidence | |---|-------|----------|----",
+            "scorer_says": {
+              "source_types": [
+                "academic",
+                "community",
+                "financial",
+                "media",
+                "regulatory"
+              ],
+              "count": 5
+            },
+            "options": [
+              {
+                "value": "independent",
+                "label": "Yes \u2014 all 5 source types are truly independent"
+              },
+              {
+                "value": "some_dependent",
+                "label": "Some of these sources cite each other or share a common origin"
+              },
+              {
+                "value": "not_independent",
+                "label": "These are NOT independent \u2014 same info in different venues"
+              },
+              {
+                "value": "unsure",
+                "label": "Need to see the full document to judge"
+              }
+            ]
+          },
+          {
+            "id": "triangulation_2",
+            "type": "triangulation_verification",
+            "question": "The scorer says this block has 6 independent source types: academic, community, customer, employee, job_market, social. Are these truly independent, or do some share the same underlying source?",
+            "excerpt": "| Source | Found? | Key Signals | |--------|--------|------------| | **Glassdoor** | YES (57 reviews",
+            "scorer_says": {
+              "source_types": [
+                "academic",
+                "community",
+                "customer",
+                "employee",
+                "job_market",
+                "social"
+              ],
+              "count": 6
+            },
+            "options": [
+              {
+                "value": "independent",
+                "label": "Yes \u2014 all 6 source types are truly independent"
+              },
+              {
+                "value": "some_dependent",
+                "label": "Some of these sources cite each other or share a common origin"
+              },
+              {
+                "value": "not_independent",
+                "label": "These are NOT independent \u2014 same info in different venues"
+              },
+              {
+                "value": "unsure",
+                "label": "Need to see the full document to judge"
+              }
+            ]
+          },
+          {
+            "id": "triangulation_3",
+            "type": "triangulation_verification",
+            "question": "The scorer says this block has 3 independent source types: financial, job_market, regulatory. Are these truly independent, or do some share the same underlying source?",
+            "excerpt": "| Metric | Company Claims | Triangulated Range | Sources | Confidence | |--------|---------------|--",
+            "scorer_says": {
+              "source_types": [
+                "financial",
+                "job_market",
+                "regulatory"
+              ],
+              "count": 3
+            },
+            "options": [
+              {
+                "value": "independent",
+                "label": "Yes \u2014 all 3 source types are truly independent"
+              },
+              {
+                "value": "some_dependent",
+                "label": "Some of these sources cite each other or share a common origin"
+              },
+              {
+                "value": "not_independent",
+                "label": "These are NOT independent \u2014 same info in different venues"
+              },
+              {
+                "value": "unsure",
+                "label": "Need to see the full document to judge"
+              }
+            ]
+          },
+          {
+            "id": "triangulation_4",
+            "type": "triangulation_verification",
+            "question": "The scorer says this block has 5 independent source types: academic, community, employee, media, regulatory. Are these truly independent, or do some share the same underlying source?",
+            "excerpt": "**What's real** (confirmed by internal + external signals): - The wafer-scale technology is genuinel",
+            "scorer_says": {
+              "source_types": [
+                "academic",
+                "community",
+                "employee",
+                "media",
+                "regulatory"
+              ],
+              "count": 5
+            },
+            "options": [
+              {
+                "value": "independent",
+                "label": "Yes \u2014 all 5 source types are truly independent"
+              },
+              {
+                "value": "some_dependent",
+                "label": "Some of these sources cite each other or share a common origin"
+              },
+              {
+                "value": "not_independent",
+                "label": "These are NOT independent \u2014 same info in different venues"
+              },
+              {
+                "value": "unsure",
+                "label": "Need to see the full document to judge"
+              }
+            ]
+          }
+        ],
+        "specificity_verification": [
+          {
+            "id": "specificity_304",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "- [CNBC: OpenAI $10B Deal](https://www.cnbc.com/2026/01/14/cerebras-scores-openai-deal-worth-over-10-billion.html)",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_59",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| **Gross margin** | Not explicitly claimed | 37.78-50.5% | S-1 H1 2024 (41.1%), S-1 H1 2023 (50.5%), StockAnalysis (37.78%) | HIGH \u2014 SEC filing data |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_307",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "- [TechCrunch: Benchmark $225M](https://techcrunch.com/2026/02/06/benchmark-raises-225m-in-special-funds-to-double-down-on-cerebras/)",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_74",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "- $1B+ FY2025 revenue. Plausible given trajectory but unverified.",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_206",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| U5 | Fabrication yield rate on WSE-3 at TSMC 5nm | \"100% yield\" claimed but actual defect rate/redundancy utilization not disclosed. | LOW \u2014 engineering approach is sound |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_146",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "**Gap:** No public FY2025 or FY2026 customer concentration data. The most recent filing showed 87% revenue from G42 in H1 2024. While OpenAI, Meta, IBM, and DOE deals are confirmed, their actual revenue contribution is unknown. G42 was restructured to non-voting shares, but the underlying commercial",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_139",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "**Claim:** $10B+ deal validates massive revenue pipeline.",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_55",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| **Revenue FY2024** | ~$272M (estimated) | $272M-$500M+ | Sacra ($272M est.), StockAnalysis (534.97% YoY growth from $78.7M = ~$499M), S-1 ($136.4M H1 2024) | MEDIUM \u2014 wide range, annualizing H1 may understate full year |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          }
+        ],
+        "overall_assessment": [
+          {
+            "id": "overall_quality",
+            "type": "overall_assessment",
+            "question": "After reviewing this document, how would you rate its evidence quality?",
+            "context": "File: output/cerebras.ai/04-claims.md | ~40272 chars | ~335 lines",
+            "options": [
+              {
+                "value": "strong",
+                "label": "Strong \u2014 claims are well-sourced with independent evidence"
+              },
+              {
+                "value": "adequate",
+                "label": "Adequate \u2014 most claims have sources but some gaps"
+              },
+              {
+                "value": "weak",
+                "label": "Weak \u2014 many claims lack sources or rely on company materials"
+              },
+              {
+                "value": "theater",
+                "label": "Theater \u2014 sources are mentioned but don't actually support claims"
+              }
+            ]
+          }
+        ]
+      },
+      "task_count": 25,
+      "instructions": "Thank you for helping validate this dossier's scoring. For each task, read the excerpt and select the option that best matches what you observe. Your responses help calibrate our automated scorers against human judgment. There are no wrong answers \u2014 honest assessment is what we need."
+    },
+    {
+      "domain": "cerebras.ai",
+      "file": "output/cerebras.ai/05-academic.md",
+      "phase": 5,
+      "phase_name": "Academic",
+      "generated_at": "2026-06-15T20:55:10.933037+00:00",
+      "document_preview": "# Phase 5: Academic & IP Analysis \u2014 Cerebras Systems  **Date:** 2026-02-19 **Analyst:** Dossier Pipeline (automated) **Confidence Level:** HIGH \u2014 Cerebras is a hardware company with extensive published research, multiple patent families, conference presentations at top venues, and an S-1 filing with IP disclosures.  ---  ## 1. Company Publications  Cerebras maintains an official publications page ([cerebras.ai/publications](https://www.cerebras.ai/publications)) and has built a substantial resea",
+      "document_length": 33515,
+      "tasks": {
+        "source_verification": [
+          {
+            "id": "source_regulatory",
+            "type": "source_verification",
+            "question": "The scorer says 'regulatory' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "S-1 filing with IP disclosures.\n\n---\n\n## 1. Company Publications\n\nCerebras maintains an official public",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_technical",
+            "type": "source_verification",
+            "question": "The scorer says 'technical' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "github.com/ucb-bar/gemmini)** (UC Berkeley) | ~1K | RISC-V systolic array generator | Research | LOW \u2014 FPGA/AS",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_media",
+            "type": "source_verification",
+            "question": "The scorer says 'media' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "TechCrunch: Five Technical Challenges Cerebras Overcame](https://techcrunch.com/2019/08/19/the-five-technical-",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_academic",
+            "type": "source_verification",
+            "question": "The scorer says 'academic' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "Publications\n\nCerebras maintains an official publications page ([cerebras.ai/publications](https://www.cerebras",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_community",
+            "type": "source_verification",
+            "question": "The scorer says 'community' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "r/gemmini)** (UC Berkeley) | ~1K | RISC-V systolic array generator | Research | LOW \u2014 FPGA/ASIC generator for",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_financial",
+            "type": "source_verification",
+            "question": "The scorer says 'financial' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "valuation | Dominant incumbent | Google-internal + cloud | NVIDIA licensing + asset deal (Dec 24, 2025); cont",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          }
+        ],
+        "triangulation_verification": [],
+        "specificity_verification": [
+          {
+            "id": "specificity_250",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| **Status (Feb 2026)** | Production, $23B valuation | Dominant incumbent | Google-internal + cloud | NVIDIA licensing + asset deal (Dec 24, 2025); continues operating independently | Restructured, uncertain future |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_21",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| **Sparse Maximal Update Parameterization (SuPar): A Holistic Approach to Sparse Training Dynamics** | Cerebras Research team | 2024 | NeurIPS 2024 (arXiv:2405.15743) | Ensures activations, gradients, and weight updates scale independently of sparsity level. Up to 11.9% relative loss improvement at",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_32",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| **Molecular Dynamics on WSE-2** | Sandia, LLNL, LANL, Cerebras | 2024 | **Gordon Bell Prize Finalist** \u2014 457x faster than Frontier exascale supercomputer. 699,000 timesteps/sec for 800K tantalum atoms. | [Sandia](https://www.sandia.gov/labnews/2024/10/03/sandia-led-collaboration-achieves-one-of-wo",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_315",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "- [USPTO Report: US11,328,207](https://uspto.report/patent/grant/11,328,207)",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_97",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| **US20200005142A1 / US10,699,189** | Accelerated Deep Learning | Cerebras team | 2018/2020 | 8 citations (Sony, Intel, IBM) | Array of processing elements with flow-based wavelet computations, 2D mesh routing, SGD/mini-batch training on wafer-scale fabric. **Most-cited patent in portfolio.** |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_122",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| **Gary R. Lauterbach** | 68 patents (career total) | CTO Emeritus & Co-Founder | SeaMicro co-founder, AMD data center CTO. PI on $9.3M DOE grant |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_61",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "The WSE uses fine-grained dataflow compute cores rather than the von Neumann model used by GPUs/CPUs. Each core is a small (38,000 um^2) independent processor with 48KB local SRAM, running at 1.1 GHz and consuming only 30mW. The dataflow paradigm \u2014 where execution is triggered by data availability r",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_268",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "1. **Small patent portfolio vs. NVIDIA.** 102 patents vs. 6,234+ applications. In a patent war, NVIDIA has overwhelming volume. However, Cerebras operates in a different design space (WSI vs. GPU), reducing direct overlap.",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          }
+        ],
+        "overall_assessment": [
+          {
+            "id": "overall_quality",
+            "type": "overall_assessment",
+            "question": "After reviewing this document, how would you rate its evidence quality?",
+            "context": "File: output/cerebras.ai/05-academic.md | ~33515 chars | ~351 lines",
+            "options": [
+              {
+                "value": "strong",
+                "label": "Strong \u2014 claims are well-sourced with independent evidence"
+              },
+              {
+                "value": "adequate",
+                "label": "Adequate \u2014 most claims have sources but some gaps"
+              },
+              {
+                "value": "weak",
+                "label": "Weak \u2014 many claims lack sources or rely on company materials"
+              },
+              {
+                "value": "theater",
+                "label": "Theater \u2014 sources are mentioned but don't actually support claims"
+              }
+            ]
+          }
+        ]
+      },
+      "task_count": 15,
+      "instructions": "Thank you for helping validate this dossier's scoring. For each task, read the excerpt and select the option that best matches what you observe. Your responses help calibrate our automated scorers against human judgment. There are no wrong answers \u2014 honest assessment is what we need."
+    },
+    {
+      "domain": "cerebras.ai",
+      "file": "output/cerebras.ai/06-valuation.md",
+      "phase": 6,
+      "phase_name": "Valuation",
+      "generated_at": "2026-06-15T20:55:10.998038+00:00",
+      "document_preview": "# Phase 6: Valuation & Replication Assessment \u2014 Cerebras Systems (cerebras.ai)  **Date:** 2026-02-19 **Analyst:** Dossier Pipeline (automated) **Confidence Level:** HIGH for business model and financial analysis (S-1 data, confirmed deals, public funding rounds). MEDIUM for forward revenue estimates and replication cost (hardware economics are opaque, deal timing uncertain). LOW for specific gross margin projections on cloud inference (no public unit economics).  **NOTE:** Cerebras is a HARDWARE",
+      "document_length": 35814,
+      "tasks": {
+        "source_verification": [
+          {
+            "id": "source_regulatory",
+            "type": "source_verification",
+            "question": "The scorer says 'regulatory' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "S-1 data, confirmed deals, public funding rounds). MEDIUM for forward revenue estimates and replication",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_technical",
+            "type": "source_verification",
+            "question": "The scorer says 'technical' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "committed compute capacity | OpenAI ($10B+), Meta, enterprise | $/MW/year (custom) | ~15-25% |\n| **Profess",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_media",
+            "type": "source_verification",
+            "question": "The scorer says 'media' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "Bloomberg: Series H at $23B](https://www.bloomberg.com/news/articles/2026-02-04/cerebras-raises-1-billion-in-",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_community",
+            "type": "source_verification",
+            "question": "The scorer says 'community' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "r/AI infrastructure frameworks: revenue multiples, gross margin trajectory, capital intensity ratios, an",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_financial",
+            "type": "source_verification",
+            "question": "The scorer says 'financial' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "Valuation & Replication Assessment \u2014 Cerebras Systems (cerebras.ai)\n\n**Date:** 2026-02-19\n**Analyst:** Dossie",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          }
+        ],
+        "triangulation_verification": [
+          {
+            "id": "triangulation_0",
+            "type": "triangulation_verification",
+            "question": "The scorer says this block has 3 independent source types: community, financial, regulatory. Are these truly independent, or do some share the same underlying source?",
+            "excerpt": "| Period | Revenue | Source | Confidence | |--------|---------|--------|------------| | FY2022 | $24",
+            "scorer_says": {
+              "source_types": [
+                "community",
+                "financial",
+                "regulatory"
+              ],
+              "count": 3
+            },
+            "options": [
+              {
+                "value": "independent",
+                "label": "Yes \u2014 all 3 source types are truly independent"
+              },
+              {
+                "value": "some_dependent",
+                "label": "Some of these sources cite each other or share a common origin"
+              },
+              {
+                "value": "not_independent",
+                "label": "These are NOT independent \u2014 same info in different venues"
+              },
+              {
+                "value": "unsure",
+                "label": "Need to see the full document to judge"
+              }
+            ]
+          },
+          {
+            "id": "triangulation_1",
+            "type": "triangulation_verification",
+            "question": "The scorer says this block has 3 independent source types: community, financial, regulatory. Are these truly independent, or do some share the same underlying source?",
+            "excerpt": "### Financial Data - [Cerebras S-1 (SEC)](https://www.sec.gov/Archives/edgar/data/2021728/0001628280",
+            "scorer_says": {
+              "source_types": [
+                "community",
+                "financial",
+                "regulatory"
+              ],
+              "count": 3
+            },
+            "options": [
+              {
+                "value": "independent",
+                "label": "Yes \u2014 all 3 source types are truly independent"
+              },
+              {
+                "value": "some_dependent",
+                "label": "Some of these sources cite each other or share a common origin"
+              },
+              {
+                "value": "not_independent",
+                "label": "These are NOT independent \u2014 same info in different venues"
+              },
+              {
+                "value": "unsure",
+                "label": "Need to see the full document to judge"
+              }
+            ]
+          },
+          {
+            "id": "triangulation_2",
+            "type": "triangulation_verification",
+            "question": "The scorer says this block has 3 independent source types: financial, media, regulatory. Are these truly independent, or do some share the same underlying source?",
+            "excerpt": "### Deals & Partnerships - [CNBC: OpenAI $10B Deal](https://www.cnbc.com/2026/01/14/cerebras-scores-",
+            "scorer_says": {
+              "source_types": [
+                "financial",
+                "media",
+                "regulatory"
+              ],
+              "count": 3
+            },
+            "options": [
+              {
+                "value": "independent",
+                "label": "Yes \u2014 all 3 source types are truly independent"
+              },
+              {
+                "value": "some_dependent",
+                "label": "Some of these sources cite each other or share a common origin"
+              },
+              {
+                "value": "not_independent",
+                "label": "These are NOT independent \u2014 same info in different venues"
+              },
+              {
+                "value": "unsure",
+                "label": "Need to see the full document to judge"
+              }
+            ]
+          }
+        ],
+        "specificity_verification": [
+          {
+            "id": "specificity_332",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| **Customer concentration persists** (OpenAI > 60% FY2026) | 70% | -10% (public market discount) | -7% |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_346",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "At IPO, a $30-50B market cap would be defensible if FY2025 revenue exceeds $1B and the gross margin trajectory is visibly improving. A $50-80B market cap requires the bull case: full OpenAI execution, gross margins reaching 50%+, and visible customer diversification.",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_127",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| **CS-3 System Integration** | Full system design, power, cooling, packaging | $50-100M | 1-2 years | HARD \u2014 requires WSE as input |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_315",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| Mature | 55-65% | 15-25% | 2028-2029 | Full OpenAI capacity online, customer diversification, cloud-dominant mix |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_358",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "At 85x FY2024 estimated revenue, Cerebras is priced for perfection. But the $10B+ OpenAI backlog, Meta/IBM/DOE customer additions, and 245%+ growth trajectory mean FY2026 revenue could reach $2.5-4B \u2014 compressing the multiple to 6-9x, which would be cheap relative to semiconductor peers. The valuati",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_76",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| **Capital Efficiency** | $0.10-$0.20 revenue per $1 raised (FY2024) | HIGH | $272-500M revenue on $2.55B raised |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_66",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| **Gross Margin** | 38-41% (H1 2024), trending to ~45-50% (est. 2025) | MEDIUM | S-1 data, improving mix shift toward cloud |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_288",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| **Cerebras Series H (Feb 2026)** | **$23B** | **19-85x** (depends on FY2024 vs FY2025 revenue) | Pre-IPO growth-stage pricing |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          }
+        ],
+        "overall_assessment": [
+          {
+            "id": "overall_quality",
+            "type": "overall_assessment",
+            "question": "After reviewing this document, how would you rate its evidence quality?",
+            "context": "File: output/cerebras.ai/06-valuation.md | ~35814 chars | ~420 lines",
+            "options": [
+              {
+                "value": "strong",
+                "label": "Strong \u2014 claims are well-sourced with independent evidence"
+              },
+              {
+                "value": "adequate",
+                "label": "Adequate \u2014 most claims have sources but some gaps"
+              },
+              {
+                "value": "weak",
+                "label": "Weak \u2014 many claims lack sources or rely on company materials"
+              },
+              {
+                "value": "theater",
+                "label": "Theater \u2014 sources are mentioned but don't actually support claims"
+              }
+            ]
+          }
+        ]
+      },
+      "task_count": 17,
+      "instructions": "Thank you for helping validate this dossier's scoring. For each task, read the excerpt and select the option that best matches what you observe. Your responses help calibrate our automated scorers against human judgment. There are no wrong answers \u2014 honest assessment is what we need."
+    },
+    {
+      "domain": "cerebras.ai",
+      "file": "output/cerebras.ai/07-report.md",
+      "phase": 7,
+      "phase_name": "Report",
+      "generated_at": "2026-06-15T20:55:11.095468+00:00",
+      "document_preview": "# Due Diligence Report: Cerebras Systems (cerebras.ai)  **Date:** 2026-02-19 **Prepared by:** Dossier Pipeline (automated, 7-phase analysis) **Classification:** Pre-IPO Investment Due Diligence **Report Version:** 1.0  ---  ## Table of Contents  1. [Executive Summary](#1-executive-summary) 2. [Company Profile](#2-company-profile) 3. [Problem Statement](#3-problem-statement) 4. [Market Analysis](#4-market-analysis) 5. [Technical Assessment](#5-technical-assessment) 6. [Claims Validation](#6-claim",
+      "document_length": 55646,
+      "tasks": {
+        "source_verification": [
+          {
+            "id": "source_regulatory",
+            "type": "source_verification",
+            "question": "The scorer says 'regulatory' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "secured a transformative $10B+ compute capacity deal with OpenAI (750MW through 2028), partnerships wit",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_employee",
+            "type": "source_verification",
+            "question": "The scorer says 'employee' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "Glassdoor** (57 reviews) | 4.1/5 | 90% recommend. Pros: smart people, good pay. Cons: unreported 2022-2023 la",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_technical",
+            "type": "source_verification",
+            "question": "The scorer says 'technical' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "committed $225M via two special-purpose vehicles -- extraordinary for a firm that caps funds at $450M. Fro",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_media",
+            "type": "source_verification",
+            "question": "The scorer says 'media' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "Bloomberg, TechCrunch, Cerebras PR | HIGH |\n| **Latest Round** | Series H: $1B at $23B (Tiger Global lead, Fe",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_academic",
+            "type": "source_verification",
+            "question": "The scorer says 'academic' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "arXiv |\n| 2 | 20x+ faster inference than GPUs | **VERIFIED** (with nuance) | HIGH | Artificial Analysis (",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_community",
+            "type": "source_verification",
+            "question": "The scorer says 'community' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "HN commenters have flagged this repeatedly.\n\n**GAP-2: OpenAI Deal Revenue Recognition Timing (CRITICAL",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_financial",
+            "type": "source_verification",
+            "question": "The scorer says 'financial' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "Valuation Signals](#8-valuation-signals)\n9. [Confidence Matrix](#9-confidence-matrix)\n10. [Risk Register](#10",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_job_market",
+            "type": "source_verification",
+            "question": "The scorer says 'job_market' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "Hiring** | NET POSITIVE | 64-75 open positions across chip design, compiler, ML, systems, DevOps, finance.",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_review_platform",
+            "type": "source_verification",
+            "question": "The scorer says 'review_platform' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "Glassdoor** (57 reviews) | 4.1/5 | 90% recommend. Pros: smart people, good pay. Cons: unreported 2022-2023 la",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          }
+        ],
+        "triangulation_verification": [
+          {
+            "id": "triangulation_0",
+            "type": "triangulation_verification",
+            "question": "The scorer says this block has 3 independent source types: financial, media, regulatory. Are these truly independent, or do some share the same underlying source?",
+            "excerpt": "| Field | Value | Source | Confidence | |-------|-------|--------|:----------:| | **Legal Name** | C",
+            "scorer_says": {
+              "source_types": [
+                "financial",
+                "media",
+                "regulatory"
+              ],
+              "count": 3
+            },
+            "options": [
+              {
+                "value": "independent",
+                "label": "Yes \u2014 all 3 source types are truly independent"
+              },
+              {
+                "value": "some_dependent",
+                "label": "Some of these sources cite each other or share a common origin"
+              },
+              {
+                "value": "not_independent",
+                "label": "These are NOT independent \u2014 same info in different venues"
+              },
+              {
+                "value": "unsure",
+                "label": "Need to see the full document to judge"
+              }
+            ]
+          },
+          {
+            "id": "triangulation_1",
+            "type": "triangulation_verification",
+            "question": "The scorer says this block has 4 independent source types: academic, financial, media, regulatory. Are these truly independent, or do some share the same underlying source?",
+            "excerpt": "| # | Claim | Verdict | Confidence | Key Evidence | |---|-------|:-------:|:----------:|------------",
+            "scorer_says": {
+              "source_types": [
+                "academic",
+                "financial",
+                "media",
+                "regulatory"
+              ],
+              "count": 4
+            },
+            "options": [
+              {
+                "value": "independent",
+                "label": "Yes \u2014 all 4 source types are truly independent"
+              },
+              {
+                "value": "some_dependent",
+                "label": "Some of these sources cite each other or share a common origin"
+              },
+              {
+                "value": "not_independent",
+                "label": "These are NOT independent \u2014 same info in different venues"
+              },
+              {
+                "value": "unsure",
+                "label": "Need to see the full document to judge"
+              }
+            ]
+          },
+          {
+            "id": "triangulation_2",
+            "type": "triangulation_verification",
+            "question": "The scorer says this block has 3 independent source types: community, employee, job_market. Are these truly independent, or do some share the same underlying source?",
+            "excerpt": "| Source | Rating | Key Signal | |--------|:------:|-----------| | **Glassdoor** (57 reviews) | 4.1/",
+            "scorer_says": {
+              "source_types": [
+                "community",
+                "employee",
+                "job_market"
+              ],
+              "count": 3
+            },
+            "options": [
+              {
+                "value": "independent",
+                "label": "Yes \u2014 all 3 source types are truly independent"
+              },
+              {
+                "value": "some_dependent",
+                "label": "Some of these sources cite each other or share a common origin"
+              },
+              {
+                "value": "not_independent",
+                "label": "These are NOT independent \u2014 same info in different venues"
+              },
+              {
+                "value": "unsure",
+                "label": "Need to see the full document to judge"
+              }
+            ]
+          },
+          {
+            "id": "triangulation_3",
+            "type": "triangulation_verification",
+            "question": "The scorer says this block has 5 independent source types: academic, employee, financial, media, regulatory. Are these truly independent, or do some share the same underlying source?",
+            "excerpt": "| Section | Data Quality | Analysis Confidence | Key Gaps | |---------|:----------:|:---------------",
+            "scorer_says": {
+              "source_types": [
+                "academic",
+                "employee",
+                "financial",
+                "media",
+                "regulatory"
+              ],
+              "count": 5
+            },
+            "options": [
+              {
+                "value": "independent",
+                "label": "Yes \u2014 all 5 source types are truly independent"
+              },
+              {
+                "value": "some_dependent",
+                "label": "Some of these sources cite each other or share a common origin"
+              },
+              {
+                "value": "not_independent",
+                "label": "These are NOT independent \u2014 same info in different venues"
+              },
+              {
+                "value": "unsure",
+                "label": "Need to see the full document to judge"
+              }
+            ]
+          },
+          {
+            "id": "triangulation_4",
+            "type": "triangulation_verification",
+            "question": "The scorer says this block has 4 independent source types: job_market, regulatory, review_platform, technical. Are these truly independent, or do some share the same underlying source?",
+            "excerpt": "| ID | Risk | Probability | Impact | Trigger | Mitigation | |----|------|:----------:|:------:|-----",
+            "scorer_says": {
+              "source_types": [
+                "job_market",
+                "regulatory",
+                "review_platform",
+                "technical"
+              ],
+              "count": 4
+            },
+            "options": [
+              {
+                "value": "independent",
+                "label": "Yes \u2014 all 4 source types are truly independent"
+              },
+              {
+                "value": "some_dependent",
+                "label": "Some of these sources cite each other or share a common origin"
+              },
+              {
+                "value": "not_independent",
+                "label": "These are NOT independent \u2014 same info in different venues"
+              },
+              {
+                "value": "unsure",
+                "label": "Need to see the full document to judge"
+              }
+            ]
+          }
+        ],
+        "specificity_verification": [
+          {
+            "id": "specificity_393",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "**Competitive comparison:** NVIDIA has 6,234+ AI chip patent applications vs. Cerebras' 102. However, Cerebras operates in a different design space (wafer-scale integration vs. GPU), reducing direct overlap. IFI Claims assessment: \"Cerebras appears to be sitting on a valuable invention.\"",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_292",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| 5 | $23B valuation (Series H) | **VERIFIED** | HIGH | Bloomberg, TechCrunch, Axios |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_147",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| **AMD** | GPUs (MI300X, MI400) | Second-source GPU, ~$180B market cap | MEDIUM |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_270",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| Llama 4 Maverick | 2,522 | 1,038 (B200) | 2.4x | Artificial Analysis |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_105",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "Wafer-scale integration -- a single chip the size of an entire 300mm silicon wafer (46,225 mm2) with 44GB of on-chip SRAM delivering 21 PB/s memory bandwidth. By keeping model weights entirely on-chip, Cerebras eliminates inter-chip data movement and delivers 20x+ faster inference at lower energy pe",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_526",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| **R7** | **Hyperscaler captive silicon reduces TAM** (Google TPU, AWS Trainium, Microsoft Maia, Meta MTIA) | 40% | MEDIUM | Major AI labs build sufficient internal capacity to reduce external chip purchases | Focus on customers who are NOT building custom silicon (OpenAI chose Cerebras over buildi",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_252",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "**Assessment:** Cerebras treats open-source as a developer onboarding funnel, not a community ecosystem. The SDKs are high-quality (Stainless-generated, same tooling as OpenAI/Anthropic). Everything else receives minimal community investment. Modelzoo (1,125 stars) has 26 open issues with many unans",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_425",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| FY2024 (est.) | $272-500M | 37.8% | Unknown | Sacra, StockAnalysis | MEDIUM |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          }
+        ],
+        "overall_assessment": [
+          {
+            "id": "overall_quality",
+            "type": "overall_assessment",
+            "question": "After reviewing this document, how would you rate its evidence quality?",
+            "context": "File: output/cerebras.ai/07-report.md | ~55646 chars | ~708 lines",
+            "options": [
+              {
+                "value": "strong",
+                "label": "Strong \u2014 claims are well-sourced with independent evidence"
+              },
+              {
+                "value": "adequate",
+                "label": "Adequate \u2014 most claims have sources but some gaps"
+              },
+              {
+                "value": "weak",
+                "label": "Weak \u2014 many claims lack sources or rely on company materials"
+              },
+              {
+                "value": "theater",
+                "label": "Theater \u2014 sources are mentioned but don't actually support claims"
+              }
+            ]
+          }
+        ]
+      },
+      "task_count": 23,
+      "instructions": "Thank you for helping validate this dossier's scoring. For each task, read the excerpt and select the option that best matches what you observe. Your responses help calibrate our automated scorers against human judgment. There are no wrong answers \u2014 honest assessment is what we need."
+    }
+  ]
+}

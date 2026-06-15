@@ -1,0 +1,3410 @@
+{
+  "domain": "vercel.com",
+  "files": [
+    {
+      "domain": "vercel.com",
+      "file": "output/vercel.com/01-discovery.md",
+      "phase": 1,
+      "phase_name": "Discovery",
+      "generated_at": "2026-06-15T20:55:08.888086+00:00",
+      "document_preview": "# Vercel \u2014 Phase 1: Discovery Report  **Date:** 2026-02-18 **Domain:** vercel.com **Analyst method:** WebSearch only (Bash and WebFetch denied in this environment; WHOIS script and DNS dig commands could not be executed)  ---  ## Company Identity  | Field | Value | Source | |-------|-------|--------| | Legal name | Vercel Inc. | [Vercel DPA](https://vercel.com/legal/dpa), [Justia Trademark](https://trademarks.justia.com/901/49/vercel-90149383.html) | | Former name | ZEIT (rebranded April 2020) |",
+      "document_length": 15935,
+      "tasks": {
+        "source_verification": [
+          {
+            "id": "source_regulatory",
+            "type": "source_verification",
+            "question": "The scorer says 'regulatory' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "secure web apps) | [Vercel homepage](https://vercel.com) |\n| Secondary product | v0 \u2014 AI-powered full-s",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_employee",
+            "type": "source_verification",
+            "question": "The scorer says 'employee' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "Glassdoor | 4.1/5 (115 reviews), 74% recommend | Positives: talent density, fast pace, intellectually stimula",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_customer",
+            "type": "source_verification",
+            "question": "The scorer says 'customer' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "Customer reviews praising speed and DX. | [PeerSpot](https://www.peerspot.com/products/vercel-reviews) |\n| Trustpil",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_technical",
+            "type": "source_verification",
+            "question": "The scorer says 'technical' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "github.com/vercel) |\n| Target market | Frontend developers (individual to enterprise), AI application builders",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_community",
+            "type": "source_verification",
+            "question": "The scorer says 'community' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "r/X | [@vercel](https://twitter.com/vercel) | Active account. CEO @rauchg has 303K+ followers. | [X](ht",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_financial",
+            "type": "source_verification",
+            "question": "The scorer says 'financial' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "Crunchbase](https://www.crunchbase.com/organization/vercel) |\n| Headquarters | San Francisco, California | [Li",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_social",
+            "type": "source_verification",
+            "question": "The scorer says 'social' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "Twitter/X | [@vercel](https://twitter.com/vercel) | Active account. CEO @rauchg has 303K+ followers. | [X](",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_review_platform",
+            "type": "source_verification",
+            "question": "The scorer says 'review_platform' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "Glassdoor | 4.1/5 (115 reviews), 74% recommend | Positives: talent density, fast pace, intellectually stimula",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          }
+        ],
+        "triangulation_verification": [
+          {
+            "id": "triangulation_0",
+            "type": "triangulation_verification",
+            "question": "The scorer says this block has 3 independent source types: financial, regulatory, technical. Are these truly independent, or do some share the same underlying source?",
+            "excerpt": "| Field | Value | Source | |-------|-------|--------| | Legal name | Vercel Inc. | [Vercel DPA](http",
+            "scorer_says": {
+              "source_types": [
+                "financial",
+                "regulatory",
+                "technical"
+              ],
+              "count": 3
+            },
+            "options": [
+              {
+                "value": "independent",
+                "label": "Yes \u2014 all 3 source types are truly independent"
+              },
+              {
+                "value": "some_dependent",
+                "label": "Some of these sources cite each other or share a common origin"
+              },
+              {
+                "value": "not_independent",
+                "label": "These are NOT independent \u2014 same info in different venues"
+              },
+              {
+                "value": "unsure",
+                "label": "Need to see the full document to judge"
+              }
+            ]
+          },
+          {
+            "id": "triangulation_1",
+            "type": "triangulation_verification",
+            "question": "The scorer says this block has 6 independent source types: community, customer, employee, financial, social, technical. Are these truly independent, or do some share the same underlying source?",
+            "excerpt": "| Platform | Presence | Details | Source | |----------|----------|---------|--------| | GitHub | [gi",
+            "scorer_says": {
+              "source_types": [
+                "community",
+                "customer",
+                "employee",
+                "financial",
+                "social",
+                "technical"
+              ],
+              "count": 6
+            },
+            "options": [
+              {
+                "value": "independent",
+                "label": "Yes \u2014 all 6 source types are truly independent"
+              },
+              {
+                "value": "some_dependent",
+                "label": "Some of these sources cite each other or share a common origin"
+              },
+              {
+                "value": "not_independent",
+                "label": "These are NOT independent \u2014 same info in different venues"
+              },
+              {
+                "value": "unsure",
+                "label": "Need to see the full document to judge"
+              }
+            ]
+          },
+          {
+            "id": "triangulation_2",
+            "type": "triangulation_verification",
+            "question": "The scorer says this block has 4 independent source types: community, financial, regulatory, social. Are these truly independent, or do some share the same underlying source?",
+            "excerpt": "1. **What are the actual DNS records (MX, TXT, NS) for vercel.com?** Bash was denied; these should b",
+            "scorer_says": {
+              "source_types": [
+                "community",
+                "financial",
+                "regulatory",
+                "social"
+              ],
+              "count": 4
+            },
+            "options": [
+              {
+                "value": "independent",
+                "label": "Yes \u2014 all 4 source types are truly independent"
+              },
+              {
+                "value": "some_dependent",
+                "label": "Some of these sources cite each other or share a common origin"
+              },
+              {
+                "value": "not_independent",
+                "label": "These are NOT independent \u2014 same info in different venues"
+              },
+              {
+                "value": "unsure",
+                "label": "Need to see the full document to judge"
+              }
+            ]
+          }
+        ],
+        "specificity_verification": [
+          {
+            "id": "specificity_98",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| Glassdoor | 4.1/5 (115 reviews), 74% recommend | Positives: talent density, fast pace, intellectually stimulating. Negatives: culture shift concerns, overwork reports. | [Glassdoor](https://www.glassdoor.com/Reviews/Vercel-Reviews-E6510369.htm) |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_32",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| Series E | May 2024 | $250M | $3.25B | Accel |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_208",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "2. **What is the enterprise vs. SMB revenue split?** v0 Teams/Enterprise is >50% of v0 revenue, but the overall platform breakdown is unknown.",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_160",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| Serverless runtime | Rust | [Blog: Functions powered by Rust](https://vercel.com/blog/vercel-functions-are-now-faster-and-powered-by-rust) \u2014 47% faster connections, 77% faster p99 |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_33",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| Earlier rounds | 2016-2021 | ~$313M total | Various | Various (CRV, GV, Tiger Global, 8VC, SV Angel, Notable Capital) |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_50",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "v0 contribution: ~$42M ARR as of Feb 2025 (~21% of total), with 3.5M+ unique users and Teams/Enterprise representing >50% of v0 revenue.",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_34",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| **Total raised** | | **~$863M** | | **31 investors** |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_201",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "5. **Culture signals are mixed.** Glassdoor at 4.1/5 with 74% recommending is solid but not exceptional. Recent reviews cite culture shift concerns, \"bro culture\" allegations in senior management, and overwork. With ~823-874 employees supporting $200M ARR, revenue per employee is ~$230K \u2014 moderate f",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          }
+        ],
+        "overall_assessment": [
+          {
+            "id": "overall_quality",
+            "type": "overall_assessment",
+            "question": "After reviewing this document, how would you rate its evidence quality?",
+            "context": "File: output/vercel.com/01-discovery.md | ~15935 chars | ~230 lines",
+            "options": [
+              {
+                "value": "strong",
+                "label": "Strong \u2014 claims are well-sourced with independent evidence"
+              },
+              {
+                "value": "adequate",
+                "label": "Adequate \u2014 most claims have sources but some gaps"
+              },
+              {
+                "value": "weak",
+                "label": "Weak \u2014 many claims lack sources or rely on company materials"
+              },
+              {
+                "value": "theater",
+                "label": "Theater \u2014 sources are mentioned but don't actually support claims"
+              }
+            ]
+          }
+        ]
+      },
+      "task_count": 20,
+      "instructions": "Thank you for helping validate this dossier's scoring. For each task, read the excerpt and select the option that best matches what you observe. Your responses help calibrate our automated scorers against human judgment. There are no wrong answers \u2014 honest assessment is what we need."
+    },
+    {
+      "domain": "vercel.com",
+      "file": "output/vercel.com/02-market.md",
+      "phase": 2,
+      "phase_name": "Market",
+      "generated_at": "2026-06-15T20:55:08.937923+00:00",
+      "document_preview": "# Vercel \u2014 Phase 2: Market Research  **Date:** 2026-02-18 **Domain:** vercel.com **Analyst method:** WebSearch (multi-source triangulation)  ---  ## Problem Statement  ### What Problem Does Vercel Solve?  **Core problem:** Modern web applications are hard to build, deploy, and scale. The gap between writing frontend code and running it reliably at global scale involves a cascade of infrastructure decisions \u2014 CI/CD pipelines, CDN configuration, serverless function orchestration, edge routing, SSL",
+      "document_length": 27902,
+      "tasks": {
+        "source_verification": [
+          {
+            "id": "source_regulatory",
+            "type": "source_verification",
+            "question": "The scorer says 'regulatory' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "second page loads globally requires expertise in SSR, ISR, edge caching, and image optimization. Vercel",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_media",
+            "type": "source_verification",
+            "question": "The scorer says 'media' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "Fortune 500. Enterprise customers include OpenAI, McDonald's, Washington Post, PayPal, and eBay. The platfo",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_community",
+            "type": "source_verification",
+            "question": "The scorer says 'community' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "Stack Overflow 2024](https://www.esparkinfo.com/software-development/technologies/reactjs/statistics))\n- Next.js h",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_financial",
+            "type": "source_verification",
+            "question": "The scorer says 'financial' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "Funding | Valuation | Est. Revenue | Employees | Differentiator | Target Segment | Pricing Entry |\n|-------",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          }
+        ],
+        "triangulation_verification": [],
+        "specificity_verification": [
+          {
+            "id": "specificity_33",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "**Company size distribution:** Vercel's 4M+ hosted websites span from hobbyist to Fortune 500. Enterprise customers include OpenAI, McDonald's, Washington Post, PayPal, and eBay. The platform's pricing tiers ($0 \u2192 $20/dev/mo \u2192 custom enterprise) reflect this range.",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_282",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "3. **The AI pivot saved Vercel's growth story, and v0's trajectory is strong.** Revenue growth decelerated to 16% in 2024 before v0 re-accelerated it to 80-100%. v0 reached ~$42M ARR in 16 months, placing it in the top 1% of all software products by time-to-revenue. Competitors (Cursor, Lovable, Rep",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_207",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| **Netlify** | 6 | 5 | Niche Player | Pioneer that lost momentum. $46M revenue vs. Vercel's $200M. Framework-agnostic vision is defensible but underfunded. |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_69",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| AI coding tools | ~$15B (developer spend) | ~$20B (est.) | >30% | [Medium / industry estimates](https://medium.com/@aftab001x/the-2026-ai-coding-platform-wars-replit-vs-windsurf-vs-bolt-new-f908b9f76325) |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_104",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| **SAM** | $8-10B | 7M React/Next.js devs x $600 + v0 market |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_92",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "**SOM (Serviceable Obtainable Market): ~$500M-1B (3-5 year horizon)**",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_304",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "- [MarketsandMarkets \u2014 PaaS Market $164.3B by 2026](https://www.globenewswire.com/news-release/2023/11/30/2788631/0/en/Platform-as-a-Service-PaaS-Market-worth-164-3-billion-by-2026-growing-at-a-CAGR-of-19-6-Report-by-MarketsandMarkets.html)",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_192",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| **AI coding tool competition** | High | Cursor ($9.9B), Lovable ($100M ARR in 8 months), Replit ($100M ARR in 9 months) compete in overlapping but distinct segments. v0 reached ~$42M ARR in 16 months (top 1% by time-to-revenue) with structural ecosystem advantages (React/Next.js/shadcn/ui integrat",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          }
+        ],
+        "overall_assessment": [
+          {
+            "id": "overall_quality",
+            "type": "overall_assessment",
+            "question": "After reviewing this document, how would you rate its evidence quality?",
+            "context": "File: output/vercel.com/02-market.md | ~27902 chars | ~319 lines",
+            "options": [
+              {
+                "value": "strong",
+                "label": "Strong \u2014 claims are well-sourced with independent evidence"
+              },
+              {
+                "value": "adequate",
+                "label": "Adequate \u2014 most claims have sources but some gaps"
+              },
+              {
+                "value": "weak",
+                "label": "Weak \u2014 many claims lack sources or rely on company materials"
+              },
+              {
+                "value": "theater",
+                "label": "Theater \u2014 sources are mentioned but don't actually support claims"
+              }
+            ]
+          }
+        ]
+      },
+      "task_count": 13,
+      "instructions": "Thank you for helping validate this dossier's scoring. For each task, read the excerpt and select the option that best matches what you observe. Your responses help calibrate our automated scorers against human judgment. There are no wrong answers \u2014 honest assessment is what we need."
+    },
+    {
+      "domain": "vercel.com",
+      "file": "output/vercel.com/03-technical.md",
+      "phase": 3,
+      "phase_name": "Technical",
+      "generated_at": "2026-06-15T20:55:08.978421+00:00",
+      "document_preview": "# Vercel \u2014 Phase 3: Technical Analysis  **Date:** 2026-02-18 **Domain:** vercel.com **Data sources:** GitHub API (`gh` CLI), WebSearch, Phase 1 Discovery Report  ---  ## GitHub Presence  ### Organization Overview  | Field | Value | |-------|-------| | GitHub org | [github.com/vercel](https://github.com/vercel) | | Public repos | 216 (main org) + ~149 (vercel-labs) | | Org followers | 26,046 | | Created | 2015-10-05 | | Description | \"Develop. Preview. Ship. Creators of Next.js.\" | | Combined sta",
+      "document_length": 23137,
+      "tasks": {
+        "source_verification": [
+          {
+            "id": "source_regulatory",
+            "type": "source_verification",
+            "question": "The scorer says 'regulatory' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "second conversion utility | Active |\n| examples | 4,965 | TypeScript | Curated solution patterns | Acti",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_technical",
+            "type": "source_verification",
+            "question": "The scorer says 'technical' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "github.com/vercel](https://github.com/vercel) |\n| Public repos | 216 (main org) + ~149 (vercel-labs) |\n| Org f",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_community",
+            "type": "source_verification",
+            "question": "The scorer says 'community' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "r/output/vercel.com/raw/github-repos.json`\n- **Discovery report:** `/Volumes/OWC drive/Dev/dossier/output/ve",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          }
+        ],
+        "triangulation_verification": [],
+        "specificity_verification": [
+          {
+            "id": "specificity_41",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| **ai** (AI SDK) | 21,862 | 3,843 | 1,126 | TypeScript | NOASSERTION | 2026-02-19 | Active (daily commits) |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_323",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| vercel (CLI) | 526 | 14,843 | 3.5% | Slightly elevated |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_368",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "1. **AI SDK issue backlog is growing faster than triage.** 1,126 open issues on a 21.8K-star repo (5.2% ratio) is elevated. The AI SDK is the fastest-growing project and a critical revenue driver (v0 depends on it). If community trust erodes due to unresolved issues, the adoption flywheel slows.",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_378",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "6. **Next.js open issue count (3,340) requires sustained investment.** While the ratio to stars is normal (2.4%), the absolute number is large. Maintaining triage velocity at this scale requires significant dedicated headcount, which competes with feature development.",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_320",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| next.js | 3,340 | 137,795 | 2.4% | Normal for this scale |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_352",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "1. **Unmatched open-source developer mindshare.** 137K stars on Next.js, 3,200+ contributors, 1M+ monthly active developers. This is a moat no competitor can replicate in the near term. The open-source flywheel (Next.js adoption drives Vercel platform adoption) is the core business strategy.",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_65",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| ai-elements | 1,657 | TypeScript | AI-native component library (shadcn/ui) | Active (new) |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_46",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| **micro** | 10,617 | 452 | \u2014 | TypeScript | \u2014 | 2026-02-18 | Active |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          }
+        ],
+        "overall_assessment": [
+          {
+            "id": "overall_quality",
+            "type": "overall_assessment",
+            "question": "After reviewing this document, how would you rate its evidence quality?",
+            "context": "File: output/vercel.com/03-technical.md | ~23137 chars | ~405 lines",
+            "options": [
+              {
+                "value": "strong",
+                "label": "Strong \u2014 claims are well-sourced with independent evidence"
+              },
+              {
+                "value": "adequate",
+                "label": "Adequate \u2014 most claims have sources but some gaps"
+              },
+              {
+                "value": "weak",
+                "label": "Weak \u2014 many claims lack sources or rely on company materials"
+              },
+              {
+                "value": "theater",
+                "label": "Theater \u2014 sources are mentioned but don't actually support claims"
+              }
+            ]
+          }
+        ]
+      },
+      "task_count": 12,
+      "instructions": "Thank you for helping validate this dossier's scoring. For each task, read the excerpt and select the option that best matches what you observe. Your responses help calibrate our automated scorers against human judgment. There are no wrong answers \u2014 honest assessment is what we need."
+    },
+    {
+      "domain": "vercel.com",
+      "file": "output/vercel.com/04-claims.md",
+      "phase": 4,
+      "phase_name": "Claims Validation",
+      "generated_at": "2026-06-15T20:55:09.040335+00:00",
+      "document_preview": "# Vercel \u2014 Phase 4: Claims Validation / Shadow Prediction Market  **Date:** 2026-02-19 **Domain:** vercel.com **Data sources:** P1 Discovery, P3 Technical Analysis, WebSearch across 11 signal sources **Methodology:** Extract verifiable claims from P1/P3, cross-reference against third-party evidence, reconstruct internal prediction market from employee/community signals  ---  ## 1. Claim Extraction & Evidence Mapping  ### 1.1 Scale & Growth Claims  | # | Claim | Source | Evidence | Verdict | |---",
+      "document_length": 34573,
+      "tasks": {
+        "source_verification": [
+          {
+            "id": "source_regulatory",
+            "type": "source_verification",
+            "question": "The scorer says 'regulatory' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "security bulletin, CISA KEV listing, and community reports. The WAF mitigation was real and deployed be",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_employee",
+            "type": "source_verification",
+            "question": "The scorer says 'employee' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "Blind says 800. Multiple independent sources converge in 800-875 range. | **VERIFIED** |\n| S6 | \"6 millio",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_customer",
+            "type": "source_verification",
+            "question": "The scorer says 'customer' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "Capterra / Trustpilot\n\n**Signal strength:** Medium-High (verified user reviews)\n\n**Key findings:**\n- **Capte",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_technical",
+            "type": "source_verification",
+            "question": "The scorer says 'technical' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "npm download data supports massive Next.js usage. This measures Next.js framework users, not Vercel pla",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_media",
+            "type": "source_verification",
+            "question": "The scorer says 'media' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "Bloomberg video (Oct 2025)\n- Ongoing: Developer complaints about pricing, v0 quality regressions, and Next.js",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_academic",
+            "type": "source_verification",
+            "question": "The scorer says 'academic' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "arXiv / Google Scholar\n\n**Signal strength:** Low (Vercel is not a research company)\n\n**Key findings:**\n-",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_community",
+            "type": "source_verification",
+            "question": "The scorer says 'community' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "Reddit\n\n**Signal strength:** Medium (dispersed across subreddits)\n\n**Key findings (from r/nextjs, r/webdev",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_financial",
+            "type": "source_verification",
+            "question": "The scorer says 'financial' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "Sacra, Getlatka) | Confirmed by BusinessWire Series F announcement, Sacra equity research, Getlatka profi",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_job_market",
+            "type": "source_verification",
+            "question": "The scorer says 'job_market' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "Careers page shows remote positions. | **VERIFIED** |\n| C2 | \"High talent density\" | Glassdoor, P1 | Glassdoor p",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_social",
+            "type": "source_verification",
+            "question": "The scorer says 'social' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "Product Hunt and community discussions confirm massive adoption. The number is plausible given v0's virality but",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_review_platform",
+            "type": "source_verification",
+            "question": "The scorer says 'review_platform' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "Blind says 800. Multiple independent sources converge in 800-875 range. | **VERIFIED** |\n| S6 | \"6 millio",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          }
+        ],
+        "triangulation_verification": [
+          {
+            "id": "triangulation_0",
+            "type": "triangulation_verification",
+            "question": "The scorer says this block has 4 independent source types: employee, financial, social, technical. Are these truly independent, or do some share the same underlying source?",
+            "excerpt": "| # | Claim | Source | Evidence | Verdict | |---|-------|--------|----------|---------| | S1 | \"$200",
+            "scorer_says": {
+              "source_types": [
+                "employee",
+                "financial",
+                "social",
+                "technical"
+              ],
+              "count": 4
+            },
+            "options": [
+              {
+                "value": "independent",
+                "label": "Yes \u2014 all 4 source types are truly independent"
+              },
+              {
+                "value": "some_dependent",
+                "label": "Some of these sources cite each other or share a common origin"
+              },
+              {
+                "value": "not_independent",
+                "label": "These are NOT independent \u2014 same info in different venues"
+              },
+              {
+                "value": "unsure",
+                "label": "Need to see the full document to judge"
+              }
+            ]
+          },
+          {
+            "id": "triangulation_1",
+            "type": "triangulation_verification",
+            "question": "The scorer says this block has 3 independent source types: employee, financial, job_market. Are these truly independent, or do some share the same underlying source?",
+            "excerpt": "| Proposition | Predicted Probability | Confidence | |------------|----------------------|----------",
+            "scorer_says": {
+              "source_types": [
+                "employee",
+                "financial",
+                "job_market"
+              ],
+              "count": 3
+            },
+            "options": [
+              {
+                "value": "independent",
+                "label": "Yes \u2014 all 3 source types are truly independent"
+              },
+              {
+                "value": "some_dependent",
+                "label": "Some of these sources cite each other or share a common origin"
+              },
+              {
+                "value": "not_independent",
+                "label": "These are NOT independent \u2014 same info in different venues"
+              },
+              {
+                "value": "unsure",
+                "label": "Need to see the full document to judge"
+              }
+            ]
+          },
+          {
+            "id": "triangulation_2",
+            "type": "triangulation_verification",
+            "question": "The scorer says this block has 3 independent source types: community, financial, technical. Are these truly independent, or do some share the same underlying source?",
+            "excerpt": "| Competitor | Threat Level | Nature of Threat | |-----------|-------------|-----------------| | **C",
+            "scorer_says": {
+              "source_types": [
+                "community",
+                "financial",
+                "technical"
+              ],
+              "count": 3
+            },
+            "options": [
+              {
+                "value": "independent",
+                "label": "Yes \u2014 all 3 source types are truly independent"
+              },
+              {
+                "value": "some_dependent",
+                "label": "Some of these sources cite each other or share a common origin"
+              },
+              {
+                "value": "not_independent",
+                "label": "These are NOT independent \u2014 same info in different venues"
+              },
+              {
+                "value": "unsure",
+                "label": "Need to see the full document to judge"
+              }
+            ]
+          },
+          {
+            "id": "triangulation_3",
+            "type": "triangulation_verification",
+            "question": "The scorer says this block has 6 independent source types: academic, community, customer, employee, job_market, social. Are these truly independent, or do some share the same underlying source?",
+            "excerpt": "- **Sources searched:** Glassdoor (115 reviews), Blind (37 reviews), Reddit (multiple subreddits), H",
+            "scorer_says": {
+              "source_types": [
+                "academic",
+                "community",
+                "customer",
+                "employee",
+                "job_market",
+                "social"
+              ],
+              "count": 6
+            },
+            "options": [
+              {
+                "value": "independent",
+                "label": "Yes \u2014 all 6 source types are truly independent"
+              },
+              {
+                "value": "some_dependent",
+                "label": "Some of these sources cite each other or share a common origin"
+              },
+              {
+                "value": "not_independent",
+                "label": "These are NOT independent \u2014 same info in different venues"
+              },
+              {
+                "value": "unsure",
+                "label": "Need to see the full document to judge"
+              }
+            ]
+          }
+        ],
+        "specificity_verification": [
+          {
+            "id": "specificity_70",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "- Interview experience rated positive by only 35% of candidates (below average)",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_17",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| S3 | \"v0 generates ~$42M ARR (~21% of total)\" | P1 (Shipper) | Single source (Shipper.now), attributed to \"Feb 2025\" estimates. No independent confirmation from Vercel press releases. v0 launched Sep 2023; $42M in ~16 months would be exceptional. Sacra reports confirm v0 is a significant revenue d",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_297",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "3. **\"264% ROI.\"** Commissioned Forrester study with cherry-picked enterprise customers. The methodology is sound, but the composite organization ($1.5B revenue, 250M users, 50 frontend devs) represents the ideal case, not the median customer.",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_275",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| Significant employee attrition in 2026 | 55% | Medium-High \u2014 Glassdoor trend is negative, culture shift backlash is active, Netanyahu controversy created a fault line. Counter-signal: comp is competitive ($209K-$675K). |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_307",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "3. **\"We removed 80% of our agent's tools\" blog post (Dec 2025).** A thought leadership piece positioned as technical insight, but it's product marketing for the AI SDK's Agent interface. The content is legitimate, but the narrative framing (\"we discovered less is more\") is standard content marketin",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_250",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "- **Gap severity:** HIGH \u2014 35% positive interview experience and declining Glassdoor trend signal talent acquisition risk",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_271",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| v0 reaches $100M ARR by end of 2026 | 55-60% | Medium-High \u2014 $42M as of Feb 2025, growing fast. \"Vibe coding\" market is fragmenting but v0's ecosystem integration (React/Next.js/shadcn/ui + Vercel deploy) provides structural advantages in the largest frontend framework. Pricing backlash is a headw",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_55",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| C4 | \"4.1/5 Glassdoor rating, 74% recommend\" | P1 | Confirmed as of Feb 2026. However, Blind rates Vercel at 3.9/5 with Management at 3.1/5. The Glassdoor number masks a declining trajectory in recent reviews. | **VERIFIED** (snapshot accurate, but trend is negative) |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          }
+        ],
+        "overall_assessment": [
+          {
+            "id": "overall_quality",
+            "type": "overall_assessment",
+            "question": "After reviewing this document, how would you rate its evidence quality?",
+            "context": "File: output/vercel.com/04-claims.md | ~34573 chars | ~394 lines",
+            "options": [
+              {
+                "value": "strong",
+                "label": "Strong \u2014 claims are well-sourced with independent evidence"
+              },
+              {
+                "value": "adequate",
+                "label": "Adequate \u2014 most claims have sources but some gaps"
+              },
+              {
+                "value": "weak",
+                "label": "Weak \u2014 many claims lack sources or rely on company materials"
+              },
+              {
+                "value": "theater",
+                "label": "Theater \u2014 sources are mentioned but don't actually support claims"
+              }
+            ]
+          }
+        ]
+      },
+      "task_count": 24,
+      "instructions": "Thank you for helping validate this dossier's scoring. For each task, read the excerpt and select the option that best matches what you observe. Your responses help calibrate our automated scorers against human judgment. There are no wrong answers \u2014 honest assessment is what we need."
+    },
+    {
+      "domain": "vercel.com",
+      "file": "output/vercel.com/05-academic.md",
+      "phase": 5,
+      "phase_name": "Academic",
+      "generated_at": "2026-06-15T20:55:09.085364+00:00",
+      "document_preview": "# Vercel \u2014 Phase 5: Academic & IP Analysis  **Date:** 2026-02-18 **Domain:** vercel.com **Analyst method:** WebSearch (arXiv queries, patent databases, academic databases, industry sources)  ---  ## Company Publications  ### Formal Academic Papers  Vercel has **no meaningful formal academic publication record**. Neither the company nor its key technical leaders have published peer-reviewed papers in academic venues (ACM, IEEE, arXiv). This is consistent with Vercel's identity as a practitioner-d",
+      "document_length": 25814,
+      "tasks": {
+        "source_verification": [
+          {
+            "id": "source_regulatory",
+            "type": "source_verification",
+            "question": "The scorer says 'regulatory' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "Secondary College (Australia) | No academic papers. Created Babel (2014) and Rome toolchain. |\n| Jared",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_technical",
+            "type": "source_verification",
+            "question": "The scorer says 'technical' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "github.com/vercel/cla)).\n3. **Speed of execution**: The moat is developer mindshare and ecosystem lock-in, not",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_academic",
+            "type": "source_verification",
+            "question": "The scorer says 'academic' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "arXiv queries, patent databases, academic databases, industry sources)\n\n---\n\n## Company Publications\n\n###",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_community",
+            "type": "source_verification",
+            "question": "The scorer says 'community' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "r/papers/cs-tr-5027.pdf))\n- **Salsa** (Matsakis et al.): A Rust framework for on-demand incrementalized comp",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_financial",
+            "type": "source_verification",
+            "question": "The scorer says 'financial' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "valuation metrics, benchmarks, and reliability challenges.\n- **Hallucination in code generation** (arXiv:2404",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          }
+        ],
+        "triangulation_verification": [
+          {
+            "id": "triangulation_0",
+            "type": "triangulation_verification",
+            "question": "The scorer says this block has 3 independent source types: academic, community, technical. Are these truly independent, or do some share the same underlying source?",
+            "excerpt": "- **Adapton** (Hammer et al., 2014, University of Maryland): The foundational academic work on compo",
+            "scorer_says": {
+              "source_types": [
+                "academic",
+                "community",
+                "technical"
+              ],
+              "count": 3
+            },
+            "options": [
+              {
+                "value": "independent",
+                "label": "Yes \u2014 all 3 source types are truly independent"
+              },
+              {
+                "value": "some_dependent",
+                "label": "Some of these sources cite each other or share a common origin"
+              },
+              {
+                "value": "not_independent",
+                "label": "These are NOT independent \u2014 same info in different venues"
+              },
+              {
+                "value": "unsure",
+                "label": "Need to see the full document to judge"
+              }
+            ]
+          },
+          {
+            "id": "triangulation_1",
+            "type": "triangulation_verification",
+            "question": "The scorer says this block has 3 independent source types: academic, financial, technical. Are these truly independent, or do some share the same underlying source?",
+            "excerpt": "- **Tools used:** WebSearch exclusively. Google Patents, USPTO, arXiv, and academic databases querie",
+            "scorer_says": {
+              "source_types": [
+                "academic",
+                "financial",
+                "technical"
+              ],
+              "count": 3
+            },
+            "options": [
+              {
+                "value": "independent",
+                "label": "Yes \u2014 all 3 source types are truly independent"
+              },
+              {
+                "value": "some_dependent",
+                "label": "Some of these sources cite each other or share a common origin"
+              },
+              {
+                "value": "not_independent",
+                "label": "These are NOT independent \u2014 same info in different venues"
+              },
+              {
+                "value": "unsure",
+                "label": "Need to see the full document to judge"
+              }
+            ]
+          }
+        ],
+        "specificity_verification": [
+          {
+            "id": "specificity_136",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| **Remix** (Shopify) | ~30K | Web-standards-first, simpler mental model, nested routing | Smaller ecosystem, fewer integrations, <15% React framework market share | Low-Medium |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_183",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| **Replit** | ~$50M+ ARR | Browser-based IDE + deployment, educational market | Less focused on production-quality output | Medium |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_182",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| **Lovable** | ~$20M ARR in 2 months | Fastest-growing European startup; full-stack from natural language | Less developer-focused; quality concerns at scale | Medium |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_156",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "**Critical competitor: Cloudflare.** With Workers platform growing 50% YoY to 3M+ active developers, Workers AI inference requests up ~4,000% YoY, and $479M quarterly revenue providing massive infrastructure investment capacity, Cloudflare is the most serious platform threat to Vercel. Cloudflare's ",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_106",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "**Assessment:** Vercel appears to have a deliberate **zero-patent strategy**, consistent with its open-source-first identity. This is notable given that the company has raised $863M and is valued at $9.3B. The IP protection strategy relies instead on:",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_153",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| **Railway** | ~$10M ARR | ~30 | Simple backend/fullstack deployment, developer-friendly | Much smaller; limited edge network; no framework play | Low |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_139",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| **Astro** | ~48K | Best-in-class for content sites; 40-70% better LCP than Next.js SSG | Not suited for highly interactive apps; limited server-side capabilities | Low (different use case) |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_72",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "- **Cold start optimization**: Vercel's Rust-based serverless runtime (47% faster connections, 77% faster p99) addresses a well-studied problem in serverless computing literature.",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          }
+        ],
+        "overall_assessment": [
+          {
+            "id": "overall_quality",
+            "type": "overall_assessment",
+            "question": "After reviewing this document, how would you rate its evidence quality?",
+            "context": "File: output/vercel.com/05-academic.md | ~25814 chars | ~256 lines",
+            "options": [
+              {
+                "value": "strong",
+                "label": "Strong \u2014 claims are well-sourced with independent evidence"
+              },
+              {
+                "value": "adequate",
+                "label": "Adequate \u2014 most claims have sources but some gaps"
+              },
+              {
+                "value": "weak",
+                "label": "Weak \u2014 many claims lack sources or rely on company materials"
+              },
+              {
+                "value": "theater",
+                "label": "Theater \u2014 sources are mentioned but don't actually support claims"
+              }
+            ]
+          }
+        ]
+      },
+      "task_count": 16,
+      "instructions": "Thank you for helping validate this dossier's scoring. For each task, read the excerpt and select the option that best matches what you observe. Your responses help calibrate our automated scorers against human judgment. There are no wrong answers \u2014 honest assessment is what we need."
+    },
+    {
+      "domain": "vercel.com",
+      "file": "output/vercel.com/06-valuation.md",
+      "phase": 6,
+      "phase_name": "Valuation",
+      "generated_at": "2026-06-15T20:55:09.151494+00:00",
+      "document_preview": "# Vercel -- Phase 6: Valuation & Replication Assessment  **Date:** 2026-02-19 **Domain:** vercel.com **Data sources:** P1 Discovery, P2 Market, P3 Technical, P4 Claims, P5 Academic, WebSearch (financial databases, analyst reports, pricing pages)  ---  ## 1. Business Model Analysis  ### Revenue Model  Vercel operates a **hybrid freemium + usage-based + enterprise contract** model with three distinct revenue streams:  | Stream | Model | Est. % of Revenue | Basis | |--------|-------|---------------",
+      "document_length": 37135,
+      "tasks": {
+        "source_verification": [
+          {
+            "id": "source_regulatory",
+            "type": "source_verification",
+            "question": "The scorer says 'regulatory' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "security, audit logs | Mid-market to large enterprise |\n| **v0 Free** | Free | Limited generations/mont",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_customer",
+            "type": "source_verification",
+            "question": "The scorer says 'customer' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "Trustpilot) | Cost-sensitive customers churn or migrate | Negative: logo churn in SMB/Pro |\n| v0 credit exhaus",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_technical",
+            "type": "source_verification",
+            "question": "The scorer says 'technical' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "npm/Node.js runtime, browser testing (Playwright) |\n| **Automatable work** | Routing engine, SSR/SSG re",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_community",
+            "type": "source_verification",
+            "question": "The scorer says 'community' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "r/month | 1TB bandwidth, 40hr CPU/mo, preview deploys, $20 usage credit | Professional developers, small te",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_financial",
+            "type": "source_verification",
+            "question": "The scorer says 'financial' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "Valuation & Replication Assessment\n\n**Date:** 2026-02-19\n**Domain:** vercel.com\n**Data sources:** P1 Discover",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          }
+        ],
+        "triangulation_verification": [],
+        "specificity_verification": [
+          {
+            "id": "specificity_40",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| Enterprise | ~500-1,500 contracts | ~$20-50K/yr | $20-40M | Low ACV enterprise; logos are real but shallow |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_18",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| **Marketplace & Add-ons** | Usage-based (storage, analytics, observability) | ~5-8% | Vercel Blob, Postgres (via Neon), KV (via Upstash), Analytics, Speed Insights |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_404",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| **Network Effects / Community** | 4.0 | 20% | 0.80 | This is Vercel's strongest moat. 138K GitHub stars on Next.js, 1.3M monthly active developers, 3,200+ contributors, 80K+ active teams, 4M+ hosted websites. The framework-to-platform flywheel (Next.js adoption drives Vercel platform adoption) is ",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_442",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "The $9.3B valuation is supported by genuine assets: $200M ARR growing 80-100%, a 138K-star framework that dominates its ecosystem, an AI product (v0) generating $42M ARR in its first year, and enterprise logos including OpenAI and PayPal. However, ~70% of the defensible value is in the community/net",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_41",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| v0 (all tiers) | ~100K-200K paid | ~$200-400/yr blended | ~$42M | 3.5M users, low conversion, high churn expected |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_231",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| **Community/marketing** | $50M-100M |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_399",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| **Core Technology** | 2.5 | 20% | 0.50 | The platform technology (serverless, CDN, deployment pipeline) is well-understood and has been replicated by Netlify, Cloudflare, Railway, Render, etc. The Rust runtime and Fluid compute are sophisticated but not unique in concept. Next.js is MIT-licensed a",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_60",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| **Current ARR** | $200M (May 2025) | HIGH | BusinessWire Series F press release, Sacra, Getlatka converge |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          }
+        ],
+        "overall_assessment": [
+          {
+            "id": "overall_quality",
+            "type": "overall_assessment",
+            "question": "After reviewing this document, how would you rate its evidence quality?",
+            "context": "File: output/vercel.com/06-valuation.md | ~37135 chars | ~500 lines",
+            "options": [
+              {
+                "value": "strong",
+                "label": "Strong \u2014 claims are well-sourced with independent evidence"
+              },
+              {
+                "value": "adequate",
+                "label": "Adequate \u2014 most claims have sources but some gaps"
+              },
+              {
+                "value": "weak",
+                "label": "Weak \u2014 many claims lack sources or rely on company materials"
+              },
+              {
+                "value": "theater",
+                "label": "Theater \u2014 sources are mentioned but don't actually support claims"
+              }
+            ]
+          }
+        ]
+      },
+      "task_count": 14,
+      "instructions": "Thank you for helping validate this dossier's scoring. For each task, read the excerpt and select the option that best matches what you observe. Your responses help calibrate our automated scorers against human judgment. There are no wrong answers \u2014 honest assessment is what we need."
+    },
+    {
+      "domain": "vercel.com",
+      "file": "output/vercel.com/07-report.md",
+      "phase": 7,
+      "phase_name": "Report",
+      "generated_at": "2026-06-15T20:55:09.220189+00:00",
+      "document_preview": "# Vercel Inc. -- Unified Due Diligence Report  **Prepared:** 2026-02-19 **Subject:** Vercel Inc. (vercel.com) **Classification:** SaaS Due Diligence -- Phase 7 Final Report **Report version:** 1.0 **Recommendation:** **PROCEED WITH CAUTION**  ---  ## Table of Contents  1. [Confidence Matrix](#1-confidence-matrix) 2. [Company Identity & Corporate Structure](#2-company-identity--corporate-structure) 3. [Financial Profile](#3-financial-profile) 4. [Product & Technology](#4-product--technology) 5. [",
+      "document_length": 42441,
+      "tasks": {
+        "source_verification": [
+          {
+            "id": "source_regulatory",
+            "type": "source_verification",
+            "question": "The scorer says 'regulatory' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "section of this report is rated on two dimensions: **Data Quality** (reliability of underlying sources)",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_employee",
+            "type": "source_verification",
+            "question": "The scorer says 'employee' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "Glassdoor reviews + 37 Blind reviews + Reddit/HN/Twitter cross-referencing |\n| **Patent & IP** | HIGH | HIGH",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_customer",
+            "type": "source_verification",
+            "question": "The scorer says 'customer' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "Trustpilot 1.8/5 is red flag | P2, P4 |\n| R2 | **Cloudflare captures cost-sensitive segment** | HIGH | MEDIUM-",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_technical",
+            "type": "source_verification",
+            "question": "The scorer says 'technical' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "commit frequency, issue counts, star history are factual |\n| **Security Posture** | HIGH | HIGH | CVEs in",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_academic",
+            "type": "source_verification",
+            "question": "The scorer says 'academic' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "arXiv, ACM, Google Scholar; negative result is reliable |\n| **Replication Cost** | MEDIUM | MEDIUM | LOC",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_community",
+            "type": "source_verification",
+            "question": "The scorer says 'community' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "Reddit/HN/Twitter cross-referencing |\n| **Patent & IP** | HIGH | HIGH | Negative result confirmed across G",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_financial",
+            "type": "source_verification",
+            "question": "The scorer says 'financial' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "Valuation Analysis](#9-valuation-analysis)\n10. [Replication Assessment](#10-replication-assessment)\n11. [Cros",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_job_market",
+            "type": "source_verification",
+            "question": "The scorer says 'job_market' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "hiring patterns (FP&A, Corp Dev intern, COO from Stripe); no confirmed plans |\n\n### Summary Statistics\n\n-",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_social",
+            "type": "source_verification",
+            "question": "The scorer says 'social' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "Twitter cross-referencing |\n| **Patent & IP** | HIGH | HIGH | Negative result confirmed across Google Paten",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          },
+          {
+            "id": "source_review_platform",
+            "type": "source_verification",
+            "question": "The scorer says 'review_platform' source was found and has data. Read the excerpt below. Did this source actually contribute real data to the analysis, or is it just mentioned?",
+            "excerpt": "Glassdoor reviews + 37 Blind reviews + Reddit/HN/Twitter cross-referencing |\n| **Patent & IP** | HIGH | HIGH",
+            "scorer_says": {
+              "found": true,
+              "has_data": true
+            },
+            "options": [
+              {
+                "value": "has_data",
+                "label": "Yes \u2014 real data was extracted from this source"
+              },
+              {
+                "value": "mentioned_only",
+                "label": "No \u2014 source is mentioned but no real data"
+              },
+              {
+                "value": "negative",
+                "label": "Source is mentioned with 'no results' / 'not found'"
+              },
+              {
+                "value": "unsure",
+                "label": "Can't tell from this excerpt"
+              }
+            ]
+          }
+        ],
+        "triangulation_verification": [
+          {
+            "id": "triangulation_0",
+            "type": "triangulation_verification",
+            "question": "The scorer says this block has 8 independent source types: academic, community, employee, financial, job_market, regulatory, social, technical. Are these truly independent, or do some share the same underlying source?",
+            "excerpt": "| Section | Data Quality | Analysis Confidence | Key Gaps | |---------|-------------|---------------",
+            "scorer_says": {
+              "source_types": [
+                "academic",
+                "community",
+                "employee",
+                "financial",
+                "job_market",
+                "regulatory",
+                "social",
+                "technical"
+              ],
+              "count": 8
+            },
+            "options": [
+              {
+                "value": "independent",
+                "label": "Yes \u2014 all 8 source types are truly independent"
+              },
+              {
+                "value": "some_dependent",
+                "label": "Some of these sources cite each other or share a common origin"
+              },
+              {
+                "value": "not_independent",
+                "label": "These are NOT independent \u2014 same info in different venues"
+              },
+              {
+                "value": "unsure",
+                "label": "Need to see the full document to judge"
+              }
+            ]
+          },
+          {
+            "id": "triangulation_1",
+            "type": "triangulation_verification",
+            "question": "The scorer says this block has 3 independent source types: community, financial, regulatory. Are these truly independent, or do some share the same underlying source?",
+            "excerpt": "- **12 of 18 sections** rated MEDIUM or higher on Data Quality - **14 of 18 sections** rated MEDIUM ",
+            "scorer_says": {
+              "source_types": [
+                "community",
+                "financial",
+                "regulatory"
+              ],
+              "count": 3
+            },
+            "options": [
+              {
+                "value": "independent",
+                "label": "Yes \u2014 all 3 source types are truly independent"
+              },
+              {
+                "value": "some_dependent",
+                "label": "Some of these sources cite each other or share a common origin"
+              },
+              {
+                "value": "not_independent",
+                "label": "These are NOT independent \u2014 same info in different venues"
+              },
+              {
+                "value": "unsure",
+                "label": "Need to see the full document to judge"
+              }
+            ]
+          },
+          {
+            "id": "triangulation_2",
+            "type": "triangulation_verification",
+            "question": "The scorer says this block has 3 independent source types: community, customer, financial. Are these truly independent, or do some share the same underlying source?",
+            "excerpt": "| # | Risk | Severity | Likelihood | Mitigation Signals | Phase Source | |---|------|----------|----",
+            "scorer_says": {
+              "source_types": [
+                "community",
+                "customer",
+                "financial"
+              ],
+              "count": 3
+            },
+            "options": [
+              {
+                "value": "independent",
+                "label": "Yes \u2014 all 3 source types are truly independent"
+              },
+              {
+                "value": "some_dependent",
+                "label": "Some of these sources cite each other or share a common origin"
+              },
+              {
+                "value": "not_independent",
+                "label": "These are NOT independent \u2014 same info in different venues"
+              },
+              {
+                "value": "unsure",
+                "label": "Need to see the full document to judge"
+              }
+            ]
+          },
+          {
+            "id": "triangulation_3",
+            "type": "triangulation_verification",
+            "question": "The scorer says this block has 3 independent source types: employee, job_market, regulatory. Are these truly independent, or do some share the same underlying source?",
+            "excerpt": "| # | Risk | Severity | Likelihood | Mitigation Signals | Phase Source | |---|------|----------|----",
+            "scorer_says": {
+              "source_types": [
+                "employee",
+                "job_market",
+                "regulatory"
+              ],
+              "count": 3
+            },
+            "options": [
+              {
+                "value": "independent",
+                "label": "Yes \u2014 all 3 source types are truly independent"
+              },
+              {
+                "value": "some_dependent",
+                "label": "Some of these sources cite each other or share a common origin"
+              },
+              {
+                "value": "not_independent",
+                "label": "These are NOT independent \u2014 same info in different venues"
+              },
+              {
+                "value": "unsure",
+                "label": "Need to see the full document to judge"
+              }
+            ]
+          },
+          {
+            "id": "triangulation_4",
+            "type": "triangulation_verification",
+            "question": "The scorer says this block has 3 independent source types: community, employee, technical. Are these truly independent, or do some share the same underlying source?",
+            "excerpt": "| # | Action | Frequency | Trigger | |---|--------|-----------|---------| | 6 | **Track Cloudflare +",
+            "scorer_says": {
+              "source_types": [
+                "community",
+                "employee",
+                "technical"
+              ],
+              "count": 3
+            },
+            "options": [
+              {
+                "value": "independent",
+                "label": "Yes \u2014 all 3 source types are truly independent"
+              },
+              {
+                "value": "some_dependent",
+                "label": "Some of these sources cite each other or share a common origin"
+              },
+              {
+                "value": "not_independent",
+                "label": "These are NOT independent \u2014 same info in different venues"
+              },
+              {
+                "value": "unsure",
+                "label": "Need to see the full document to judge"
+              }
+            ]
+          }
+        ],
+        "specificity_verification": [
+          {
+            "id": "specificity_446",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| Deployment pipeline | High | $3-5M + 1-2 years | Largely yes |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_467",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "1. **Next.js community** (138K stars, 3,200+ contributors, 1.3M monthly active devs) -- decade of organic growth",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_239",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| Cursor | ~$200M+ ARR | v0 deploys to Vercel natively | Cursor is IDE-native, more flexible |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_214",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| TAM (web devs + AI tools) | $30-45B | MEDIUM |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_513",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "**P2 and P4** note that v0 at $42M ARR is modest compared to Cursor (~$200M+), Lovable ($100M in 8 months), and Replit ($100M in 9 months).",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_97",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| Series F | Sep 2025 | $300M | $9.3B | Accel, GIC |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_456",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| Data / Content (telemetry) | 3.0 | 15% | 0.45 |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          },
+          {
+            "id": "specificity_448",
+            "type": "specificity_verification",
+            "question": "This line contains specific numbers. Is the data attributed to a source, or is it an unsourced assertion?",
+            "excerpt": "| Dashboard / UI | Medium | $2-5M + 1-2 years | Yes |",
+            "options": [
+              {
+                "value": "attributed",
+                "label": "Attributed \u2014 a source is cited for this data"
+              },
+              {
+                "value": "unattributed",
+                "label": "Unattributed \u2014 number appears without a source"
+              },
+              {
+                "value": "self_referential",
+                "label": "Source is the company itself (press release, website)"
+              },
+              {
+                "value": "derived",
+                "label": "This is a calculation/estimate, not raw data"
+              }
+            ]
+          }
+        ],
+        "overall_assessment": [
+          {
+            "id": "overall_quality",
+            "type": "overall_assessment",
+            "question": "After reviewing this document, how would you rate its evidence quality?",
+            "context": "File: output/vercel.com/07-report.md | ~42441 chars | ~657 lines",
+            "options": [
+              {
+                "value": "strong",
+                "label": "Strong \u2014 claims are well-sourced with independent evidence"
+              },
+              {
+                "value": "adequate",
+                "label": "Adequate \u2014 most claims have sources but some gaps"
+              },
+              {
+                "value": "weak",
+                "label": "Weak \u2014 many claims lack sources or rely on company materials"
+              },
+              {
+                "value": "theater",
+                "label": "Theater \u2014 sources are mentioned but don't actually support claims"
+              }
+            ]
+          }
+        ]
+      },
+      "task_count": 24,
+      "instructions": "Thank you for helping validate this dossier's scoring. For each task, read the excerpt and select the option that best matches what you observe. Your responses help calibrate our automated scorers against human judgment. There are no wrong answers \u2014 honest assessment is what we need."
+    }
+  ]
+}
