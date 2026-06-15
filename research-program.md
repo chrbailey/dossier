@@ -203,12 +203,47 @@ See `ralph-x-signals.md` for the full orchestration protocol.
 
 ---
 
+## Scoring Configuration
+
+All weights and thresholds below are UNCALIBRATED defaults. To calibrate:
+run `python3 scripts/calibrate.py` against backtest companies, compare
+predicted scores to known outcomes, adjust values below to minimize error.
+
+### EDS Weights
+| Component | Weight | Calibration Status |
+|-----------|--------|-------------------|
+| url_citation_rate | 0.20 | UNCALIBRATED |
+| source_coverage | 0.20 | UNCALIBRATED |
+| triangulation_rate | 0.20 | UNCALIBRATED |
+| temporal_freshness | 0.15 | UNCALIBRATED |
+| specificity_score | 0.15 | UNCALIBRATED |
+| negative_evidence_rate | 0.10 | UNCALIBRATED |
+
+### Drift Thresholds
+| Threshold | Value | Calibration Status |
+|-----------|-------|-------------------|
+| stable_max_drift | 0.15 | UNCALIBRATED |
+| changed_max_drift | 0.50 | UNCALIBRATED |
+| material_number_change_pct | 20.0 | UNCALIBRATED |
+
+### Sentiment Thresholds
+| Label | Min Value | Calibration Status |
+|-------|-----------|-------------------|
+| BULLISH | > 0.3 | UNCALIBRATED |
+| SLIGHTLY BULLISH | > 0.1 | UNCALIBRATED |
+| NEUTRAL | > -0.1 | UNCALIBRATED |
+| SLIGHTLY BEARISH | > -0.3 | UNCALIBRATED |
+| BEARISH | ≤ -0.3 | UNCALIBRATED |
+
+---
+
 ## Editing This File
 
-**For humans:** Modify the strategy variants, thresholds, and source weightings to
-steer how the agent researches. You are the experimental designer. The agent is
-the experimenter.
+**For humans:** Modify the strategy variants, thresholds, source weightings, AND
+scoring configuration above to steer how the agent researches and evaluates.
+You are the experimental designer. The agent is the experimenter.
 
 **For agents:** Read this file before each research sprint. Follow the iteration
-protocol. Select the strategy variant matching your attempt number. Report EDS
-after each sprint.
+protocol. Select the strategy variant matching your attempt number. Load EDS
+weights and thresholds from the Scoring Configuration section above. Report EDS
+after each sprint using `scripts/evaluate_phase_v2.py`.

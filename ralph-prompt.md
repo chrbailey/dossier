@@ -84,12 +84,25 @@ Each Ralph Loop iteration:
    - Not currently in progress
 3. **Dispatch**: Launch sub-agents for all unblocked phases
 4. **Wait**: Sub-agents complete their work
-5. **Evaluate**: Run EDS evaluator on each new output:
-   ```bash
-   python3 scripts/evaluate_phase.py "output/${DOMAIN}/0N-phase.md" --phase N
-   ```
+5. **Evaluate with Validator Agent**: For each new phase output, spawn a
+   validator agent (see `prompts/validator-agent.md` for the full template):
+   
+   The validator agent:
+   a) Independently reads the file and counts URLs, source types with actual
+      data, real triangulations (3+ structurally independent source types),
+      year references in citation context, and attributed specifics
+   b) Runs the v2 scorer:
+      ```bash
+      python3 scripts/evaluate_phase_v2.py "output/${DOMAIN}/0N-phase.md" --phase N --domain ${DOMAIN}
+      ```
+   c) Compares its independent counts to the scorer's counts
+   d) Logs the result (expected vs actual) to `output/${DOMAIN}/validation-log.jsonl`
+   e) Reports PASS (scorer accurate), FAIL (scorer inflated), or DRIFT (off >10%)
+   
+   If the validator reports FAIL, investigate the discrepancy before using the score.
+   
 6. **Keep or discard**:
-   - If EDS improved over previous best → keep new output, log in PROGRESS.md
+   - If validated EDS improved over previous best → keep new output, log in PROGRESS.md
    - If EDS regressed → revert to previous best output
    - If first attempt → keep regardless (establishes baseline)
 7. **Check quality gate**:

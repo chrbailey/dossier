@@ -49,11 +49,15 @@ ls output/{domain}/
 - Don't skip phases — if blocked, note the blocker and continue
 - Don't overwrite prior phase outputs without reason
 
-### Quality Gates (Autoresearch Pattern)
-- Each phase output is scored by `scripts/evaluate_phase.py` (Evidence Density Score)
-- Phases re-run with different strategies if EDS is below threshold
-- See `research-program.md` for thresholds, strategy variants, and source weighting
-- The human edits `research-program.md` to steer research strategy; agents execute it
+### Quality Gates (Validated Computation)
+- Each phase output is scored by `scripts/evaluate_phase_v2.py` (Evidence Density Score)
+- V2 scorers check sources actually contributed data (not just mentioned)
+- Triangulation requires 3+ structurally independent source types per claim
+- All weights and thresholds are configurable in `research-program.md` (Scoring Configuration section)
+- Every scoring run is logged to `output/{domain}/validation-log.jsonl`
+- Validator agents independently verify scorer accuracy (see `prompts/validator-agent.md`)
+- Run `python3 scripts/calibrate.py` to compare scores against backtest known outcomes
+- The human edits `research-program.md` to steer research strategy AND tune scoring; agents execute it
 
 ## Verification
 
@@ -62,17 +66,23 @@ ls output/{domain}/
 python3 scripts/whois_lookup.py example.com
 python3 scripts/arxiv_search.py "machine learning" 3
 
-# Evaluate phase output quality
-python3 scripts/evaluate_phase.py output/example.com/04-claims.md
+# Evaluate phase output quality (v2 — validated)
+python3 scripts/evaluate_phase_v2.py output/example.com/04-claims.md --domain example.com
 
-# Score X social signal coverage
-python3 scripts/score_x_accounts.py output/example.com/social-signals-x.md
+# Score X social signal coverage (v2 — configurable)
+python3 scripts/score_x_accounts_v2.py output/example.com/social-signals-x.md --domain example.com
 
-# Check staleness of a phase output
-python3 scripts/drift_check.py output/example.com/04-claims.md --staleness
+# Check staleness of a phase output (v2 — raw data, no fake verdicts)
+python3 scripts/drift_check_v2.py output/example.com/04-claims.md --staleness
 
-# Compare two versions of a dossier
-python3 scripts/drift_check.py output/v1/ output/v2/
+# Compare two versions of a dossier (v2 — with numerical change detection)
+python3 scripts/drift_check_v2.py output/v1/ output/v2/ --domain example.com
+
+# View validation log for a domain
+python3 scripts/validation_report.py example.com
+
+# Run calibration against backtest companies
+python3 scripts/calibrate.py
 
 # Check phase outputs after a run
 cat output/*/PROGRESS.md
