@@ -15,6 +15,19 @@ import os
 import re
 import sys
 from pathlib import Path
+from urllib.parse import urlsplit
+
+# URL schemes allowed in rendered links. Anything else (javascript:, data:,
+# vbscript:, ...) is rejected and rendered as inert text. Scheme-less URLs
+# (relative paths, #fragments, //protocol-relative) have an empty scheme and
+# are always allowed — they cannot carry an executable scheme.
+SAFE_URL_SCHEMES = {'http', 'https', 'mailto'}
+
+
+def _url_is_safe(url):
+    """True if the URL has no scheme or an allowlisted one."""
+    scheme = urlsplit(html_mod.unescape(url)).scheme.lower()
+    return scheme == '' or scheme in SAFE_URL_SCHEMES
 
 DOSSIER_ROOT = Path(__file__).resolve().parent.parent
 
@@ -30,19 +43,44 @@ STATUS_KEYWORDS = {
 
 
 def _inline(text):
-    """Process inline markdown: bold, italic, code, links, status tags."""
-    # Inline code (before bold/italic to avoid conflicts)
-    text = re.sub(r'`([^`]+)`', r'<code class="inline">\1</code>', text)
-    # Links — validate URL scheme to prevent javascript: XSS
-    def _safe_link(m):
+    """Process inline markdown: bold, italic, code, links, status tags.
+
+    Security model: the source text is UNTRUSTED (phase outputs are built from
+    scraped third-party web content). We HTML-escape the whole line first, so
+    any raw markup like <script> becomes inert, then layer trusted markdown
+    markup on top. Generated fragments (code spans, links) are stashed behind
+    placeholders so later substitution passes cannot corrupt their contents
+    (e.g. a status keyword inside a URL rewriting the href attribute).
+    """
+    # 1. Escape everything first — inert-ifies raw HTML in untrusted content.
+    #    escape() touches only & < > " ' and leaves markdown syntax intact.
+    text = html_mod.escape(text)
+
+    stash = []
+
+    def _stash(html):
+        stash.append(html)
+        return f'\x00{len(stash) - 1}\x00'
+
+    # 2. Inline code (before bold/italic to avoid conflicts).
+    text = re.sub(
+        r'`([^`]+)`',
+        lambda m: _stash(f'<code class="inline">{m.group(1)}</code>'),
+        text,
+    )
+
+    # 3. Links — reject non-allowlisted schemes, stash the rest so later
+    #    passes can't rewrite inside the href. label/url are already escaped.
+    def _link(m):
         label, url = m.group(1), m.group(2)
-        # Only allow http(s) and mailto schemes
-        if not re.match(r'^https?://|^mailto:', url, re.IGNORECASE):
-            return html_mod.escape(f'[{label}]({url})')
-        safe_url = html_mod.escape(url, quote=True)
-        return f'<a href="{safe_url}" target="_blank" rel="noopener">{label}</a>'
-    text = re.sub(r'\[([^\]]+)\]\(([^)]+)\)', _safe_link, text)
-    # Bold status keywords: **VERIFIED** → styled span
+        if not _url_is_safe(url):
+            return f'[{label}]({url})'  # inert literal text (already escaped)
+        return _stash(
+            f'<a href="{url}" target="_blank" rel="noopener">{label}</a>'
+        )
+    text = re.sub(r'\[([^\]]+)\]\(([^)]+)\)', _link, text)
+
+    # 4. Bold status keywords: **VERIFIED** → styled span
     for kw, cls in STATUS_KEYWORDS.items():
         text = text.replace(
             f'**{kw}**',
@@ -59,6 +97,11 @@ def _inline(text):
             f'<span class="status status-{cls}">{kw}</span>',
             text
         )
+
+    # 5. Restore stashed fragments. Reverse order so a link containing a
+    #    stashed code span resolves its inner placeholder too.
+    for i in reversed(range(len(stash))):
+        text = text.replace(f'\x00{i}\x00', stash[i])
     return text
 
 
@@ -464,6 +507,7 @@ PHASE_FILES = [
     ('02-market', 'p2'),
     ('03-technical', 'p3'),
     ('04-claims', 'p4'),
+    ('04.5-red-team', 'p45'),
     ('05-academic', 'p5'),
     ('06-valuation', 'p6'),
     ('07-report', 'p7'),
@@ -525,8 +569,9 @@ def build_report(domain):
     for key, md in phases.items():
         phase_html[key] = md_to_html(md)
 
-    # Inject into template
-    replacements = {
+    # Scalar values are regex-extracted from untrusted phase markdown, so
+    # HTML-escape them before injecting into the template.
+    scalar = {
         '{{COMPANY_NAME}}': scores['company_name'],
         '{{TICKER}}': scores['ticker'],
         '{{DATE}}': scores['date'],
@@ -540,20 +585,28 @@ def build_report(domain):
         '{{SCORE_ACCURACY_PCT}}': scores['accuracy_pct'],
         '{{RECOMMENDATION}}': scores['recommendation'],
         '{{RECOMMENDATION_CLASS}}': scores['recommendation_class'],
+    }
+    # HTML values are already sanitized by md_to_html / build_quadrant_svg.
+    html_values = {
         '{{EXEC_SUMMARY_HTML}}': phase_html.get('summary', ''),
         '{{PHASE_1_HTML}}': phase_html.get('p1', ''),
         '{{QUADRANT_HTML}}': quadrant_html,
         '{{PHASE_2_HTML}}': phase_html.get('p2', ''),
         '{{PHASE_3_HTML}}': phase_html.get('p3', ''),
         '{{PHASE_4_HTML}}': phase_html.get('p4', ''),
+        '{{PHASE_4_5_HTML}}': phase_html.get('p45', ''),
         '{{PHASE_5_HTML}}': phase_html.get('p5', ''),
         '{{PHASE_6_HTML}}': phase_html.get('p6', ''),
         '{{PHASE_7_HTML}}': phase_html.get('p7', ''),
     }
+    replacements = {k: html_mod.escape(v) for k, v in scalar.items()}
+    replacements.update(html_values)
 
-    result = template
-    for placeholder, value in replacements.items():
-        result = result.replace(placeholder, value)
+    # Single-pass substitution: each placeholder is replaced exactly once, so
+    # a value that happens to contain another placeholder token is not
+    # re-expanded (prevents injected {{...}} tokens from pulling in other slots).
+    pattern = re.compile('|'.join(re.escape(k) for k in replacements))
+    result = pattern.sub(lambda m: replacements[m.group(0)], template)
 
     # Write output
     output_path = output_dir / 'dossier-report.html'

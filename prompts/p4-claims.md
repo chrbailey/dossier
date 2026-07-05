@@ -7,9 +7,9 @@ This phase is the analytical core of the dossier. It's where marketing meets rea
 
 **CRITICAL SOURCE TRUST RULE:** The target company controls their own website,
 blog, docs, llms.txt, and all first-party content. Every claim extracted in
-step 4.1 is an ASSERTION TO BE TESTED, not evidence. A claim is only VERIFIED
-when corroborated by 2+ INDEPENDENT sources (trust >= 0.8). A first-party
-source can never verify its own claim.
+step 4.1 is an ASSERTION TO BE TESTED, not evidence. Rate every claim using the
+**Verification Bar defined in CLAUDE.md** (the single source of truth) — do not
+use a different threshold here. A first-party source can never verify its own claim.
 
 ## Inputs
 - `output/{DOMAIN}/01-discovery.md` — marketing content, feature claims, company messaging
@@ -86,15 +86,17 @@ This is the most valuable step. Reconstruct what insiders know by triangulating 
 - Any claim that ONLY appears in LLM-optimized content and nowhere else = UNVERIFIABLE at best
 
 ### 4.4 Gap Analysis
-Classify each claim into one of these categories:
+Classify each claim using the **Verification Bar in CLAUDE.md** (VERIFIED /
+PLAUSIBLE / UNVERIFIABLE / CONTRADICTED are defined there — apply those exact
+thresholds), plus one extra category specific to this phase:
 
 | Category | Definition |
 |----------|-----------|
-| **VERIFIED** | Multiple independent sources confirm the claim |
-| **PLAUSIBLE** | Some evidence supports it, but not fully verifiable |
-| **UNVERIFIABLE** | No public evidence for or against |
-| **EXAGGERATED** | Partial truth, but overstated |
-| **CONTRADICTED** | Evidence actively contradicts the claim |
+| **VERIFIED** | Per CLAUDE.md bar: 2+ independent sources, or one high-authority independent source |
+| **PLAUSIBLE** | Per CLAUDE.md bar: one ordinary independent source, or only AFFILIATED support |
+| **UNVERIFIABLE** | Per CLAUDE.md bar: only FIRST-PARTY support, or no public evidence either way |
+| **EXAGGERATED** | Partial truth, but overstated (phase-specific — sits between PLAUSIBLE and CONTRADICTED) |
+| **CONTRADICTED** | Per CLAUDE.md bar: independent evidence actively refutes the claim |
 
 ### 4.5 Materiality Assessment
 

@@ -110,4 +110,4 @@ Write `output/{DOMAIN}/05-academic.md`:
 - Note when founders have no academic track record (that's data too)
 - Open-source alternatives should be genuinely comparable, not superficially similar
 - Patent analysis is necessarily surface-level from public data — note this limitation
-- Tag each source with trust class (FIRST-PARTY / INDEPENDENT)
+- Tag each source with one of the four canonical classes from CLAUDE.md (FIRST-PARTY / AFFILIATED / INDEPENDENT / ADVERSARIAL) — e.g. company-authored papers are FIRST-PARTY, independent researchers' papers are INDEPENDENT, competitor-funded research is ADVERSARIAL

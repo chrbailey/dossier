@@ -19,15 +19,19 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Dict, List, Optional, Tuple
 
-# Phase dependency DAG — matches ARCHITECTURE.md
+# Phase dependency DAG — single source of truth for the pipeline graph.
+# Prompts/docs reference this; keep them in sync when editing here.
+# P4.5 (Red Team) is a mandatory phase that attacks P4's conclusions before
+# valuation, so P6 gates on it.
 PHASE_DEPENDENCIES: Dict[str, Dict[str, List[str]]] = {
     "P1": {"required": [], "optional": []},
     "P2": {"required": ["P1"], "optional": []},
     "P3": {"required": ["P1"], "optional": []},
     "P5": {"required": ["P1"], "optional": []},
     "P4": {"required": ["P1", "P3"], "optional": ["P2", "P5"]},
-    "P6": {"required": ["P1", "P2", "P3", "P4"], "optional": ["P5"]},
-    "P7": {"required": ["P1", "P2", "P3", "P4", "P6"], "optional": ["P5"]},
+    "P4.5": {"required": ["P1", "P3", "P4"], "optional": []},
+    "P6": {"required": ["P1", "P2", "P3", "P4", "P4.5"], "optional": ["P5"]},
+    "P7": {"required": ["P1", "P2", "P3", "P4", "P4.5", "P6"], "optional": ["P5"]},
 }
 
 PHASE_NAMES: Dict[str, str] = {
@@ -36,6 +40,7 @@ PHASE_NAMES: Dict[str, str] = {
     "P3": "Technical",
     "P5": "Academic",
     "P4": "Claims",
+    "P4.5": "Red Team",
     "P6": "Valuation",
     "P7": "Report",
 }
@@ -45,10 +50,19 @@ PHASE_FILES: Dict[str, str] = {
     "P2": "02-market.md",
     "P3": "03-technical.md",
     "P4": "04-claims.md",
+    "P4.5": "04.5-red-team.md",
     "P5": "05-academic.md",
     "P6": "06-valuation.md",
     "P7": "07-report.md",
 }
+
+
+def _phase_re(phase: str) -> str:
+    """Regex fragment matching a phase id in PROGRESS.md, without prefix
+    collisions. `P4` must not match a `P4.5` line, so forbid a following
+    digit or dot. The id may still be followed by a space (`P4 Claims`) or a
+    colon (`## P4: Claims — FAILED`)."""
+    return rf"{re.escape(phase)}(?![\d.])"
 
 
 class ProgressFile:
@@ -66,17 +80,18 @@ class ProgressFile:
     def phase_status(self, phase: str) -> str:
         """Return 'completed', 'failed', 'in_progress', or 'pending'."""
         content = self.read()
+        pr = _phase_re(phase)
         # Check for explicit status markers
         if re.search(
-            rf"##\s+{phase}.*?FAILED", content, re.IGNORECASE | re.DOTALL
+            rf"##\s+{pr}.*?FAILED", content, re.IGNORECASE | re.DOTALL
         ):
             return "failed"
         if re.search(
-            rf"\[x\]\s+{phase}.*completed", content, re.IGNORECASE
+            rf"\[x\]\s+{pr}.*completed", content, re.IGNORECASE
         ):
             return "completed"
         if re.search(
-            rf"\[ \]\s+{phase}.*IN PROGRESS", content, re.IGNORECASE
+            rf"\[ \]\s+{pr}.*IN PROGRESS", content, re.IGNORECASE
         ):
             return "in_progress"
         # Check if output file exists as ground truth
@@ -122,7 +137,7 @@ class ProgressFile:
         content = self.read()
         # Update checkbox if present
         content = re.sub(
-            rf"\[ \]\s+{phase}.*",
+            rf"\[ \]\s+{_phase_re(phase)}.*",
             f"[!] {phase} {name} — FAILED {timestamp}",
             content,
         )
@@ -137,7 +152,7 @@ class ProgressFile:
         content = self.read()
         # Update checkbox
         content = re.sub(
-            rf"\[[ !]\]\s+{phase}.*",
+            rf"\[[ !]\]\s+{_phase_re(phase)}.*",
             f"[x] {phase} {name} — completed {timestamp}",
             content,
         )
@@ -200,7 +215,7 @@ class PhaseDependencies:
         lines.append("| Phase | Name | Status | Can Run | Detail |")
         lines.append("|-------|------|--------|---------|--------|")
 
-        for phase in ["P1", "P2", "P3", "P5", "P4", "P6", "P7"]:
+        for phase in ["P1", "P2", "P3", "P5", "P4", "P4.5", "P6", "P7"]:
             name = PHASE_NAMES.get(phase, phase)
             status = self.progress.phase_status(phase)
             ok, detail = self.can_run(phase)

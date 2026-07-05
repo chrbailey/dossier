@@ -7,8 +7,9 @@ Iteration: 0
 - [ ] P2 Market
 - [ ] P3 Technical
 - [ ] P4 Claims — blocked (needs P1, P3)
+- [ ] P4.5 Red Team — blocked (needs P4)
 - [ ] P5 Academic
-- [ ] P6 Valuation — blocked (needs P1-P5)
+- [ ] P6 Valuation — blocked (needs P1-P4.5)
 - [ ] P7 Report — blocked (needs P6)
 
 ## Blockers

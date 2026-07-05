@@ -2,7 +2,7 @@
 
 ## What This Is
 
-Automated SaaS company evaluation pipeline. Runs inside Claude Code — sub-agents handle 7 analysis phases, Ralph Loop drives iterative execution until all phases complete.
+Automated SaaS company evaluation pipeline. Runs inside Claude Code — sub-agents handle 8 analysis phases (P1–P7 plus a mandatory P4.5 Red Team), Ralph Loop drives iterative execution until all phases complete.
 
 ## How To Run
 
@@ -21,10 +21,11 @@ ls output/{domain}/
 ## Project Rules
 
 ### File Conventions
-- Phase outputs go to `output/{domain}/0N-phase.md`
+- Phase outputs go to `output/{domain}/0N-phase.md` (the Red Team phase uses the fractional id `04.5-red-team.md`)
 - Raw data goes to `output/{domain}/raw/*.json`
 - Progress tracking in `output/{domain}/PROGRESS.md`
-- Sub-agent prompts in `prompts/p{N}-{phase}.md`
+- Sub-agent prompts in `prompts/p{N}-{phase}.md` (e.g. `prompts/p4.5-red-team.md`)
+- Repo-level docs and audits that are not tied to a target domain go under `docs/`, never in `output/` (which is per-target only)
 
 ### Sub-Agent Behavior
 - Each phase sub-agent reads PROGRESS.md to understand prior work
@@ -81,6 +82,25 @@ Every piece of data entering the pipeline gets tagged by provenance:
 | **AFFILIATED** | Investor blogs, partner case studies, paid analyst reports, company-sponsored benchmarks | 0.4 | Biased toward target. Corroboration required from independent source. |
 | **INDEPENDENT** | Glassdoor, Blind, Reddit, HN, SEC filings, arXiv, job boards, user reviews on G2/Capterra | 0.8 | Primary evidence. Still check for astroturfing (new accounts, suspiciously uniform language). |
 | **ADVERSARIAL** | Competitor claims about target, competitor-funded research | 0.4 | Biased against target. Same corroboration rules as AFFILIATED but in reverse. |
+
+**All four classes are canonical.** When a phase asks you to tag a source, use
+these exact names. Do not invent phase-local trust weights — the numbers above
+are the single source of truth. Phase prompts may add phase-specific *guidance*
+(e.g. how to classify a GitHub repo) but must not redefine the classes or weights.
+
+### Verification Bar (single definition — referenced by P4 and P4.5)
+
+A claim's rating is determined solely by INDEPENDENT support (trust 0.8):
+
+- **VERIFIED** — corroborated by **2+ independent sources**, OR one high-authority
+  independent source (SEC filing, court record, audited financials).
+- **PLAUSIBLE** — exactly one ordinary independent source, or only AFFILIATED
+  support.
+- **UNVERIFIABLE** — only FIRST-PARTY support, or no public evidence either way.
+- **CONTRADICTED** — independent evidence actively refutes the claim.
+
+FIRST-PARTY and AFFILIATED sources can never, on their own, raise a claim above
+UNVERIFIABLE/PLAUSIBLE respectively. A source can never verify its own claim.
 
 ### LLM-Optimized Content Detection
 

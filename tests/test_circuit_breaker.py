@@ -156,12 +156,29 @@ class TestPhaseDependencies:
         assert "P2" in reason
 
     def test_p6_convergence_point(self, output_dir, checker):
-        # P6 needs P1-P4 required, P5 optional
+        # P6 needs P1-P4 and the mandatory P4.5 Red Team; P5 optional.
+        # Without P4.5 it must NOT be runnable (Red Team gates valuation).
         for p in ["P1", "P2", "P3", "P4"]:
             _create_phase_output(output_dir, p)
         ok, reason = checker.can_run("P6")
+        assert ok is False
+        assert "P4.5" in reason  # blocked on the missing Red Team phase
+
+        # Once P4.5 completes, P6 is runnable (warning only about optional P5).
+        _create_phase_output(output_dir, "P4.5")
+        ok, reason = checker.can_run("P6")
         assert ok is True
         assert "P5" in reason  # warns about missing optional
+
+    def test_p4_5_red_team_gating(self, output_dir, checker):
+        # P4.5 needs P1, P3, P4; it must not be runnable until P4 is done.
+        for p in ["P1", "P3"]:
+            _create_phase_output(output_dir, p)
+        ok, _ = checker.can_run("P4.5")
+        assert ok is False
+        _create_phase_output(output_dir, "P4")
+        ok, _ = checker.can_run("P4.5")
+        assert ok is True
 
     def test_unknown_phase(self, checker):
         ok, reason = checker.can_run("P99")

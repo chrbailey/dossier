@@ -9,6 +9,7 @@ Read ALL prior phase outputs:
 - `output/{DOMAIN}/02-market.md` — market size, competitive position
 - `output/{DOMAIN}/03-technical.md` — architecture, repos, code quality
 - `output/{DOMAIN}/04-claims.md` — verified capabilities
+- `output/{DOMAIN}/04.5-red-team.md` — **red team downgrades; use these adjusted ratings, not P4's originals**
 - `output/{DOMAIN}/05-academic.md` — IP landscape, open-source alternatives
 
 ## Steps
@@ -134,7 +135,7 @@ This phase synthesizes all prior phases. Apply these rules:
 - If P4.5 (Red Team) downgraded any claims used here, use the downgraded ratings.
 - SaaS metrics should be derived from INDEPENDENT signals (team size from LinkedIn,
   customer count from review volume, growth from hiring pace) not company press releases.
-- Replication assessment should use CODE-VERIFIED findings from P3, not CLAIMED capabilities.
+- Replication assessment should use CODE-OBSERVED findings from P3, not CLAIMED capabilities.
 
 ## Quality Criteria
 - All estimates must show their reasoning — no numbers without rationale

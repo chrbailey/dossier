@@ -1,9 +1,9 @@
 # Dossier Pipeline — Ralph Loop Orchestration
 
 ## Goal
-Execute a full SaaS due diligence analysis on the target domain. Run all 7 phases to completion, producing a unified report with executive summary.
+Execute a full SaaS due diligence analysis on the target domain. Run all 8 phases (P1–P7 plus the mandatory P4.5 Red Team) to completion, producing a unified report with executive summary.
 
-**Done when:** All 7 phases are marked complete in PROGRESS.md → output `<promise>DOSSIER_COMPLETE</promise>`
+**Done when:** All 8 phases (P1–P7 including P4.5) are marked complete in PROGRESS.md → output `<promise>DOSSIER_COMPLETE</promise>`
 
 ## Setup
 
@@ -30,11 +30,14 @@ P6 → unlocks P7
 ```
 
 ### Parallel Execution
-When multiple phases are unblocked, dispatch them as parallel sub-agents using the Task tool:
+When multiple phases are unblocked, dispatch them as parallel sub-agents using the Task tool.
+The **Phase Dependencies (DAG) above are authoritative** — these bullets are just the
+expected timeline; if they ever seem to disagree with the DAG, follow the DAG (or ask
+`scripts/circuit_breaker.py can-run P{N} output/{DOMAIN}`, which encodes the same graph):
 - **After P1 completes:** Launch P2, P3, P5 in parallel (3 agents)
 - **After P3 completes:** Launch P4 (if P1 also done)
 - **After P4 completes:** Launch P4.5 Red Team (reads P1, P3, P4)
-- **After P4.5 + P5 complete:** Launch P6
+- **When P6's full dependency set is met (P1, P2, P3, P4, P4.5; P5 optional):** Launch P6
 - **After P6 completes:** Launch P7
 
 ### Per-Phase Execution

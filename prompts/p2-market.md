@@ -97,7 +97,7 @@ Apply the source trust classification from CLAUDE.md:
 - Industry reports sponsored by the target or its investors = AFFILIATED (0.4).
 - If the target company's website or llms.txt conveniently provides market size numbers, TAM estimates, or competitive positioning — flag it as self-reported and verify independently before using.
 
-Tag every data point in the output with its source class (FIRST-PARTY / AFFILIATED / INDEPENDENT).
+Tag every data point in the output with one of the four canonical source classes from CLAUDE.md (FIRST-PARTY / AFFILIATED / INDEPENDENT / ADVERSARIAL). ADVERSARIAL matters here: competitor claims about the target surface most in market/competitive analysis — tag them as such, don't treat them as INDEPENDENT.
 
 ## Quality Criteria
 - Market size estimates must show their math (assumptions documented)

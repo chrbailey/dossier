@@ -105,21 +105,32 @@ Write `output/{DOMAIN}/03-technical.md`:
 
 ## Source Trust Rules
 
-GitHub repos and code are relatively trustworthy — code doesn't lie the way
-marketing copy does. However:
-- README files and documentation = FIRST-PARTY marketing (trust 0.2). A README
-  can claim "enterprise-grade" while the code has zero tests.
-- Actual code, CI configs, test suites, dependency manifests = INDEPENDENT evidence (trust 0.8).
-  These are hard to fake.
-- Star counts can be gamed. Weight contributor count and commit frequency higher.
-- If the company's website or llms.txt claims specific technical capabilities,
-  verify against actual repo contents. Log discrepancies.
+Apply the source trust classification from CLAUDE.md. A crucial nuance for this
+phase: **the target's own repos are still FIRST-PARTY (trust 0.2)** — the company
+controls them and can delete failing tests, vendor green CI badges, or curate what
+is public. Code is more *observable* than marketing copy, but observing the
+company's own artifact is not independent corroboration.
 
-Tag findings as CODE-VERIFIED (saw it in the repo) vs CLAIMED (company says so but no repo evidence).
+- README files, docs, self-authored code, the company's own CI configs and test
+  suites = FIRST-PARTY. Use them to check the company's claims for *internal
+  consistency* (does the code do what the marketing says?), not as INDEPENDENT
+  evidence that verifies a claim.
+- Genuinely INDEPENDENT (trust 0.8) technical signals: external contributors and
+  forks, other projects that depend on their packages, third-party security
+  audits, and bug reports/issues filed by outside users.
+- Star counts can be gamed. Weight external contributor count and downstream
+  dependents higher than stars.
+- If the company's website or llms.txt claims specific technical capabilities,
+  check them against actual repo contents and log discrepancies.
+
+Tag each technical finding as **CODE-OBSERVED** (seen in the company's own repo —
+first-party, good for consistency checks) or **CLAIMED** (asserted with no repo
+artifact at all). Neither tag alone VERIFIES a claim under P4's bar — that still
+requires an independent source.
 
 ## Quality Criteria
 - Repository data should be current (use gh CLI for live data)
 - Distinguish between public repos and likely private infrastructure
 - Note what you CAN'T see — a company with 3 public repos may have 300 private ones
 - Architecture assessment should be clearly labeled as inference where appropriate
-- Every technical claim must be tagged CODE-VERIFIED or CLAIMED
+- Every technical claim must be tagged CODE-OBSERVED (first-party) or CLAIMED, and neither substitutes for independent corroboration
