@@ -4,7 +4,7 @@ Iteration: 0
 
 ## Phases
 - [x] P1 Discovery — complete 2026-07-08 (01-discovery.md; raw/whois.json, raw/dns.json, raw/website-content.json)
-- [ ] P2 Market
+- [x] P2 Market — complete 2026-07-08 (02-market.md)
 - [ ] P3 Technical
 - [ ] P4 Claims — blocked (needs P1, P3)
 - [ ] P4.5 Red Team — blocked (needs P4)
@@ -16,4 +16,5 @@ Iteration: 0
 - P1 environment gaps (non-fatal, work around applied): direct fetch of yardi.com blocked (Cloudflare + egress proxy 403) -> first-party content captured via WebSearch snippets; WHOIS port 43/RDAP blocked -> registration data from whois.com snippet (single independent source); TXT DNS lookup timed out; llms.txt / .well-known check UNCONFIRMED (no indexed llms.txt found, but could not probe directly) — downstream phases with direct access must re-check.
 
 ## Notes
+- P2 key facts: TAM ~$7B global core PM software 2026 (analyst cluster $6.5-7.7B corroborated by bottom-up JCHS units x AppFolio audited $101/unit ARPU); broad-scope TAM $25-30B (low confidence, scope ambiguity). Yardi SOM = its own est. revenue $1.6-3B (~20-40% of core). Quadrant: Yardi Leader, Vision 7 / Execution 9; AppFolio 8/8, Entrata 8/7, RealPage 7/7, MRI 7/7; Buildium/Rent Manager/ResMan niche. Top market risk: algorithmic-pricing legal storm — DOJ/RealPage consent decree (Nov 2025, 7-yr conduct remedies) is now plaintiffs' template while Duffy v. Yardi proceeds under per se standard (narrowed Apr 2026, still in discovery). MRI for sale at up to $10B; Entrata $4.3B valuation w/ Blackstone. Gaps for P4/P6: Yardi revenue 2x spread unresolved; Revenue IQ revenue share unknown; competitor "best software" content is ADVERSARIAL (vendors ranking themselves) — corroborates but does not independently verify Yardi UX complaints.
 - P1 key facts: Yardi Systems Inc., founded 1984 by Anant Yardi, HQ Santa Barbara CA; private/founder-owned, reportedly no outside capital (Crunchbase lists 'Rabil Ventures' — discrepancy to verify in P4); headcount conflicting 6,990-10,000; revenue estimates conflict ($1.6B Getlatka vs ~$3B press) — no audited figures. Products: Voyager (enterprise), Breeze (SMB, $1-2/unit/mo), RentCafe, CommercialEdge, Matrix. Stack: ASP.NET/C#/SQL Server/SOAP behind Cloudflare + Route53 + Proofpoint. GitHub org archived Sep 2025. Live antitrust class action Duffy v. Yardi (W.D. Wash.) over algorithmic rent pricing — material for P2/P4/P6. G2/Capterra 4.0-4.6 with recurring complaints: slow, dated UI, no open API. Glassdoor 4.0 (3,102 reviews).
