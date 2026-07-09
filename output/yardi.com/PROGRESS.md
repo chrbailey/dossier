@@ -10,7 +10,10 @@ Iteration: 0
 - [x] P4.5 Red Team — complete 2026-07-08T23:55Z (04.5-red-team.md)
 - [x] P5 Academic — complete 2026-07-09T00:45Z (05-academic.md; raw/arxiv-papers.json, raw/arxiv-algorithmic-pricing.json, raw/patents.json, raw/github-oss-alternatives.json)
 - [x] P6 Valuation — complete 2026-07-09T00:05Z (06-valuation.md)
-- [ ] P7 Report — blocked (needs P6)
+- [x] P7 Report — complete 2026-07-09T01:20Z (07-report.md + executive-summary.md)
+
+## Final Status
+DOSSIER COMPLETE — all 8 phases done (P1–P7 incl. P4.5 Red Team). Final recommendation: **PROCEED WITH CAUTION** (posture-specific: partner/integrate, compete on SMB flank, or monitor Duffy + CEO transition — no conventional invest/acquire path exists for a private, no-outside-capital company). Scorecard: AI Reality 3/5; Revenue Quality 2/10 (unauditable, LOW-confidence $1.5–2.5B cluster); Claims 15/21 verified-or-plausible (~71%, red-team-adjusted); Build vs Buy 3/4 (bimodal — SMB flank attackable, enterprise core not); EV base ~$8–11B (bear $3.5–5B / bull $16–22B); source independence ~66% nominal / ~60% red-team-adjusted; LLM-influence UNKNOWN (llms.txt probe still 403-blocked — dossier is unaudited, not clean, on this axis), manipulation risk MEDIUM (Virtuoso 78%/92% laundering loop demonstrated). Red-team downgrades carried authoritative throughout P6/P7; P4-vs-P4.5 disagreements presented side-by-side in 07-report.md §6.3. Top residual diligence items: (1) audited financials, (2) read actual Duffy record incl. Oct 2025 CA ruling text, (3) SOC2/ISO attestations, (4) re-probe llms.txt from unblocked environment.
 
 ## Blockers
 - P1 environment gaps (non-fatal, work around applied): direct fetch of yardi.com blocked (Cloudflare + egress proxy 403) -> first-party content captured via WebSearch snippets; WHOIS port 43/RDAP blocked -> registration data from whois.com snippet (single independent source); TXT DNS lookup timed out; llms.txt / .well-known check UNCONFIRMED (no indexed llms.txt found, but could not probe directly) — downstream phases with direct access must re-check.
