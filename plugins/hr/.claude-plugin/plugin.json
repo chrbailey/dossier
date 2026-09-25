@@ -1,0 +1,12 @@
+{
+  "name": "hr",
+  "version": "0.1.0",
+  "description": "People due diligence for a target company — headcount, hiring velocity, retention/culture, leadership and key-person risk. One shippable page, every claim independently sourced. A companion to dossier.md.",
+  "author": {
+    "name": "chrbailey",
+    "url": "https://github.com/chrbailey/dossier"
+  },
+  "homepage": "https://github.com/chrbailey/dossier/tree/main/plugins/hr",
+  "license": "MIT",
+  "keywords": ["hr", "people", "headcount", "hiring", "retention", "leadership", "due-diligence"]
+}

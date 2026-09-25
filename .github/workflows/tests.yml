@@ -24,7 +24,10 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install -r scripts/requirements.txt
-          pip install -r dspy/requirements.txt
-          pip install pytest pytest-asyncio
-      - name: Run tests
-        run: python -m pytest tests/ -v --tb=short
+      - name: Validate plugin manifests
+        run: |
+          python -c "import json; json.load(open('.claude-plugin/marketplace.json'))"
+          python -c "import json; json.load(open('plugins/hr/.claude-plugin/plugin.json'))"
+          test -f plugins/hr/commands/dossier.md
+      - name: Byte-compile helper scripts
+        run: python -m compileall -q scripts

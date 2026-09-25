@@ -1,0 +1,20 @@
+{
+  "name": "dossier-plugins",
+  "owner": {
+    "name": "chrbailey",
+    "url": "https://github.com/chrbailey/dossier"
+  },
+  "metadata": {
+    "description": "Plugins that extend Dossier's due-diligence coverage. Each is a prompt-as-program in the same spirit as dossier.md.",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "hr",
+      "source": "./plugins/hr",
+      "description": "People due diligence: headcount, hiring velocity, retention/culture, leadership and key-person risk — one shippable page, every claim independently sourced.",
+      "category": ["due-diligence", "research"],
+      "keywords": ["hr", "people", "headcount", "hiring", "retention", "leadership", "org-health"]
+    }
+  ]
+}
